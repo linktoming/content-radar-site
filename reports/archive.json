@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-07-23",
+  "lang": "zh",
+  "title": "今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型；解读层开始盯 sandbox / reward-seeking / 长程任务；投资层下注的是 FDE、dark factory、physical AI；实战层则把这",
+  "url": "reports/2026-07-23-zh.html"
+ },
+ {
   "date": "2026-07-22",
   "lang": "zh",
   "title": "今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统：源头层在补能力与安全边界，实践层在把 agent 变成岗位/工作流，投资层在押“软件自己生产自己”的 dark factory。",
