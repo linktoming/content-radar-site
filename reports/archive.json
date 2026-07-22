@@ -6,6 +6,12 @@
   "url": "reports/2026-07-23-zh.html"
  },
  {
+  "date": "2026-07-23",
+  "lang": "en",
+  "title": "The agent story has moved from capability to controlled deployment. Labs are adding security, economic observability, enterprise agent surfaces, and c",
+  "url": "reports/2026-07-23-en.html"
+ },
+ {
   "date": "2026-07-22",
   "lang": "zh",
   "title": "今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统：源头层在补能力与安全边界，实践层在把 agent 变成岗位/工作流，投资层在押“软件自己生产自己”的 dark factory。",
