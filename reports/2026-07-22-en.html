@@ -1,0 +1,132 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The consequential shift is not another model release. Agents are leavi · Content Radar</title>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="../index.html"><span class="dot"></span><span>Content&nbsp;Radar</span></a>
+  <div class="controls">
+    <span class="edtag">EN edition</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <div class="rp-head">
+    <div class="eyebrow">2026 · 07 · 22 · Daily AI Intelligence</div>
+    <span class="pill free">Public · Free</span>
+  </div>
+  <article class="rp-body"><h2>🔭 Today’s Thesis</h2>
+<p>The consequential shift is not another model release. Agents are leaving the chat box and entering production systems, where speed, permissions, verification, identity, and liability matter as much as raw intelligence. <a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/">Google DeepMind</a> is packaging production coding, multimodal document work, and cyber remediation; <a href="https://x.com/AnthropicAI/status/2077452646303006927#m">Anthropic</a> is documenting autonomous-agent misalignment; and investors are funding the infrastructure for software that increasingly produces itself.</p>
+<p>The China-side signal sharpens the thesis. <a href="https://www.jiqizhixin.com/articles/2026-07-21-13">机器之心’s WAIC coverage</a> shows the conversation moving beyond parameter counts toward deployment in cities, industry, and founder ecosystems, while AINews continues tracking how Kimi and other Chinese open models are becoming procurement and policy questions. The frontier is no longer just who has the smartest model; it is who can get capable agents adopted inside real institutions.</p>
+<h2>🎯 Primary Sources</h2>
+<ul>
+<li><strong>OpenAI / Sam Altman</strong> — Sam says the new voice model crossed a threshold and that he now talks to ChatGPT more than he types; OpenAI and Hugging Face also <a href="https://x.com/sama/status/2079661132302995790#m">published a safety incident found during model evaluation</a>, evidence that evals are becoming operational safety engineering.</li>
+<li><strong>Google DeepMind / Gemini</strong> — <a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/">Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber</a> span production code, multimodal documents, and vulnerability remediation. Lightweight specialist models are becoming background workers.</li>
+<li><strong>NotebookLM</strong> — <a href="https://x.com/Gemini_Notebook/status/2077803351392268314#m">NotebookLM is repositioning itself</a> from passive workspace to research companion, with adoption at 30 million users and 600,000 organizations.</li>
+<li><strong>Anthropic</strong> — Its <a href="https://x.com/AnthropicAI/status/2077452646303006927#m">Summer 2026 agentic-misalignment work</a> keeps the downside of autonomous execution visible: giving an agent more agency without stronger controls is not progress.</li>
+<li><strong>Mistral</strong> — The <a href="https://x.com/MistralAI/status/2079598447234064801#m">expanded Microsoft partnership</a> targets enterprise and regulated industries, strengthening Europe’s controllable-frontier-AI position.</li>
+<li><strong>OpenClaw / Firecrawl</strong> — <a href="https://x.com/firecrawl/status/2077787131360018870#m">Firecrawl is now free on OpenClaw</a>, bringing live search, scraping, dynamic sites, and PDF parsing into agent workflows; <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3">OpenClaw 2026.7.2 beta</a> advances native remote coding sessions.</li>
+<li><strong>Claude Code</strong> — Bryan Cherny’s production checklist emphasizes <a href="https://x.com/bcherny/status/2077929390806073807#m">end-to-end verification, automatic permissions, code/security review, and multi-agent management</a>. That is the gap between a clever demo and a dependable system.</li>
+</ul>
+<h2>🧠 Sense Makers</h2>
+<ul>
+<li><strong>Lenny / Claire Vo</strong> — The <a href="https://www.lennysnewsletter.com/p/how-the-founder-of-morning-brew-built">Morning Brew content machine</a> first interviews Alex Lieberman, stores voice in Markdown, then uses six revision personas. The moat is encoded judgment, not generated prose.</li>
+<li><strong>Andrej Karpathy</strong> — His <a href="https://x.com/karpathy/status/2079610838143623371#m">long-ramble workflow</a> is a practical interface insight: voice lets you transmit enough context for complex work when typing becomes the bottleneck.</li>
+<li><strong>The Information</strong> — Its comparison of <a href="https://www.youtube.com/watch?v=FvLF9OygqN4">where Anthropic trails OpenAI and Google</a> locates the gap in voice and customer-chat latency, not abstract benchmarks.</li>
+<li><strong>TechCrunch</strong> — Jack Dorsey’s <a href="https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/">Buzz</a> combines team chat, agents, and Git hosting, pointing toward shared workspaces where humans and agents operate in the same channels.</li>
+<li><strong>swyx</strong> — <a href="https://x.com/swyx/status/2079580673086730701#m">Qwen Image 3</a> matters less for pretty images than for rich annotated output in a single generation, opening education and industrial-training use cases.</li>
+<li><strong>机器之心</strong> — This is one of China’s most important AI industry publications. Its <a href="https://www.jiqizhixin.com/articles/2026-07-21-13">WAIC Day 3</a> and <a href="https://www.jiqizhixin.com/articles/2026-07-21-14">future-tech coverage</a> show capital, young founders, and urban deployment converging around applied AI.</li>
+<li><strong>Every</strong> — <a href="https://x.com/frankhellend/status/2078895314744807516#m">The Case Against Skills</a> warns that elaborate skill scaffolding can constrain stronger future models. Builders should treat skills as replaceable interfaces, not sacred architecture.</li>
+</ul>
+<h2>🔨 Practitioners</h2>
+<ul>
+<li><strong>Greg Isenberg</strong> — His <a href="https://www.youtube.com/watch?v=zXysLUTLjw4">FDE explainer</a> frames the forward-deployed engineer as someone who combines business reality, judgment, and building. Even solo founders can use the model to decide which workflows deserve automation.</li>
+<li><strong>Andrew Ng / DeepLearning.AI</strong> — <a href="https://x.com/AndrewYNg/status/2078144569594761591#m">Fast LLM inference with Cerebras</a> reinforces a basic point: low latency enables new interaction patterns; it is not benchmark vanity.</li>
+<li><strong>歸藏 (Guizang)</strong> — A prominent Chinese AI creator, he released a <a href="https://x.com/op7418/status/2079508851737633055#m">social-card skill</a> for Claude Code and Codex. The useful signal for Western creators is that Chinese practitioners are turning agent skills directly into platform-native visual production.</li>
+<li><strong>课代表立正</strong> — This Chinese creator’s <a href="https://www.youtube.com/watch?v=NDBCOPAucvM">Codex publishing incident</a> is a concrete permissions lesson: actions visible to 20,000 people need an explicit confirmation boundary.</li>
+<li><strong>AI Engineer / HeyGen</strong> — <a href="https://www.youtube.com/watch?v=Cz4v1WHVyZc">HTML Is All Agents Need</a> treats video generation as a code-producing-video problem. Editable intermediate representations beat opaque prompting when reliability matters.</li>
+<li><strong>Levelsio</strong> — His <a href="https://x.com/levelsio/status/2079591739493404931#m">software-commoditization argument</a> points to the hard consequence of abundant code: distribution, brand, and operations become more valuable.</li>
+</ul>
+<h2>💰 Investors</h2>
+<ul>
+<li><strong>Sequoia / Factory</strong> — <a href="https://www.youtube.com/watch?v=ZesOukBjPmI">Dark Factory</a> is the thesis that software will increasingly produce software. Their sharper metric is that <a href="https://www.youtube.com/shorts/LQGVBApMiVk">90% of AI tokens may become asynchronous</a>; current usage still depends too heavily on a human sitting at the keyboard.</li>
+<li><strong>a16z / Marc Andreessen</strong> — <a href="https://www.a16z.news/p/making-a-billion-intelligent-machines">Making a Billion Intelligent Machines</a> extends the agent platform into physical AI: the leverage lies in tools that let small teams build machines, not only in the machines themselves.</li>
+<li><strong>Elad Gil</strong> — <a href="https://x.com/eladgil/status/2079561730263531771#m">Cursor agents rebuilding SQLite</a> exposes a 15× cost variance across model mixes. Orchestration economics—routing, decomposition, and verification—will become a moat.</li>
+<li><strong>Sequoia / Bunkerhill</strong> — <a href="https://sequoiacap.com/article/partnering-with-bunkerhill-health-ai-agents-that-improve-patient-outcomes/">AI agents improving patient outcomes</a> show that regulated industries are adopting agents where workflow integration and evidence matter more than novelty.</li>
+<li><strong>YC / Klaimee</strong> — An <a href="https://x.com/inesboutem/status/2079655816261455880#m">AI-agent warranty</a> directly addresses the enterprise question “who pays when the agent fails?” Liability is becoming product infrastructure.</li>
+<li><strong>Greylock / Oak</strong> — <a href="https://x.com/GreylockVC/status/2077421172169670626#m">AI-native identity governance</a> treats machine identities and agents as first-class actors. The security stack will be rebuilt around non-human workers.</li>
+</ul>
+<h2>🔥 Professional Trending</h2>
+<ul>
+<li><strong>GitHub Trending</strong> — <a href="https://github.com/bojieli/ai-agent-book">ai-agent-book</a> is a Chinese engineering guide to AI agents; <a href="https://github.com/tirth8205/code-review-graph">code-review-graph</a> builds local-first code intelligence so coding agents read only necessary context; <a href="https://github.com/earthtojake/text-to-cad">text-to-cad</a> applies agent skills to CAD and robotics.</li>
+<li><strong>Hacker News</strong> — <a href="https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git">Buzz</a> reinforces the convergence of chat, agents, and Git; Meta’s <a href="https://ai.meta.com/blog/genesis-mission-lawrence-berkeley-national-laboratory-segment-anything-dino/?_fb_noscript=1">Genesis Mission</a> puts its models into scientific workflows.</li>
+<li><strong>Product Hunt</strong> — <a href="https://www.producthunt.com/products/openchatcut">OpenChatCut</a> is an open-source agentic video editor; <a href="https://www.producthunt.com/products/creed-2">Creed</a> creates a portable personal context file for agents; <a href="https://www.producthunt.com/products/diffsmith-code-review-studio">Diffsmith</a> productizes review of agent-generated code.</li>
+<li><strong>Reddit</strong> — <a href="https://www.reddit.com/r/Solopreneur/comments/1uly4r6/docs_written_for_humans_are_quietly_breaking_my/">“Docs written for humans are quietly breaking my agents”</a> is an early product insight: documentation increasingly has two readers, human and machine.</li>
+</ul>
+<h2>📡 Keyword Radar</h2>
+<p>Today’s keyword radar is not interpretable: <code>search_coverage</code> is empty because browser/search lanes never ran. All eleven search clusters—from AI Builder and Agent Workflow to China AI entrepreneurship and AI × cognition—must be marked <strong>not searched</strong>, not “zero hits.”</p>
+<h2>🌱 Early Signals</h2>
+<ol>
+<li><strong>Agent-readable documentation becomes the next SEO.</strong> The <a href="https://www.reddit.com/r/Solopreneur/comments/1uly4r6/docs_written_for_humans_are_quietly_breaking_my/">Solopreneur discussion</a> is small but directionally important: your content and product docs will increasingly be retrieved and acted on by agents.</li>
+<li><strong>Permission architecture becomes a creator competency.</strong> The <a href="https://www.youtube.com/watch?v=NDBCOPAucvM">Chinese Codex publishing case</a> makes the issue concrete: greater leverage requires better confirmation boundaries.</li>
+<li><strong>Portable context is becoming a product category.</strong> <a href="https://www.producthunt.com/products/creed-2">Creed</a> is early, but users will not want to re-explain themselves inside every agent tool.</li>
+<li><strong>Model-mix economics become an orchestration moat.</strong> The <a href="https://x.com/eladgil/status/2079561730263531771#m">15× cost variance in the SQLite reconstruction</a> suggests the winning stack will route work intelligently rather than call the strongest model for everything.</li>
+<li><strong>Chinese creators are packaging platform craft as agent skills.</strong> <a href="https://x.com/op7418/status/2079508851737633055#m">Guizang’s social-card workflow</a> is a small example of a wider edge: content is becoming a structured asset pipeline, not a single post.</li>
+</ol></article>
+  <div class="rp-cta">
+    <p>This is the full public edition. Want the daily 选题 picks, or a radar built for your positioning?</p>
+    <a class="btn primary" href="../index.html#channels">See how to subscribe →</a>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <a class="dom" href="../index.html">content-radar.sharpener.ai</a>
+  <span class="meta">Public edition free · complete · no personal info · picks &amp; custom are paid</span>
+</div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

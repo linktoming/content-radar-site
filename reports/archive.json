@@ -6,6 +6,12 @@
   "url": "reports/2026-07-22-zh.html"
  },
  {
+  "date": "2026-07-22",
+  "lang": "en",
+  "title": "The consequential shift is not another model release. Agents are leaving the chat box and entering production systems, where speed, permissions, verif",
+  "url": "reports/2026-07-22-en.html"
+ },
+ {
   "date": "2026-07-21",
   "lang": "zh",
   "title": "今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束：长任务安全、可验证执行环境、算力供给、开放模型、以及 founder 自己的内容系统。",
