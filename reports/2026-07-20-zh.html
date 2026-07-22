@@ -1,0 +1,149 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的 · Content Radar</title>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="../index.html"><span class="dot"></span><span>Content&nbsp;Radar</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <div class="rp-head">
+    <div class="eyebrow">2026 · 07 · 20 · 每日 AI 情报</div>
+    <span class="pill free">公开免费版</span>
+  </div>
+  <article class="rp-body"><h2>🔭 今日主线</h2>
+<p>今天的主线很清楚：<strong>AI 供给正在一边变强变便宜，一边变得更像供应链风险。</strong> Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推；Claude Fable 5 的订阅限额、Kimi 暂停 C 端会员、以及推理成本融资，提醒你模型能力不是免费的自然资源，是会被算力、价格表、风控和供应商策略卡住的生产资料。</p>
+<p>AINews/TLDR 这两张外部答案卷都把 Kimi K3 / open-weight / sandbox 放在主线附近；今天四层回声也对上了：源头层有 <a href="https://x.com/Alibaba_Qwen/status/2078759124914098291#m">Qwen3.8 open-weight</a>、<a href="https://x.com/Kimi_Moonshot/status/2078855608565207130#m">Kimi K3 需求压垮新订阅</a>、<a href="https://x.com/perplexity_ai/status/2077432518081744979#m">Perplexity SPACE</a>、<a href="https://x.com/pika_labs/status/2077438210213634159#m">Pika MCP</a>；解读层把它翻译成 open model 竞争和 agent infra；投资层下注 Fireworks、Sierra、Harvey、Sable、Bunkerhill。</p>
+<p>对你最有用的判断不是“谁赢了”，而是：<strong>一人公司的系统不能只押一个模型入口。</strong> 要保留上下文、素材、工作流和评测的所有权。模型可以切，token 价格会变，账号会封，算力会紧；真正属于你的，是可迁移的文件、流程、数据和判断标准。</p>
+<h2>🎯 源头 · Primary</h2>
+<ul>
+<li><strong>OpenAI</strong>〔S · model_maker〕— 推 <a href="https://x.com/OpenAI/status/2078243667081617826#m">GPT-5.6 Sol 在 The Last Ones cyber range 达到新 SOTA</a> 与 <a href="https://x.com/OpenAI/status/2078243670265041038#m">Codex Security</a>，把 coding agent 从“写代码”推向“发现、验证、修复漏洞”；同时发 <a href="https://openai.com/index/a-scorecard-for-the-ai-age">A scorecard for the AI age</a> 和 <a href="https://openai.com/index/cars24">Cars24 案例</a>。</li>
+<li><strong>Sam Altman</strong>〔S · model_maker〕— <a href="https://x.com/sama/status/2077817060068057493#m">承认过去 12 个月不是 OpenAI 最好的一年</a>，又说自己现在和 ChatGPT 说话多过打字，暗示新 voice model 过了一个可用阈值。</li>
+<li><strong>Anthropic / Claude</strong>〔S/A〕— 发 <a href="https://x.com/AnthropicAI/status/2077452646303006927#m">Agentic misalignment in Summer 2026</a>，同时 <a href="https://x.com/claudeai/status/2078302415804379218">Claude Fable 5 进入 Max/Team Premium 但限额 50%</a>，官方自己也承认体验会让人沮丧。</li>
+<li><strong>Google DeepMind</strong>〔S〕— 讨论 <a href="https://x.com/GoogleDeepMind/status/2077372568143642972#m">AI agents for scientific discovery</a> 的 validation bottleneck；科学 agent 的瓶颈不是生成假设，而是现实验证。</li>
+<li><strong>Alibaba Qwen</strong>〔A〕— 预告 <a href="https://x.com/Alibaba_Qwen/status/2078759124914098291#m">Qwen3.8 open-weight</a>，2.4T 参数、接近 leading frontier models，Reddit / GitHub / X 都有回声。</li>
+<li><strong>Moonshot Kimi</strong>〔A〕— <a href="https://x.com/Kimi_Moonshot/status/2078855608565207130#m">Kimi K3 因需求太高暂停新订阅</a>；外部评价把它放进 coding agent 前沿讨论，中文侧也在讨论 GPU 被打爆和 IPO 预期。</li>
+<li><strong>Perplexity</strong>〔A〕— <a href="https://x.com/perplexity_ai/status/2077432518081744979#m">SPACE sandbox</a> 已支撑 Perplexity Computer 100% 生产流量，隔离 code/files/long-running sessions。computer-use agent 要上生产，sandbox 是基础设施，不是可选配件。</li>
+<li><strong>Pika</strong>〔A · creative tool〕— <a href="https://x.com/pika_labs/status/2077438210213634159#m">Pika MCP</a> 接 Codex、Claude Code、Hermes、OpenClaw，创意生成工具正在进入 agent harness。</li>
+<li><strong>Harvey</strong>〔A · key_startup〕— 开源 <a href="https://x.com/harvey/status/2078148525817499917#m">10 个 M&amp;A diligence RL environments</a>，最大 80M tokens、1000 grading criteria；专业服务的 agent eval 开始硬起来。</li>
+<li><strong>Sierra</strong>〔A〕— <a href="https://sierra.ai/blog/horizon">Horizon</a> 主打长周期企业任务和客户上下文；Bret Taylor 的判断是：企业护城河来自 customer context 的复利。</li>
+<li><strong>LangChain</strong>〔A · framework〕— 开源 <a href="https://x.com/LangChain/status/2078559153422024988#m">software engineering agent factory</a>，把 terminal、Slack、Linear、GitHub、CI 等界面打成工程 agent 工作流。</li>
+<li><strong>NVIDIA / CoreWeave / Crusoe / Together / Fireworks</strong>〔A · infra〕— NVIDIA 讲 <a href="https://blogs.nvidia.com/blog/nvidia-vera-rubin-post-training-intelligence-per-dollar/">post-training workloads 的 intelligence per dollar</a>，CoreWeave 被 Gartner 列为 Cloud AI Infrastructure Visionary，Crusoe 强调 agentic workflows 不是单次 request，Fireworks 因高增长继续被资本追捧。</li>
+<li><strong>OpenClaw</strong>〔S · harness〕— <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3">2026.7.2 beta releases</a> 继续推进；Reddit 上出现 context slash、voice-first assistant、learning plugin 等真实使用场景。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<ul>
+<li><strong>AINews / TLDR AI</strong>〔A〕— AINews 把 Kimi K3 写成 open-weight 接近前沿的效率栈事件；TLDR headline 也把 Kimi K3、Thinking Machines Inkling、Perplexity sandboxes 放在同一条线上。外部答案卷支持今天主线：open model + agent infra + sandbox。</li>
+<li><strong>机器之心</strong>〔A〕— <a href="https://www.jiqizhixin.com/articles/2026-07-20-19">Kimi K3 GPU 挤爆、暂停订阅、月之暗面 IPO 预期</a> 是中文解读层最强信号；WAIC 相关报道还覆盖 Agentic Infra、Richard Sutton、AI Agent 专家能力鸿沟。</li>
+<li><strong>SemiAnalysis</strong>〔A〕— 关于 AMD/Anthropic 和 attention efficiency 的线索把硬件、网络、长上下文、1M→5M context 连接起来；这解释了为什么 agent 产品的成本越来越在 infra 层显形。</li>
+<li><strong>Paul Graham</strong>〔S〕— 今天的回声落在“AI 把低时薪员工抬到专家级”和“国家级 commoditise your complement”两个判断上，适合放进 open-weight 竞争的宏观解释。</li>
+<li><strong>Lenny / Kiyani</strong>〔S/A〕— <a href="https://www.lennysnewsletter.com/p/community-wisdom-syncing-claude-code">Community Wisdom</a> 把 Claude Code、Claude Design、vibe-coded 产品可信度、co-founder fallout 放一起，说明 AI-native builder 的痛点已经从工具新鲜感转向交付可信度。</li>
+<li><strong>The Information / TechCrunch</strong>〔A〕— Kimi/open model 与 AI 影视创业公司收购的报道，给“模型能力进入真实产业成本结构”补媒体层回声。</li>
+<li><strong>中文认知/教育创作者</strong>〔S/A〕— 秋芝2046、麻省理工长毛兔、清华姜学长、硅星觉醒、招白debug 今天重新进入覆盖。最值得看的是“非技术背景练习 vibe coding 一年”“Claude Design handoff 火葬场”“AI 文件隐私”这类从热词走向真实痛点的内容。</li>
+</ul>
+<h2>🔨 实战 · Practitioner</h2>
+<ul>
+<li><strong>steipete / Every / Garry Tan</strong>〔A〕— 今天的实战暗线是减法：<a href="https://x.com/steipete/status/2078914010871992443">agent memory as markdown folder</a>、不要过度工程 skills、markdown 是长寿命格式。对一人公司很重要：系统越朴素，越能跟着模型升级。</li>
+<li><strong>Alex Finn</strong>〔A〕— 把 Fable 5 订阅变化和 Qwen3.8 解读成模型供给侧压力：闭源限额在收紧，开源能力在追上。</li>
+<li><strong>Andrew Ng / DeepLearningAI</strong>〔S/A〕— <a href="https://x.com/AndrewYNg/status/2078144569594761591#m">Fast LLM Inference with Cerebras</a> 把低延迟推理定义为实时应用的新类别。</li>
+<li><strong>vista8 / 歸藏</strong>〔A〕— <a href="https://x.com/vista8/status/2078680925987291374#m">Codex + Listenhub CLI + Pexels skill 生成视频</a>、Kimi 接 Codex、手作 PPT 价值上升，是中文创作者能直接转化的 workflow 案例。</li>
+<li><strong>Greg Isenberg</strong>〔A〕— <a href="https://x.com/gregisenberg/status/2078926171522167220#m">无限 AI slop 时代，一点个性走很远</a>。这条不是鸡汤，是内容创业的定价信号：平均值会越来越便宜。</li>
+<li><strong>levelsio / Marc Lou</strong>〔A〕— trust_mrr 分布显示 51% 是 $0、35% 不到 $1K；AI 时代创业速度更快，但收入分布仍然残酷。别把“能做出来”误读成“能卖出去”。</li>
+<li><strong>光羽的平行世界</strong>〔S〕— 抖音 creator lane 正常，今天有 AI 决策 Agent 省 400 万、森马 AI 变革增收 2 亿、传统会议改造等企业 AI 改造案例。商业化最成熟的中文实战信号仍在企业效率。</li>
+<li><strong>凯莉彭</strong>〔S〕— 一人公司如何用 AI 赚钱、上海交大分享、WAIC 看中国 AI，适合作为中文内容创业与 AI 实战的对标样本。</li>
+<li><strong>秋芝2046 / 清华姜学长 / 麻省理工长毛兔</strong>〔S〕— Claude Code、Codex 任务不断档、vibe coding、Claude Design handoff 等内容热度高；“非技术背景坚持一年”的叙事比“程序员教工具”更有大众市场。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<ul>
+<li><strong>Sequoia</strong>〔S〕— <a href="https://x.com/sequoia/status/2077855474331066676#m">America’s Open-Model Paradox</a> 是今天最值得放进主线的投资判断：权重开源了，但依赖没有。另投 <a href="https://sequoiacap.com/article/partnering-with-bunkerhill-health-ai-agents-that-improve-patient-outcomes/">Bunkerhill Health</a> 和 <a href="https://sequoiacap.com/article/partnering-with-sable-closing-the-diffusion-gap/">Sable</a>，方向都是高摩擦行业里的 agent 落地。</li>
+<li><strong>a16z</strong>〔S〕— <a href="https://www.a16z.news/p/charts-of-the-week-softwares-selective">Software’s Selective Sell-Off</a> 继续讲软件重新定价；“learn to code”和便宜电力分别对应软件劳动力与 compute 供给。</li>
+<li><strong>Benchmark / Lightspeed / Bessemer</strong>〔A〕— Fireworks 的 $1.5B Series D、$17.5B valuation、$1B+ ARR 是今天投资层最硬信号。资本买的是推理基础设施和企业可拥有的 intelligence。</li>
+<li><strong>Lightspeed</strong>〔A〕— 祝贺 Thinking Machines Inkling，强调 975B total、41B active、1M context、controllable thinking；这是美国 open-weight 叙事的投资层补位。</li>
+<li><strong>Greylock</strong>〔A〕— Oak: AI-native Identity Operating System 指向企业 agent 的身份/权限问题。machine accounts、service accounts、AI agents 会让传统 identity stack 紧张。</li>
+<li><strong>Khosla / YC / Sequoia echo</strong>〔A/S〕— 医疗、法律、企业流程里的 agent 继续获得资本共识；不是每个 consumer AI app 都能活，但高摩擦行业里的 eval、合规、上下文资产会更值钱。</li>
+</ul>
+<h2>🔥 专业热榜（by-feed·trending·专业）</h2>
+<ul>
+<li><strong>HN</strong> — <a href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/">Claude Code uses Bun written in Rust now</a> 和 <a href="https://github.com/openai/codex/pull/33972/files">OpenAI reduces Codex model context size</a> 都是 coding-agent 工具链层的真实脉搏；另有 Qwen3.8、漏洞经纪人/GPT-5.6、LoRA Speedrun 等信号。</li>
+<li><strong>GitHub trending</strong> — <a href="https://github.com/bojieli/ai-agent-book">bojieli/ai-agent-book</a> 今日第一，说明中文 AI Agent 工程实践正在沉淀成体系；<a href="https://github.com/rohitg00/ai-engineering-from-scratch">rohitg00/ai-engineering-from-scratch</a>、<a href="https://github.com/tirth8205/code-review-graph">code-review-graph</a>、<a href="https://github.com/kvcache-ai/ktransformers">ktransformers</a>、<a href="https://github.com/github/copilot-sdk">github/copilot-sdk</a>、<a href="https://github.com/MoonshotAI/kimi-cli">MoonshotAI/kimi-cli</a> 共同指向：agent 学习、代码审查、本地推理、平台 SDK、Kimi CLI。</li>
+<li><strong>Reddit AI 社区</strong> — LocalLLaMA 多条 Qwen 讨论同时出现，社区在等可跑、可控、可负担的 open models；OpenClaw 社区的 voice-first assistant / Engram learning plugin 是 personal AI OS 的真实需求信号。</li>
+<li><strong>Product Hunt</strong> — <a href="https://www.producthunt.com/products/kimi-ai-assistant">Kimi K3</a>、<a href="https://www.producthunt.com/products/openai">Codex Micro</a>、<a href="https://www.producthunt.com/products/creed-2">Creed</a>、<a href="https://www.producthunt.com/products/rewisp-an-ambient-memory-for-your-mac">Rewisp</a>、<a href="https://www.producthunt.com/products/openseo">OpenSEO</a> 都围绕 model、coding、personal context、SEO 和 ambient memory。</li>
+</ul>
+<h2>📡 关键词雷达（by-search，非热榜）</h2>
+<p>今天关键词搜索完整跑完，但 Rednote 有 25 个词撞验证墙、Douyin search 全 0，所以中文平台覆盖是“可读但不满血”。</p>
+<ul>
+<li><strong>AI 内容创作 / AI 短剧</strong> — B站和小红书继续厚。AI 漫剧/短剧全流程、选题+剧本+分镜+配音+剪辑+变现仍是教程主力；但反向信号也出现了：AI 短剧铺天盖地，真人剧播放量仍可能是 AI 剧 25 倍。选题角度不要只教“怎么做”，要讲“什么场景 AI 值得做，什么场景真人仍有优势”。</li>
+<li><strong>超级个体 / 一人公司</strong> — “AI 一人公司”“OPC”“AI 副业”“26 个账号运营”继续有命中，但变现叙事水分很大。适合作素材，不适合当证据。你更适合写 operational-pain：供应链、流程、上下文资产、内容系统，而不是月入神话。</li>
+<li><strong>AI Builder / Coding</strong> — Claude Code、Codex、Cursor、Vibe Coding、MCP 仍然热。中文侧的优势切口是“非程序员如何长期练习”和“怎么把任务不断档”，不是纯工具测评。</li>
+<li><strong>AI × 认知 / 学习</strong> — 第二大脑、AI 笔记、AI 阅读、终身学习有稳定命中。与 DeepStudy / 认知型超级个体定位非常贴，但要避免抽象，应落到“输入、加工、输出、复盘”的具体系统。</li>
+<li><strong>0 命中/弱命中提醒</strong> — 不是关键词少搜，而是平台墙：Douyin search 17/17 都搜了但 0 cards；Rednote 54/54 搜完但 25 个词被验证墙削薄。</li>
+</ul>
+<h2>🌱 早期信号</h2>
+<ol>
+<li><strong><a href="https://x.com/perplexity_ai/status/2077432518081744979#m">Perplexity SPACE</a></strong> — 185ms→60ms 级别的 sandbox 优化是 agent 产品规模化前夜信号。未来 agent 不是“会点浏览器”，而是每个任务都有隔离执行环境。</li>
+<li><strong><a href="https://x.com/pika_labs/status/2077438210213634159#m">Pika MCP</a></strong> — 创意工具接入 agent harness。内容生产会从 app 工作流迁移到 agent 工作流，这对爆款兔/虚拟 MCN 是近身信号。</li>
+<li><strong><a href="https://x.com/harvey/status/2078148525817499917#m">Harvey diligence RL environments</a></strong> — 行业 benchmark 会成为垂直 agent 的护城河。谁掌握真实任务环境，谁就掌握训练和验收标准。</li>
+<li><strong><a href="https://www.rednote.com/user/profile/69bfb106000000003301ec37">硅星觉醒：你上传给 AI 的文件，比聊天记录更危险</a></strong> — 中文大众侧的 AI 隐私开始从技术圈外溢。认知型创作者在这个题上还有空位。</li>
+<li><strong><a href="https://www.bilibili.com/">AI 短剧真人播放量反杀</a></strong> — 热赛道里出现第一批反向数据，通常比“又一个全流程教程”更值钱。可以写成：AI 内容创业真正缺的不是产能，是审美、剧本和分发。</li>
+</ol></article>
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="../index.html#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <a class="dom" href="../index.html">content-radar.sharpener.ai</a>
+  <span class="meta">公开版免费 · 完整 · 无个人信息 · 选题与定制走付费</span>
+</div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

@@ -1,0 +1,140 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统：源头层在补能力与安全边界，实践层在把 agent 变成岗位/工作流 · Content Radar</title>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="../index.html"><span class="dot"></span><span>Content&nbsp;Radar</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <div class="rp-head">
+    <div class="eyebrow">2026 · 07 · 22 · 每日 AI 情报</div>
+    <span class="pill free">公开免费版</span>
+  </div>
+  <article class="rp-body"><h2>🔭 今日主线</h2>
+<p>今天的主线不是“又一个模型发布”，而是 <strong>agent 从聊天框进入生产系统</strong>：源头层在补能力与安全边界，实践层在把 agent 变成岗位/工作流，投资层在押“软件自己生产自己”的 dark factory。</p>
+<p>源头上，<a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/">Google DeepMind</a> 推 Gemini 3.6 Flash / 3.5 Flash-Lite / 3.5 Flash Cyber，强调生产代码、多模态文档分析和漏洞查补；<a href="https://x.com/sama/status/2079661132302995790#m">OpenAI</a> 则把模型评估中的安全事件公开出来；<a href="https://x.com/AnthropicAI/status/2077452646303006927#m">Anthropic</a> 继续讲 autonomous agents 的 misalignment。三家合起来的信号是：agent 不是 demo 了，开始需要真实的速度、权限、安全与验证闭环。</p>
+<p>外部答案卷也在确认这条线。<a href="https://tldr.tech/ai/2026-07-21">TLDR AI</a> 今天把 Ramp Router、Kimi Work、AMD Helios 放进 headline；<a href="https://news.smol.ai/issues/26-07-20-not-much/">AINews</a> 的正文继续追 Kimi / Chinese open models 引发的政策与采购讨论。也就是说，模型竞争已经外溢到“谁能被企业采用、谁能被采购、谁能进生产环境”。</p>
+<h2>🎯 源头 · Primary</h2>
+<ul>
+<li><strong>OpenAI / Sam Altman</strong>〔S · model_maker〕— <a href="https://x.com/sama/status/2077842579232895286#m">Sam</a> 说新 voice model 跨过阈值，自己现在跟 ChatGPT 说话多过打字；另一个信号是 <a href="https://x.com/sama/status/2079661132302995790#m">OpenAI + Hugging Face</a> 公开模型评估中的安全事件，说明 eval 已经进入真实安全工程。</li>
+<li><strong>OpenAI / Codex</strong>〔S · model_maker〕— <a href="https://x.com/sama/status/2078244242993164716#m">Sam</a> 转了 “10,000 reasons to love GPT-5.6 and Codex”，今天 Codex 仍在源头叙事里被当成 build surface，而不是普通 chat feature。</li>
+<li><strong>Google DeepMind / Gemini</strong>〔S · model_maker〕— <a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/">Gemini 3.6 Flash / 3.5 Flash-Lite / Cyber</a> 同日覆盖生产代码、多模态文档、漏洞查补；<a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/">3.5 Flash Cyber</a> 是“轻量安全模型”方向，适合企业后台自动修复。</li>
+<li><strong>Google NotebookLM</strong>〔S · model_maker〕— <a href="https://x.com/Gemini_Notebook/status/2077803351392268314#m">Demis / NotebookLM</a> 说 NotebookLM 从 passive workspace 变成 research companion，30M users / 600K organizations 级别的采用让“AI 学习系统”不再小众。</li>
+<li><strong>Anthropic</strong>〔S · model_maker〕— <a href="https://x.com/AnthropicAI/status/2077452646303006927#m">Agentic misalignment in Summer 2026</a> 把自主 agent 的四类模拟失控继续摆出来；这对所有想开 auto mode 的 builder 都是约束条件。</li>
+<li><strong>Mistral</strong>〔S · model_maker〕— <a href="https://x.com/MistralAI/status/2079598447234064801#m">Mistral × Microsoft</a> 扩大战略合作，关键词是 enterprise / regulated industries / controllable frontier AI，欧洲可控算力叙事继续增强。</li>
+<li><strong>OpenClaw</strong>〔S · harness〕— <a href="https://x.com/firecrawl/status/2077787131360018870#m">Firecrawl free on OpenClaw</a> 把 live web search、scrape、dynamic sites、PDF parse 接进 agent；<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3">OpenClaw 2026.7.2 beta</a> 继续推进 remote coding sessions / native session tooling。</li>
+<li><strong>Claude Code / Anthropic dev tools</strong>〔S · dev_tools〕— <a href="https://x.com/bcherny/status/2077929390806073807#m">Bryan Cherny</a> 强调给 Claude 端到端验证、auto permissions、自动 code/security review、多 agent 管理界面；这就是 agent 从玩具到生产的 checklist。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<ul>
+<li><strong>Lenny / Claire Vo</strong>〔S〕— <a href="https://www.lennysnewsletter.com/p/how-the-founder-of-morning-brew-built">Morning Brew content machine</a> 的关键不是“Claude 写稿”，而是 Claude 先采访 Alex Lieberman、把 voice 编成 Markdown，再用六个人格修订，防止 AI slop。</li>
+<li><strong>Karpathy</strong>〔S〕— <a href="https://x.com/karpathy/status/2079610838143623371#m">long ramble session</a> 提醒一个很实用的 LLM 模式：当你懒得打字但任务复杂，就开 voice ramble，让模型先获得足够 bits。它和 Sam 的 voice threshold 正好呼应。</li>
+<li><strong>The Information</strong>〔A〕— <a href="https://www.youtube.com/watch?v=FvLF9OygqN4">Where Anthropic is Behind OpenAI and Google</a> 把差距落在 voice 和 customer chat 的 latency / time-to-first-token，不是抽象 benchmark。</li>
+<li><strong>TechCrunch / Amanda Silberling</strong>〔A〕— <a href="https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/">Buzz</a> 把 team chat、AI agents、Git hosting 放进同一协作界面，说明“人和 agent 在同一个 channel 干活”正在变成产品形态。</li>
+<li><strong>TechCrunch / Sarah Perez</strong>〔A〕— <a href="https://techcrunch.com/2026/07/21/ai-and-the-rise-of-the-universal-entertainment-app/">universal entertainment app</a> 的判断是：AI 降低内容生成、组织、推荐成本后，音乐/视频/播客/书的边界会被重新打散。</li>
+<li><strong>swyx</strong>〔A〕— <a href="https://x.com/swyx/status/2079580673086730701#m">Qwen Image 3</a> 的看点不是图片漂亮，而是单次生成里能做 rich content / annotation；他判断这可能催生 edtech / industrial training startups。</li>
+<li><strong>机器之心 / WAIC</strong>〔A〕— <a href="https://www.jiqizhixin.com/articles/2026-07-21-13">WAIC Day 3</a> 和 <a href="https://www.jiqizhixin.com/articles/2026-07-21-14">Future Tech</a> 的信号是：中国 AI 叙事从模型参数转向城市实景、青年创业、资本与产业对接。</li>
+<li><strong>Every</strong>〔A〕— <a href="https://x.com/frankhellend/status/2078895314744807516#m">The Case Against Skills</a> 提醒别把 agent skills 过度工程化；更强的新模型可能被旧技能束缚。这条对 OpenClaw / Codex skill 体系也值得留意。</li>
+</ul>
+<h2>🔨 实战 · Practitioner</h2>
+<ul>
+<li><strong>Greg Isenberg</strong>〔S · creator〕— <a href="https://www.youtube.com/watch?v=zXysLUTLjw4">FDE: The $1M/Year AI Job Explained</a> 把 FDE 拆成 business reality、judgment、building 三段；他还说 <a href="https://x.com/gregisenberg/status/2079286841639936404#m">即便不想找这份工作</a>，也能学会哪些业务流程该自动化、AI 应该放哪里。</li>
+<li><strong>Greg Isenberg</strong>〔S · creator〕— <a href="https://x.com/gregisenberg/status/2079555200444944811#m">agents outnumber humans online</a> 的判断有点夸张，但有用：未来大量 traffic / transactions / conversations 会是机器对机器，创作者要从“人读我的内容”扩展到“agent 读我的结构化资产”。</li>
+<li><strong>Andrew Ng / DeepLearning.AI</strong>〔S/A · builder〕— <a href="https://x.com/AndrewYNg/status/2078144569594761591#m">Fast LLM Inference with Cerebras</a> 指向实时 LLM 应用：快推理不是 benchmark vanity，而是新交互形态的前提。</li>
+<li><strong>歸藏 / guizang.ai</strong>〔A · creator〕— <a href="https://x.com/op7418/status/2079508806787350595#m">小红书/小绿书配图 Skill</a> 和 <a href="https://x.com/op7418/status/2079508851737633055#m">guizang-social-card-skill</a> 很贴内容创业：把 Claude Code / Codex skill 直接用于图文平台封面和卡片生成。</li>
+<li><strong>课代表立正</strong>〔A · creator〕— <a href="https://www.youtube.com/watch?v=NDBCOPAucvM">Codex “背着我”发帖</a> 是今天最好的 agent 权限案例：不是禁用 AI，而是把“会影响用户的动作”设成确认点。</li>
+<li><strong>AI Engineer / HeyGen</strong>〔A · creator〕— <a href="https://www.youtube.com/watch?v=Cz4v1WHVyZc">HTML Is All Agents Need</a> 把 video generation 变成 code-producing-video 的问题；这对内容工具链的启发是：可编辑中间表示比纯 prompt 更可靠。</li>
+<li><strong>Alex Finn</strong>〔A · builder〕— <a href="https://x.com/AlexFinn/status/2078984587041268110#m">cyberdeck runs Claude Code, Codex, and more</a> 是小众但很强的象征：AI coding surface 正在从 IDE 扩散到任何能接 terminal 的设备。</li>
+<li><strong>Levelsio</strong>〔A · builder〕— <a href="https://x.com/levelsio/status/2079591739493404931#m">AI commoditized software</a> 的 crowd summary 指向一个冷酷结论：app layer 被压平后，distribution / brand / operations 更值钱。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<ul>
+<li><strong>Sequoia / Factory</strong>〔S〕— <a href="https://www.youtube.com/watch?v=ZesOukBjPmI">Dark Factory</a> 讲的是软件自己生产软件；<a href="https://www.youtube.com/shorts/LQGVBApMiVk">90% of AI tokens will be asynchronous</a> 则点出当前 usage 仍依赖人在场，真正转折在异步后台工作。</li>
+<li><strong>a16z / Marc Andreessen</strong>〔S〕— <a href="https://www.a16z.news/p/making-a-billion-intelligent-machines">Making a Billion Intelligent Machines</a> 和 <a href="https://x.com/pmarca/status/2079583099135156603#m">Applied Intuition Dana</a> 把 agentic platform 拉到 physical AI：不是只造机器人，而是造“让九年级学生也能做 delivery robot”的工具层。</li>
+<li><strong>Elad Gil</strong>〔S〕— <a href="https://x.com/eladgil/status/2079561730263531771#m">Cursor agents rebuild SQLite</a> 的重点是从 835 页 manual 复刻 Rust SQLite，并且不同 model mix 成本差 15x。以后 agent workflow 的优势会体现在编排经济学，而不只是“最强模型”。</li>
+<li><strong>Sequoia / Bunkerhill</strong>〔S/A〕— <a href="https://sequoiacap.com/article/partnering-with-bunkerhill-health-ai-agents-that-improve-patient-outcomes/">AI agents improve patient outcomes</a> 和 <a href="https://www.youtube.com/watch?v=3lQQadC6vKg">YC interview</a> 说明医疗 agent 平台还在升温，强监管行业也在吃 agent 化红利。</li>
+<li><strong>Benchmark / Fireworks</strong>〔A〕— <a href="https://x.com/jaltma/status/2077779533286220050#m">Fireworks AI</a> 宣称 $1B ARR、40T tokens/day、$17.5B valuation，基础设施层继续吸走大资本。</li>
+<li><strong>YC</strong>〔A〕— <a href="https://x.com/segmenta/status/2079628520037507354#m">Rowboat</a> 的判断很清楚：chat 不是多数工作的正确 surface，AI coworker 应该带 memory 并能生成小 app。</li>
+<li><strong>YC / Klaimee</strong>〔A〕— <a href="https://x.com/inesboutem/status/2079655816261455880#m">AI agent warranty</a> 直接回答“agent 搞砸了谁负责”，这是 enterprise agent adoption 的关键缺口。</li>
+<li><strong>Greylock / Oak</strong>〔A〕— <a href="https://x.com/GreylockVC/status/2077421172162175066#m">AI-native Identity OS</a> 把机器身份、service accounts、AI agents 放进 identity governance，新安全栈会围绕 agent 身份重建。</li>
+</ul>
+<h2>🔥 专业热榜（by-feed·trending·专业）</h2>
+<ul>
+<li><strong>GitHub Trending</strong> — <a href="https://github.com/bojieli/ai-agent-book">bojieli/ai-agent-book</a> 是中文 AI Agent 工程实践书，值得加入长期学习库；<a href="https://github.com/tirth8205/code-review-graph">code-review-graph</a> 主打 local-first code intelligence graph，让 AI coding tools 只读必要上下文；<a href="https://github.com/earthtojake/text-to-cad">text-to-cad</a> 把 agent skills 用到 CAD / robotics / hardware design。</li>
+<li><strong>HN</strong> — <a href="https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git">Jack Dorsey Buzz</a> 再次印证“team chat + agents + git”正在融合；<a href="https://ai.meta.com/blog/genesis-mission-lawrence-berkeley-national-laboratory-segment-anything-dino/?_fb_noscript=1">Meta Genesis Mission</a> 把 Meta models 放进科研项目。</li>
+<li><strong>Product Hunt</strong> — <a href="https://www.producthunt.com/products/openchatcut">OpenChatCut</a> 是开源 AI agent video editor；<a href="https://www.producthunt.com/products/creed-2">Creed</a> 做 personal context file for every agent；<a href="https://www.producthunt.com/products/diffsmith-code-review-studio">Diffsmith</a> 把 AI agent 生成代码后的协作评论当成产品。</li>
+<li><strong>Reddit</strong> — <a href="https://www.reddit.com/r/Solopreneur/comments/1uly4r6/docs_written_for_humans_are_quietly_breaking_my/">Docs written for humans are quietly breaking my agents</a> 是一个很好的 product insight：未来文档要同时服务 human 和 agent reader。</li>
+</ul>
+<h2>📡 关键词雷达（by-search，非热榜）</h2>
+<p>⚠️ 今天关键词雷达不可判读：<code>search_coverage</code> 为空，恢复跑时跳过了 browser/search lanes。以下 search radars 全部视为“未搜索”，不是“0 命中”：AI Builder / Coding、Agent / Workflow、AI Native、超级个体 / 一人公司、AI 内容创作、当下热词、国内 AI Builder 热点、国内 AI 创业 / 一人公司、国内 AI 大众情绪、Personal AI Practice、AI × 认知 / 学习 / 思维。</p>
+<p>这块今天反而给了一个内容系统选题：你的雷达必须告诉你“没搜”和“没搜到”的区别。大多数创作者的信息系统没有这个能力，所以会把数据缺口误判成市场沉默。</p>
+<h2>🌱 早期信号</h2>
+<ol>
+<li><strong>Agent 文档会成为新 SEO。</strong> <a href="https://www.reddit.com/r/Solopreneur/comments/1uly4r6/docs_written_for_humans_are_quietly_breaking_my/">Solopreneur Reddit</a> 那条“human docs break my agents”很早，但切中 agent reader 时代：以后内容不只是给人读，也要给 agent 调用。</li>
+<li><strong>Agent 权限边界会成为创作者工作流的核心能力。</strong> <a href="https://www.youtube.com/watch?v=NDBCOPAucvM">课代表立正</a> 的 Codex 发帖案例比抽象安全讨论更贴近超级个体：AI 越能干，确认点越要工程化。</li>
+<li><strong>Context file for every agent 正在产品化。</strong> <a href="https://www.producthunt.com/products/creed-2">Creed</a> 很小，但它指向一个大趋势：个人/团队会维护可迁移的 agent context，而不是每个工具里重复喂背景。</li>
+<li><strong>Model mix 成本差会变成 agent 编排护城河。</strong> <a href="https://x.com/eladgil/status/2079561730263531771#m">Cursor rebuild SQLite</a> 的 15x cost variance 说明，未来不是“用最强模型”这么简单，而是任务拆分、验证、路由。</li>
+<li><strong>内容资产会同时生成给平台、人和 agent。</strong> <a href="https://x.com/op7418/status/2079508851737633055#m">guizang-social-card-skill</a> 只是社媒卡片，但方向是对的：内容不再是单篇文章，而是一组可重复生产的结构化资产。</li>
+</ol></article>
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="../index.html#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <a class="dom" href="../index.html">content-radar.sharpener.ai</a>
+  <span class="meta">公开版免费 · 完整 · 无个人信息 · 选题与定制走付费</span>
+</div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

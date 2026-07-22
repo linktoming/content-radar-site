@@ -1,0 +1,499 @@
+<title>Content Radar — Read the Other Half of the World</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --ground:#ECEDEF; --surface:#F6F7F8; --raised:#FFFFFF;
+  --ink:#141821; --muted:#5C6470; --faint:#8A909A;
+  --line:#D7DADF; --line-soft:#E4E6EA;
+  --east:#C67A16; --east-soft:#E0912E;      /* 黎明·东·中文 */
+  --west:#3E718F; --west-soft:#5C93B0;       /* 黄昏·西·EN */
+  --radar:#C67A16;
+  --shadow:0 1px 2px rgba(20,24,33,.06),0 8px 30px rgba(20,24,33,.05);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --ground:#0B0E13; --surface:#111620; --raised:#151B26;
+    --ink:#DCE3EC; --muted:#8A94A2; --faint:#5E6875;
+    --line:#252F3C; --line-soft:#1B222D;
+    --east:#E0912E; --east-soft:#EAA748;
+    --west:#5C93B0; --west-soft:#7FB0C9;
+    --radar:#E0912E;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 40px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="light"]{
+  --ground:#ECEDEF; --surface:#F6F7F8; --raised:#FFFFFF;
+  --ink:#141821; --muted:#5C6470; --faint:#8A909A;
+  --line:#D7DADF; --line-soft:#E4E6EA;
+  --east:#C67A16; --east-soft:#E0912E; --west:#3E718F; --west-soft:#5C93B0; --radar:#C67A16;
+  --shadow:0 1px 2px rgba(20,24,33,.06),0 8px 30px rgba(20,24,33,.05);
+}
+:root[data-theme="dark"]{
+  --ground:#0B0E13; --surface:#111620; --raised:#151B26;
+  --ink:#DCE3EC; --muted:#8A94A2; --faint:#5E6875;
+  --line:#252F3C; --line-soft:#1B222D;
+  --east:#E0912E; --east-soft:#EAA748; --west:#5C93B0; --west-soft:#7FB0C9; --radar:#E0912E;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 40px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  font-size:16px; line-height:1.6; letter-spacing:.005em;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  transition:background .4s ease,color .4s ease;
+}
+:root{
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,"Cascadia Code",monospace;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+@media(max-width:640px){.wrap{padding:0 18px}}
+
+/* ---- meridian: the day/night terminator threading the page ---- */
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;pointer-events:none;z-index:0;
+  background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);
+  opacity:.34;transform:translateX(-.5px)}
+@media(max-width:820px){.meridian{display:none}}
+
+a{color:inherit;text-decoration:none}
+.mono{font-family:var(--mono)}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;text-wrap:balance;letter-spacing:-.01em;line-height:1.14;margin:0}
+
+/* ---- top bar ---- */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:8px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.seg button{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;background:transparent;color:var(--muted);
+  border:0;padding:6px 9px;cursor:pointer;transition:background .2s,color .2s}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:3px;padding:6px 8px;cursor:pointer;transition:color .2s,border-color .2s}
+.iconbtn:hover{color:var(--ink);border-color:var(--muted)}
+
+/* ---- hero ---- */
+.hero{position:relative;z-index:1;padding:74px 0 60px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+@media(max-width:820px){.hero{grid-template-columns:1fr;gap:28px;padding:48px 0 42px}}
+.hero h1{font-size:clamp(38px,6.2vw,68px);margin:18px 0 0}
+.hero .sub{margin:22px 0 0;font-size:18px;line-height:1.62;color:var(--muted);max-width:34ch}
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;
+  border:1px solid var(--ink);transition:transform .15s ease,background .2s,color .2s,border-color .2s;display:inline-flex;gap:9px;align-items:center}
+.btn.primary{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.btn.primary:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--ink)}
+.hero .east{color:var(--east)}
+.hero .west{color:var(--west)}
+
+/* radar instrument */
+.radar-wrap{justify-self:center;position:relative;width:min(340px,80vw);aspect-ratio:1}
+canvas{width:100%;height:100%;display:block}
+.radar-cap{position:absolute;left:0;right:0;bottom:-6px;text-align:center;font-family:var(--mono);
+  font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+
+/* ---- section frame ---- */
+section{position:relative;z-index:1;padding:56px 0;border-top:1px solid var(--line-soft)}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:30px}
+.sec-head .num{font-family:var(--mono);font-size:12px;color:var(--east);letter-spacing:.1em}
+.sec-head h2{font-size:clamp(24px,3.6vw,34px)}
+.lead{color:var(--muted);max-width:60ch;font-size:16.5px}
+
+/* two hemispheres */
+.hemis{display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;margin-top:8px}
+@media(max-width:700px){.hemis{grid-template-columns:1fr}}
+.hemi{padding:26px 28px}
+.hemi.e{border-left:2px solid var(--east)}
+.hemi.w{border-left:2px solid var(--west);text-align:left}
+@media(min-width:701px){.hemi.w{text-align:right;border-left:0;border-right:2px solid var(--west)}}
+.hemi .tag{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.hemi.e .tag{color:var(--east)} .hemi.w .tag{color:var(--west)}
+.hemi h3{font-size:20px;margin:10px 0 8px}
+.hemi p{margin:0;color:var(--muted);font-size:15px}
+.hemi ul{margin:14px 0 0;padding:0;list-style:none;font-family:var(--mono);font-size:12.5px;color:var(--faint);line-height:2}
+.divider-mark{align-self:center;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--faint);
+  writing-mode:vertical-rl;text-orientation:mixed;padding:0 6px}
+@media(max-width:700px){.divider-mark{writing-mode:horizontal-tb;text-align:center;padding:14px 0}.hemi.w{border-right:0;border-left:2px solid var(--west);text-align:left}}
+
+/* today's radar sample */
+.report{background:var(--raised);border:1px solid var(--line);border-radius:5px;box-shadow:var(--shadow);overflow:hidden}
+.report .rhead{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 22px;border-bottom:1px solid var(--line-soft);flex-wrap:wrap}
+.report .rhead .d{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--muted)}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line)}
+.pill.free{color:var(--west);border-color:color-mix(in srgb,var(--west) 45%,var(--line))}
+.report .body{padding:22px 24px 26px}
+.thesis{font-family:var(--serif);font-size:21px;line-height:1.4;margin:0 0 4px}
+.thesis .hl{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--east) 34%,transparent) 62%)}
+.layers{margin-top:22px;display:grid;gap:0}
+.layer{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line-soft)}
+@media(max-width:560px){.layer{grid-template-columns:1fr;gap:5px}}
+.layer .lname{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;padding-top:2px}
+.layer .lname b{display:block;color:var(--ink);font-size:14px;font-family:var(--serif);letter-spacing:0;text-transform:none}
+.layer .items{margin:0;padding:0;list-style:none}
+.layer .items li{padding:3px 0;font-size:14.5px}
+.layer .items li .src{font-family:var(--mono);font-size:11px;color:var(--faint);margin-left:6px}
+.blur-note{margin-top:20px;padding:14px 16px;border:1px dashed var(--line);border-radius:4px;font-size:13.5px;color:var(--muted);display:flex;gap:10px;align-items:center}
+.blur-note .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--east);border:1px solid color-mix(in srgb,var(--east) 40%,var(--line));border-radius:100px;padding:3px 8px;white-space:nowrap}
+a.report{display:block;color:inherit}
+a.report:hover{border-color:var(--muted)}
+a.report .thesis{transition:color .2s}
+.shape{margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;gap:9px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+.shape i{color:var(--faint);font-style:normal}
+.shape em{font-style:normal;color:var(--east);margin-left:6px}
+a.report:hover .shape em{text-decoration:underline}
+.arch .empty{padding:22px 4px;color:var(--faint);font-family:var(--mono);font-size:13px}
+
+/* archive */
+.arch{margin-top:6px;border-top:1px solid var(--line-soft)}
+.arch a{display:grid;grid-template-columns:104px 1fr auto;gap:16px;align-items:baseline;padding:15px 6px;border-bottom:1px solid var(--line-soft);transition:background .18s,padding-left .18s}
+@media(max-width:560px){.arch a{grid-template-columns:88px 1fr;padding:13px 4px}.arch a .rd{display:none}}
+.arch a:hover{background:var(--surface);padding-left:14px}
+.arch .dt{font-family:var(--mono);font-size:12.5px;color:var(--east);letter-spacing:.03em;font-variant-numeric:tabular-nums}
+.arch .ti{font-size:15px}
+.arch .rd{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.08em}
+
+/* differentiators */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:5px;overflow:hidden}
+@media(max-width:700px){.grid3{grid-template-columns:1fr}}
+.cell{background:var(--ground);padding:24px 22px}
+.cell .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--east)}
+.cell h3{font-size:18px;margin:12px 0 8px}
+.cell p{margin:0;color:var(--muted);font-size:14.5px}
+
+/* channels */
+.chan{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:700px){.chan{grid-template-columns:1fr}}
+.card{background:var(--raised);border:1px solid var(--line);border-radius:5px;padding:24px 22px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow);transition:transform .18s ease,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--muted)}
+.card .top{display:flex;justify-content:space-between;align-items:center}
+.card .lang{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:100px}
+.card.cn .lang{color:var(--east);border:1px solid color-mix(in srgb,var(--east) 40%,var(--line))}
+.card.en .lang{color:var(--west);border:1px solid color-mix(in srgb,var(--west) 40%,var(--line))}
+.card.cu .lang{color:var(--muted);border:1px solid var(--line)}
+.card h3{font-size:20px}
+.card p{margin:0;color:var(--muted);font-size:14.5px;flex:1}
+.card .price{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.03em}
+.card .go{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;color:var(--ink);border-top:1px solid var(--line-soft);padding-top:14px;display:flex;justify-content:space-between;align-items:center}
+.card .go .arrow{color:var(--east);transition:transform .2s}
+.card:hover .go .arrow{transform:translateX(4px)}
+
+/* footer */
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:44px 0 60px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:baseline}
+.foot .sig{font-family:var(--serif);font-size:16px}
+.foot .meta{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em;line-height:2}
+.foot a.dom{color:var(--east)}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+:focus-visible{outline:2px solid var(--east);outline-offset:2px;border-radius:2px}
+</style>
+
+<div class="meridian" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap bar">
+    <div class="brand"><span class="dot"></span><span>Content&nbsp;Radar</span></div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Language">
+        <button data-lang="zh" aria-pressed="true">中文</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:0">
+    <div>
+      <div class="eyebrow reveal" data-i18n="hero.eyebrow">每日 · AI 情报 · 横跨东西</div>
+      <h1 class="reveal">
+        <span data-i18n="hero.h1a">读到</span><span class="east" data-i18n="hero.h1east">另一半</span><span data-i18n="hero.h1b">世界</span>
+      </h1>
+      <p class="sub reveal" data-i18n="hero.sub">一份每天的 AI 情报报告,把西方的源头(X · HN · 实验室)讲给中文读者,把中文创作圈(小红书 · B站 · WAIC)讲给英文读者。两个半球,一条雷达。</p>
+      <div class="cta-row reveal">
+        <a class="btn primary" href="#channels"><span data-i18n="hero.cta1">订阅今日雷达</span><span aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#today" data-i18n="hero.cta2">看今天这份</a>
+      </div>
+    </div>
+    <div class="radar-wrap reveal">
+      <canvas id="radar" width="680" height="680" aria-hidden="true"></canvas>
+      <div class="radar-cap" data-i18n="hero.radarcap">扫描 · 东经 116° / 西经 122°</div>
+    </div>
+  </section>
+
+  <!-- THESIS: two hemispheres -->
+  <section id="why">
+    <div class="sec-head reveal"><span class="num">01</span><h2 data-i18n="why.h2">别人只扫一半天空</h2></div>
+    <p class="lead reveal" data-i18n="why.lead">英文的 AI newsletter 几乎不看中文创作圈的信号;中文的又追不上英文源头的深度。Content Radar 同一次抓取横跨两边——所以你每天读到的,是完整的一圈,不是半张地图。</p>
+    <div class="hemis reveal">
+      <div class="hemi e">
+        <div class="tag" data-i18n="why.eTag">东 · 中文世界</div>
+        <h3 data-i18n="why.eH">写给英文读者的中国信号</h3>
+        <p data-i18n="why.eP">WAIC 现场、月之暗面 IPO、小红书里一年练 vibe coding 的素人、B站的 Agent 教程——西方读者平时看不到的那半个战场。</p>
+        <ul><li>rednote · bilibili · 抖音</li><li>WAIC · 机器之心 · 量子位</li><li>Kimi · Qwen · DeepSeek</li></ul>
+      </div>
+      <div class="divider-mark" aria-hidden="true">MERIDIAN</div>
+      <div class="hemi w">
+        <div class="tag" data-i18n="why.wTag">西 · 英文世界</div>
+        <h3 data-i18n="why.wH">写给中文读者的西方源头</h3>
+        <p data-i18n="why.wP">实验室发布、投资人下注、独立开发者的真实数字——不是翻译标题,是按你的定位重新解读成选题。</p>
+        <ul><li>X · Hacker News · Substack</li><li>Anthropic · OpenAI · a16z</li><li>Sequoia · indie hackers</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODAY'S RADAR — injected live from reports/archive.json -->
+  <section id="today">
+    <div class="sec-head reveal"><span class="num">02</span><h2 data-i18n="today.h2">今天这份雷达</h2></div>
+    <p class="lead reveal" data-i18n="today.lead">公开版免费、完整、无个人信息。付费版多一层「选题建议」——只有我能给你的那部分。</p>
+    <a class="report reveal" id="latestCard" href="#">
+      <div class="rhead">
+        <span class="d" id="latestDate">—</span>
+        <span class="pill free" data-i18n="today.pill">公开免费版</span>
+      </div>
+      <div class="body">
+        <p class="thesis"><span class="hl" id="latestThesis" data-i18n="today.loading">正在载入最新一期…</span></p>
+        <div class="shape" aria-hidden="true">
+          <span data-i18n="today.l1">源头</span><i>→</i><span data-i18n="today.l2">解读</span><i>→</i><span data-i18n="today.l3">实战</span><i>→</i><span data-i18n="today.l4">投资</span>
+          <em data-i18n="today.readfull">读完整四层报告 →</em>
+        </div>
+        <div class="blur-note"><span class="k" data-i18n="today.paywall">付费版</span><span data-i18n="today.paywallText">每天的「选题建议」——把当天信号翻译成只有你能写的角度——只在付费版展开。</span></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ARCHIVE — injected live from reports/archive.json -->
+  <section id="archive">
+    <div class="sec-head reveal"><span class="num">03</span><h2 data-i18n="arch.h2">往期</h2></div>
+    <div class="arch reveal" id="archiveList"></div>
+  </section>
+
+  <!-- DIFFERENTIATORS -->
+  <section id="how">
+    <div class="sec-head reveal"><span class="num">04</span><h2 data-i18n="how.h2">它凭什么不漏、不噪</h2></div>
+    <div class="grid3 reveal">
+      <div class="cell"><div class="k" data-i18n="how.k1">信任召回</div><h3 data-i18n="how.h1">信来源,不信词汇</h3><p data-i18n="how.p1">追踪账号的帖不看关键词直接进候选——治「新事物还没名字」时的失明。</p></div>
+      <div class="cell"><div class="k" data-i18n="how.k2">语义召回</div><h3 data-i18n="how.h3b">关键词零命中也浮上来</h3><p data-i18n="how.p2">本地向量模型按语义相关性捞,不靠字面匹配,所以不会因为你没想到那个词就漏掉。</p></div>
+      <div class="cell"><div class="k" data-i18n="how.k3">Decay 复审</div><h3 data-i18n="how.h3c">雷达词会过期</h3><p data-i18n="how.p3">每个追踪词带过期日,到点强制在报告顶勾 keep / drop——防雷达变成没人清理的噪音收集器。</p></div>
+    </div>
+  </section>
+
+  <!-- CHANNELS -->
+  <section id="channels">
+    <div class="sec-head reveal"><span class="num">05</span><h2 data-i18n="ch.h2">在哪读</h2></div>
+    <p class="lead reveal" data-i18n="ch.lead">中英各一个免费渠道,加一个「为你的定位定制一份专属雷达」。</p>
+    <div class="chan reveal">
+      <div class="card cn">
+        <div class="top"><h3>微信公众号</h3><span class="lang">中文 · CN</span></div>
+        <p data-i18n="ch.cnP">每天完整正文,免费。想要选题建议或一份定制雷达?加我。</p>
+        <span class="price" data-i18n="ch.cnPrice">免费 · 正文 + 加我得选题</span>
+        <div class="go"><span data-i18n="ch.follow">关注</span><span class="arrow">→</span></div>
+      </div>
+      <div class="card en">
+        <div class="top"><h3>Substack</h3><span class="lang">English · EN</span></div>
+        <p data-i18n="ch.enP">Full report free. Paid tier unlocks the daily 选题 — the picks only I can make.</p>
+        <span class="price" data-i18n="ch.enPrice">Free body · Paid picks</span>
+        <div class="go"><span data-i18n="ch.sub">Subscribe</span><span class="arrow">→</span></div>
+      </div>
+      <div class="card cu">
+        <div class="top"><h3 data-i18n="ch.cuH">定制雷达</h3><span class="lang" data-i18n="ch.cuTag">Done-for-you</span></div>
+        <p data-i18n="ch.cuP">用你自己的定位、你的对标账号,搭一份每天自动跑的专属雷达。省掉你自己刷全网的时间。</p>
+        <span class="price" data-i18n="ch.cuPrice">按定位定制 · 私聊</span>
+        <div class="go"><span data-i18n="ch.talk">聊聊</span><span class="arrow">→</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="sig" data-i18n="foot.sig">认知型超级个体,每天替你扫完整整一圈天空。</div>
+      <div class="meta" style="margin-top:10px"><a class="dom" href="#">content-radar.sharpener.ai</a> · <span data-i18n="foot.by">by sharpener.ai</span></div>
+    </div>
+    <div class="meta" data-i18n="foot.note">公开版免费 · 完整 · 无个人信息<br>选题与定制走付费</div>
+  </div>
+</footer>
+
+<script>
+/* ---------- i18n ---------- */
+const I18N={
+ en:{
+  "hero.eyebrow":"Daily · AI Intelligence · East meets West",
+  "today.loading":"Loading the latest edition…","today.readfull":"Read the full four-layer report →",
+  "hero.h1a":"Read the ",  "hero.h1east":"other half",  "hero.h1b":" of the world",
+  "hero.sub":"A daily AI intelligence report — Western frontier (X · HN · labs) explained for Chinese readers, China's creator scene (rednote · Bilibili · WAIC) explained for English readers. Two hemispheres, one radar.",
+  "hero.cta1":"Subscribe to today's radar","hero.cta2":"See today's edition","hero.radarcap":"Sweep · 116°E / 122°W",
+  "why.h2":"Everyone else scans half the sky",
+  "why.lead":"English AI newsletters barely watch China's creator signals; Chinese ones can't keep up with Western sources. Content Radar crawls both in one pass — so what you read each day is the full circle, not half a map.",
+  "why.eTag":"East · Chinese world","why.eH":"China's signals, for English readers",
+  "why.eP":"WAIC on the ground, Moonshot's IPO, a beginner who practiced vibe coding for a year on rednote, Agent tutorials on Bilibili — the half of the battlefield the West rarely sees.",
+  "why.wTag":"West · English world","why.wH":"Western sources, for Chinese readers",
+  "why.wP":"Lab releases, VC bets, indie-hacker real numbers — not translated headlines, but re-read into angles that fit your positioning.",
+  "today.h2":"Today's radar","today.lead":"The public edition is free, complete, and scrubbed of personal info. The paid edition adds one layer — the 选题 picks only I can give you.",
+  "today.edition":"CN edition","today.pill":"Public · Free",
+  "today.tA":"Every signal today points to one thing: ","today.tB":"the intelligence supply you depend on is getting cheaper and less stable at once","today.tC":" — and neither is in your control.",
+  "today.l1":"Primary","today.l2":"Sense-maker","today.l3":"Practitioner","today.l4":"Investor",
+  "today.l1a":"Kimi K3 launch crushes GPUs, consumer plans paused","today.l1b":"Qwen3.8 to open-weight at 2.4T params","today.l1c":"Anthropic Fable 5 limits halved + fresh bans",
+  "today.l2a":"Sequoia: “the weights are open, your dependency isn't”",
+  "today.l3a":"“Master Claude Code in 60 min” — 33k likes on rednote",
+  "today.l4a":"Inference is enterprise AI's priciest line; investors bet $1B",
+  "today.paywall":"Paid","today.paywallText":"“Run your one-person company like a small factory manages suppliers: primary + backup + portable data.” Today's 5 picks open up in the paid edition.",
+  "arch.h2":"Archive","arch.read":"read →",
+  "arch.a1":"Intelligence supply is getting cheaper and shakier — time for a second leg",
+  "arch.a2":"Kimi K3 isn't just a performance story — it's open-source pulling level with the frontier",
+  "arch.a3":"Agent infra shifts from “it runs” to “billed by the millisecond”",
+  "arch.a4":"Don't over-engineer your AI system: the scaffolding is racing the model",
+  "how.h2":"Why it doesn't miss, and doesn't drown you",
+  "how.k1":"Trust recall","how.h1":"Trust the source, not the word",
+  "how.p1":"Posts from tracked accounts enter regardless of keywords — curing the blindness to things that don't have a name yet.",
+  "how.k2":"Semantic recall","how.h3b":"Zero keyword hits, still surfaced",
+  "how.p2":"A local vector model pulls by meaning, not literal match — so you don't lose a signal just because you didn't think of the word.",
+  "how.k3":"Decay review","how.h3c":"Radar terms expire",
+  "how.p3":"Every tracked term carries an expiry; at the date it forces a keep / drop at the top of the report — so the radar never rots into a noise collector.",
+  "ch.h2":"Where to read","ch.lead":"A free channel in each language, plus “a custom radar built for your positioning.”",
+  "ch.cnP":"Full report daily, free. Want the picks or a custom radar? Add me.",
+  "ch.cnPrice":"Free · body + add-me for picks","ch.follow":"Follow",
+  "ch.enP":"Full report free. Paid tier unlocks the daily 选题 — the picks only I can make.",
+  "ch.enPrice":"Free body · Paid picks","ch.sub":"Subscribe",
+  "ch.cuH":"Custom radar","ch.cuTag":"Done-for-you",
+  "ch.cuP":"Your positioning, your benchmark accounts — a private radar that runs itself every day. Reclaim the hours you'd spend scanning the web.",
+  "ch.cuPrice":"Built to your positioning · DM","ch.talk":"Let's talk",
+  "foot.sig":"A cognitive solo-operator, scanning the full circle of sky for you every day.",
+  "foot.by":"by sharpener.ai","foot.note":"Public edition free · complete · no personal info<br>Picks & custom are paid"
+ }
+};
+const zhStore={};
+function cacheZh(){document.querySelectorAll("[data-i18n]").forEach(el=>{zhStore[el.getAttribute("data-i18n")]=el.innerHTML;});}
+function setLang(l){
+  document.documentElement.lang = l==="en"?"en":"zh";
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const k=el.getAttribute("data-i18n");
+    if(l==="en"&&I18N.en[k]!=null) el.innerHTML=I18N.en[k];
+    else if(zhStore[k]!=null) el.innerHTML=zhStore[k];
+  });
+  document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===l)));
+  try{localStorage.setItem("cr-lang",l)}catch(e){}
+  if(typeof renderArchive==="function"&&__archive) renderArchive(l);   // re-filter archive by language
+}
+cacheZh();
+document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+/* auto-detect: system language decides the chrome, unless the visitor chose before */
+(function(){
+  let l=null; try{l=localStorage.getItem("cr-lang")}catch(e){}
+  if(!l){ l=(navigator.language||"zh").toLowerCase().startsWith("zh")?"zh":"en"; }
+  setLang(l);
+})();
+
+/* ---------- theme ---------- */
+const root=document.documentElement;
+function applyTheme(t){root.setAttribute("data-theme",t);try{localStorage.setItem("cr-theme",t)}catch(e){}}
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}
+ if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{
+  const cur=root.getAttribute("data-theme")|| (matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
+  applyTheme(cur==="dark"?"light":"dark");
+});
+
+/* ---------- radar instrument (canvas) ---------- */
+(function(){
+  const c=document.getElementById("radar"); if(!c) return;
+  const ctx=c.getContext("2d"); const S=c.width, R=S/2;
+  const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  const css=getComputedStyle(document.documentElement);
+  const blips=[[.42,-.55],[-.6,.28],[.66,.35],[-.32,-.4],[.15,.7],[-.72,-.12]];
+  let ang=-Math.PI/2;
+  function col(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+  function draw(){
+    ctx.clearRect(0,0,S,S);
+    const line=col("--line"), east=col("--radar"), west=col("--west"), faint=col("--faint");
+    ctx.save(); ctx.translate(R,R);
+    // rings
+    ctx.strokeStyle=line; ctx.lineWidth=1;
+    for(let i=1;i<=4;i++){ctx.beginPath();ctx.arc(0,0,R*.9*i/4,0,Math.PI*2);ctx.stroke();}
+    // crosshair
+    ctx.beginPath();ctx.moveTo(-R*.9,0);ctx.lineTo(R*.9,0);ctx.moveTo(0,-R*.9);ctx.lineTo(0,R*.9);ctx.stroke();
+    // meridian tick (east/west split emphasis)
+    ctx.strokeStyle=west; ctx.globalAlpha=.5; ctx.beginPath();ctx.moveTo(0,-R*.9);ctx.lineTo(0,R*.9);ctx.stroke(); ctx.globalAlpha=1;
+    // sweep
+    const grad=ctx.createConicGradient? null:null;
+    ctx.save(); ctx.rotate(ang);
+    const g=ctx.createLinearGradient(0,0,R*.9,0);
+    g.addColorStop(0,east); g.addColorStop(1,"transparent");
+    ctx.fillStyle=g; ctx.globalAlpha=.28;
+    ctx.beginPath();ctx.moveTo(0,0);ctx.arc(0,0,R*.9,-0.42,0);ctx.closePath();ctx.fill();
+    ctx.globalAlpha=1; ctx.strokeStyle=east; ctx.lineWidth=1.5;
+    ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(R*.9,0);ctx.stroke();
+    ctx.restore();
+    // blips
+    blips.forEach((b,i)=>{
+      const x=b[0]*R*.82, y=b[1]*R*.82;
+      const near=Math.abs(((ang%(Math.PI*2))+Math.PI*2)%(Math.PI*2)-(Math.atan2(y,x)+Math.PI*2)%(Math.PI*2));
+      const glow=Math.max(0,1-near*1.6);
+      ctx.fillStyle= (i%2? west:east);
+      ctx.globalAlpha=.35+glow*.65;
+      ctx.beginPath();ctx.arc(x,y,3+glow*2.5,0,Math.PI*2);ctx.fill();
+    });
+    ctx.globalAlpha=1; ctx.restore();
+  }
+  draw();
+  if(!reduce){ (function loop(){ang+=0.012; draw(); requestAnimationFrame(loop);})(); }
+  new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+})();
+
+/* ---------- reveal on scroll ---------- */
+(function(){
+  const els=document.querySelectorAll(".reveal");
+  if(!("IntersectionObserver" in window)){els.forEach(e=>e.classList.add("in"));return;}
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}})},{threshold:.12});
+  els.forEach(e=>io.observe(e));
+})();
+
+/* ---------- live archive from reports/archive.json ---------- */
+let __archive=null, __curLang="zh";
+function fmtDate(iso){const m=/(\d{4})-(\d{2})-(\d{2})/.exec(iso||"");return m?`${m[2]} · ${m[3]}`:iso;}
+function renderArchive(lang){
+  __curLang=lang;
+  const list=document.getElementById("archiveList"), card=document.getElementById("latestCard");
+  if(!__archive){return;}
+  let rows=__archive.filter(e=>e.lang===lang);
+  if(!rows.length) rows=__archive;                 // fall back to any language
+  const strings=(window.__i18nGet)||((k,d)=>d);
+  // latest card
+  if(rows[0]&&card){
+    card.setAttribute("href",rows[0].url);
+    document.getElementById("latestDate").textContent=fmtDate(rows[0].date)+" · "+(rows[0].lang==="en"?"EN":"中文");
+    document.getElementById("latestThesis").textContent=rows[0].title||"";
+    document.getElementById("latestThesis").removeAttribute("data-i18n");
+  }
+  // list
+  if(list){
+    const readTxt=lang==="en"?"read →":"读 →";
+    list.innerHTML = rows.length ? rows.map(e=>
+      `<a href="${e.url}"><span class="dt">${fmtDate(e.date)}</span><span class="ti">${(e.title||"").replace(/[<>&]/g,"")}</span><span class="rd">${readTxt}</span></a>`
+    ).join("") : `<div class="empty">${lang==="en"?"First edition publishing soon.":"首期即将发布。"}</div>`;
+  }
+}
+(function(){
+  fetch("reports/archive.json",{cache:"no-store"})
+    .then(r=>r.ok?r.json():Promise.reject())
+    .then(d=>{__archive=Array.isArray(d)?d:[]; renderArchive(document.documentElement.lang.startsWith("en")?"en":"zh");})
+    .catch(()=>{ // file:// preview or no archive yet — leave graceful placeholder
+      const list=document.getElementById("archiveList");
+      if(list) list.innerHTML='<div class="empty">档案将在站点上线后自动填充 · archive fills once live.</div>';
+    });
+})();
+</script>
