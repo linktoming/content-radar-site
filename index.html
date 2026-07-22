@@ -191,8 +191,10 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:44px
 .foot .meta{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em;line-height:2}
 .foot a.dom{color:var(--east)}
 
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
+/* Content is visible by DEFAULT. Only once JS runs (html.js) do we hide-then-reveal,
+   so any script failure leaves the page fully readable instead of blank. */
+html.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+html.js .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 ::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
 :focus-visible{outline:2px solid var(--east);outline-offset:2px;border-radius:2px}
@@ -329,6 +331,11 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:44px
 </footer>
 
 <script>
+/* archive state — declared FIRST so setLang() (called on load, before the archive
+   block) can reference it safely; a `let` declared later sits in the temporal dead
+   zone and setLang's `&& __archive` would throw, aborting the whole script and
+   leaving every .reveal element stuck at opacity:0 (only header/footer visible). */
+let __archive=null, __curLang="zh";
 /* ---------- i18n ---------- */
 const I18N={
  en:{
@@ -456,6 +463,7 @@ document.getElementById("theme").addEventListener("click",()=>{
 
 /* ---------- reveal on scroll ---------- */
 (function(){
+  document.documentElement.classList.add("js");   // enable hide-then-reveal only now
   const els=document.querySelectorAll(".reveal");
   if(!("IntersectionObserver" in window)){els.forEach(e=>e.classList.add("in"));return;}
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}})},{threshold:.12});
@@ -463,7 +471,6 @@ document.getElementById("theme").addEventListener("click",()=>{
 })();
 
 /* ---------- live archive from reports/archive.json ---------- */
-let __archive=null, __curLang="zh";
 function fmtDate(iso){const m=/(\d{4})-(\d{2})-(\d{2})/.exec(iso||"");return m?`${m[2]} · ${m[3]}`:iso;}
 function renderArchive(lang){
   __curLang=lang;
