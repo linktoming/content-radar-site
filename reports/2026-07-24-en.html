@@ -1,0 +1,239 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI is moving out of the chat window and into the control plane for wor · Content Radar</title>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="../index.html"><span class="dot"></span><span>Content&nbsp;Radar</span></a>
+  <div class="controls">
+    <span class="edtag">EN edition</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <div class="rp-head">
+    <div class="eyebrow">2026 · 07 · 24 · Daily AI Intelligence</div>
+    <span class="pill free">Public · Free</span>
+  </div>
+  <article class="rp-body"><h2>🔭 Today’s Thesis</h2>
+<p>AI is moving out of the chat window and into the <strong>control plane for work</strong>. <a href="https://x.com/OpenAI/status/2080378182469857576#m">OpenAI brought Voice to desktop</a>, where it can control the computer and coordinate ChatGPT Work and Codex agents; <a href="https://x.com/claudeai/status/2080376094939603366#m">Claude connected Voice mode to stronger models and tools</a>; and Andrew Ng’s <a href="https://x.com/AndrewYNg/status/2080333504446108104#m">OpenWorker</a> frames an agent as something that returns finished documents, Slack messages, calendar actions, and briefs—not another conversation.</p>
+<p>The economic unit is changing with the interface: from price per token to <strong>price per successful task</strong>. <a href="https://x.com/cursor_ai/status/2079993729532989500#m">Cursor Router</a>, <a href="https://x.com/runwayml/status/2080343130780655635#m">Runway Media Router</a>, and Fireworks/Arize’s <a href="https://x.com/FireworksAI_HQ/status/2080372012363493725#m">2,400 agent-run study</a> all converge on routing by outcome, quality, latency, and budget. China’s creator platforms show the downstream consequence: builders are already packaging these capabilities into repeatable content factories, not debating benchmark points.</p>
+<h2>🎯 Primary</h2>
+<ul>
+<li>
+<p><strong>OpenAI</strong>〔S · model maker〕— <a href="https://x.com/OpenAI/status/2080378182469857576#m">ChatGPT Voice desktop</a> unifies voice, computer control, ChatGPT Work, Codex, and multi-agent coordination. <a href="https://x.com/OpenAI/status/2080339982288568709#m">Health in ChatGPT</a> now lets US users connect Apple Health and medical records, another step toward a personal context operating system.</p>
+</li>
+<li>
+<p><strong>Anthropic / Claude</strong>〔S/A · model maker〕— <a href="https://x.com/claudeai/status/2080376094939603366#m">Voice mode</a> can use stronger models and connected tools mid-conversation. The <a href="https://x.com/claudeai/status/2079990597973057691#m">Claude Code Security plugin</a> entered beta, moving security checks inside the coding-agent loop.</p>
+</li>
+<li>
+<p><strong>Google DeepMind</strong>〔S · model maker〕— <a href="https://x.com/GoogleDeepMind/status/2080321516814647630#m">Gemini 3.5 Flash Cyber</a> targets vulnerability discovery. Alphabet reported Google Cloud growth of 82%, 950 million Gemini app MAU, and model APIs processing 22 billion tokens per minute.</p>
+</li>
+<li>
+<p><strong>Alibaba Qwen</strong>〔A · China model maker〕— Alibaba’s open-model family shipped <a href="https://x.com/Alibaba_Qwen/status/2080270065547809133#m">Qwen-Audio-3.0-TTS</a> with 16 languages and fine-grained emotion controls, plus <a href="https://x.com/Alibaba_Qwen/status/2079906336381509659#m">Qwen-Image-3.0</a> for complex layouts, UI, PDFs, and storyboards. The emphasis is production media, not leaderboard theater.</p>
+</li>
+<li>
+<p><strong>Black Forest Labs</strong>〔A · model maker〕— <a href="https://x.com/bfl_ai/status/2080309131068764265">FLUX 3</a> was previewed as a multimodal family spanning image, video, audio, and motion; Chinese creator analyst 歸藏 says the video model supports 20 seconds and a Dev model will be open.</p>
+</li>
+<li>
+<p><strong>Cursor</strong>〔A · developer tools〕— <a href="https://x.com/cursor_ai/status/2079993729532989500#m">Cursor Router</a> claims 60% lower cost at frontier quality for Teams and Enterprise. AI coding products are becoming intelligence-budget managers.</p>
+</li>
+<li>
+<p><strong>Runway</strong>〔A · key startup〕— <a href="https://x.com/runwayml/status/2080343130780655635#m">Media Router</a> lets developers declare quality, latency, and cost preferences while the system selects the video, image, or audio model.</p>
+</li>
+<li>
+<p><strong>Sierra</strong>〔A · key startup〕— Sierra <a href="https://sierra.ai/blog/sierra-acquires-takeoff">acquired Takeoff</a>, expanding from customer-service agents into long-horizon work that runs for hours or days. Takeoff reportedly approached eight-figure ARR in its first year.</p>
+</li>
+<li>
+<p><strong>LangChain</strong>〔A · framework〕— <a href="https://x.com/LangChain/status/2080338157682233773#m">Deep Agents benchmarks</a>, <a href="https://x.com/sydneyrunkle/status/2080348156009558239#m">Loop Engineering</a>, and 100 million accepted lines in Agentforce Vibes all point toward eval, trace, recovery, and iteration as the real agent stack.</p>
+</li>
+<li>
+<p><strong>CoreWeave / AMD / Together / Fireworks</strong>〔A · infrastructure〕— <a href="https://x.com/CoreWeave/status/2080377158153707886#m">MiniMax M3 at 357 output tok/s</a>, <a href="https://x.com/AMD/status/2080357349684850927">ROCm.ai</a>, Together’s next inference platform, and Fireworks’ <a href="https://x.com/FireworksAI_HQ/status/2080372012363493725#m">cost-per-successful-task framing</a> shift infrastructure competition from cheap tokens to completed work.</p>
+</li>
+<li>
+<p><strong>OpenClaw</strong>〔S · agent harness〕— <a href="https://x.com/openclaw/status/2080043081513193652#m">ClawCast Episode 5</a> featured the OpenAI Codex team while recent releases advanced remote coding sessions, mobile automations, and nodes. Quiet signal: the personal-agent stack is entering the mainstream coding-agent conversation.</p>
+</li>
+</ul>
+<h2>🧠 Sense Makers</h2>
+<ul>
+<li>
+<p><strong>TLDR AI</strong>— Its headline slate—<a href="https://tldr.tech/ai/2026-07-23">Cursor Router, OpenAI Presence, AMD + Anthropic</a>—independently confirms the routing-and-work-interface thesis.</p>
+</li>
+<li>
+<p><strong>AINews (smol.ai)</strong>— Its recent digests connect the OpenAI/Hugging Face security incidents with policy pressure on Chinese open models such as Kimi and GLM. Open weights are becoming a security and industrial-policy question, not merely a deployment option.</p>
+</li>
+<li>
+<p><strong>Andrej Karpathy</strong>— His <a href="https://x.com/karpathy/status/2079610838143623371#m">long voice ramble</a> is the cognitive practice behind today’s product news: treat voice as high-bandwidth thinking input, not a short-command interface.</p>
+</li>
+<li>
+<p><strong>Lenny Rachitsky</strong>— <a href="https://www.lennysnewsletter.com/p/computer-and-browser-use-in-codex">Computer and browser use in Codex</a> shows QA, LinkedIn, and shopping workflows. The key technique is under-prompting: specify the objective and let a frontier model explore.</p>
+</li>
+<li>
+<p><strong>Naval</strong>— As <a href="https://x.com/naval/status/2080052566377763071#m">software gets cheaper, value moves to vertically integrated experiences</a>. That is why prompt wrappers and tool directories remain weak businesses.</p>
+</li>
+<li>
+<p><strong>Tiago Forte</strong>— <a href="https://x.com/fortelabs/status/2080276980147101973#m">Finding Alpha</a> argues that average answers are abundant; upstream sources, personal detail, and outcome-linked knowledge retain value.</p>
+</li>
+<li>
+<p><strong>SemiAnalysis</strong>— <a href="https://x.com/SemiAnalysis_/status/2080367443839513072#m">US jobless claims show no AI-layoff signal</a>, tempering the popular displacement narrative while its Intel, ASML, and rack-supply work tracks the actual capital cycle.</p>
+</li>
+<li>
+<p><strong>机器之心 (Synced)</strong>— China’s technical AI publication covered a <a href="https://www.jiqizhixin.com/articles/2026-07-22-17">national AI coding competition</a>, <a href="https://www.jiqizhixin.com/articles/2026-07-23-10">GUI agents losing their demo halo</a>, <a href="https://www.jiqizhixin.com/articles/2026-07-23-9">editable Office-file generation</a>, and <a href="https://www.jiqizhixin.com/articles/2026-07-23-7">agent skill evolution</a>. The Chinese discourse is also moving from “can it generate?” to “can it deliver?”</p>
+</li>
+<li>
+<p><strong>36氪</strong>— Its profile of <a href="https://36kr.com/p/3907953777120385?f=rss">former CapCut builders starting an AI company</a> is a useful China lens: consumer AI products still depend on taste, user understanding, and distribution experience—not model capability alone.</p>
+</li>
+</ul>
+<h2>🔨 Practitioners</h2>
+<ul>
+<li>
+<p><strong>Andrew Ng</strong>〔S〕— <a href="https://x.com/AndrewYNg/status/2080333504446108104#m">OpenWorker</a> defines an agent by finished work: documents, Slack messages, calendar actions, and customer briefs.</p>
+</li>
+<li>
+<p><strong>Alex Finn</strong>〔A〕— The <a href="https://x.com/AlexFinn/status/2080024545856249998#m">Finn Loop</a> packages vibe coding as a small software factory, then uses ChatGPT Work to generate its documentation site.</p>
+</li>
+<li>
+<p><strong>Greg Isenberg</strong>〔S〕— His <a href="https://x.com/gregisenberg/status/2080360929535853032#m">16 things that will feel normal in three years</a> includes humans paid to stop agents doing stupid things and agent bills resembling a small-company expense report. Solo companies will need agent operations.</p>
+</li>
+<li>
+<p><strong>Every</strong>〔A〕— <a href="https://x.com/danshipper/status/2079954927451799950#m">All Access added roughly $9,000 MRR in two days</a>. It is a live example of a content company bundling subscription media, AI tools, and compound engineering.</p>
+</li>
+<li>
+<p><strong>歸藏</strong>〔A · Chinese creator analyst〕— His <a href="https://x.com/op7418/status/2080317863400030312#m">FLUX 3 analysis</a> translates capability into creator use cases: reference video, keyframes, smart editing, multilingual layouts, and image output.</p>
+</li>
+<li>
+<p><strong>数字生命卡兹克</strong>〔A · Chinese AI creator〕— A small <a href="https://x.com/vista8/status/2080150051872276990#m">YouTube download Skill</a> is practical creator infrastructure; his accompanying DeepSeek notes emphasize data and taste as the remaining advantage.</p>
+</li>
+<li>
+<p><strong>秋芝2046</strong>〔S · Chinese AI educator〕— Bilibili recovered what the dark Rednote creator lane missed: a <a href="https://www.bilibili.com/video/BV1NvRyBzEhq">60-minute Claude Code tutorial</a>, <a href="https://www.bilibili.com/video/BV1Nd596vEyU">40-minute Codex tutorial</a>, and <a href="https://www.bilibili.com/video/BV1mhKv68EPQ">Doubao Agent introduction</a>.</p>
+</li>
+<li>
+<p><strong>光羽的平行世界</strong>〔S · Chinese enterprise-AI creator〕— His Douyin case studies claim <a href="https://www.douyin.com/video/7642252037626907958">RMB 200 million incremental revenue at Semir</a>, <a href="https://www.douyin.com/video/7665274557162409257">17 straight months of growth at a 20-person company</a>, and <a href="https://www.douyin.com/video/7662313739689004303">RMB 4 million saved with a decision agent</a>.</p>
+</li>
+<li>
+<p><strong>课代表立正</strong>〔A · Chinese knowledge-business creator〕— His <a href="https://www.youtube.com/watch?v=RknuTsX1Afw">move from big tech to courses and enterprise training</a> argues that courses sell trust; real delivery and credible identity matter because presentation alone no longer separates quality.</p>
+</li>
+</ul>
+<h2>💰 Investors</h2>
+<ul>
+<li>
+<p><strong>Sequoia / Sonya Huang</strong>〔S〕— Etched raised a $300 million Series C at a $10.3 billion valuation; Sequoia’s <a href="https://sequoiacap.com/article/partnering-with-etched-building-the-inference-machine/">investment thesis</a> is explicit: inference becomes the largest market, and a purpose-built inference machine wins.</p>
+</li>
+<li>
+<p><strong>a16z</strong>〔S〕— <a href="https://www.a16z.news/p/how-to-win-the-largest-market-in">Production is the product</a> aligns with its inference thesis, while <a href="https://x.com/a16z/status/2080376574843715999#m">rental-conversation data</a> illustrates why vertical AI value comes from workflow data rather than generic chat.</p>
+</li>
+<li>
+<p><strong>Bessemer</strong>〔A〕— Its <a href="https://x.com/BessemerVP/status/2080350858550931583#m">Building AI Differently</a> thesis looks for repetitive, language-heavy, manually painful industries and stresses customer proximity over desk research.</p>
+</li>
+<li>
+<p><strong>Lightspeed</strong>〔A〕— <a href="https://x.com/lightspeedvp/status/2080340740027097551#m">A Security</a> frames AI security as perpetual machine-to-machine conflict, matching the Hugging Face incident and Gemini Flash Cyber release.</p>
+</li>
+<li>
+<p><strong>YC</strong>〔A〕— <a href="https://x.com/JamesAEmerick/status/2080352215487697068#m">Cosmic Robotics</a> and <a href="https://x.com/rapidfolio/status/2080367126830080394#m">Rapidfolio</a> show AI moving into energy construction and bank/fintech back offices: real industry workflows rather than horizontal chat.</p>
+</li>
+<li>
+<p><strong>Garry Tan</strong>〔A〕— <a href="https://x.com/garrytan/status/2080345524620914897">“Open weight models are very, very important”</a> captures investor concern that broad restrictions on Chinese open models would raise startup intelligence costs.</p>
+</li>
+</ul>
+<h2>🔥 Professional Trending</h2>
+<ul>
+<li>
+<p><strong>Hacker News</strong>— <a href="https://news.ycombinator.com/item?id=49026810">Echo</a> offers Fable-level output with open weights at one-third the cost; <a href="https://news.ycombinator.com/item?id=49024620">Screenpipe</a> turns recorded workflows into agents. Debate over <a href="https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/">open-source AI restrictions</a> keeps Kimi and GLM in the policy layer.</p>
+</li>
+<li>
+<p><strong>GitHub Trending</strong>— <a href="https://github.com/ComposioHQ/awesome-claude-skills">awesome-claude-skills</a> suggests “skills” are becoming a public knowledge interface for agents. <a href="https://github.com/alibaba/open-code-review">Alibaba open-code-review</a>, <a href="https://github.com/diegosouzapw/OmniRoute">OmniRoute</a>, and <a href="https://github.com/earthtojake/text-to-cad">text-to-cad</a> are concrete workflow products.</p>
+</li>
+<li>
+<p><strong>Product Hunt</strong>— <a href="https://www.producthunt.com/products/promptscout">PromptScout</a>, <a href="https://www.producthunt.com/products/agentloop-2">AgentLoop</a>, <a href="https://www.producthunt.com/products/opencode-superapp">OpenCode Superapp</a>, and <a href="https://www.producthunt.com/products/penguinharness">PenguinHarness</a> show continued agent-tool density. Most remain tools; outcome-bound products are scarcer.</p>
+</li>
+<li>
+<p><strong>Reddit</strong>— LocalLLaMA focused on a <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v49lxp/deepseek_founders_4hour_investor_meeting_deepseek/">four-hour DeepSeek founder meeting</a>, <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v4moxy/the_llm_distillation_process_simplified_for/">distillation politics</a>, and the <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v4avga/ceo_of_hugging_face_heading_to_san_francisco_to/">Hugging Face rogue-agent incident</a>.</p>
+</li>
+</ul>
+<h2>📡 Keyword Radar</h2>
+<ul>
+<li>
+<p><strong>AI content creation</strong>— 51 hits. China’s Bilibili surfaced <a href="https://www.bilibili.com/video/BV1fmgx6aEtM">RMB 200,000 AI-writing manuscripts</a>, an <a href="https://www.bilibili.com/video/BV1MJKh6pEQr">AI comic workflow</a>, and <a href="https://www.bilibili.com/video/BV1KFKN6gEFY">viral WeChat article selection</a>. Rednote added both upside and platform-risk stories, including AI-writing accounts being banned.</p>
+</li>
+<li>
+<p><strong>Solo company / super individual</strong>— 40 hits. The Chinese mass-market imagination is project-driven: AI comics, music, fiction, WeChat traffic, and affiliate sites. The opportunity is to upgrade “side-hustle projects” into compounding operating systems.</p>
+</li>
+<li>
+<p><strong>China AI builder signals</strong>— 36 hits. Bilibili includes <a href="https://www.bilibili.com/video/BV1kJg466ENG">OpenClaw operating and operations teams</a>, <a href="https://www.bilibili.com/video/BV1gAgS6DEZH">MCP + Agent enterprise workflows</a>, and a <a href="https://www.bilibili.com/video/BV1xvgD6mEhN">Kimi K3 review</a>. OpenClaw and MCP are already being translated for a broader Chinese audience.</p>
+</li>
+<li>
+<p><strong>AI × cognition / learning</strong>— 59 hits. A <a href="https://www.bilibili.com/video/BV1KegD6EEgZKU">Skill connected to a knowledge base to remove “AI voice”</a>, a <a href="https://www.rednote.com/search_result/69d4f99f000000001f00412b">Karpathy-style knowledge base</a>, and <a href="https://www.youtube.com/watch?v=S1Z3-GaxzKU">Heptabase knowledge organization</a> all point to the same constraint: content quality is upstream knowledge plus judgment.</p>
+</li>
+<li>
+<p><strong>AI Native</strong>— 33 hits. China’s video platforms are translating the idea into organization design: <a href="https://www.bilibili.com/video/BV1DKKw6BEgJ">Garry Tan explaining AI-native companies</a> and <a href="https://www.bilibili.com/video/BV12Kg16wEBc">“every company needs a brain”</a>.</p>
+</li>
+<li>
+<p><strong>Agent / Workflow</strong>— 15 hits, mostly on Rednote. Useful for mainstream onboarding, but too tutorial-heavy to carry the thesis.</p>
+</li>
+</ul>
+<p>Zero-hit cautions: Rednote stopped early, so empty buckets do not prove dead keywords. Douyin search returned zero across all 17 terms and is not reliable enough for trend judgment.</p>
+<h2>🌱 Early Signals</h2>
+<ol>
+<li><strong>Programmable workspaces</strong> — <a href="https://x.com/NotionHQ/status/2080331924732850687">Notion as code</a> is an early form of a personal or team operating system that coding agents can build, version, and deploy.</li>
+<li><strong>Voice as orchestration, not dictation</strong> — <a href="https://x.com/OpenAI/status/2080378182469857576#m">OpenAI</a>, <a href="https://x.com/claudeai/status/2080376094939603366#m">Claude</a>, and <a href="https://x.com/karpathy/status/2079610838143623371#m">Karpathy</a> converge on voice as the interface for cognitive unloading and agent control.</li>
+<li><strong>Routers cross from code into media</strong> — <a href="https://x.com/cursor_ai/status/2079993729532989500#m">Cursor Router</a> and <a href="https://x.com/runwayml/status/2080343130780655635#m">Runway Media Router</a> landed together. Creators will declare intent and budget instead of manually choosing models.</li>
+<li><strong>Skills become the packaging format for operational knowledge</strong> — <a href="https://github.com/ComposioHQ/awesome-claude-skills">awesome-claude-skills</a>, Claude, and OpenClaw are converging on reusable, versioned process memory.</li>
+<li><strong>China creator discovery requires cross-platform identity</strong> — Rednote creator profiles went dark, but Bilibili and Douyin recovered 秋芝2046, 光羽, and others. Western readers need a cross-platform map, not a single Chinese feed.</li>
+</ol></article>
+  <div class="rp-cta">
+    <p>This is the full public edition. Want the daily 选题 picks, or a radar built for your positioning?</p>
+    <a class="btn primary" href="../index.html#channels">See how to subscribe →</a>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <a class="dom" href="../index.html">content-radar.sharpener.ai</a>
+  <span class="meta">Public edition free · complete · no personal info · picks &amp; custom are paid</span>
+</div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

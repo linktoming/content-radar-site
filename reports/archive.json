@@ -6,6 +6,12 @@
   "url": "reports/2026-07-24-zh.html"
  },
  {
+  "date": "2026-07-24",
+  "lang": "en",
+  "title": "AI is moving out of the chat window and into the control plane for work. OpenAI brought Voice to desktop, where it can control the computer and coordi",
+  "url": "reports/2026-07-24-en.html"
+ },
+ {
   "date": "2026-07-23",
   "lang": "zh",
   "title": "今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型；解读层开始盯 sandbox / reward-seeking / 长程任务；投资层下注的是 FDE、dark factory、physical AI；实战层则把这",
