@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-07-24",
+  "lang": "zh",
+  "title": "今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层。OpenAI 把 ChatGPT Voice 带到桌面，可以用语音控制电脑并指挥 ChatGPT Work / Codex 里的多个 agents；Claude 同日把 Voice mode 接入更强模型和连接",
+  "url": "reports/2026-07-24-zh.html"
+ },
+ {
   "date": "2026-07-23",
   "lang": "zh",
   "title": "今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型；解读层开始盯 sandbox / reward-seeking / 长程任务；投资层下注的是 FDE、dark factory、physical AI；实战层则把这",
