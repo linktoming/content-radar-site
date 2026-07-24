@@ -6,6 +6,12 @@
   "url": "reports/2026-07-25-zh.html"
  },
  {
+  "date": "2026-07-25",
+  "lang": "en",
+  "title": "The model race is becoming an operating-surface race. Anthropic shipped Claude Opus 5, OpenAI put Voice on desktop where it can direct ChatGPT Work an",
+  "url": "reports/2026-07-25-en.html"
+ },
+ {
   "date": "2026-07-24",
   "lang": "zh",
   "title": "今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层。OpenAI 把 ChatGPT Voice 带到桌面，可以用语音控制电脑并指挥 ChatGPT Work / Codex 里的多个 agents；Claude 同日把 Voice mode 接入更强模型和连接",
