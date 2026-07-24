@@ -1,4 +1,4 @@
-<title>Content Radar — Read the Other Half of the World</title>
+<title>AI Radar — Read the Other Half of the World</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 :root{
@@ -209,7 +209,7 @@ html.js .reveal.in{opacity:1;transform:none}
 
 <header>
   <div class="wrap bar">
-    <div class="brand"><span class="dot"></span><span>Content&nbsp;Radar</span></div>
+    <div class="brand"><span class="dot"></span><span data-i18n="brand">AI情报</span></div>
     <div class="controls">
       <div class="seg" role="group" aria-label="Language">
         <button data-lang="zh" aria-pressed="true">中文</button>
@@ -244,7 +244,7 @@ html.js .reveal.in{opacity:1;transform:none}
   <!-- THESIS: two hemispheres -->
   <section id="why">
     <div class="sec-head reveal"><span class="num">01</span><h2 data-i18n="why.h2">别人只扫一半天空</h2></div>
-    <p class="lead reveal" data-i18n="why.lead">英文的 AI newsletter 几乎不看中文创作圈的信号;中文的又追不上英文源头的深度。Content Radar 同一次抓取横跨两边——所以你每天读到的,是完整的一圈,不是半张地图。</p>
+    <p class="lead reveal" data-i18n="why.lead">英文的 AI newsletter 几乎不看中文创作圈的信号;中文的又追不上英文源头的深度。AI情报 同一次抓取横跨两边——所以你每天读到的,是完整的一圈,不是半张地图。</p>
     <div class="hemis reveal">
       <div class="hemi e">
         <div class="tag" data-i18n="why.eTag">东 · 中文世界</div>
@@ -353,7 +353,7 @@ const I18N={
   "hero.sub":"A daily AI intelligence report — Western frontier (X · HN · labs) explained for Chinese readers, China's creator scene (rednote · Bilibili · WAIC) explained for English readers. Two hemispheres, one radar.",
   "hero.cta1":"Subscribe to today's radar","hero.cta2":"See today's edition","hero.radarcap":"Sweep · 116°E / 122°W",
   "why.h2":"Everyone else scans half the sky",
-  "why.lead":"English AI newsletters barely watch China's creator signals; Chinese ones can't keep up with Western sources. Content Radar crawls both in one pass — so what you read each day is the full circle, not half a map.",
+  "why.lead":"English AI newsletters barely watch China's creator signals; Chinese ones can't keep up with Western sources. AI Radar crawls both in one pass — so what you read each day is the full circle, not half a map.",
   "why.eTag":"East · Chinese world","why.eH":"China's signals, for English readers",
   "why.eP":"WAIC on the ground, Moonshot's IPO, a beginner who practiced vibe coding for a year on rednote, Agent tutorials on Bilibili — the half of the battlefield the West rarely sees.",
   "why.wTag":"West · English world","why.wH":"Western sources, for Chinese readers",
@@ -388,13 +388,15 @@ const I18N={
   "ch.cuP":"Your positioning, your benchmark accounts — a private radar that runs itself every day. Reclaim the hours you'd spend scanning the web.",
   "ch.cuPrice":"Built to your positioning · DM","ch.talk":"Let's talk",
   "foot.sig":"A cognitive solo-operator, scanning the full circle of sky for you every day.",
-  "foot.by":"by sharpener.ai","foot.note":"Public edition free · complete · no personal info<br>Picks & custom are paid"
+  "foot.by":"by sharpener.ai","foot.note":"Public edition free · complete · no personal info<br>Picks & custom are paid",
+  "brand":"AI Radar"
  }
 };
 const zhStore={};
 function cacheZh(){document.querySelectorAll("[data-i18n]").forEach(el=>{zhStore[el.getAttribute("data-i18n")]=el.innerHTML;});}
 function setLang(l){
   document.documentElement.lang = l==="en"?"en":"zh";
+  document.title = l==="en" ? "AI Radar — Read the Other Half of the World" : "AI情报 — 读到另一半世界";
   document.querySelectorAll("[data-i18n]").forEach(el=>{
     const k=el.getAttribute("data-i18n");
     if(l==="en"&&I18N.en[k]!=null) el.innerHTML=I18N.en[k];
