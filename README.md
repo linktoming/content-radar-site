@@ -1,7 +1,7 @@
 # Content Radar — public site
 
 Landing page + daily **public editions** of Content Radar, served at
-**content-radar.sharpener.ai** via GitHub Pages.
+**radar.sharpener.ai** via GitHub Pages.
 
 - `index.html` — bilingual (auto by system language) landing.
 - `reports/*.html` — de-personalized public editions (free, complete, no personal info;
