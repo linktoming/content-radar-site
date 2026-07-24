@@ -183,6 +183,11 @@ a.report:hover .shape em{text-decoration:underline}
 .card .go{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;color:var(--ink);border-top:1px solid var(--line-soft);padding-top:14px;display:flex;justify-content:space-between;align-items:center}
 .card .go .arrow{color:var(--east);transition:transform .2s}
 .card:hover .go .arrow{transform:translateX(4px)}
+.card .qr{display:flex;align-items:center;gap:14px;border-top:1px solid var(--line-soft);padding-top:14px}
+.card .qr img{width:104px;height:104px;border-radius:6px;background:#fff;padding:6px;box-shadow:0 1px 5px rgba(0,0,0,.14);flex-shrink:0}
+.card .qr-cap{display:flex;flex-direction:column;gap:3px}
+.card .qr-cap b{color:var(--ink);font-size:15px;font-weight:600}
+.card .qr-cap span{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--muted)}
 
 /* footer */
 footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:44px 0 60px;margin-top:20px}
@@ -302,12 +307,15 @@ html.js .reveal.in{opacity:1;transform:none}
         <div class="top"><h3>微信公众号</h3><span class="lang">中文 · CN</span></div>
         <p data-i18n="ch.cnP">每天完整正文,免费。想要选题建议或一份定制雷达?加我。</p>
         <span class="price" data-i18n="ch.cnPrice">免费 · 正文 + 加我得选题</span>
-        <div class="go"><span data-i18n="ch.follow">关注</span><span class="arrow">→</span></div>
+        <div class="qr">
+          <img src="assets/gzh-qr.jpg" alt="微信扫码关注 明明AI掘金记" width="104" height="104" loading="lazy">
+          <div class="qr-cap"><b>明明AI掘金记</b><span data-i18n="ch.scan">微信扫码关注</span></div>
+        </div>
       </div>
       <a class="card en" href="https://aicontentradar.substack.com/" target="_blank" rel="noopener">
         <div class="top"><h3>Substack</h3><span class="lang">English · EN</span></div>
-        <p data-i18n="ch.enP">Full report free. Paid tier unlocks the daily 选题 — the picks only I can make.</p>
-        <span class="price" data-i18n="ch.enPrice">Free body · Paid picks</span>
+        <p data-i18n="ch.enP">Full report free. Paid tier unlocks the early trends and daily topics to write about.</p>
+        <span class="price" data-i18n="ch.enPrice">Free full report · Paid picks</span>
         <div class="go"><span data-i18n="ch.sub">Subscribe</span><span class="arrow">→</span></div>
       </a>
       <div class="card cu">
@@ -373,9 +381,9 @@ const I18N={
   "how.p3":"Every tracked term carries an expiry; at the date it forces a keep / drop at the top of the report — so the radar never rots into a noise collector.",
   "ch.h2":"Where to read","ch.lead":"A free channel in each language, plus “a custom radar built for your positioning.”",
   "ch.cnP":"Full report daily, free. Want the picks or a custom radar? Add me.",
-  "ch.cnPrice":"Free · body + add-me for picks","ch.follow":"Follow",
-  "ch.enP":"Full report free. Paid tier unlocks the daily 选题 — the picks only I can make.",
-  "ch.enPrice":"Free body · Paid picks","ch.sub":"Subscribe",
+  "ch.cnPrice":"Free full report · add-me for picks","ch.follow":"Follow","ch.scan":"Scan to follow on WeChat",
+  "ch.enP":"Full report free. Paid tier unlocks the early trends and daily topics to write about.",
+  "ch.enPrice":"Free full report · Paid picks","ch.sub":"Subscribe",
   "ch.cuH":"Custom radar","ch.cuTag":"Done-for-you",
   "ch.cuP":"Your positioning, your benchmark accounts — a private radar that runs itself every day. Reclaim the hours you'd spend scanning the web.",
   "ch.cuPrice":"Built to your positioning · DM","ch.talk":"Let's talk",
