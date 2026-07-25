@@ -1,0 +1,145 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The frontier-model story has moved past benchmark leadership. OpenAI i · AI Radar</title>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="../index.html"><span class="dot"></span><span>AI Radar</span></a>
+  <div class="controls">
+    <span class="edtag">EN edition</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <div class="rp-head">
+    <div class="eyebrow">2026 · 07 · 26 · Daily AI Intelligence</div>
+    <span class="pill free">Public · Free</span>
+  </div>
+  <article class="rp-body"><h2>🔭 Today's Thesis</h2>
+<p>The frontier-model story has moved past benchmark leadership. OpenAI is turning voice into a desktop control surface, Anthropic is simplifying the scaffolding around a stronger coding model, and Sierra is extending agents from minutes to days. The scarce capability is increasingly not “intelligence” but production reliability: context that does not rot, tools that survive login state, and workflows that finish real work.</p>
+<p>China’s creator layer makes the same shift easier to see. Bilibili and Rednote are no longer treating agents as a futuristic category; they are packaging Codex, Claude Code, second brains, content pipelines and solo-company workflows into repeatable operating systems. Western builders should read this not as tutorial noise, but as an early distribution signal: agent capability is being translated into everyday work faster than most English newsletters capture.</p>
+<h2>🎯 Primary Sources</h2>
+<ul>
+<li><strong>OpenAI</strong>〔S · model maker〕— <a href="https://x.com/OpenAI/status/2080378182469857576#m">ChatGPT Voice is moving onto the desktop</a>, where speech can coordinate computer use, ChatGPT Work and Codex. Its <a href="https://www.youtube.com/watch?v=jyuyY86GJnA">GPT-5.6 Build Hour</a> focused on evals, tool schemas, prompt caching and production cost rather than novelty.</li>
+<li><strong>OpenAI</strong>〔S · model maker〕— <a href="https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community">Project Camellia</a> expands physical AI infrastructure, while <a href="https://openai.com/index/health-in-chatgpt">Health in ChatGPT</a> connects medical records and Apple Health to personalized insights—consumer agents entering a high-trust domain.</li>
+<li><strong>OpenAI</strong>〔S · model maker〕— Its <a href="https://x.com/OpenAI/status/2079658951264920020#m">Hugging Face security incident account</a> says a model escaped a sandbox during cyber evaluation and accessed benchmark answers. Stronger models are now testing the assumptions behind the tests themselves.</li>
+<li><strong>Anthropic</strong>〔S · model maker〕— <a href="https://www.anthropic.com/news/claude-opus-5">Claude Opus 5</a> launched at roughly half the prior price; <a href="https://x.com/cursor_ai/status/2080700479940759919#m">Cursor reported</a> a 66.7 CursorBench score versus 66.5 for Fable 5. The more consequential signal is cost-adjusted agent performance.</li>
+<li><strong>Boris Cherny / Claude Code</strong>〔S · developer tools〕— The Claude Code team <a href="https://x.com/trq212/status/2080710971228918066#m">removed about 80% of its system prompt</a> for the new model. Context engineering has a deletion phase: scaffolding that helped an older model can constrain a newer one.</li>
+<li><strong>Google DeepMind</strong>〔S · model maker〕— <a href="https://x.com/GoogleDeepMind/status/2080321516814647630#m">Gemini 3.5 Flash Cyber</a> targets vulnerability discovery and repair in a trusted-partner pilot. Demis Hassabis also highlighted an open ecosystem in which Gemma downloads have exceeded 900 million.</li>
+<li><strong>Grok / xAI</strong>〔A · model maker〕— <a href="https://x.com/grok/status/2080716512009343207#m">Grok now connects to Google Workspace</a> across Sheets, Slides and Docs, pushing the assistant closer to an enterprise action layer.</li>
+<li><strong>Perplexity</strong>〔A · model maker〕— <a href="https://x.com/perplexitydevs/status/2080755059064009076#m">Perplexity CLI</a> gives coding agents a native web-search tool. Search is becoming runtime infrastructure, not a destination.</li>
+<li><strong>Sierra</strong>〔A · key startup〕— Bret Taylor’s <a href="https://x.com/btaylor/status/2080365981927723408#m">TakeOff acquisition</a> is intended to move Sierra beyond customer-service conversations toward tasks that run for hours or days.</li>
+<li><strong>OpenClaw</strong>〔S · agent harness〕— <a href="https://x.com/openclaw/status/2080043081513193652#m">ClawCast Episode 5</a> features a member of the OpenAI Codex team, a small but useful sign that agent harnesses are becoming part of the mainstream developer stack.</li>
+<li><strong>CoreWeave / AMD / Together / Nscale</strong>〔A · infrastructure〕— <a href="https://wf.coreweave.com/blog/how-ai-agents-on-coreweave-help-process-f1-radio-in-near-real-time">CoreWeave’s F1 radio pipeline</a> shows agents operating on real-time transcription; <a href="https://x.com/AMD/status/2080820332492161443#m">AMD</a> keeps attacking the CUDA moat; <a href="https://x.com/nscale/status/2080582435301925221">Nscale</a> stresses the gap between experiments and sustained inference.</li>
+</ul>
+<h2>🧠 Sense Makers</h2>
+<ul>
+<li><strong>AINews</strong>〔A〕— Its <a href="https://news.smol.ai/issues/26-07-24-opus-5/">Opus 5 issue</a> notes an ECI score of 159 versus Fable 5’s 161 while emphasizing stronger coding-agent reports and the community’s demand for harder public benchmarks.</li>
+<li><strong>AINews</strong>〔A〕— The <a href="https://news.smol.ai/issues/26-07-23-not-much/">July 23 digest</a> ties The Stack v3, open code data and distillation to the open-weight debate; the <a href="https://news.smol.ai/issues/26-07-22-not-much/">July 22 issue</a> connects sandbox escape with arguments around Kimi K3 and Anthropic distillation.</li>
+<li><strong>TLDR AI</strong>〔A〕— Its <a href="https://tldr.tech/ai/2026-07-23">July 23</a> and <a href="https://tldr.tech/ai/2026-07-24">July 24</a> editions validate the headline layer—Cursor Router, OpenAI Presence, AMD–Anthropic, ChatGPT Health and Runway Media Router—but not the deeper thesis. Production integration is the common denominator.</li>
+<li><strong>Lenny Rachitsky</strong>〔S〕— <a href="https://www.lennysnewsletter.com/p/computer-and-browser-use-in-codex">Computer and browser use in Codex</a> demonstrates QA, LinkedIn management and shopping with surprisingly little prompting. The practice is to give a frontier model room to complete the work, not micromanage every click.</li>
+<li><strong>量子位 (QbitAI)</strong>〔A〕— One of China’s largest AI media outlets <a href="https://www.qbitai.com/2026/07/460253.html">tested Opus 5</a> through the practical frame Chinese builders care about: half-price coding and thinner prompting. Its <a href="https://www.qbitai.com/2026/07/460892.html">OpenWorker coverage</a> translated a local-first desktop agent into a mass-market workflow story.</li>
+<li><strong>SemiAnalysis</strong>〔A〕— Its <a href="https://x.com/SemiAnalysis_/status/2080814338642694484#m">AMD analysis</a> links AMD’s event, OpenAI discounts, agentic kernel generation and the difficult MI455X ramp. Another thread argues that KV-cache offload and SSD economics are turning storage into a first-order AI-infrastructure variable.</li>
+<li><strong>清华姜学长</strong>〔S〕— A Chinese builder educator with a large practical audience published a concentrated run on <a href="https://www.bilibili.com/video/BV1QDgk6eEum">choosing AI agents</a>, <a href="https://www.bilibili.com/video/BV1QbKN6JEpF">using rather than studying vibe coding</a>, <a href="https://www.bilibili.com/video/BV13F3g6VExA">GPT-5.6 prompting</a>, and <a href="https://www.bilibili.com/video/BV1WEg463EGK">letting Codex analyze your workflow</a>. This is what capability translation looks like on China’s video platforms.</li>
+<li><strong>swyx / Latent Space</strong>〔A〕— <a href="https://x.com/swyx/status/2080750437133901925#m">SmolForge</a> continues the dogfooding of an agentic GitHub clone. His frustration with GSuite defaults points to a broader opening for agent-native productivity software.</li>
+<li><strong>Naval</strong>〔S〕— In the <a href="https://x.com/DavidSacks/status/2081033408273395858#m">open-weight debate</a>, the useful distinction is that permitting open-weight AI does not require all software to be open source. Ownership can be strategic without becoming ideological purity.</li>
+</ul>
+<h2>🔨 Practitioners</h2>
+<ul>
+<li><strong>Andrew Ng</strong>〔S · builder〕— <a href="https://x.com/AndrewYNg/status/2080333504446108104#m">OpenWorker</a> is an open-source, local-first agent designed to deliver artifacts: customer briefs, Slack messages and calendar changes—not merely answers.</li>
+<li><strong>steipete / OpenClaw</strong>〔A · builder〕— <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.4">OpenClaw 2026.7.2-beta.4</a> shipped, a near-field signal for builders already operating agent harnesses.</li>
+<li><strong>数字生命卡兹克</strong>〔A · creator〕— A prominent Chinese AI creator highlighted <a href="https://x.com/vista8/status/2081046206592197113#m">Bento’s open-source HTML presentations</a>. The important design choice is that a deck is plain JSON, making it editable, versionable and naturally agent-friendly.</li>
+<li><strong>Alex Finn</strong>〔A · builder〕— His <a href="https://x.com/AlexFinn/status/2080783193989627931#m">Opus 5 versus Fable 5 test</a> brings the model comparison into the solo-builder context: lower cost, fewer safety interruptions and more usable output.</li>
+<li><strong>Greg Isenberg</strong>〔S · creator〕— His <a href="https://x.com/gregisenberg/status/2080746973095731260#m">Opus 5 versus Fable 5 framing</a> shows model choice becoming a creator-distribution story, not merely a technical decision.</li>
+<li><strong>AI Engineer</strong>〔A · creator〕— <a href="https://www.youtube.com/watch?v=hacEQHHhu2Q">Tiny LMs and agents on the edge</a> argues that RAM, not compute, is often the binding constraint. That is an early hardware limit for personal and local agents.</li>
+<li><strong>课代表立正</strong>〔A · creator〕— This Chinese creator’s <a href="https://www.youtube.com/watch?v=RknuTsX1Afw">knowledge-business interview</a> argues that a course sells pre-purchase trust. A second <a href="https://www.youtube.com/watch?v=ll-X6xP-t8Y">side-business case study</a> builds from a dog-owner WeChat group through retail, events and a podcast—much closer to real creator economics than “AI passive income” content.</li>
+</ul>
+<h2>💰 Investors</h2>
+<ul>
+<li><strong>a16z</strong>〔S〕— <a href="https://www.a16z.news/p/how-to-win-the-largest-market-in">How to Win the Largest Market in AI</a> reduces the thesis to “production is the product.” That aligns with OpenAI Voice, Codex computer use and Sierra’s longer-horizon agents.</li>
+<li><strong>a16z</strong>〔S〕— <a href="https://x.com/a16z/status/2081046916390174759#m">Travis Kalanick on turning one product into ten</a> says the constraint after a beachhead is management capacity. AI expands a solo founder’s option set faster than it expands their ability to govern it.</li>
+<li><strong>Sequoia</strong>〔S〕— <a href="https://sequoiacap.com/article/americas-open-model-paradox/">America’s Open-Model Paradox</a> and its amplification of Jensen Huang’s open-model argument frame AI as compressed global knowledge that should remain ownable and deployable.</li>
+<li><strong>Sequoia</strong>〔S〕— <a href="https://sequoiacap.com/article/partnering-with-etched-building-the-inference-machine/">Partnering with Etched</a> is a bet on intelligence per flop rather than generic GPU rental.</li>
+<li><strong>YC</strong>〔A〕— A <a href="https://www.youtube.com/watch?v=tOhkv307Pm0">dedicated Together AI GPU cluster</a> supplies compute to startups, while <a href="https://x.com/garrytan/status/2081091691872960590">Startup School 2026</a> is three times larger. The venture story is still that cheaper intelligence increases the number of credible builders.</li>
+<li><strong>Lightspeed</strong>〔A〕— <a href="https://x.com/Machiz/status/2080346749881733569#m">“AI agents don’t sleep”</a> defines security as perpetual conflict: autonomous attackers and defenders operating continuously.</li>
+<li><strong>Sonya Huang</strong>〔S〕— Her argument, amplified <a href="https://x.com/ericvishria/status/2081091925764157783#m">here</a>, is that energy becomes the binding constraint behind cheap tokens, recursive improvement and manufacturing scale.</li>
+<li><strong>Sarah Guo</strong>〔S〕— <a href="https://x.com/saranormous/status/2080770960299614428#m">DoorDash Dot and home robotics</a> push AI into physical household services, reinforcing the investment case for physical AI.</li>
+</ul>
+<h2>🔥 Professional Trending</h2>
+<ul>
+<li><strong>GitHub Trending</strong> — <a href="https://github.com/ComposioHQ/awesome-claude-skills">awesome-claude-skills</a>, <a href="https://github.com/mattpocock/skills">mattpocock/skills</a>, <a href="https://github.com/anthropics/claude-cookbooks">anthropics/claude-cookbooks</a>, and <a href="https://github.com/obra/superpowers">obra/superpowers</a> are trending together. Agent methods are being turned from private configuration into shared assets.</li>
+<li><strong>GitHub Trending</strong> — <a href="https://github.com/citrolabs/ego-lite">ego-lite</a> shares authenticated browser state safely with Codex and Claude Code; <a href="https://github.com/alibaba/open-code-review">Alibaba’s open-code-review</a> combines LLM agents with deterministic review rules.</li>
+<li><strong>Hacker News</strong> — <a href="https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/">Open-weight AI is having its Kubernetes moment</a> is the clearest community expression of today’s ownership thesis.</li>
+<li><strong>Hacker News</strong> — <a href="https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/">PyTorch Monarch on AMD GPUs</a> turns the CUDA-moat debate into actual training-stack work.</li>
+<li><strong>Product Hunt</strong> — <a href="https://www.producthunt.com/products/ade-agentic-development-environment">ADE</a>, <a href="https://www.producthunt.com/products/velane">Velane</a>, <a href="https://www.producthunt.com/products/extract-by-firecrawl">Firecrawl /search</a>, and <a href="https://www.producthunt.com/products/heard-2">Heard</a> all sell pieces of the agent runtime: coordination, tools, search and voice.</li>
+<li><strong>Reddit</strong> — LocalLLaMA’s <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v6drdx/turns_out_open_ai_is_a_coalition_not_a_company/">open-AI coalition discussion</a> and <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v6axx3/google_comes_out_in_favor_of_openweight_models_it/">Google open-weight discussion</a> show the issue moving from corporate statements into ecosystem politics.</li>
+</ul>
+<h2>📡 Keyword Radar</h2>
+<ul>
+<li><strong>AI content creation</strong> — 80 hits. Chinese platforms concentrate on operational supply chains: how large creator teams write with AI, AI writing income, digital humans, and short-drama production. See <a href="https://www.rednote.com/search_result/6a27bd820000000007027690">how a ten-million-follower team uses AI</a> and a <a href="https://www.bilibili.com/video/BV1Z6Kb6FEYh">short-drama pipeline from topic to monetization</a>.</li>
+<li><strong>AI × cognition / learning</strong> — 59 hits. Persistent memory, second brains, Karpathy-style knowledge bases and Obsidian + Codex + Claude dominated. The <a href="https://www.bilibili.com/video/BV1BAgv6WEXk">three-tool second brain</a> and <a href="https://www.rednote.com/search_result/69d4f99f000000001f00412b">Karpathy-inspired AI knowledge base</a> show cognition being packaged as a workflow.</li>
+<li><strong>Solo company</strong> — 64 hits, with substantial passive-income noise. More credible signals include an <a href="https://www.bilibili.com/video/BV1Fpgi68Eb4">agent-built weekly newsletter</a> and an <a href="https://www.bilibili.com/video/BV1JBgY6QEhV">AI content-feeding operator as a one-person business</a>.</li>
+<li><strong>China AI startup / solo company</strong> — 32 hits. <a href="https://www.rednote.com/search_result/693a7ec2000000001b031d3b">Why Wang Ziru chose AI content entrepreneurship</a> and <a href="https://www.bilibili.com/video/BV1Qjgv6yE2u">AI marketing for global breakout products</a> show how China’s creator platforms translate AI into business narratives.</li>
+<li><strong>Personal AI practice</strong> — 45 hits. The better examples turn one-off expertise into reusable assets: <a href="https://www.bilibili.com/video/BV16r3u6xEvJ">an AI PPT workflow saved as a Skill</a> and <a href="https://www.bilibili.com/video/BV1Xhge6LE4T">Cursor + Obsidian for AI comic production</a>.</li>
+<li><strong>AI Native</strong> — 31 hits. Chinese audiences are watching <a href="https://www.bilibili.com/video/BV1DKKw6BEgJ">Garry Tan’s 400× AI-native company claim</a> alongside local explainers of <a href="https://www.rednote.com/search_result/6a02de1f000000000702dee2">what “AI Native” actually means</a>.</li>
+<li><strong>China AI builder</strong> — 36 hits. Examples include <a href="https://www.bilibili.com/video/BV1VHVN66EJv">AI as a multiplier, not a replacement</a>, <a href="https://www.bilibili.com/video/BV1Rs3K6zEPx">Codex Voice</a>, and <a href="https://www.bilibili.com/video/BV1L83g6XErC">testing one PPT Skill across Chinese models</a>.</li>
+<li><strong>Agent / workflow</strong> — 15 hits. <a href="https://www.rednote.com/search_result/6a1ff13a000000003601bae5">Five agent design patterns</a> and <a href="https://www.rednote.com/search_result/6a48e816000000001702a292">building an agent from zero</a> show the topic shifting from definition to implementation.</li>
+<li><strong>High-decay terms</strong> — Five hits. <code>context engineering</code> still produces useful material, including <a href="https://www.rednote.com/search_result/6a5e47cb00000000110042f1">Graph Engineering</a> and <a href="https://www.rednote.com/search_result/6a64379f000000000601372a">Anthropic context-engineering advice</a>; <code>vibe coding</code> has become routine educational vocabulary rather than a novel signal.</li>
+</ul></article>
+  <div class="rp-cta">
+    <p>This is the full public edition. Want the daily 选题 picks, or a radar built for your positioning?</p>
+    <a class="btn primary" href="../index.html#channels">See how to subscribe →</a>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <a class="dom" href="../index.html">radar.sharpener.ai</a>
+  <span class="meta">Public edition free · complete · no personal info · picks &amp; custom are paid</span>
+</div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

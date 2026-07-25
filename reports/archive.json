@@ -6,6 +6,12 @@
   "url": "reports/2026-07-26-zh.html"
  },
  {
+  "date": "2026-07-26",
+  "lang": "en",
+  "title": "The frontier-model story has moved past benchmark leadership. OpenAI is turning voice into a desktop control surface, Anthropic is simplifying the sca",
+  "url": "reports/2026-07-26-en.html"
+ },
+ {
   "date": "2026-07-25",
   "lang": "zh",
   "title": "今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天：Anthropic 发 Claude Opus 5，OpenAI 把 ChatGPT Voice 放进桌面端并能调度 ChatGPT Work / Codex 多个 agent，OpenAI 又推出 Hea",
