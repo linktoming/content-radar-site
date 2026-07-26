@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-07-27",
+  "lang": "zh",
+  "title": "今天的主线不是单个模型发布，而是“模型能力进入可替换、可路由、可本地掌控”的阶段。源头层里 Anthropic 发布 Claude Opus 5，强调同价位、更强编码与专业任务；Cursor、Glean、Warp 立刻把 Opus 5 接入自己的工作流，并开始讲“更低 cost per task”。",
+  "url": "reports/2026-07-27-zh.html"
+ },
+ {
   "date": "2026-07-26",
   "lang": "zh",
   "title": "今天不是单点模型新闻，而是「agent 从会答题，变成会接管工作界面」继续加速。源头层里，OpenAI 把 ChatGPT Voice 放进桌面端，可以用语音控制电脑并指挥 ChatGPT Work / Codex 多个 agent；iOS 上也能通过远程访问在 Codex 里用 Voice。同一波",
