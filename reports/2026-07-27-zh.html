@@ -63,56 +63,126 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px
 <p>另一条线是 open weights 的政治经济学。OpenClaw、AMD、NVIDIA、Hugging Face、Sequoia 等同时围绕开放模型发声：<a href="https://x.com/openclaw/status/2081173256451866860#m">OpenClaw 签署 Microsoft 的开放权重公开信</a>，<a href="https://x.com/AMD/status/2081379093128343768#m">AMD</a>讲开放标准与互操作，<a href="https://x.com/ClementDelangue/status/2081056675558195657#m">Hugging Face</a>要求 OpenAI 对安全事件做 radical transparency。AINews 的外部答案卷也把 The Stack v3、distillation、FLUX 3、Qwen-Audio-3.0-TTS 放在同一天叙事里；TLDR 的标题则点出 Cursor Router、OpenAI Presence、Gemini Flash Cyber。结论：模型战争正在从“谁更聪明”转向“谁能被组合、被审计、被路由、被低成本部署”。</p>
 <h2>🎯 源头 · Primary</h2>
 <ul>
-<li><strong>Anthropic / Claude</strong>〔A · key_startup〕— <a href="https://www.anthropic.com/news/claude-opus-5">Claude Opus 5</a> 发布，同价 Opus 4.8，强调 coding、professional work、agent 长任务；<a href="https://x.com/claudeai/status/2080376094939603366#m">Voice mode</a>也接入更强模型和已连接工具。</li>
-<li><strong>OpenAI</strong>〔S · model_maker〕— <a href="https://x.com/OpenAI/status/2080378182469857576#m">ChatGPT Voice desktop</a>开始控制电脑并协调 ChatGPT Work / Codex 多个 agent；<a href="https://openai.com/index/health-in-chatgpt">Health in ChatGPT</a>进入 Product Hunt 热榜。</li>
-<li><strong>Google DeepMind</strong>〔S · model_maker〕— <a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/">Gemini 3.6 Flash / 3.5 Flash-Lite / 3.5 Flash Cyber</a>发布，Cyber 版本面向防守方代码路径检查；同时给 <a href="https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/">Genesis Mission</a>投入 4000 万美元 AI tokens / cloud credits。</li>
-<li><strong>Cursor</strong>〔A · dev_tools〕— <a href="https://x.com/cursor_ai/status/2080700479940759919#m">Opus 5 接入 Cursor</a>，并声称 CursorBench 66.7、接近 Fable 5 但半价；另推 <a href="https://x.com/cursor_ai/status/2079993729532989500#m">Cursor Router</a>，主打 frontier-quality 但成本低 60%。</li>
-<li><strong>OpenClaw</strong>〔S · harness〕— <a href="https://x.com/openclaw/status/2081173256451866860#m">签署开放权重公开信</a>，把“用户选择、可运行、可研究、可自建”放在 AI leadership 叙事中；同时发布 <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.33">v2026.6.33</a>。</li>
-<li><strong>Moonshot / Kimi</strong>〔A · model_maker〕— Kimi K3 在 Agent Arena / DesignArena 信号里继续被放大：<a href="https://x.com/arena/status/2079253211077300736#m">Agent Arena #4</a>、Frontend Web App Arena #1、3D Design #1。开放权重如果按期落地，会继续冲击“闭源模型才适合 agentic work”的默认假设。</li>
-<li><strong>Alibaba Qwen</strong>〔A · model_maker〕— <a href="https://x.com/Alibaba_Qwen/status/2080270065547809133#m">Qwen-Audio-3.0-TTS</a>强调多语言、情绪/呼吸/笑声等 inline 控制；<a href="https://x.com/Alibaba_Qwen/status/2079906336381509659#m">Qwen-Image-3.0</a>把“Real”落到报纸 PDF、短剧分镜、复杂 UI 等生产力场景。</li>
-<li><strong>Sierra</strong>〔A · key_startup〕— <a href="https://sierra.ai/blog/sierra-acquires-takeoff">收购 Takeoff</a>，强化 long-horizon agent；另写 <a href="https://sierra.ai/blog/building-sierras-mcp-gateway-an-engineering-iceberg">MCP Gateway 工程冰山</a>，说明企业 agent 的难点不是 demo，而是权限、集成、可靠性。</li>
+<li>
+<p><strong>Anthropic / Claude</strong>〔A · key_startup〕— <a href="https://www.anthropic.com/news/claude-opus-5">Claude Opus 5</a> 发布，同价 Opus 4.8，强调 coding、professional work、agent 长任务；<a href="https://x.com/claudeai/status/2080376094939603366#m">Voice mode</a>也接入更强模型和已连接工具。</p>
+</li>
+<li>
+<p><strong>OpenAI</strong>〔S · model_maker〕— <a href="https://x.com/OpenAI/status/2080378182469857576#m">ChatGPT Voice desktop</a>开始控制电脑并协调 ChatGPT Work / Codex 多个 agent；<a href="https://openai.com/index/health-in-chatgpt">Health in ChatGPT</a>进入 Product Hunt 热榜。</p>
+</li>
+<li>
+<p><strong>Google DeepMind</strong>〔S · model_maker〕— <a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/">Gemini 3.6 Flash / 3.5 Flash-Lite / 3.5 Flash Cyber</a>发布，Cyber 版本面向防守方代码路径检查；同时给 <a href="https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/">Genesis Mission</a>投入 4000 万美元 AI tokens / cloud credits。</p>
+</li>
+<li>
+<p><strong>Cursor</strong>〔A · dev_tools〕— <a href="https://x.com/cursor_ai/status/2080700479940759919#m">Opus 5 接入 Cursor</a>，并声称 CursorBench 66.7、接近 Fable 5 但半价；另推 <a href="https://x.com/cursor_ai/status/2079993729532989500#m">Cursor Router</a>，主打 frontier-quality 但成本低 60%。</p>
+</li>
+<li>
+<p><strong>OpenClaw</strong>〔S · harness〕— <a href="https://x.com/openclaw/status/2081173256451866860#m">签署开放权重公开信</a>，把“用户选择、可运行、可研究、可自建”放在 AI leadership 叙事中；同时发布 <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.33">v2026.6.33</a>。</p>
+</li>
+<li>
+<p><strong>Moonshot / Kimi</strong>〔A · model_maker〕— Kimi K3 在 Agent Arena / DesignArena 信号里继续被放大：<a href="https://x.com/arena/status/2079253211077300736#m">Agent Arena #4</a>、Frontend Web App Arena #1、3D Design #1。开放权重如果按期落地，会继续冲击“闭源模型才适合 agentic work”的默认假设。</p>
+</li>
+<li>
+<p><strong>Alibaba Qwen</strong>〔A · model_maker〕— <a href="https://x.com/Alibaba_Qwen/status/2080270065547809133#m">Qwen-Audio-3.0-TTS</a>强调多语言、情绪/呼吸/笑声等 inline 控制；<a href="https://x.com/Alibaba_Qwen/status/2079906336381509659#m">Qwen-Image-3.0</a>把“Real”落到报纸 PDF、短剧分镜、复杂 UI 等生产力场景。</p>
+</li>
+<li>
+<p><strong>Sierra</strong>〔A · key_startup〕— <a href="https://sierra.ai/blog/sierra-acquires-takeoff">收购 Takeoff</a>，强化 long-horizon agent；另写 <a href="https://sierra.ai/blog/building-sierras-mcp-gateway-an-engineering-iceberg">MCP Gateway 工程冰山</a>，说明企业 agent 的难点不是 demo，而是权限、集成、可靠性。</p>
+</li>
 </ul>
 <h2>🧠 解读 · Sense Maker</h2>
 <ul>
-<li><strong>AINews / TLDR</strong>〔A · independent_org〕— AINews 的 <a href="https://news.smol.ai/issues/26-07-24-opus-5/">Opus 5</a> 与 “not much happened today” 正文把 Opus 5、The Stack v3、distillation、FLUX 3、Qwen TTS 放在同一张图里；TLDR 标题给出的外部 headline 是 <a href="https://tldr.tech/ai/2026-07-23">Cursor Router / OpenAI Presence / AMD + Anthropic</a> 与 <a href="https://tldr.tech/ai/2026-07-22">Gemini Flash / OpenAI security escape / Devin Outposts</a>。</li>
-<li><strong>SemiAnalysis</strong>〔A · independent_org〕— <a href="https://x.com/SemiAnalysis_/status/2080814338642694484#m">AMD 能否打破 CUDA moat</a> 与 storage/KV cache offload 讨论，把模型战争落回基础设施成本：推理时代，瓶颈可能从 GPU 转向内存、存储、互联和软件栈。</li>
-<li><strong>机器之心</strong>〔A · CN 解读〕— <a href="https://www.jiqizhixin.com/articles/2026-07-26-4">Vibe Coding 撞墙与局部失忆</a>、<a href="https://www.jiqizhixin.com/articles/2026-07-25-10">Claude Code 删除 80% 系统提示词</a>、<a href="https://www.jiqizhixin.com/articles/2026-07-26">Karpathy 简介变动猜测</a>共同指向同一个问题：AI 编程进入“上下文工程”阶段。</li>
-<li><strong>Lenny Rachitsky</strong>〔A · product sense〕— <a href="https://www.lennysnewsletter.com/p/anthropics-first-technical-pm-on">Anthropic technical PM 访谈</a>和 Dianne Penn 视频，解释 Claude Code 这类产品如何在模型未完全到位前先构造产品体验。</li>
-<li><strong>Naval</strong>〔S · cognition〕— <a href="https://x.com/naval/status/2081417049935417673#m">开放权重如果有后门，闭源实验室反而最有动力找出来</a>。这是一句很强的“反直觉监管”论点：安全不是闭源天然更安全，而是需要可验证的竞争。</li>
-<li><strong>Tiago Forte</strong>〔A · learning〕— <a href="https://x.com/fortelabs/status/2080276982978273580#m">Finding Alpha</a>说 LLM 给的是平均答案，alpha 要从上游、细节和 outcome-driven 消费里找。这个观点很适合接入 AI 第二大脑 / 内容选题系统。</li>
+<li>
+<p><strong>AINews / TLDR</strong>〔A · independent_org〕— AINews 的 <a href="https://news.smol.ai/issues/26-07-24-opus-5/">Opus 5</a> 与 “not much happened today” 正文把 Opus 5、The Stack v3、distillation、FLUX 3、Qwen TTS 放在同一张图里；TLDR 标题给出的外部 headline 是 <a href="https://tldr.tech/ai/2026-07-23">Cursor Router / OpenAI Presence / AMD + Anthropic</a> 与 <a href="https://tldr.tech/ai/2026-07-22">Gemini Flash / OpenAI security escape / Devin Outposts</a>。</p>
+</li>
+<li>
+<p><strong>SemiAnalysis</strong>〔A · independent_org〕— <a href="https://x.com/SemiAnalysis_/status/2080814338642694484#m">AMD 能否打破 CUDA moat</a> 与 storage/KV cache offload 讨论，把模型战争落回基础设施成本：推理时代，瓶颈可能从 GPU 转向内存、存储、互联和软件栈。</p>
+</li>
+<li>
+<p><strong>机器之心</strong>〔A · CN 解读〕— <a href="https://www.jiqizhixin.com/articles/2026-07-26-4">Vibe Coding 撞墙与局部失忆</a>、<a href="https://www.jiqizhixin.com/articles/2026-07-25-10">Claude Code 删除 80% 系统提示词</a>、<a href="https://www.jiqizhixin.com/articles/2026-07-26">Karpathy 简介变动猜测</a>共同指向同一个问题：AI 编程进入“上下文工程”阶段。</p>
+</li>
+<li>
+<p><strong>Lenny Rachitsky</strong>〔A · product sense〕— <a href="https://www.lennysnewsletter.com/p/anthropics-first-technical-pm-on">Anthropic technical PM 访谈</a>和 Dianne Penn 视频，解释 Claude Code 这类产品如何在模型未完全到位前先构造产品体验。</p>
+</li>
+<li>
+<p><strong>Naval</strong>〔S · cognition〕— <a href="https://x.com/naval/status/2081417049935417673#m">开放权重如果有后门，闭源实验室反而最有动力找出来</a>。这是一句很强的“反直觉监管”论点：安全不是闭源天然更安全，而是需要可验证的竞争。</p>
+</li>
+<li>
+<p><strong>Tiago Forte</strong>〔A · learning〕— <a href="https://x.com/fortelabs/status/2080276982978273580#m">Finding Alpha</a>说 LLM 给的是平均答案，alpha 要从上游、细节和 outcome-driven 消费里找。这个观点很适合接入 AI 第二大脑 / 内容选题系统。</p>
+</li>
 </ul>
 <h2>🔨 实战 · Practitioner</h2>
 <ul>
-<li><strong>Pieter Levels</strong>〔A · indie builder〕— <a href="https://x.com/levelsio/status/2081437287871586338">取消并 vibecode 掉 SaaS 订阅</a>，同时承认 indie software 的流量和收入被 BigAI 蚕食；这不是“AI 让人人发财”，而是“构建成本下降后，分发和真实需求更残酷”。</li>
-<li><strong>Alex Finn</strong>〔A · creator-builder〕— <a href="https://x.com/AlexFinn/status/2081408374315602338">4 小时徒步用 ChatGPT Voice 做完 8 小时桌面工作</a>，把 voice agent 讲成“移动场景里的生产力界面”，不是语音聊天玩具。</li>
-<li><strong>Every / Dan Shipper</strong>〔A · builder media〕— <a href="https://x.com/danshipper/status/2081412243388788988#m">写 Codex 起源史</a>，同时推“dictate brief → Notion trace code/spec → hand to agent → review swarm”的工作流；这和 OpenClaw/爆款兔的“流程产品化”同频。</li>
-<li><strong>光羽的平行世界</strong>〔A · CN practitioner〕— 抖音连续讲企业 AI 改造：20 人公司 17 个月增长、AI 决策 Agent 省 400 万、传统会议改造、森马电商 AI 增收。重点不是工具，而是“组织流程被 AI 重写”。</li>
-<li><strong>清华姜学长 / 秋芝2046</strong>〔A · CN 教程〕— B站密集覆盖 <a href="https://www.bilibili.com/video/BV1QDgk6eEum">主流 AI Agent 怎么选</a>、<a href="https://www.bilibili.com/video/BV1NvRyBzEhq">Claude Code 60 分钟</a>、<a href="https://www.bilibili.com/video/BV1Nd596vEyU">Codex 40 分钟</a>、<a href="https://www.bilibili.com/video/BV1WEg463EGK">Codex 找工作流</a>。国内用户已经从“AI 是什么”进入“我怎么把 agent 装进日常流程”。</li>
-<li><strong>课代表立正</strong>〔A · creator-business〕— <a href="https://www.youtube.com/watch?v=ll-X6xP-t8Y">副业比想象中更容易开始，前提是找准需求</a>给了很实用的验证法：先找 6 个朋友收定金，不收钱的反馈都是 false signal。这个能直接服务内容创业者。</li>
+<li>
+<p><strong>Pieter Levels</strong>〔A · indie builder〕— <a href="https://x.com/levelsio/status/2081437287871586338">取消并 vibecode 掉 SaaS 订阅</a>，同时承认 indie software 的流量和收入被 BigAI 蚕食；这不是“AI 让人人发财”，而是“构建成本下降后，分发和真实需求更残酷”。</p>
+</li>
+<li>
+<p><strong>Alex Finn</strong>〔A · creator-builder〕— <a href="https://x.com/AlexFinn/status/2081408374315602338">4 小时徒步用 ChatGPT Voice 做完 8 小时桌面工作</a>，把 voice agent 讲成“移动场景里的生产力界面”，不是语音聊天玩具。</p>
+</li>
+<li>
+<p><strong>Every / Dan Shipper</strong>〔A · builder media〕— <a href="https://x.com/danshipper/status/2081412243388788988#m">写 Codex 起源史</a>，同时推“dictate brief → Notion trace code/spec → hand to agent → review swarm”的工作流；这和 OpenClaw/爆款兔的“流程产品化”同频。</p>
+</li>
+<li>
+<p><strong>光羽的平行世界</strong>〔A · CN practitioner〕— 抖音连续讲企业 AI 改造：20 人公司 17 个月增长、AI 决策 Agent 省 400 万、传统会议改造、森马电商 AI 增收。重点不是工具，而是“组织流程被 AI 重写”。</p>
+</li>
+<li>
+<p><strong>清华姜学长 / 秋芝2046</strong>〔A · CN 教程〕— B站密集覆盖 <a href="https://www.bilibili.com/video/BV1QDgk6eEum">主流 AI Agent 怎么选</a>、<a href="https://www.bilibili.com/video/BV1NvRyBzEhq">Claude Code 60 分钟</a>、<a href="https://www.bilibili.com/video/BV1Nd596vEyU">Codex 40 分钟</a>、<a href="https://www.bilibili.com/video/BV1WEg463EGK">Codex 找工作流</a>。国内用户已经从“AI 是什么”进入“我怎么把 agent 装进日常流程”。</p>
+</li>
+<li>
+<p><strong>课代表立正</strong>〔A · creator-business〕— <a href="https://www.youtube.com/watch?v=ll-X6xP-t8Y">副业比想象中更容易开始，前提是找准需求</a>给了很实用的验证法：先找 6 个朋友收定金，不收钱的反馈都是 false signal。这个能直接服务内容创业者。</p>
+</li>
 </ul>
 <h2>💰 投资 · Investor</h2>
 <ul>
-<li><strong>a16z</strong>〔A · fund〕— <a href="https://www.a16z.news/p/how-to-win-the-largest-market-in">How to Win the Largest Market in AI</a>继续围绕 AI 最大市场做 thesis；同时借 Travis Kalanick 讲“一个产品如何变十个产品”，核心约束是 management capacity。</li>
-<li><strong>Sequoia</strong>〔A · fund〕— <a href="https://sequoiacap.com/article/americas-open-model-paradox/">America’s Open-Model Paradox</a>与 <a href="https://sequoiacap.com/article/partnering-with-etched-building-the-inference-machine/">Etched inference machine</a>同时出现，押注点是开放模型与专用推理基础设施。</li>
-<li><strong>Y Combinator / Garry Tan</strong>〔A · accelerator〕— Startup School 2026 扩到 3 倍，定位“让第一次技术型年轻人来 SF 判断创业是否适合自己”；<a href="https://www.youtube.com/watch?v=tOhkv307Pm0">YC GPU Cluster with Together AI</a>说明创业基础设施也在被打包。</li>
-<li><strong>Lightspeed</strong>〔A · fund〕— <a href="https://x.com/lightspeedvp/status/2080340740027097551#m">Perpetual Conflict Era</a>把 AI security 讲成机器对机器的长期冲突，并押注 A Security 的 3700 万美元融资。</li>
-<li><strong>Bessemer</strong>〔A · fund〕— <a href="https://x.com/BessemerVP/status/2080693004629901510#m">Future-proofing your idea against AI giants</a>与“客户不关心 investor traction”形成一个现实提醒：AI 时代更要靠真实 proximity，而不是靠融资叙事自嗨。</li>
+<li>
+<p><strong>a16z</strong>〔A · fund〕— <a href="https://www.a16z.news/p/how-to-win-the-largest-market-in">How to Win the Largest Market in AI</a>继续围绕 AI 最大市场做 thesis；同时借 Travis Kalanick 讲“一个产品如何变十个产品”，核心约束是 management capacity。</p>
+</li>
+<li>
+<p><strong>Sequoia</strong>〔A · fund〕— <a href="https://sequoiacap.com/article/americas-open-model-paradox/">America’s Open-Model Paradox</a>与 <a href="https://sequoiacap.com/article/partnering-with-etched-building-the-inference-machine/">Etched inference machine</a>同时出现，押注点是开放模型与专用推理基础设施。</p>
+</li>
+<li>
+<p><strong>Y Combinator / Garry Tan</strong>〔A · accelerator〕— Startup School 2026 扩到 3 倍，定位“让第一次技术型年轻人来 SF 判断创业是否适合自己”；<a href="https://www.youtube.com/watch?v=tOhkv307Pm0">YC GPU Cluster with Together AI</a>说明创业基础设施也在被打包。</p>
+</li>
+<li>
+<p><strong>Lightspeed</strong>〔A · fund〕— <a href="https://x.com/lightspeedvp/status/2080340740027097551#m">Perpetual Conflict Era</a>把 AI security 讲成机器对机器的长期冲突，并押注 A Security 的 3700 万美元融资。</p>
+</li>
+<li>
+<p><strong>Bessemer</strong>〔A · fund〕— <a href="https://x.com/BessemerVP/status/2080693004629901510#m">Future-proofing your idea against AI giants</a>与“客户不关心 investor traction”形成一个现实提醒：AI 时代更要靠真实 proximity，而不是靠融资叙事自嗨。</p>
+</li>
 </ul>
 <h2>🔥 专业热榜（by-feed·trending·专业）</h2>
 <ul>
-<li><strong>GitHub Trending</strong> — <a href="https://github.com/andrewyng/aisuite">andrewyng/aisuite</a>、<a href="https://github.com/anthropics/claude-cookbooks">anthropics/claude-cookbooks</a>、<a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a>、<a href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a>说明 builder 社区今天仍围着 multi-model、Claude cookbook、code review、agentic coding 转。</li>
-<li><strong>HN</strong> — <a href="https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and">The New AI Superpowers: Focus and Followthrough</a>很像今天的认知主题：AI 真正放大的不是“会提示词”，而是能持续聚焦和跟进的人。</li>
-<li><strong>Reddit AI 社区</strong> — LocalLLaMA 热点集中在 <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v7e5ck/kimi_k3_countdown_has_been_released/">Kimi K3 countdown</a>、<a href="https://www.reddit.com/r/LocalLLaMA/comments/1v7bwg7/minimax_official_on_x_open_weights_open_research/">MiniMax open weights</a>、<a href="https://www.reddit.com/r/LocalLLaMA/comments/1v72jft/ceo_of_hugging_face_in_the_spirit_of_transparency/">Hugging Face 要求 OpenAI 透明</a>和 <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v74j62/sources_openai_and_anthropic_quietly_lobby/">OpenAI/Anthropic lobbying open-source restrictions</a>。</li>
-<li><strong>Product Hunt</strong> — <a href="https://www.producthunt.com/products/ade-agentic-development-environment">ADE</a>、<a href="https://www.producthunt.com/products/opencomputer">OpenComputer</a>、<a href="https://www.producthunt.com/products/openai">Health in ChatGPT</a>、<a href="https://www.producthunt.com/products/buzz-3">Buzz</a>显示 agentic development、computer control、AI health 进入消费级产品发现面。</li>
+<li>
+<p><strong>GitHub Trending</strong> — <a href="https://github.com/andrewyng/aisuite">andrewyng/aisuite</a>、<a href="https://github.com/anthropics/claude-cookbooks">anthropics/claude-cookbooks</a>、<a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a>、<a href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a>说明 builder 社区今天仍围着 multi-model、Claude cookbook、code review、agentic coding 转。</p>
+</li>
+<li>
+<p><strong>HN</strong> — <a href="https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and">The New AI Superpowers: Focus and Followthrough</a>很像今天的认知主题：AI 真正放大的不是“会提示词”，而是能持续聚焦和跟进的人。</p>
+</li>
+<li>
+<p><strong>Reddit AI 社区</strong> — LocalLLaMA 热点集中在 <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v7e5ck/kimi_k3_countdown_has_been_released/">Kimi K3 countdown</a>、<a href="https://www.reddit.com/r/LocalLLaMA/comments/1v7bwg7/minimax_official_on_x_open_weights_open_research/">MiniMax open weights</a>、<a href="https://www.reddit.com/r/LocalLLaMA/comments/1v72jft/ceo_of_hugging_face_in_the_spirit_of_transparency/">Hugging Face 要求 OpenAI 透明</a>和 <a href="https://www.reddit.com/r/LocalLLaMA/comments/1v74j62/sources_openai_and_anthropic_quietly_lobby/">OpenAI/Anthropic lobbying open-source restrictions</a>。</p>
+</li>
+<li>
+<p><strong>Product Hunt</strong> — <a href="https://www.producthunt.com/products/ade-agentic-development-environment">ADE</a>、<a href="https://www.producthunt.com/products/opencomputer">OpenComputer</a>、<a href="https://www.producthunt.com/products/openai">Health in ChatGPT</a>、<a href="https://www.producthunt.com/products/buzz-3">Buzz</a>显示 agentic development、computer control、AI health 进入消费级产品发现面。</p>
+</li>
 </ul>
 <h2>📡 关键词雷达（by-search，非热榜）</h2>
 <ul>
-<li><strong>AI 内容创作（跨平台）</strong> — 74 条。强信号是“内容流水线”：B站有 <a href="https://www.bilibili.com/video/BV1eG3E6TEwQ">AI 内容检测智能体：文案检测、爆款拆解、数据复盘</a>、<a href="https://www.bilibili.com/video/BV1Z6Kb6FEYh">AI 短剧全流程</a>、<a href="https://www.bilibili.com/video/BV1PygX6JESh">AI 小说生成流水线</a>，小红书也出现“千万博主团队如何用 AI 写内容”。今天这个簇适合做“从选题到复盘”的系统选题。</li>
-<li><strong>超级个体 / 一人公司</strong> — 60 条。B站集中在 <a href="https://www.bilibili.com/video/BV1jegS68EGj">AI 赚钱 14 个思路</a>、<a href="https://www.bilibili.com/video/BV1HbgY6ZEZu">靠 AI 编程接单首月 1.8W</a>、<a href="https://www.bilibili.com/video/BV1Fag967EXX">2026 超级个体财富路线图</a>。要警惕暴富味，但“普通人如何把能力产品化”是真需求。</li>
-<li><strong>AI × 认知 / 学习 / 思维</strong> — 62 条。B站有 <a href="https://www.bilibili.com/video/BV1HR376UEsQ">Codex + Obsidian 5 分钟打造第二 AI 大脑</a>、<a href="https://www.bilibili.com/video/BV1qzg96rEdX">智能体迭代笔记</a>、<a href="https://www.bilibili.com/video/BV1TP3J6aEsx">AI 知识库可能建反了</a>。这是你最该占的心智位。</li>
-<li><strong>国内 AI Builder 热点</strong> — 36 条。Claude Code、Codex、Kimi、DeepSeek、Agent 项目实战密集出现，说明国内 builder 教程正在快速商品化；真正有价值的切口不是“保姆级教程”，而是“如何把教程沉淀成自己的 Skill / workflow”。</li>
-<li><strong>AI Native / Agent Workflow</strong> — AI Native 30 条、Agent / Workflow 15 条。NVIDIA 原生 Agent 框架、Meta 设计系统适配 AI Agent、Claude Code ReAct 拆解这些内容说明“AI 原生”开始从概念词进入工程实现。</li>
-<li><strong>0 命中/弱命中提醒</strong> — 今日没有完全 0 命中的主要 search 簇；但 rednote 只搜到 32/54，所以小红书侧空桶不能直接判定为“词死了”。</li>
+<li>
+<p><strong>AI 内容创作（跨平台）</strong> — 74 条。强信号是“内容流水线”：B站有 <a href="https://www.bilibili.com/video/BV1eG3E6TEwQ">AI 内容检测智能体：文案检测、爆款拆解、数据复盘</a>、<a href="https://www.bilibili.com/video/BV1Z6Kb6FEYh">AI 短剧全流程</a>、<a href="https://www.bilibili.com/video/BV1PygX6JESh">AI 小说生成流水线</a>，小红书也出现“千万博主团队如何用 AI 写内容”。今天这个簇适合做“从选题到复盘”的系统选题。</p>
+</li>
+<li>
+<p><strong>超级个体 / 一人公司</strong> — 60 条。B站集中在 <a href="https://www.bilibili.com/video/BV1jegS68EGj">AI 赚钱 14 个思路</a>、<a href="https://www.bilibili.com/video/BV1HbgY6ZEZu">靠 AI 编程接单首月 1.8W</a>、<a href="https://www.bilibili.com/video/BV1Fag967EXX">2026 超级个体财富路线图</a>。要警惕暴富味，但“普通人如何把能力产品化”是真需求。</p>
+</li>
+<li>
+<p><strong>AI × 认知 / 学习 / 思维</strong> — 62 条。B站有 <a href="https://www.bilibili.com/video/BV1HR376UEsQ">Codex + Obsidian 5 分钟打造第二 AI 大脑</a>、<a href="https://www.bilibili.com/video/BV1qzg96rEdX">智能体迭代笔记</a>、<a href="https://www.bilibili.com/video/BV1TP3J6aEsx">AI 知识库可能建反了</a>。这是你最该占的心智位。</p>
+</li>
+<li>
+<p><strong>国内 AI Builder 热点</strong> — 36 条。Claude Code、Codex、Kimi、DeepSeek、Agent 项目实战密集出现，说明国内 builder 教程正在快速商品化；真正有价值的切口不是“保姆级教程”，而是“如何把教程沉淀成自己的 Skill / workflow”。</p>
+</li>
+<li>
+<p><strong>AI Native / Agent Workflow</strong> — AI Native 30 条、Agent / Workflow 15 条。NVIDIA 原生 Agent 框架、Meta 设计系统适配 AI Agent、Claude Code ReAct 拆解这些内容说明“AI 原生”开始从概念词进入工程实现。</p>
+</li>
+<li>
+<p><strong>0 命中/弱命中提醒</strong> — 今日没有完全 0 命中的主要 search 簇；但 rednote 只搜到 32/54，所以小红书侧空桶不能直接判定为“词死了”。</p>
+</li>
 </ul></article>
   <div class="rp-cta">
     <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>

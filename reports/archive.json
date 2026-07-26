@@ -6,6 +6,12 @@
   "url": "reports/2026-07-27-zh.html"
  },
  {
+  "date": "2026-07-27",
+  "lang": "en",
+  "title": "The model layer is becoming replaceable; the workflow layer is becoming the product. Anthropic shipped Claude Opus 5, and Cursor, Warp, and Glean imme",
+  "url": "reports/2026-07-27-en.html"
+ },
+ {
   "date": "2026-07-26",
   "lang": "zh",
   "title": "今天不是单点模型新闻，而是「agent 从会答题，变成会接管工作界面」继续加速。源头层里，OpenAI 把 ChatGPT Voice 放进桌面端，可以用语音控制电脑并指挥 ChatGPT Work / Codex 多个 agent；iOS 上也能通过远程访问在 Codex 里用 Voice。同一波",
