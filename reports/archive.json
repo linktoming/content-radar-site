@@ -6,6 +6,12 @@
   "url": "reports/2026-07-28-zh.html"
  },
  {
+  "date": "2026-07-28",
+  "lang": "en",
+  "title": "The important story is not another model launch. China’s Moonshot AI released Kimi K3, an open-weight 2.8T MoE model with a 1M context window and mult",
+  "url": "reports/2026-07-28-en.html"
+ },
+ {
   "date": "2026-07-27",
   "lang": "zh",
   "title": "今天的主线不是单个模型发布，而是“模型能力进入可替换、可路由、可本地掌控”的阶段。源头层里 Anthropic 发布 Claude Opus 5，强调同价位、更强编码与专业任务；Cursor、Glean、Warp 立刻把 Opus 5 接入自己的工作流，并开始讲“更低 cost per task”。",
