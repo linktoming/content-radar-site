@@ -6,6 +6,12 @@
   "url": "reports/2026-07-29-zh.html"
  },
  {
+  "date": "2026-07-29",
+  "lang": "en",
+  "title": "Today we scanned 158 tracked entities across 19 retrieval lanes and 1,197 deduplicated candidates. The important shift is not another model launch: th",
+  "url": "reports/2026-07-29-en.html"
+ },
+ {
   "date": "2026-07-28",
   "lang": "zh",
   "title": "今天的主线不是「又发了一个模型」，而是开源/开放权重模型开始把 frontier 能力、推理供给和商业策略连成一条线。Moonshot 的 Kimi K3 把 2.8T MoE、1M context、视觉能力一起打包，Hugging Face 上线后半小时 4000+ likes；Together ",
