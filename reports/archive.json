@@ -6,6 +6,12 @@
   "url": "reports/2026-07-30-zh.html"
  },
  {
+  "date": "2026-07-30",
+  "lang": "en",
+  "title": "Second line, quieter but closer to your stack: the harness — not the model — became the unit of competition. Composio ran identical tasks through thre",
+  "url": "reports/2026-07-30-en.html"
+ },
+ {
   "date": "2026-07-29",
   "lang": "zh",
   "title": "今日扫描 158 个追踪实体 · 19 个 fetcher/lane · 1197 条去重候选。今天的主线不是“又出了一个模型”，而是 agent 时代的基础设施开始从能力竞赛转向安全、成本、控制权和工作流分发。",
