@@ -6,6 +6,12 @@
   "url": "reports/2026-07-31-zh.html"
  },
  {
+  "date": "2026-07-31",
+  "lang": "en",
+  "title": "Today we scanned 1,309 raw items across 19 source lanes and distilled 715 semantic candidates. The important shift is not another model launch. Infere",
+  "url": "reports/2026-07-31-en.html"
+ },
+ {
   "date": "2026-07-30",
   "lang": "zh",
   "title": "今日扫描 1298 条原始内容 · 19 个 fetcher · 706 条语义候选。",
