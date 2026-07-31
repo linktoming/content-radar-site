@@ -6,6 +6,12 @@
   "url": "reports/2026-08-01-zh.html"
  },
  {
+  "date": "2026-08-01",
+  "lang": "en",
+  "title": "Today we scanned 289 tracked entities across 19 fetchers and 1,214 deduplicated items. The important shift is not another model launch: frontier capab",
+  "url": "reports/2026-08-01-en.html"
+ },
+ {
   "date": "2026-07-31",
   "lang": "zh",
   "title": "今日扫描 1309 条原始内容 · 19 个 fetcher · 715 条语义候选。主线不是“又出了一个模型”，而是 AI 的单位经济开始塌缩，agent 的工程边界开始变硬：OpenAI 降 GPT-5.6 Luna/Terra 价格，Google DeepMind 把 Gemini Robot",

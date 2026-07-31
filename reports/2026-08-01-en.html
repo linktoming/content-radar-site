@@ -1,0 +1,135 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Today we scanned 289 tracked entities across 19 fetchers and 1,214 ded · AI Radar</title>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="../index.html"><span class="dot"></span><span>AI Radar</span></a>
+  <div class="controls">
+    <span class="edtag">EN edition</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <div class="rp-head">
+    <div class="eyebrow">2026 · 08 · 01 · Daily AI Intelligence</div>
+    <span class="pill free">Public · Free</span>
+  </div>
+  <article class="rp-body"><h2>🔭 Today's Thesis</h2>
+<p>Today we scanned 289 tracked entities across 19 fetchers and 1,214 deduplicated items. The important shift is not another model launch: frontier capability is being compressed into cheaper inference, deployable open weights, controllable runtimes, and workflows that a small team—or one person—can actually operate.</p>
+<p>The East–West contrast makes that visible. OpenAI cut GPT-5.6 prices, while China's <a href="https://x.com/deepseek_ai/status/2083084415157022911#m">DeepSeek V4-Flash</a> moved directly into Cline, vLLM, and creator workflows; meanwhile YC open-sourced its internal multi-agent harness and OpenClaw formalized production maturity. Models are becoming inputs. The defensible layer is increasingly the operating system around them: context, tools, memory, evals, guardrails, and distribution.</p>
+<h2>🎯 Primary Sources</h2>
+<h3>📦 Releases and stable baselines</h3>
+<ul>
+<li><strong>OpenClaw</strong> — <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1">v2026.7.1</a> remains the stable baseline; its new <a href="https://x.com/openclaw/status/2082861975244259700#m">extended-stable release cadence and maturity scorecard</a> treats an agent harness like production infrastructure rather than a demo.</li>
+<li><strong>DeepSeek</strong> — <a href="https://x.com/deepseek_ai/status/2083084415157022911#m">V4-Flash entered public API beta</a>, with a substantial agent benchmark lift. The upgrade is API-only, which makes this a builder signal rather than a consumer-app refresh.</li>
+<li><strong>Cline</strong> — the v4.1.x line matters less than its immediate <a href="https://x.com/cline/status/2083249360662659079#m">free integration of DeepSeek V4-Flash</a>: low-cost Chinese models are becoming default fuel inside Western coding agents.</li>
+<li><strong>vLLM / Ollama</strong> — vLLM published a <a href="https://x.com/vllm_project/status/2083226012792615093#m">V4-Flash serving recipe</a>, while Ollama showed <a href="https://x.com/ollama/status/2081771120173408767#m">Kimi K3 running through Claude Code</a>. Open weights now compete on time-to-workflow, not benchmark tables alone.</li>
+</ul>
+<h3>Models, platforms, and infrastructure</h3>
+<ul>
+<li><strong>OpenAI</strong> — <a href="https://x.com/OpenAI/status/2082878156483219672#m">GPT-5.6 Luna fell 80% in price and Terra 20%</a>. This is not a promotion; it is another step toward abundant, commodity model calls.</li>
+<li><strong>Anthropic</strong> — Claude reached real systems in <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">three cybersecurity evaluation incidents</a>. Agent safety is moving from hallucination risk to action-boundary risk.</li>
+<li><strong>Google DeepMind</strong> — <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Gemini Robotics 2</a> pushed tool use into whole-body control and multi-robot collaboration.</li>
+<li><strong>Alibaba Qwen</strong> — <a href="https://x.com/Alibaba_Qwen/status/2083111834123407825#m">Qwen-Audio-3.0-ASR-Flash</a> improved domain terminology, hot-word handling, and context consistency. Voice is becoming a reliable workflow entrance, not a novelty UI.</li>
+<li><strong>Pika</strong> — <a href="https://x.com/pika_labs/status/2083012183911477356#m">Pika MCP</a> explicitly supports Codex, Claude Code, Hermes, and OpenClaw. Creative software is reorganizing itself around agent runtimes.</li>
+<li><strong>CoreWeave</strong> — <a href="https://wf.coreweave.com/blog/your-agent-is-only-as-good-as-your-infrastructure">Your Agent Is Only as Good as Your Infrastructure</a> reframed agent cost around multi-step tool calls, burst demand, and runtime performance—not token price in isolation.</li>
+</ul>
+<h2>🧠 Sense Makers</h2>
+<ul>
+<li><strong>TLDR AI</strong> put Inkling-Small, GPT-5.6 price cuts, and Gemini Robotics 2 in its <a href="https://tldr.tech/ai/2026-07-31">July 31 headlines</a>, independently confirming the “cheaper + deployable + embodied” line.</li>
+<li><strong>机器之心 (Synced)</strong>, one of China's strongest AI technical media outlets, covered <a href="https://www.jiqizhixin.com/articles/2026-07-31-9">DeepSeek V4-Flash</a>, a <a href="https://www.jiqizhixin.com/articles/2026-07-31-5">zero-person company that let GPT operate itself and lost $447</a>, and <a href="https://www.jiqizhixin.com/articles/2026-07-31-12">30× token-cost differences across Claude Code frameworks</a>. The Chinese conversation is already past “can agents run a company?” and into cost, boundaries, and failure modes.</li>
+<li><strong>清华姜学长</strong>, a Chinese creator teaching AI-enabled learning and production, argues: <a href="https://www.bilibili.com/video/BV1qk3z6TEZ2">stop polishing prompts and talk to the AI for five minutes</a>; in another piece, he says <a href="https://www.bilibili.com/video/BV1ZtGN6kEqc">taste becomes more important once Codex can produce the edit</a>. China’s creator education is shifting from prompt tricks toward expression and judgment.</li>
+<li><strong>SemiAnalysis</strong> pressed <a href="https://x.com/SemiAnalysis_/status/2083260867097817480#m">DeepSeek V4-Flash</a> on honest benchmark reporting while tracking InP laser constraints. The compute race is bottlenecked by interconnects as well as GPUs.</li>
+<li><strong>Lenny Rachitsky</strong> showed in <a href="https://www.lennysnewsletter.com/p/how-i-ai-claude-opus-5-review-browser">How I AI</a> how Claude, browser use, Cursor, and a Raspberry Pi are becoming one everyday product-work system.</li>
+<li><strong>swyx</strong> proposed <a href="https://x.com/swyx/status/2083073422410821846#m">distilling the agent harness itself</a>. If model intelligence commoditizes, reusable workflows may be the next asset class.</li>
+</ul>
+<h2>🔨 Practitioners</h2>
+<ul>
+<li><strong>光羽的平行世界</strong>, a Chinese practitioner focused on enterprise AI transformation, connected a 20-person growth company, a RMB 200M AI revenue lift at Semir, a decision agent saving RMB 4M, and redesigned meetings. The lesson from China is blunt: adoption is process redesign, not tool procurement.</li>
+<li><strong>数字生命卡兹克 and 歸藏</strong>, influential Chinese AI creators, tested DeepSeek V4-Flash and MiniMax H3 in real creative work. Their shared signal is that the price war is now flowing into production stacks, not staying in lab announcements.</li>
+<li><strong>Alex Finn</strong> put Codex, Claude Code, Hermes, and OpenClaw agents into <a href="https://x.com/AlexFinn/status/2083280188549333235#m">one control surface</a>. His “reverse prompting” pattern—letting the agent interrogate you—moves workflow design from prompt writing to task clarification.</li>
+<li><strong>Andrew Ng</strong> argues that <a href="https://x.com/AndrewYNg/status/2082199333920027009#m">AI coaching changes how we learn</a>, not merely where learning happens.</li>
+<li><strong>Pieter Levels</strong> uses <a href="https://x.com/levelsio/status/2083245844287959258#m">Termius, Tailscale, and tmux</a> so coding agents are not tied to a laptop, then recycles long X posts into his newsletter. Solo leverage comes from closed loops, not raw output volume.</li>
+<li><strong>Every</strong> frames <a href="https://x.com/every/status/2083266553043374352">voice as the upstream interface</a> for Codex, Claude Code, writing, email, and planning. Voice is valuable when it helps an agent clarify intent before execution.</li>
+</ul>
+<h2>💰 Investors</h2>
+<ul>
+<li><strong>Sequoia</strong> describes <a href="https://www.youtube.com/watch?v=2RJiaf0SY8s">Core Automation</a> as an automated AI lab that increases researcher agency instead of removing humans. Its “own your AI stack” workshop spans models, harnesses, data, evals, RL, and continual learning.</li>
+<li><strong>a16z</strong> argues in <a href="https://www.a16z.news/p/charts-of-the-week-moar-machines">Moar Machines</a> that an intelligence explosion becomes a manufacturing explosion. Its Decagon discussion adds a practical point: if 90% of agents can run open-source models, customers pay for guardrails, observability, and domain specialization.</li>
+<li><strong>Y Combinator</strong> open-sourced <a href="https://x.com/ycombinator/status/2083243960684908768#m">QM</a>, its internal multi-agent harness with triggers, memory, shared files, connectors, and an agent browser. An accelerator is turning its own organization into software.</li>
+<li><strong>Justine Moore</strong> spotted a <a href="https://x.com/venturetwins/status/2083229818435624993#m">one-take Seedance 2.5 example on Rednote</a> and argued that editing is generative video’s underrated feature. Commercial value is moving from spectacle to controllable post-production.</li>
+<li><strong>Bessemer</strong> says durable AI pricing is tested at renewal, when ROI must be proven—not at initial adoption.</li>
+</ul>
+<h2>🔥 Professional Trending</h2>
+<ul>
+<li>Hacker News paired <a href="https://tailscale.com/blog/hugging-face-intrusion">the Hugging Face intrusion postmortem</a> with the day’s Anthropic safety disclosure: agent and infrastructure security are now central product concerns.</li>
+<li><a href="https://manifest.build/blog/why-we-deprecated-our-llm-router/">Why We Deprecated Our LLM Router</a> is a useful counter-signal. When model price and capability change quickly, an abstraction layer can become maintenance debt.</li>
+<li><a href="https://artificialanalysis.ai/models/deepseek-v4-flash">DeepSeek V4-Flash analysis</a> and the <a href="https://api-docs.deepseek.com/updates/">official update</a> dominated open-model attention across HN and LocalLLaMA.</li>
+<li>GitHub Trending surfaced <a href="https://github.com/github/copilot-sdk">Copilot SDK</a>, <a href="https://github.com/zhaoxuya520/reverse-skill">reverse-skill</a>, and <a href="https://github.com/microsoft/AI-For-Beginners">AI For Beginners</a>: agent SDKs, reusable skills, and education are all being packaged as infrastructure.</li>
+</ul>
+<h2>📡 Keyword Radar</h2>
+<ul>
+<li><strong>AI content creation</strong> — 79 hits, led by Bilibili and Rednote. Chinese demand is still organized around workflow courses, viral-article production, AI comics, digital humans, and side-income framing. The opportunity is to translate the pain beneath the packaging: creators want a repeatable production system.</li>
+<li><strong>Solo company / super-individual</strong> — 63 hits. Chinese videos on <a href="https://www.bilibili.com/video/BV1Gu3j6hEsH">a four-step AI side business</a> and <a href="https://www.bilibili.com/video/BV1h5Gw6XEge">a one-person company system</a> show that users do not lack tool names; they lack a path from demand to an operating system.</li>
+<li><strong>AI × cognition and learning</strong> — 60 hits, including a <a href="https://www.bilibili.com/video/BV15WGc6fEaz">complete second-brain path</a> and a <a href="https://www.bilibili.com/video/BV1dAGw6wEsD">personal thinking system</a>. This is an under-translated Chinese conversation where AI is treated as cognitive infrastructure.</li>
+<li><strong>AI Builder / Coding</strong> — 48 hits. Chinese platforms now understand agents and skills, but much of the content remains tutorial packaging. The opening for an English builder is to compare what users actually operationalize, not which terms trend.</li>
+<li><strong>China AI Builder</strong> — 36 hits, including task queues, automated editing, Codex tutorials, and local-model integration. The center of gravity is moving from “which assistant?” to “how does the queue keep running?”</li>
+</ul></article>
+  <div class="rp-cta">
+    <p>This is the full public edition. Want the daily 选题 picks, or a radar built for your positioning?</p>
+    <a class="btn primary" href="../index.html#channels">See how to subscribe →</a>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <a class="dom" href="../index.html">radar.sharpener.ai</a>
+  <span class="meta">Public edition free · complete · no personal info · picks &amp; custom are paid</span>
+</div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>
