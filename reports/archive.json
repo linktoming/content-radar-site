@@ -6,6 +6,12 @@
   "url": "reports/2026-08-02-zh.html"
  },
  {
+  "date": "2026-08-02",
+  "lang": "en",
+  "title": "Today we scanned 289 tracked entities across 19 fetchers and retained 1,245 deduplicated candidates. The clearest shift is that models are getting che",
+  "url": "reports/2026-08-02-en.html"
+ },
+ {
   "date": "2026-08-01",
   "lang": "zh",
   "title": "今日扫描 289 个跟踪实体 · 19 个 fetcher · 1214 条去重候选；主线不是“又出了一个模型”，而是模型能力开始被压进可用成本、可控运行时和真实工作流里。",
