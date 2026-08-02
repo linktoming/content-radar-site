@@ -1,0 +1,132 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Today we scanned 1,185 deduplicated items across 19 fetchers and retai · AI Radar</title>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="../index.html"><span class="dot"></span><span>AI Radar</span></a>
+  <div class="controls">
+    <span class="edtag">EN edition</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <div class="rp-head">
+    <div class="eyebrow">2026 · 08 · 03 · Daily AI Intelligence</div>
+    <span class="pill free">Public · Free</span>
+  </div>
+  <article class="rp-body"><h2>🔭 Today’s Thesis</h2>
+<p>Today we scanned 1,185 deduplicated items across 19 fetchers and retained 711 semantic candidates. The important shift is not simply that models are getting stronger: the unit economics of agent workflows are collapsing while the surrounding execution layer—harnesses, sandboxes, local inference, and tool protocols—is becoming production-grade.</p>
+<p>The Western headline is OpenAI cutting GPT-5.6 Luna pricing by 80%. The less visible half is how quickly China’s model ecosystem is turning that same cost curve into usable infrastructure: <a href="https://x.com/deepseek_ai/status/2083084415157022911#m">DeepSeek V4-Flash</a> launched an agent-focused API with Responses API and Codex compatibility, then Ollama, vLLM, Cline, Bilibili builders, and LocalLLaMA connected and tested it almost immediately. For a solo builder, the competitive edge is moving away from access to a model and toward the design of a reliable operating system around it.</p>
+<h2>🎯 Primary Sources</h2>
+<h3>📦 Releases</h3>
+<ul>
+<li><strong>OpenClaw</strong> — <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1">stable v2026.7.1</a> remains the baseline, with major changes across Control UI, onboarding, mobile, provider/model support, Codex, and connected coding-agent workflows.</li>
+<li><strong>DeepSeek</strong> — <a href="https://x.com/deepseek_ai/status/2083084415157022911#m">V4-Flash’s public API beta</a> emphasizes agent capability, Responses API support, and Codex integration. DeepSeek clarified that the 0731 update is API-only; its consumer app and web model have not changed.</li>
+<li><strong>OpenAI</strong> — <a href="https://x.com/OpenAI/status/2082878156483219672#m">GPT-5.6 Luna and Terra price cuts</a> position cheaper and faster inference as infrastructure for scalable enterprise workflows, not merely a consumer-model promotion.</li>
+</ul>
+<h3>Models, robotics, and creative tools</h3>
+<ul>
+<li><strong>Google DeepMind</strong> — <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Gemini Robotics 2</a> and <a href="https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/">ER 2</a> combine video understanding, task orchestration, and multi-robot collaboration. This is the agent stack moving into embodied work.</li>
+<li><strong>Moonshot AI / Kimi</strong> — <a href="https://x.com/arena/status/2081804108433072623#m">Kimi K3 ranked first among open-weight models in Agent Arena</a>. Together AI is marketing its 2.8T parameters, 1M context, and OpenAI-compatible interface—an unusually direct bridge from a Chinese lab into Western developer workflows.</li>
+<li><strong>Pika</strong> — <a href="https://x.com/pika_labs/status/2083012183911477356#m">Pika MCP</a> turns video generation into a callable tool for Codex, Claude Code, Hermes, and OpenClaw. Creative software is becoming agent infrastructure.</li>
+</ul>
+<h3>Agent infrastructure</h3>
+<ul>
+<li><strong>Sierra</strong> — <a href="https://sierra.ai/blog/our-partnership-with-plaid">Plaid × Sierra</a> lets support agents securely connect bank accounts inside a conversation. Alongside Sierra’s sandbox work, this shows enterprise agents becoming systems of permission and execution, not chat interfaces.</li>
+<li><strong>CoreWeave</strong> — <a href="https://wf.coreweave.com/blog/your-agent-is-only-as-good-as-your-infrastructure">Your Agent Is Only as Good as Your Infrastructure</a> frames multi-step tool use, bursty load, and infrastructure latency as core product constraints.</li>
+<li><strong>Lambda</strong> — <a href="https://lambda.ai/blog/keeping-100k-battles-of-untrusted-agent-code-in-their-lane">100,000 battles of untrusted agent code</a> makes sandboxing and isolation concrete rather than theoretical.</li>
+<li><strong>Ollama / vLLM / Cline</strong> — Ollama added <a href="https://x.com/ollama/status/2083411055284232268#m">DeepSeek V4-Flash cloud support</a>, while vLLM published a <a href="https://x.com/vllm_project/status/2083226012792615093#m">DeepSeek deployment recipe</a>. The open-model distribution loop is now measured in hours, not weeks.</li>
+</ul>
+<h2>🧠 Sense Makers</h2>
+<ul>
+<li><strong>AINews (smol.ai)</strong> — its <a href="https://news.smol.ai/issues/26-07-31-not-much/">July 31 issue</a> puts DeepSeek V4-Flash at 82.7 on Terminal-Bench, near GPT-5.6 Luna, at roughly 60% lower cost per task. Its <a href="https://news.smol.ai/issues/26-07-30-not-much/">July 30 issue</a> interprets OpenAI’s price cuts as roughly a 10× improvement in agent-workflow economics.</li>
+<li><strong>TLDR AI</strong> — its <a href="https://tldr.tech/ai/2026-07-31">July 31 edition</a> leads with Inkling-Small, GPT-5.6 price cuts, and Gemini Robotics 2. Together with AINews, the independent editorial answer key confirms efficiency plus agent capability as the day’s dominant line.</li>
+<li><strong>SemiAnalysis</strong> — <a href="https://x.com/SemiAnalysis_/status/2083598748018454726#m">AMD MI355X with vLLM beating B200 with vLLM on Kimi K2.5</a> matters less as a one-off benchmark than as evidence that community kernels and inference software can rapidly rearrange hardware economics.</li>
+<li><strong>秋芝2046</strong> — a Chinese AI educator with a large cross-platform audience, published a <a href="https://www.bilibili.com/video/BV1fpoyBeEfY">hands-on DeepSeek V4 test</a>. China’s creator layer is already translating lab announcements into the practical question Western coverage often skips: does it actually work?</li>
+<li><strong>Dan Koe</strong> — <a href="https://x.com/thedankoe/status/2083575992992305534#m">people have moved from collecting Notion templates to collecting Claude skills</a>. The joke lands because a skill ecosystem can reproduce the same consumption-without-execution trap.</li>
+</ul>
+<h2>🔨 Practitioners</h2>
+<ul>
+<li><strong>歸藏</strong> — a prominent Chinese AI builder, shipped <a href="https://x.com/op7418/status/2083827624070234507#m">Codepilot 0.63.0</a>, bringing Codex-generated images and HTML into its asset library and adding DeepSeek V4-Flash support. Version 0.64.0 restored Linux builds and lets users switch among Claude Code, AI SDK, and Codex agent frameworks. This is the Chinese builder stack becoming model-agnostic.</li>
+<li><strong>Alex Finn</strong> — <a href="https://x.com/jack/status/2083530930002509942#m">Buzz</a> puts Codex, Claude Code, Hermes, and OpenClaw agents into one command surface. “An army of agents” is marketing language, but the product direction—one operator supervising heterogeneous runtimes—is real.</li>
+<li><strong>苏大讲AI</strong> — a Chinese short-video educator, framed Kimi and DeepSeek for a mass audience through <a href="https://www.douyin.com/video/7664091878303845674">why K3 is strong</a> and <a href="https://www.douyin.com/video/7666392898035944742">the open-versus-closed model fight</a>. The important signal is translation: frontier-model competition is already becoming mainstream creator content in China.</li>
+<li><strong>Corey Haines</strong> — his <a href="https://x.com/coreyhainesco/status/2083953532903059846">watch-video skill</a> transcribes YouTube, Loom, Zoom, or local video, extracts frames, runs a vision pass, and deposits structured notes into a second brain. This is a concrete research pipeline, not another prompt collection.</li>
+</ul>
+<h2>💰 Investors</h2>
+<ul>
+<li><strong>Sarah Guo</strong> — <a href="https://x.com/saranormous/status/2083739077732626492#m">being right about a technology is not the same as buying at the right price</a>. The Cisco-2000 analogy is useful discipline: “AI gets bigger” tells you nothing about who captures the surplus.</li>
+<li><strong>Bessemer</strong> — <a href="https://x.com/BessemerVP/status/2083224045286568177#m">durable AI pricing strategies</a> focuses on renewal cycles and demonstrable ROI. As token prices fall, application companies must prove business value more clearly, not less.</li>
+<li><strong>Lightspeed</strong> — <a href="https://x.com/whoisnnamdi/status/2082934792883241162#m">AI users may be repeating the mistake of high-APM StarCraft players</a>: more actions do not imply a better outcome. Agent products need judgment about when not to spend inference.</li>
+</ul>
+<h2>🔥 Professional Trending</h2>
+<ul>
+<li><strong>GitHub Trending</strong> — <a href="https://github.com/esengine/DeepSeek-Reasonix">DeepSeek-Reasonix</a> is a DeepSeek-native terminal coding agent optimized around prefix-cache stability. It is the application-layer consequence of cheap agent inference.</li>
+<li><strong>LocalLLaMA</strong> — a <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vdq8en/deepseekv4flash0731_surpasses_fable5_sol_kimik3/">DeepSeek V4-Flash chess benchmark</a> and <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vdhgq9/llamacpp_just_added_mtp_dspark_support_for/">llama.cpp MTP/DSpark support</a> show that an open model’s practical impact depends on whether community tooling catches it.</li>
+<li><strong>OpenClaw community</strong> — discussions about <a href="https://www.reddit.com/r/openclaw/comments/1vdb0cp/do_you_use_the_codex_app_server_or_the_native/">app server versus native runtime</a> and <a href="https://www.reddit.com/r/openclaw/comments/1vcq0u7/openclaw_lts_prioritizing_codex_instructions_over/">AGENTS.md instruction priority</a> are healthy product-maturity signals: only real use exposes coordination boundaries like these.</li>
+</ul>
+<h2>📡 Keyword Radar</h2>
+<ul>
+<li><strong>AI content creation</strong> was the largest search cluster with 76 items. A Bilibili guide on <a href="https://www.bilibili.com/video/BV1oe3d62Ecm">building a creator workflow from topic selection to publishing</a> explicitly warns that full automation can trigger account restrictions. That is a more mature Chinese creator conversation than the usual “automate everything” pitch.</li>
+<li><strong>Solo company / super-individual</strong> produced 67 items. China’s platforms still wrap the topic in side-hustle language; the durable counter-position is systems and compounding, not “one tool made me rich.”</li>
+<li><strong>AI × cognition and learning</strong> produced 61 items. NVIDIA says <a href="https://x.com/nvidia/status/2083289093731934424#m">StudyFetch cut inference cost nearly 10×</a>; combined with China’s AI-learning content, the category is moving from prompt tips toward voice tutoring and agentic learning.</li>
+<li><strong>AI builder / coding</strong> produced 48 items. Chinese builders quickly tested <a href="https://www.bilibili.com/video/BV1ev396MEtw">DeepSeek V4-Flash for frontend and 3D generation</a> and <a href="https://www.bilibili.com/video/BV1pz3R6sE84">connected it to Claude Code</a>. This adoption speed is the China signal Western readers should watch.</li>
+<li><strong>Personal AI practice</strong> produced 45 items. Rednote creators are moving <a href="https://www.rednote.com/search_result/6a5985ec000000001003ddcb">from projects to reusable skills</a>, evidence that “skill” is crossing from engineering vocabulary into mainstream creator workflows.</li>
+</ul></article>
+  <div class="rp-cta">
+    <p>This is the full public edition. Want the daily 选题 picks, or a radar built for your positioning?</p>
+    <a class="btn primary" href="../index.html#channels">See how to subscribe →</a>
+  </div>
+</main>
+<footer><div class="wrap foot">
+  <a class="dom" href="../index.html">radar.sharpener.ai</a>
+  <span class="meta">Public edition free · complete · no personal info · picks &amp; custom are paid</span>
+</div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

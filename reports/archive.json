@@ -6,6 +6,12 @@
   "url": "reports/2026-08-03-zh.html"
  },
  {
+  "date": "2026-08-03",
+  "lang": "en",
+  "title": "Today we scanned 1,185 deduplicated items across 19 fetchers and retained 711 semantic candidates. The important shift is not simply that models are g",
+  "url": "reports/2026-08-03-en.html"
+ },
+ {
   "date": "2026-08-02",
   "lang": "zh",
   "title": "今日扫描 289 个追踪实体 · 19 个 fetcher · 1245 条去重候选。今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出。 OpenAI 降 GPT-5.6 Luna/Terra 价格，DeepSeek-V4-Flash",
