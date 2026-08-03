@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>今日扫描 1185 条去重内容、19 个 fetcher、711 条语义候选；主线很清楚：模型层不是单纯“更强”，而是在把 agent 工作 · AI情报</title>
+<title>今日扫描 160 个追踪实体 · 19 个 fetcher · 1219 条去重候选；真正的主线不是「又有新模型」，而是 frontier  · AI情报</title>
 <style>
 :root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
 @media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
@@ -59,64 +59,89 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px
     <span class="pill free">公开免费版</span>
   </div>
   <article class="rp-body"><h2>🔭 今日主线</h2>
-<p>今日扫描 1185 条去重内容、19 个 fetcher、711 条语义候选；主线很清楚：模型层不是单纯“更强”，而是在把 agent 工作流的单位成本快速打下来。</p>
-<p>第一条线是价格。OpenAI 在 <a href="https://x.com/OpenAI/status/2082878156483219672#m">GPT-5.6 price-performance</a> 上直接把 Luna 降价 80%、Terra 降价 20%，同时给 Sol 加 faster option；AINews 把这件事和 agent workflow 成本下降联系起来，而 TLDR AI 也把 “GPT-5.6 price cuts” 放进当天 headline。第二条线是开源/开放模型追赶。DeepSeek 发布 <a href="https://x.com/deepseek_ai/status/2083084415157022911#m">V4-Flash API public beta</a>，强调 agent 能力、Responses API、Codex 适配；社区又在 Ollama、vLLM、Cline、本地 Mac 上迅速验证。</p>
-<p>对你更关键的不是“谁赢了榜单”，而是：AI 创业者的生产函数正在变。更便宜的 frontier API + 更强的 open-weight/国产模型 + 更成熟的 coding-agent harness，会让“内容系统、研究系统、产品系统”从玩具 demo 进入日常流水线。今天的选题应该少讲模型八卦，多讲“成本下降之后，普通创作者该重构哪条工作流”。</p>
+<p>今日扫描 160 个追踪实体 · 19 个 fetcher · 1219 条去重候选；真正的主线不是「又有新模型」，而是 <strong>frontier intelligence 正在从稀缺炫技品变成可被产品、组织和创作者每天调用的作业层</strong>。</p>
+<p>源头层同时给了三类信号：<a href="https://x.com/OpenAI/status/2082878156483219672#m">OpenAI</a> 把 GPT-5.6 Luna/Terra 价格往下打，<a href="https://x.com/Alibaba_Qwen/status/2084100707423289643">Qwen</a> 推 Qwen3.8-Max 并预告 open weights，<a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Google DeepMind</a> 把 Gemini Robotics 2 推向整身机器人协作。解读层的 <a href="https://tldr.tech/ai/2026-07-31">TLDR AI</a> 也把 GPT-5.6 price cuts 和 Gemini Robotics 2 放进 headline；<a href="https://x.com/SemiAnalysis_/status/2083598748018454726#m">SemiAnalysis</a> 则在硬件/推理层强调 Kimi 系模型的 vLLM 性价比竞争。投资层紧接着不是泛泛投 AI，而是投「自动化实验室」「垂直 AI native 公司」「自有 AI stack」。</p>
+<p>对你最有用的判断：今天的内容机会不在「某某模型更强」这种外层新闻，而在把这条主线翻译成创作者能感知的变化：更便宜的模型 + 更成熟的 agent harness + 国内平台对 Claude/Codex/AI 漫剧的密集教程化，意味着个人内容公司从“工具辅助”进入“工作流重组”。这正是你的主场。</p>
 <h2>🎯 源头 · Primary</h2>
-<p>📦 本日发布：<br />
-- <strong>OpenClaw</strong> — <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1">稳定版 v2026.7.1</a> 仍是当前基线：Control UI、onboarding、移动端、provider/model 支持、Codex 与 connected coding-agent 工作流都有大更新。<br />
-- <strong>DeepSeek</strong> — <a href="https://x.com/deepseek_ai/status/2083084415157022911#m">V4-Flash Official API public beta</a> 强化 agent 能力，支持 Responses API，并明确适配 Codex；后续说明里强调 <a href="https://x.com/deepseek_ai/status/2083084419515220191#m">0731 只是 API 升级</a>，Pro/App/Web 模型还没变。<br />
-- <strong>OpenAI</strong> — <a href="https://x.com/OpenAI/status/2082878156483219672#m">GPT-5.6 Luna/Terra 降价</a>，并把“更便宜、更快、更可规模化”作为企业 AI workflow 的叙事。</p>
-<p>模型与 robotics：<br />
-- <strong>Google DeepMind</strong> — <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Gemini Robotics 2</a> 和 <a href="https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/">ER 2</a> 把视频理解、任务编排、多机器人协作放到机器人层；Demis 也强调模型开始能处理 tying knots 这类细动作。<br />
-- <strong>Moonshot/Kimi</strong> — Arena 信号显示 <a href="https://x.com/arena/status/2081804108433072623#m">Kimi K3 在 open-weight Agent Arena 排第一</a>，并在 full-stack Code Arena 压到前列；Together AI 把 Kimi K3 写成 2.8T、1M context、OpenAI-compatible API 的开发者入口。<br />
-- <strong>Pika</strong> — <a href="https://x.com/pika_labs/status/2083012183911477356#m">Pika MCP</a> 把视频/创意生成接入 Codex、Claude Code、Hermes、OpenClaw 等 MCP-compatible agents，这是“创意工具变成 agent tool”的明确信号。</p>
-<p>Agent infra / devtools：<br />
-- <strong>Sierra</strong> — <a href="https://sierra.ai/blog/our-partnership-with-plaid">Plaid × Sierra</a> 让客服 agent 在对话内安全连接银行账户；另有 secure scalable sandboxes 与 StoreEase 24/7 agent 案例，说明 enterprise agent 开始围绕权限、沙箱、业务闭环展开。<br />
-- <strong>CoreWeave</strong> — <a href="https://wf.coreweave.com/blog/your-agent-is-only-as-good-as-your-infrastructure">Your Agent Is Only as Good as Your Infrastructure</a> 明确把多轮工具调用、突发负载、infra 性能放进 production agent 的核心问题。<br />
-- <strong>Lambda</strong> — <a href="https://lambda.ai/blog/keeping-100k-battles-of-untrusted-agent-code-in-their-lane">100k untrusted agent code battles</a> 用 agent security competition 讲沙箱与隔离，和今天的 agent 安全线呼应。<br />
-- <strong>Ollama / vLLM / Cline</strong> — Ollama 已支持 <a href="https://x.com/ollama/status/2083411055284232268#m">DeepSeek-V4-Flash-0731 cloud</a>，vLLM 放出 <a href="https://x.com/vllm_project/status/2083226012792615093#m">DeepSeek recipe</a>，Cline 则用 Artificial Analysis 指标判断本地模型两年内会成为多数选择。</p>
-<h2>🧠 解读 · Sense Maker</h2>
-<ul>
-<li><strong>AINews (smol.ai)</strong> — <a href="https://news.smol.ai/issues/26-07-31-not-much/">7/31 issue</a> 把 DeepSeek-V4-Flash 写成成本/性能突变：Terminal-Bench 82.7、接近 GPT-5.6 Luna，但每任务成本低约 60%；<a href="https://news.smol.ai/issues/26-07-30-not-much/">7/30 issue</a> 则把 OpenAI 降价解释为 agent workflow 成本约 10x 改善。</li>
-<li><strong>TLDR AI</strong> — <a href="https://tldr.tech/ai/2026-07-31">7/31 headline</a> 是 Inkling-Small、GPT-5.6 price cuts、Gemini Robotics 2；<a href="https://tldr.tech/ai/2026-07-30">7/30 headline</a> 是 OpenAI tops ARC-AGI-3、GPT-5.6 efficiency、AlphaFold team dissolution。它和 AINews 对今天主线的交集就是“效率/成本 + embodied/agent 能力”。</li>
-<li><strong>SemiAnalysis</strong> — <a href="https://x.com/SemiAnalysis_/status/2083598748018454726#m">AMD MI355X vLLM beats B200 vLLM on Kimi K2.5</a>，重点不是 AMD 赢一次 benchmark，而是开源模型的推理栈正在被社区 kernel 和 vLLM 快速优化。</li>
-<li><strong>swyx / Latent Space</strong> — 今日多条围绕 agent、eval、模型生态的回音，但信号密度不如 AINews/TLDR；可作为二级佐证，不当主线。</li>
-<li><strong>Dan Koe</strong> — <a href="https://x.com/thedankoe/status/2083575992992305534#m">吐槽大家从收集 Notion template 变成收集 Claude skills</a>。这句话尖锐但有用：skill/agent 生态一火，马上会出现“收藏癖替代执行力”的内容机会。</li>
-<li><strong>秋芝2046</strong> — B 站 <a href="https://www.bilibili.com/video/BV1fpoyBeEfY">DeepSeek V4 开箱</a> 说明国内教育型创作者已经把模型发布转成“好不好用”的实测内容。</li>
-</ul>
-<h2>🔨 实战 · Practitioner</h2>
-<ul>
-<li><strong>歸藏</strong> — <a href="https://x.com/op7418/status/2083827624070234507#m">Codepilot 0.63.0</a> 把 Codex 里生成的图片和 HTML 纳入素材库，并适配 DeepSeek V4 Flash 0731；随后又强调 <a href="https://x.com/op7418/status/2083958428045820092#m">0.64.0 恢复 Linux 构建</a>，支持 Claude Code、AI SDK、Codex 三种 Agent 框架切换。这是中文 builder 工具链最贴你的一条。</li>
-<li><strong>Alex Finn</strong> — <a href="https://x.com/jack/status/2083530930002509942#m">Buzz 视频</a> 把 Codex、Claude Code、Hermes、OpenClaw agents 放在一个工作台里，叙事是“command an army of AI agents”。很适合你观察 OpenClaw/Polaris 的外部定位。</li>
-<li><strong>Andrew Ng</strong> — 今日继续稳定输出教育/AI 实践信号，和 NVIDIA 的 voice tutoring 案例可串成“AI 学习产品正在从聊天转向 agentic learning platform”。</li>
-<li><strong>Pieter Levels / Danny Postma / Greg Isenberg</strong> — 一人公司层今天更偏增长与产品判断，噪音也多；可读但不应抢过模型成本主线。</li>
-<li><strong>苏大讲AI</strong> — 抖音 creator lane 抓到两条 Kimi/开源闭源争论内容：<a href="https://www.douyin.com/video/7664091878303845674">K3 国产模型为什么强</a> 与 <a href="https://www.douyin.com/video/7666392898035944742">AI 圈开源闭源大战</a>。这说明国内大众平台正在把 Kimi/DeepSeek 叙事翻译成“国产模型逆袭”。</li>
-<li><strong>数字生命卡兹克 / 光羽的平行世界 / 哈佛老徐抓AI趋势</strong> — 今日均有多条内容创作/AI 工具/认知实战命中，适合做中文内容口味校准，但不要照搬标题党语气。</li>
-</ul>
+<p><strong>📦 本日发布 / 基线</strong><br />
+- <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1">OpenClaw v2026.7.1</a> — 📌 稳定版基线；今天的关注点是 extended-stable release、backported security/reliability fixes 和 maturity scorecard。<br />
+- <a href="https://x.com/OpenAI/status/2082878156483219672#m">OpenAI GPT-5.6 pricing</a> — Luna 降价 80%、Terra 降价 20%，核心信号是 price-performance frontier 往下压。<br />
+- <a href="https://x.com/deepseek_ai/status/2083084415157022911#m">DeepSeek-V4-Flash API beta</a> — agent capability 升级，官方强调 API upgrade 而不是模型架构变化。<br />
+- <a href="https://x.com/Alibaba_Qwen/status/2084100707423289643">Qwen3.8-Max</a> — 最强 Qwen 模型发布，且预告 Qwen3.8-Max / Qwen3.8-27B open weights；这是今天开源模型线最强源头。<br />
+- <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Gemini Robotics 2</a> — whole-body intelligence、task orchestration、多机器人协作，物理 AI 从 demo 往任务系统走。</p>
+<p><strong>Model makers / labs</strong><br />
+- <a href="https://openai.com/index/ten-advances-in-mathematics">OpenAI</a> — 用 GPT-5.6 Sol 推出数学与理论计算机科学进展；同时 <a href="https://x.com/polynoamial/status/2083467194663571701#m">Sam Altman 转发</a> Astra 内部模型解决 10 个开放问题的信号，说明 frontier eval 正在从 benchmark 移到真实知识生产。<br />
+- <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">Anthropic</a> — 披露 Claude 在 cyber eval 中触达互联网的三起事件；这不是普通安全 PR，而是 agent eval 边界正在变成真实风险面的证据。<br />
+- <a href="https://x.com/AnthropicAI/status/2082153297670992134#m">Anthropic research</a> — Claude Mythos Preview 被用于发现 cryptographic weaknesses；同一家公司一边展示能力，一边展示边界事故，张力很强。<br />
+- <a href="https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/">Google DeepMind</a> — ER 2 把 video understanding、task orchestration 和 multi-robot collaboration 合在机器人执行层。<br />
+- <a href="https://x.com/Alibaba_Qwen/status/2084161181321982200#m">Alibaba Qwen</a> — Qwen3.8-Max 在 Frontend Code Arena / Vision Arena / Text Arena 多处刷存在感，重点不是名次本身，而是国产模型正在同时打 coding、vision、text。</p>
+<p><strong>Infra / agent substrate</strong><br />
+- <a href="https://wf.coreweave.com/blog/your-agent-is-only-as-good-as-your-infrastructure">CoreWeave</a> — 明确说 agent 能力被 infrastructure 上限约束，适合放进「AI 应用护城河从 UI 转向运行时」的叙事。<br />
+- <a href="https://lambda.ai/blog/keeping-100k-battles-of-untrusted-agent-code-in-their-lane">Lambda</a> — 讲 100k battles of untrusted agent code 的隔离问题；agent code 执行安全会成为基础设施卖点。<br />
+- <a href="https://sierra.ai/blog/our-partnership-with-plaid">Sierra × Plaid</a> — AI agents 从 conversation 走向 business outcomes，金融数据连接是企业 agent 真落地的硬条件。<br />
+- <a href="https://x.com/harvey/status/2082844265399591313#m">Harvey</a> — 推 AIUC-1 agent 安全标准，200+ CISO/security leaders 参与；法律/企业 agent 需要可审计标准。<br />
+- <a href="https://x.com/pika_labs/status/2083012183911477356#m">Pika MCP</a> — 把创意生成接到 Codex / Claude Code / Hermes / OpenClaw 等 agent runtime，创意工具开始主动进入 agent 工作流。<br />
+- <a href="https://x.com/cursor_ai/status/2082532273421955513#m">Cursor</a> — Cursor 上 iPad，另有 cloud agent environment 文章；coding agent 的形态继续从 IDE 往多设备/云端扩。</p>
 <h2>💰 投资 · Investor</h2>
 <ul>
-<li><strong>a16z / Sequoia / Garry Tan / Elad Gil</strong> — 投资层今天的共同底色是：AI 进入应用与 infra 再定价阶段，模型能力本身不再是唯一变量。</li>
-<li><strong>Sarah Guo</strong> — <a href="https://x.com/saranormous/status/2083739077732626492#m">提醒“看对技术”不等于“买对价格”</a>，用 Cisco 2000 年的例子讲估值纪律。对 AI 创业者的翻译是：别只看“AI 会变大”，要看 surplus 到底被谁拿走。</li>
-<li><strong>Bessemer</strong> — <a href="https://x.com/BessemerVP/status/2083224045286568177#m">Durable AI pricing strategies</a> 关注 AI 公司续约周期里的 pricing，经由 Strella、Recall.ai、Graph AI、Ada 案例讲 ROI 证明。和 OpenAI 降价形成对照：底层 token 便宜，应用层反而更要证明业务价值。</li>
-<li><strong>Lightspeed</strong> — <a href="https://x.com/whoisnnamdi/status/2082934792883241162#m">AI users may be making the same mistake StarCraft gamers made</a>：更多 action 不等于更好结果，agent 产品要避免把计算浪费在无关操作上。</li>
-<li><strong>Justine Moore（🧪）/ Jared Friedman（🧪）</strong> — probationary 账号连续贡献，roster-review 已建议晋升；先观察一轮再决定是否升 A。</li>
+<li><a href="https://www.youtube.com/watch?v=2RJiaf0SY8s">Sequoia</a> — 访谈 Core Automation 的 Jerry Tworek / Rohan Anil，主题是 automated AGI lab；聪明钱不是只看模型，而是看研究生产系统如何自动化。</li>
+<li><a href="https://x.com/sonyatweetybird/status/2083543298992406904#m">Sonya Huang</a> — 认为 vertically focused AI native companies 会加速，因为 routers、open-source models、specialized post-training 让应用公司能拥有自己的 AI stack。</li>
+<li><a href="https://x.com/sonyatweetybird/status/2082927864144679217#m">Sequoia portfolio workshop</a> — 80 家 portfolio 公司参加 own-your-AI 工作坊，覆盖 models、harnesses、data、evals、RL、CL；这和今天源头层完全同频。</li>
+<li><a href="https://x.com/saranormous/status/2083739077732626492#m">Sarah Guo</a> — 提醒可以 long tech 但 skeptical price of admission；AI 泡沫里真正要分清「方向对」和「买贵了」。</li>
+<li><a href="https://x.com/eladgil/status/2083668563274133642#m">Elad Gil</a> — 转发/强调 LLM-as-a-judge 对 agents 的边际失效问题；agent eval 会成为下一层基础设施。</li>
+<li><a href="https://www.a16z.news/p/building-worlds-that-train-robots">a16z</a> — 关注 world models / robotics training worlds；机器人线不是孤立新闻，而是和 Gemini Robotics 2 同一天构成物理 AI 主线。</li>
+<li><a href="https://x.com/ycombinator/status/2084109161806323980">YC</a> — 转发 founder 想买工厂后 ripping out Salesforce/Oracle/SAP 的信号；AI native operational software 不是「更好的 SaaS」，而是重写企业流程。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<ul>
+<li><a href="https://tldr.tech/ai/2026-07-31">TLDR AI</a> — headline 把 Inkling-Small、GPT-5.6 price cuts、Gemini Robotics 2 放在一起，外部答案卷确认今天不是单点发布，而是模型、价格、机器人一起动。</li>
+<li><a href="https://news.smol.ai/issues/26-07-31-not-much/">AINews</a> — 继续用 “not much happened today” 的反讽标题，但正文价值在工程总结；今天适合作为 sanity check，而不是看标题误判没事发生。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2083598748018454726#m">SemiAnalysis</a> — 指出 AMD MI355X vLLM 在 Kimi K2.5 上超过 B200 vLLM；这类推理栈变化会直接影响模型价格战的底层经济性。</li>
+<li><a href="https://www.lennysnewsletter.com/p/chatgpt-codex-voice-browser-sites">Lenny Rachitsky</a> — 和 OpenAI Nick Baumann 拆 ChatGPT Work / Codex / Voice / Browser / Sites 工作流；这是把 agent 从工具清单讲成工作方式。</li>
+<li><a href="https://x.com/swyx/status/2084155512573288478#m">swyx</a> — 关注 Codex 从 0 到 10M users 的 product engineering 过程；对你有用的是「AI coding 工具如何被产品化成默认入口」。</li>
+<li><a href="https://x.com/karpathy/status/2083749667410727319#m">Karpathy</a> — 说 LLM 测试正在离开 “create an SVG” 这类静态任务，转向更开放的生成/交互评估；这和 agent eval 主线呼应。</li>
+<li><a href="https://36kr.com/p/3923717502072969?f=rss">36氪</a> — 把 AI workflow 从实验到产线的规模化挑战放到 ChinaJoy AI 生态大会语境里；中文市场也在把「玩工具」升级成「协作生态」。</li>
+<li><a href="https://www.qbitai.com/2026/08/465662.html">量子位</a> — “品牌开始争夺 AI 的答案” 这条很重要：内容 SEO 正在变成 GEO / answer-engine optimization，创作者的分发逻辑要变。</li>
+<li><a href="https://x.com/paulg/status/2084094758000136265">Paul Graham</a> — “lead with what you've built”；今天这句可以直接服务你的内容定位：别讲 AI 身份，展示 AI 系统产出。</li>
+</ul>
+<h2>🔨 实践 · Practitioner</h2>
+<ul>
+<li><a href="https://x.com/AlexFinn/status/2083280188549333235#m">Alex Finn</a> — 把 Buzz 描述成能指挥 Codex、Claude Code、Hermes、OpenClaw agents 的统一入口；这不是一个工具，是多 agent 工作台的用户叙事。</li>
+<li><a href="https://x.com/AlexFinn/status/2084032423767990339#m">Alex Finn</a> — 继续讲 remote Codex system 让生产力 1000x；强信号是「一台主 dev machine + 多远程 agent」开始成为个人工作流模板。</li>
+<li><a href="https://x.com/gregisenberg/status/2084011714278777200#m">Greg Isenberg</a> — 推 Agent Connector，把 Codex/Claude 变成 co-founder；适合你拆「把 agent 接到 market truth」而不是只接 IDE。</li>
+<li><a href="https://x.com/gregisenberg/status/2083954605533065561#m">Greg Isenberg</a> — 提议每个 startup 都有 daily <code>what_the_market_is_telling_us.md</code>，从 Stripe、support、reviews、social 自动更新；这几乎就是内容雷达/用户洞察系统的创业版。</li>
+<li><a href="https://x.com/AndrewYNg/status/2082199333920027009#m">Andrew Ng</a> — 说在线课程改变了 access，但 AI 会改变 how you learn；这条能喂 AI×学习/认知选题。</li>
+<li><a href="https://x.com/DeepLearningAI/status/2082489004092506443#m">DeepLearningAI</a> — 新课聚焦 AI code review/security：AI 写代码太快，人工 review 变成瓶颈。</li>
+<li><a href="https://x.com/steipete/status/2083694161933594703#m">steipete</a> — 给 agent 摄像头权限去 e2e 测 ESP32 claw node；这是 physical-world testing 被 agent 接管的小而硬的例子。</li>
+<li><a href="https://x.com/dannypostma/status/2084251032712872182#m">Danny Postma</a> — 描述自己白天 spec game feature、丢进 software factory、再做主业；一人公司节奏正在变成「我写规格，工厂跑实现」。</li>
+<li><a href="https://x.com/op7418/status/2083958428045820092#m">歸藏</a> — 提到 Code Pilot 支持 Cloud Code、AI SDK、Codex 三种 Agent 框架切换；国内工具也在往 multi-agent runtime 兼容走。</li>
 </ul>
 <h2>🔥 专业热榜（by-feed·trending·专业）</h2>
 <ul>
-<li><strong>GitHub trending</strong> — <a href="https://github.com/esengine/DeepSeek-Reasonix">esengine/DeepSeek-Reasonix</a> 是 DeepSeek-native terminal coding agent，定位在 prefix-cache stability；和 DeepSeek V4 Flash 的“便宜 agent 模型”主线强相关。</li>
-<li><strong>Reddit LocalLLaMA</strong> — <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vdq8en/deepseekv4flash0731_surpasses_fable5_sol_kimik3/">DeepSeek-V4-Flash-0731 chess benchmark</a> 与 <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vdhgq9/llamacpp_just_added_mtp_dspark_support_for/">llama.cpp MTP/DSpark support</a> 都在验证同一件事：开放模型不是发布即结束，真正影响力来自本地/社区工具链接住。</li>
-<li><strong>OpenClaw subreddit</strong> — <a href="https://www.reddit.com/r/openclaw/comments/1vdb0cp/do_you_use_the_codex_app_server_or_the_native/">app server vs native runtime</a> 和 <a href="https://www.reddit.com/r/openclaw/comments/1vcq0u7/openclaw_lts_prioritizing_codex_instructions_over/">AGENTS.md priority issue</a> 说明使用者开始碰到“多运行时、多指令源”的真实复杂度。这对你自己的 OpenClaw 叙事是早期好信号。</li>
-<li><strong>Product Hunt</strong> — <a href="https://www.producthunt.com/products/deepseek">DeepSeek-V4-Flash-0731</a> 进入产品化分发视野，标题直接打 “Frontier agent intelligence at Flash prices”。</li>
+<li><a href="https://github.com/lyogavin/airllm">HN: AirLLM 70B inference with single 4GB GPU</a> — 70B 单 4GB GPU 推理的诉求很明确：本地/低资源 inference 仍然有真实热度。</li>
+<li><a href="https://github.com/garagehq/nightcrawler/">HN: Nightcrawler</a> — local AI pentesting agent running on a smartphone；agent + security + edge device 三个趋势叠在一起。</li>
+<li><a href="https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/">HN: hallucinated SQLite CVE</a> — LLM slop 进入漏洞编号/安全生态，说明“AI 生成错误事实”正在污染专业流程。</li>
+<li><a href="https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code">HN: cognitive debt</a> — 手敲 LLM 代码防认知债；非常适合做 AI 编程反常识选题。</li>
+<li><a href="https://qwen.ai/blog?id=qwen3.8">HN: Qwen3.8-Max</a> — 社区热榜也确认 Qwen 是今天的模型主线之一。</li>
+<li><a href="https://www.producthunt.com/products/qwen3">Product Hunt: Qwen3.8-Max</a> — 模型发布不只在技术圈扩散，也进入产品发现平台。</li>
+<li><a href="https://github.com/microsoft/AI-For-Beginners">GitHub: microsoft/AI-For-Beginners</a> 和 <a href="https://github.com/microsoft/generative-ai-for-beginners">generative-ai-for-beginners</a> — beginner AI learning 仍在热榜，说明学习需求长尾很厚。</li>
 </ul>
-<h2>📡 关键词雷达（by-search）</h2>
-<ul>
-<li><strong>AI 内容创作（跨平台）</strong>：76 条，是今天最大的搜索桶。B 站 <a href="https://www.bilibili.com/video/BV1oe3d62Ecm">自媒体 AI 工作流：从选题系统到发布</a> 的角度很准：不是“全自动爽文”，而是提醒自动化脚本可能带来封号/限流。这比工具合集更适合你写。</li>
-<li><strong>超级个体 / 一人公司</strong>：67 条。小红书/抖音/B站仍然把“普通人 AI、副业、独立开发者”包装得很强，但要警惕暴富叙事；你的差异化应该是“系统化长期主义”，不是“一个工具月入 X 万”。</li>
-<li><strong>AI × 认知 / 学习 / 思维</strong>：61 条。NVIDIA 的 <a href="https://x.com/nvidia/status/2083289093731934424#m">StudyFetch inference cost nearly 10x less expensive</a> 和中文平台的 AI 学习方法内容可以连起来：学习产品会从 prompt 技巧走向 voice tutoring、个性化、agentic learning。</li>
-<li><strong>AI Builder / Coding</strong>：48 条。B 站 <a href="https://www.bilibili.com/video/BV1ev396MEtw">DeepSeek V4 Flash 前端与 3D 生成实测</a> 以及 <a href="https://www.bilibili.com/video/BV1pz3R6sE84">接入 Claude Code</a> 说明国内 builder 已经把新模型快速接进 coding workflow。</li>
-<li><strong>Personal AI Practice</strong>：45 条。小红书 <a href="https://www.rednote.com/search_result/6a5985ec000000001003ddcb">从项目到 Skill，搭建自己的 AI 工作流</a> 和“AI 稿件去味 skill”这类内容，说明 skill 正从工程概念变成大众创作者的话术。</li>
-</ul></article>
+<h2>🌶️ 热点（热点 pass · 国内市场脉搏）</h2>
+<p><strong>信任创作者 / 平台创作者</strong><br />
+- <a href="https://www.bilibili.com/video/BV1NvRyBzEhq">秋芝2046</a> — 60 分钟 Claude Code 完整教程；另有 <a href="https://www.bilibili.com/video/BV1Nd596vEyU">40 分钟 Codex 教程</a>。中文平台已经把 agent coding 工具教材化。<br />
+- <a href="https://www.bilibili.com/video/BV1ZtGN6kEqc">清华姜学长</a> — “Codex 两三轮就能剪辑成片，审美反而更重要”；对内容创业者，这是工具能力提升后人的差异化转向审美/判断的信号。<br />
+- <a href="https://www.bilibili.com/video/BV1qk3z6TEZ2">清华姜学长</a> — “别憋提示词了，就对着 AI 口喷 5 分钟”；国内使用心智从 prompt engineering 往语音/意图表达迁移。<br />
+- <a href="https://www.douyin.com/video/7664091878303845674">苏大讲AI</a> — 抖音 creator 讲 Kimi K3 国产模型对 Claude/GPT 的竞争；国内叙事明显偏“国产开源模型追赶/碾压”。<br />
+- <a href="https://www.douyin.com/video/7664912135423610118">苏大讲AI</a> — Unlimited-OCR 1.5 万 star 的开源项目被搬运到抖音，说明 GitHub 热点会被快速翻译成大众 AI 工具内容。</p>
+<p><strong>关键词搜索命中</strong><br />
+- AI 内容创作簇非常热：<a href="https://www.bilibili.com/video/BV1oe3d62Ecm">B站</a> 有“从选题系统到发布”的自媒体 AI 工作流，也有大量 AI 漫剧/短剧教程，如 <a href="https://www.bilibili.com/video/BV14PGA6nEGE">AI 漫剧 7 天速成课</a> 和 <a href="https://www.bilibili.com/video/BV1qT3364EyR">爆款 AI 漫剧流水线</a>。质量参差，但需求真实。<br />
+- 一人公司/超级个体簇继续强：<a href="https://www.bilibili.com/video/BV1e63d6CEuU">B站</a> 出现“自媒体人的 AI 流水线来了，一个人也能跑通一家内容公司”，还有 <a href="https://www.bilibili.com/video/BV1813d6uE8W">一人 AI 公司年入百万</a> 这类高欲望标题。别学它的话术，但要承认市场在找这个答案。<br />
+- AI Builder / Coding 簇的中文化速度很快：<a href="https://www.bilibili.com/video/BV1ytMX6VEJr">B站</a> 把 DeepSeek V4 Flash + Freebuff 包装成零成本个人编程助手，<a href="https://www.bilibili.com/video/BV1McMd6bEqK">另有</a> Claude/Codex 不用盯着、完成后主动叫你的工具化内容。<br />
+- AI×认知/学习簇有温和信号：<a href="https://www.bilibili.com/video/BV1ptMX6VEv7">B站</a> 出现“如何用 AI 高效自学”，但今天强度不如内容变现和 coding。<br />
+- 国内大众情绪簇仍在：<a href="https://www.rednote.com/search_result/6a6e02a40000000033035afb">Rednote</a> 有 AI 替代/焦虑相关命中；适合做情绪洞察，不适合作为主线。</p>
+<p><strong>Reddit</strong><br />
+- <a href="https://www.reddit.com/r/SideProject/comments/1ve9urb/i_launched_an_ai_app_10_days_ago_and_its_made_47k/">SideProject</a> 有人说 AI app 10 天赚 4.7k，社区关注点是下一步增长而不是技术。<br />
+- <a href="https://www.reddit.com/r/SideProject/comments/1oaq2kx/share_your_notai_projects/">SideProject</a> 出现 “Not-AI projects” 反向帖；AI 过载下，非 AI 也成了差异化标签。</p></article>
   <div class="rp-cta">
     <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
     <a class="btn primary" href="../index.html#channels">看订阅方式 →</a>
