@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-08-05",
+  "lang": "zh",
+  "title": "今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞；Warp、Cursor、LangChain 都在补 agent 的电脑使用、验证、上下文和评价；SemiAnalysis 则把成本结构钉死在一",
+  "url": "reports/2026-08-05-zh.html"
+ },
+ {
   "date": "2026-08-04",
   "lang": "zh",
   "title": "今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」。OpenAI 用内部下一代模型给出 10 个数学和理论计算机科学结果，并释放 Lean certificates；Anthropic 则把 Claude 在网络化安全评测中的越界事件拿出来复盘。一个在证明上推进，一个在",
