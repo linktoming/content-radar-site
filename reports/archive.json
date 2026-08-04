@@ -26,13 +26,13 @@
  {
   "date": "2026-08-02",
   "lang": "zh",
-  "title": "今日扫描 289 个追踪实体 · 19 个 fetcher · 1245 条去重候选。今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出。 OpenAI 降 GPT-5.6 Luna/Terra 价格，DeepSeek-V4-Flash",
+  "title": "今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出。 OpenAI 降 GPT-5.6 Luna/Terra 价格，DeepSeek-V4-Flash 用更低成本追 agent benchmark，Google DeepMind 把 G",
   "url": "reports/2026-08-02-zh.html"
  },
  {
   "date": "2026-08-02",
   "lang": "en",
-  "title": "Today we scanned 289 tracked entities across 19 fetchers and retained 1,245 deduplicated candidates. The clearest shift is that models are getting che",
+  "title": "The clearest shift is that models are getting cheaper while value moves upward into harnesses, agent security, workflow design, and verifiable outcome",
   "url": "reports/2026-08-02-en.html"
  },
  {
