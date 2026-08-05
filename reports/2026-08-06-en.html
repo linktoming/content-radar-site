@@ -1,0 +1,170 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The agent race has moved from model intelligence to operational systems · AI Radar</title>
+<meta name="description" content="The agent race has moved from model intelligence to operational systems: the moat is now the harness that makes models controllable, observable, and deliverable">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-08-06-en.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Radar" href="/feed-en.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Radar">
+<meta property="og:title" content="The agent race has moved from model intelligence to operational systems">
+<meta property="og:description" content="The agent race has moved from model intelligence to operational systems: the moat is now the harness that makes models controllable, observable, and deliverable">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-08-06-en.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-06">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The agent race has moved from model intelligence to operational systems">
+<meta name="twitter:description" content="The agent race has moved from model intelligence to operational systems: the moat is now the harness that makes models controllable, observable, and deliverable">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"The agent race has moved from model intelligence to operational systems","description":"The agent race has moved from model intelligence to operational systems: the moat is now the harness that makes models controllable, observable, and deliverable","datePublished":"2026-08-06","dateModified":"2026-08-06","inLanguage":"en","url":"https://radar.sharpener.ai/reports/2026-08-06-en.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-08-06-en.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI Radar","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI Radar</span></a>
+  <div class="controls">
+    <span class="edtag">EN edition</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-08-06">2026 · 08 · 06 · Daily AI Intelligence</time></div>
+      <span class="pill free">Public · Free</span>
+    </div>
+    <h1 class="rp-title">The agent race has moved from model intelligence to operational systems</h1>
+    <div class="rp-body"><h2>🔭 Today's Thesis</h2>
+<p>The agent race has moved from model intelligence to operational systems: the moat is now the harness that makes models controllable, observable, and deliverable. Today we scanned 293 tracked entities across 19 fetchers and 1,290 raw posts; the same shift appeared in frontier labs, infrastructure vendors, investors, working builders, and—most clearly—China's creator platforms.</p>
+<p><a href="https://openai.com/index/learn-teach-chatgpt-work-codex">OpenAI</a> is placing ChatGPT Work, Codex, and Voice inside real learning workflows, while <a href="https://x.com/warpdotdev/status/2085004830309851191#m">Warp</a>, <a href="https://x.com/cursor_ai/status/2084376701539405904#m">Cursor</a>, <a href="https://x.com/SergioPaniego/status/2085021209226297605#m">Hugging Face</a>, and <a href="https://x.com/LambdaAPI/status/2084985038693965852#m">Lambda</a> are competing on routing, permissions, sandboxes, evaluation, memory, and cost. China's platforms show the downstream consequence: creators and companies are no longer asking which model wins; they are packaging AI into one-person-company workflows, video factories, executive “clones,” and measurable revenue or cost reduction.</p>
+<h2>🎯 Primary Sources</h2>
+<h3>📦 Releases</h3>
+<ul>
+<li><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-1">OpenClaw v2026.7.1-1</a> — 📌 the stable baseline; reliability is becoming a product asset for agent runtimes.</li>
+<li><a href="https://x.com/deepseek_ai/status/2083084415157022911#m">DeepSeek V4-Flash API</a> — public beta focused on agent performance; Together amplified an 82.7 Terminal-Bench 2.1 result and the cost/performance angle.</li>
+<li><a href="https://x.com/MistralAI/status/2084684735725379637#m">Mistral Shieldstral 3B</a> — an Apache-2.0 text-and-image safety model, making moderation deployable rather than API-bound.</li>
+<li>
+<p><a href="https://x.com/warpdotdev/status/2085004830309851191#m">Warp Agent CLI</a> — Warp's agent now runs in any terminal or IDE with model routing, BYOK, and configurable execution.</p>
+</li>
+<li>
+<p><a href="https://openai.com/index/third-party-cyber-evaluations-involving-openai-models">OpenAI</a> disclosed real system-contact and privilege incidents from third-party cyber evaluations, while its GPT-Live architecture separates a low-latency voice path from asynchronous reasoning and tools.</p>
+</li>
+<li><a href="https://x.com/AnthropicAI/status/2084748111239344556#m">Anthropic</a> paired the AISI cyber evaluation of Claude Mythos 5 and GPT-5.6 Sol with three of its own incident reviews. Agent security is moving from policy prose to incident engineering.</li>
+<li><a href="https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/">Google DeepMind</a> introduced Gemini Robotics ER 2 for video understanding, task orchestration, and multi-robot collaboration.</li>
+<li><a href="https://x.com/cursor_ai/status/2084670808337564034#m">Cursor</a> open-sourced its MoK megakernel, reporting 1.41× improvement over its previous DeepEP stack at large GPU scale, and added Google Workspace integrations to its agent.</li>
+<li><a href="https://x.com/SergioPaniego/status/2085021209226297605#m">Hugging Face</a> demonstrated training an OpenCode coding agent through real tool loops in remote sandboxes. This is a more important capability path than another static coding benchmark.</li>
+<li><a href="https://x.com/LambdaAPI/status/2084993642377457773#m">Lambda</a> argued that harness choice can move cost by 3× for the same Kimi model across six systems.</li>
+<li><a href="https://sierra.ai/blog/our-partnership-with-plaid">Sierra and Plaid</a> pushed agents from conversation toward business outcomes; BBVA reportedly deployed a long-running Horizon agent in 30 days.</li>
+</ul>
+<h2>💰 Investor Signals</h2>
+<ul>
+<li><a href="https://x.com/MahaAmanMalik/status/2085093348277113155#m">Bessemer</a> offered the cleanest filter for AI-native services: capability alone is insufficient; market structure, demand, and defensibility still decide the business.</li>
+<li><a href="https://x.com/GavinSBaker/status/2083543298992406904#m">Sonya Huang</a> expects vertical AI companies to accelerate through routers, open models, and specialized post-training—the application layer, not the universal chat box.</li>
+<li><a href="https://x.com/a16z/status/2084999299465892196#m">a16z</a> kept betting on physical bottlenecks around AI—mining, nuclear energy, and marine robotics—rather than another thin software wrapper.</li>
+<li><a href="https://x.com/DavidCahn6/status/2085093802654773462#m">Sequoia</a> framed AI as a strategic game among companies, a useful correction to benchmark-by-benchmark coverage.</li>
+</ul>
+<h2>🧠 Sense Makers</h2>
+<ul>
+<li><a href="https://x.com/swyx/status/2085073764551962960#m">Latent Space</a> treated ChatGPT Work as the Codex harness expanding into cloud knowledge work.</li>
+<li><a href="https://www.lennysnewsletter.com/p/how-i-ai-chatgpt-codex-voice-browser">Lenny Rachitsky</a> showed a practical chain of Codex, Voice, browser, and Sites. The unit of AI use is becoming a relay of interfaces, not a prompt.</li>
+<li><a href="https://x.com/karpathy/status/2083749667410727319">Andrej Karpathy</a> used a one-million-token budget to test Opus 5 on a playable Hobbit game, arguing implicitly that toy SVG tests no longer measure long-task competence.</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-08-05-5">机器之心</a>, one of China's serious AI trade publications, connected Jeff Dean and peers leaving Google to found Discovery Loop with a search for post-Transformer architectures.</li>
+<li><a href="https://www.qbitai.com/2026/08/467034.html">量子位</a>, a large Chinese tech outlet, made a creator-relevant point: generated images without layer-level editing remain demos, not production workflows.</li>
+<li><a href="https://x.com/david_perell/status/2083252203708444913#m">David Perell</a> argued that creator scarcity comes from a unique vibe or a unique thing to say. China's anti-“AI slop” sentiment below says the same thing from the market side.</li>
+</ul>
+<h2>🔨 Practitioners</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=JWhICz1QR8M">Greg Isenberg</a> described “Graph Engineering” for better Claude/Codex output and an agent connector that turns market intelligence into cofounder-like context.</li>
+<li><a href="https://x.com/dannypostma/status/2084251032712872182#m">Danny Postma</a> specs a game feature in the morning, lets a software factory execute, then reviews and merges at night—a credible one-person software factory pattern.</li>
+<li><a href="https://x.com/levelsio/status/2084997902632390981">Pieter Levels</a> reported spending $500/$900 on an agent loop and deleting 95% of the result. Without evaluation and constraints, “autonomy” becomes rework debt.</li>
+<li><a href="https://x.com/vista8/status/2084836140390212037#m">数字生命卡兹克</a>, a prominent Chinese AI creator, argued that audiences do not hate AI texture itself; they hate the implied bargain of spending a few tokens to extract their attention. Taste and effort remain scarce.</li>
+<li><a href="https://x.com/op7418/status/2084929983924023560#m">歸藏</a>, an influential Chinese AI-tool curator, sees skill stores evolving from prompt files into tested, human-curated workflow shelves.</li>
+</ul>
+<h2>🔥 Professional Trending</h2>
+<ul>
+<li>HN elevated <a href="https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2">Meta Muse Code and Muse Spark 1.2</a>, putting Meta directly into terminal coding agents.</li>
+<li><a href="https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data">Atlassian Rovo data exfiltration</a> echoed the OpenAI and Anthropic cyber reports: permissions and data boundaries are now core product features.</li>
+<li>GitHub trending converged on agent substrate: <a href="https://github.com/addyosmani/agent-skills">agent skills</a>, <a href="https://github.com/TencentCloud/TencentDB-Agent-Memory">TencentDB Agent Memory</a>, and <a href="https://github.com/cloudflare/computer">Cloudflare Computer</a>.</li>
+<li>Product Hunt similarly clustered around knowledge connection, Claude Code terminals, and agent payments: <a href="https://www.producthunt.com/products/glasp-mcp-connector">Glasp MCP Connector</a>, <a href="https://www.producthunt.com/products/mother-claude-code-terminal">MOTHER</a>, and <a href="https://www.producthunt.com/products/cloudflare">Cloudflare Wallets</a>.</li>
+</ul>
+<h2>🌶️ China Platform Pulse</h2>
+<p>This is where the Western feed is most blind. These are second-hand technology signals but first-hand demand signals.</p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1ZtGN6kEqc">清华姜学长</a>, a prolific Bilibili AI educator, bundled Codex-based video editing, the rising value of taste, and the paradox that heavy AI users become busier. The market is ready for a “leverage without workflow debt” message.</li>
+<li><a href="https://www.douyin.com/video/7668268138902965550">光羽的平行世界</a>, a Douyin account focused on enterprise AI transformation, highlighted cases claiming RMB 200 million in added revenue, RMB 5 million in savings, ten AI executive clones, and a one-person e-commerce department doing RMB 10 million annually. The important change is the language: Chinese adoption stories are shifting from tools to measurable outcomes.</li>
+<li><a href="https://www.douyin.com/video/7669109231194246441">苏大讲AI</a> translated MiniMax H3, cheaper AI micro-dramas, Kimi K3, OCR, and open-vs-closed models into mass-market narratives. AI video remains one of China's clearest monetization wedges.</li>
+<li>Bilibili search showed concentrated demand for <a href="https://www.bilibili.com/video/BV11HMr6mEcz">an agent-built one-person company</a>, <a href="https://www.bilibili.com/video/BV1gYMk6FEUt">the move toward super-individual careers</a>, and <a href="https://www.bilibili.com/video/BV1PmMk6SEm1">Codex running an end-to-end workflow</a>.</li>
+<li>Creator workflows were equally concrete: <a href="https://www.bilibili.com/video/BV1v2MX6cETD">an end-to-end AI micro-drama pipeline</a>, <a href="https://www.bilibili.com/video/BV1dFuw6WEpY">a replicated talking-head agent</a>, and <a href="https://www.bilibili.com/video/BV1Teuc6GEYr">six skills for self-media production</a>.</li>
+<li>Two learning headlines are worth exporting: <a href="https://www.bilibili.com/video/BV14wGA6QEHT">“The most dangerous way to learn in the AI era is to finish learning before doing”</a> and <a href="https://www.bilibili.com/video/BV1cwMm6dETn">“AI will eliminate people who cannot learn, not people with poor grades”</a>. China's creator market is reframing learning as execution under feedback.</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="Previous/Next"><a class="rp-nav-prev" href="/reports/2026-08-05-en.html" rel="prev"><span class="k">← Previous</span><span class="t">The important shift is not another model launch. It is the agent stack becoming operational</span></a><span></span><a class="rp-nav-all" href="/archive-en.html">All issues →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>This is the full public edition. Want the daily story angles, or a radar built for your market positioning?</p>
+    <a class="btn primary" href="/#channels">See how to subscribe →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI market radar. Free report daily covering both west and east.<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-en.xml">English</a> · <a class="dom" href="/feed-zh.xml">中文</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">build story</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

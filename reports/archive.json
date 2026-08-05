@@ -7,6 +7,13 @@
   "url": "reports/2026-08-06-zh.html"
  },
  {
+  "date": "2026-08-06",
+  "lang": "en",
+  "title": "The agent race has moved from model intelligence to operational systems",
+  "summary": "The agent race has moved from model intelligence to operational systems: the moat is now the harness that makes models controllable, observable, and deliverable",
+  "url": "reports/2026-08-06-en.html"
+ },
+ {
   "date": "2026-08-05",
   "lang": "zh",
   "title": "今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞",

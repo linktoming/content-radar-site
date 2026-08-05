@@ -8,6 +8,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## English editions
 
+- [2026-08-06 — The agent race has moved from model intelligence to operational systems](https://radar.sharpener.ai/reports/2026-08-06-en.html): The agent race has moved from model intelligence to operational systems: the moat is now the harness that makes models controllable, observable, and deliverable
 - [2026-08-05 — The important shift is not another model launch. It is the agent stack becoming operational](https://radar.sharpener.ai/reports/2026-08-05-en.html): The important shift is not another model launch. It is the agent stack becoming operational
 - [2026-08-04 — The important shift is not another model launch. Models are leaving the chat box and entering verifiable work systems](https://radar.sharpener.ai/reports/2026-08-04-en.html): The important shift is not another model launch. Models are leaving the chat box and entering verifiable work systems
 - [2026-08-03 — The important shift is not simply that models are getting stronger](https://radar.sharpener.ai/reports/2026-08-03-en.html): The important shift is not simply that models are getting stronger: the unit economics of agent workflows are collapsing while the surrounding execution layer—harnesses, sandboxes, local inference
