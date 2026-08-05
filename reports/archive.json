@@ -208,19 +208,5 @@
   "title": "The consequential shift is not another model release. Agents are leaving the chat box and entering production systems",
   "summary": "The consequential shift is not another model release. Agents are leaving the chat box and entering production systems, where speed, permissions, verification, identity",
   "url": "reports/2026-07-22-en.html"
- },
- {
-  "date": "2026-07-21",
-  "lang": "zh",
-  "title": "今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束",
-  "summary": "今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束：长任务安全、可验证执行环境、算力供给、开放模型、以及 founder 自己的内容系统",
-  "url": "reports/2026-07-21-zh.html"
- },
- {
-  "date": "2026-07-20",
-  "lang": "zh",
-  "title": "今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推",
-  "summary": "今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推",
-  "url": "reports/2026-07-20-zh.html"
  }
 ]

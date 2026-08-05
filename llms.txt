@@ -2,7 +2,7 @@
 
 > A daily AI intelligence report covering both hemispheres: the Western frontier (labs, X, Hacker News, VC) explained for Chinese readers, and China's AI scene (rednote, Bilibili, WAIC, Chinese labs) explained for English readers. Every edition is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 17 days archived.
+Published daily by mingming (https://x.com/linktoming). 15 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
@@ -41,8 +41,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-07-24 — 今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层](https://radar.sharpener.ai/reports/2026-07-24-zh.html): 今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层。OpenAI 把 ChatGPT Voice 带到桌面
 - [2026-07-23 — 今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型](https://radar.sharpener.ai/reports/2026-07-23-zh.html): 今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型；解读层开始盯 sandbox / reward-seeking / 长程任务
 - [2026-07-22 — 今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统](https://radar.sharpener.ai/reports/2026-07-22-zh.html): 今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统：源头层在补能力与安全边界，实践层在把 agent 变成岗位/工作流，投资层在押“软件自己生产自己”的 dark factory
-- [2026-07-21 — 今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束](https://radar.sharpener.ai/reports/2026-07-21-zh.html): 今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束：长任务安全、可验证执行环境、算力供给、开放模型、以及 founder 自己的内容系统
-- [2026-07-20 — 今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推](https://radar.sharpener.ai/reports/2026-07-20-zh.html): 今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推
 
 ## Full index
 
