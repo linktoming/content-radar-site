@@ -545,7 +545,7 @@ function renderArchive(lang){
     const link=document.getElementById("archiveMore");
     if(link){
       link.href=`/archive-${lang}.html`;
-      link.textContent=lang==="en"?`View all ${rows.length} issues →`:`查看全部 ${rows.length} 期 →`;
+      link.textContent=lang==="en"?"View all issues →":"查看全部往期 →";
       link.style.display=more?"":"none";
     }
   }
