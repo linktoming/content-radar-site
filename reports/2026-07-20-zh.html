@@ -3,8 +3,10 @@
 <title>今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推 · AI情报</title>
 <meta name="description" content="今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推">
 <link rel="canonical" href="https://radar.sharpener.ai/reports/2026-07-20-zh.html">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="AI情报" href="../feed-zh.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI情报">
 <meta property="og:title" content="今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推">
@@ -17,6 +19,7 @@
 <meta name="twitter:title" content="今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推">
 <meta name="twitter:description" content="今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推">
 <meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推","description":"今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推","datePublished":"2026-07-20","dateModified":"2026-07-20","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-07-20-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-07-20-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
 <style>
 :root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
 @media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
@@ -38,6 +41,7 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--groun
 .report-page{position:relative;z-index:1;padding:40px 0 20px}
 .rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
 .pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
 .rp-body{font-size:16.5px}
 .rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
 .rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
@@ -52,29 +56,43 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--groun
 .rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
 .rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
 .rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
 .rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
 .rp-cta p{margin:0 0 16px;color:var(--muted)}
 .btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
 .btn.primary{background:var(--ink);color:var(--ground)}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
-.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
 .foot .dom{color:var(--east)}
 ::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
 </style></head><body>
 <div class="meridian" aria-hidden="true"></div>
 <header><div class="wrap bar">
-  <a class="brand" href="../index.html"><span class="dot"></span><span>AI情报</span></a>
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
   <div class="controls">
     <span class="edtag">中文版</span>
     <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
   </div>
 </div></header>
 <main class="wrap report-page">
-  <div class="rp-head">
-    <div class="eyebrow">2026 · 07 · 20 · 每日 AI 情报</div>
-    <span class="pill free">公开免费版</span>
-  </div>
-  <article class="rp-body"><h2>🔭 今日主线</h2>
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-07-20">2026 · 07 · 20 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推</h1>
+    <div class="rp-body"><h2>🔭 今日主线</h2>
 <p>今天的主线很清楚：<strong>AI 供给正在一边变强变便宜，一边变得更像供应链风险。</strong> Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推；Claude Fable 5 的订阅限额、Kimi 暂停 C 端会员、以及推理成本融资，提醒你模型能力不是免费的自然资源，是会被算力、价格表、风控和供应商策略卡住的生产资料。</p>
 <p>AINews/TLDR 这两张外部答案卷都把 Kimi K3 / open-weight / sandbox 放在主线附近；今天四层回声也对上了：源头层有 <a href="https://x.com/Alibaba_Qwen/status/2078759124914098291#m">Qwen3.8 open-weight</a>、<a href="https://x.com/Kimi_Moonshot/status/2078855608565207130#m">Kimi K3 需求压垮新订阅</a>、<a href="https://x.com/perplexity_ai/status/2077432518081744979#m">Perplexity SPACE</a>、<a href="https://x.com/pika_labs/status/2077438210213634159#m">Pika MCP</a>；解读层把它翻译成 open model 竞争和 agent infra；投资层下注 Fireworks、Sierra、Harvey、Sable、Bunkerhill。</p>
 <p>对你最有用的判断不是“谁赢了”，而是：<strong>一人公司的系统不能只押一个模型入口。</strong> 要保留上下文、素材、工作流和评测的所有权。模型可以切，token 价格会变，账号会封，算力会紧；真正属于你的，是可迁移的文件、流程、数据和判断标准。</p>
@@ -140,16 +158,15 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px
 <li><strong>AI Builder / Coding</strong> — Claude Code、Codex、Cursor、Vibe Coding、MCP 仍然热。中文侧的优势切口是“非程序员如何长期练习”和“怎么把任务不断档”，不是纯工具测评。</li>
 <li><strong>AI × 认知 / 学习</strong> — 第二大脑、AI 笔记、AI 阅读、终身学习有稳定命中。与 DeepStudy / 认知型超级个体定位非常贴，但要避免抽象，应落到“输入、加工、输出、复盘”的具体系统。</li>
 <li><strong>0 命中/弱命中提醒</strong> — 不是关键词少搜，而是平台墙：Douyin search 17/17 都搜了但 0 cards；Rednote 54/54 搜完但 25 个词被验证墙削薄。</li>
-</ul></article>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><span></span><a class="rp-nav-next" href="/reports/2026-07-21-zh.html" rel="next"><span class="k">后一期 →</span><span class="t">今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束</span></a><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
   <div class="rp-cta">
     <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
-    <a class="btn primary" href="../index.html#channels">看订阅方式 →</a>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
   </div>
 </main>
-<footer><div class="wrap foot">
-  <a class="dom" href="../index.html">radar.sharpener.ai</a>
-  <span class="meta">by mingming</span>
-</div></footer>
+<footer><div class="wrap foot"><div class="sig">你的 AI 市场雷达,每天一份横跨东西的完整报告。<br><a class="dom" href="/">radar.sharpener.ai</a></div><div class="meta">by mingming · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
 <script>
 const root=document.documentElement;
 (function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();

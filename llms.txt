@@ -1,0 +1,52 @@
+# AI Radar / AI情报
+
+> A daily AI intelligence report covering both hemispheres: the Western frontier (labs, X, Hacker News, VC) explained for Chinese readers, and China's AI and creator scene (rednote, Bilibili, WAIC, Chinese labs) explained for English readers. Every edition is published in full, free, in both Chinese and English.
+
+Published daily by mingming (https://x.com/linktoming). 17 days archived.
+
+Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
+
+## English editions
+
+- [2026-08-05 — The important shift is not another model launch. It is the agent stack becoming operational](https://radar.sharpener.ai/reports/2026-08-05-en.html): The important shift is not another model launch. It is the agent stack becoming operational
+- [2026-08-04 — The important shift is not another model launch. Models are leaving the chat box and entering verifiable work systems](https://radar.sharpener.ai/reports/2026-08-04-en.html): The important shift is not another model launch. Models are leaving the chat box and entering verifiable work systems
+- [2026-08-03 — The important shift is not simply that models are getting stronger](https://radar.sharpener.ai/reports/2026-08-03-en.html): The important shift is not simply that models are getting stronger: the unit economics of agent workflows are collapsing while the surrounding execution layer—harnesses, sandboxes, local inference
+- [2026-08-02 — The clearest shift is that models are getting cheaper while value moves upward into harnesses, agent security](https://radar.sharpener.ai/reports/2026-08-02-en.html): The clearest shift is that models are getting cheaper while value moves upward into harnesses, agent security, workflow design, and verifiable outcomes
+- [2026-08-01 — The important shift is not another model launch: frontier capability is being compressed into cheaper inference](https://radar.sharpener.ai/reports/2026-08-01-en.html): The important shift is not another model launch: frontier capability is being compressed into cheaper inference, deployable open weights, controllable runtimes, and workflows that a small team
+- [2026-07-31 — The important shift is not another model launch. Inference economics are collapsing while the engineering boundaries](https://radar.sharpener.ai/reports/2026-07-31-en.html): The important shift is not another model launch. Inference economics are collapsing while the engineering boundaries around agents are hardening
+- [2026-07-30 — The open-weights war went from policy argument to shipped infrastructure this week](https://radar.sharpener.ai/reports/2026-07-30-en.html): The open-weights war went from policy argument to shipped infrastructure this week — and the fastest way to understand it is to read both halves of the world. The fact layer
+- [2026-07-29 — The important shift is not another model launch: the agent market is moving from raw capability toward control—security](https://radar.sharpener.ai/reports/2026-07-29-en.html): The important shift is not another model launch: the agent market is moving from raw capability toward control—security, cost routing, observability, and workflow distribution
+- [2026-07-28 — The important story is not another model launch. China’s Moonshot AI released Kimi K3](https://radar.sharpener.ai/reports/2026-07-28-en.html): The important story is not another model launch. China’s Moonshot AI released Kimi K3, an open-weight 2.8T MoE model with a 1M context window and multimodal capability—and Together, vLLM, Fireworks
+- [2026-07-27 — The model layer is becoming replaceable; the workflow layer is becoming the product](https://radar.sharpener.ai/reports/2026-07-27-en.html): The model layer is becoming replaceable; the workflow layer is becoming the product. Anthropic shipped Claude Opus 5, and Cursor, Warp
+- [2026-07-26 — The frontier-model story has moved past benchmark leadership](https://radar.sharpener.ai/reports/2026-07-26-en.html): The frontier-model story has moved past benchmark leadership. OpenAI is turning voice into a desktop control surface, Anthropic is simplifying the scaffolding around a stronger coding model
+- [2026-07-25 — The model race is becoming an operating-surface race. Anthropic shipped Claude Opus 5](https://radar.sharpener.ai/reports/2026-07-25-en.html): The model race is becoming an operating-surface race. Anthropic shipped Claude Opus 5, OpenAI put Voice on desktop where it can direct ChatGPT Work and Codex agents
+- [2026-07-24 — AI is moving out of the chat window and into the control plane for work](https://radar.sharpener.ai/reports/2026-07-24-en.html): AI is moving out of the chat window and into the control plane for work. OpenAI brought Voice to desktop, where it can control the computer and coordinate ChatGPT Work and Codex agents
+- [2026-07-23 — The agent story has moved from capability to controlled deployment](https://radar.sharpener.ai/reports/2026-07-23-en.html): The agent story has moved from capability to controlled deployment. Labs are adding security, economic observability, enterprise agent surfaces, and cheaper models
+- [2026-07-22 — The consequential shift is not another model release. Agents are leaving the chat box and entering production systems](https://radar.sharpener.ai/reports/2026-07-22-en.html): The consequential shift is not another model release. Agents are leaving the chat box and entering production systems, where speed, permissions, verification, identity
+
+## 中文版
+
+- [2026-08-05 — 今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞](https://radar.sharpener.ai/reports/2026-08-05-zh.html): 今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞
+- [2026-08-04 — 今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」](https://radar.sharpener.ai/reports/2026-08-04-zh.html): 今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」。OpenAI 用内部下一代模型给出 10 个数学和理论计算机科学结果，并释放 Lean certificates
+- [2026-08-03 — 真正的主线不是「又有新模型」，而是 frontier intelligence 正在从稀缺炫技品变成可被产品、组织和创作者每天调用的作业层](https://radar.sharpener.ai/reports/2026-08-03-zh.html): 真正的主线不是「又有新模型」，而是 frontier intelligence 正在从稀缺炫技品变成可被产品、组织和创作者每天调用的作业层
+- [2026-08-02 — 今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出](https://radar.sharpener.ai/reports/2026-08-02-zh.html): 今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出
+- [2026-08-01 — 主线不是“又出了一个模型”，而是模型能力开始被压进可用成本、可控运行时和真实工作流里](https://radar.sharpener.ai/reports/2026-08-01-zh.html): 主线不是“又出了一个模型”，而是模型能力开始被压进可用成本、可控运行时和真实工作流里
+- [2026-07-31 — 主线不是“又出了一个模型”，而是 AI 的单位经济开始塌缩，agent 的工程边界开始变硬](https://radar.sharpener.ai/reports/2026-07-31-zh.html): 主线不是“又出了一个模型”，而是 AI 的单位经济开始塌缩，agent 的工程边界开始变硬：OpenAI 降 GPT-5.6 Luna/Terra 价格
+- [2026-07-30 — 今天的主线不是“又有一个大模型发布”，而是 模型能力开始被系统设置、推理成本、运行 harness 和分发入口重新定义](https://radar.sharpener.ai/reports/2026-07-30-zh.html): 今天的主线不是“又有一个大模型发布”，而是 模型能力开始被系统设置、推理成本、运行 harness 和分发入口重新定义。OpenAI 在 GPT-5.6 Sol 上把效率、ARC-AGI-3 记忆设置、科研访问连成一条线
+- [2026-07-29 — 今天的主线不是“又出了一个模型”，而是 agent 时代的基础设施开始从能力竞赛转向安全、成本、控制权和工作流分发](https://radar.sharpener.ai/reports/2026-07-29-zh.html): 今天的主线不是“又出了一个模型”，而是 agent 时代的基础设施开始从能力竞赛转向安全、成本、控制权和工作流分发
+- [2026-07-28 — 今天的主线不是「又发了一个模型」，而是开源/开放权重模型开始把 frontier 能力、推理供给和商业策略连成一条线](https://radar.sharpener.ai/reports/2026-07-28-zh.html): 今天的主线不是「又发了一个模型」，而是开源/开放权重模型开始把 frontier 能力、推理供给和商业策略连成一条线
+- [2026-07-27 — 今天的主线不是单个模型发布，而是“模型能力进入可替换、可路由、可本地掌控”的阶段](https://radar.sharpener.ai/reports/2026-07-27-zh.html): 今天的主线不是单个模型发布，而是“模型能力进入可替换、可路由、可本地掌控”的阶段。源头层里 Anthropic 发布 Claude Opus 5，强调同价位、更强编码与专业任务
+- [2026-07-26 — 今天不是单点模型新闻，而是「agent 从会答题，变成会接管工作界面」继续加速](https://radar.sharpener.ai/reports/2026-07-26-zh.html): 今天不是单点模型新闻，而是「agent 从会答题，变成会接管工作界面」继续加速。源头层里，OpenAI 把 ChatGPT Voice 放进桌面端
+- [2026-07-25 — 今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天](https://radar.sharpener.ai/reports/2026-07-25-zh.html): 今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天：Anthropic 发 Claude Opus 5
+- [2026-07-24 — 今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层](https://radar.sharpener.ai/reports/2026-07-24-zh.html): 今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层。OpenAI 把 ChatGPT Voice 带到桌面
+- [2026-07-23 — 今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型](https://radar.sharpener.ai/reports/2026-07-23-zh.html): 今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型；解读层开始盯 sandbox / reward-seeking / 长程任务
+- [2026-07-22 — 今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统](https://radar.sharpener.ai/reports/2026-07-22-zh.html): 今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统：源头层在补能力与安全边界，实践层在把 agent 变成岗位/工作流，投资层在押“软件自己生产自己”的 dark factory
+- [2026-07-21 — 今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束](https://radar.sharpener.ai/reports/2026-07-21-zh.html): 今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束：长任务安全、可验证执行环境、算力供给、开放模型、以及 founder 自己的内容系统
+- [2026-07-20 — 今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推](https://radar.sharpener.ai/reports/2026-07-20-zh.html): 今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推
+
+## Full index
+
+- [All English issues](https://radar.sharpener.ai/archive-en.html)
+- [All Chinese issues](https://radar.sharpener.ai/archive-zh.html)
+- [RSS, English](https://radar.sharpener.ai/feed-en.xml)
+- [RSS, Chinese](https://radar.sharpener.ai/feed-zh.xml)

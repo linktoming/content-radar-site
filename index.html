@@ -9,6 +9,8 @@
 <meta name="description" content="A daily AI intelligence report. The Western frontier (X · Hacker News · labs) explained for Chinese readers; China's creator scene (rednote · Bilibili · WAIC) explained for English readers.">
 <link rel="canonical" href="https://radar.sharpener.ai/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="AI Radar (EN)" href="/feed-en.xml">
 <link rel="alternate" type="application/rss+xml" title="AI情报 (中文)" href="/feed-zh.xml">
 <meta property="og:type" content="website">
@@ -23,6 +25,15 @@
 <meta name="twitter:title" content="AI Radar — Read the Other Half of the World">
 <meta name="twitter:description" content="A daily AI intelligence report. The Western frontier explained for Chinese readers; China's creator scene explained for English readers.">
 <meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<!-- Structured data: states publisher, author, language and cadence as facts rather
+     than leaving a crawler (search or LLM) to infer them from the layout. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://radar.sharpener.ai/#website","url":"https://radar.sharpener.ai/","name":"AI Radar","alternateName":"AI情报","inLanguage":["en","zh-CN"],"description":"A daily AI intelligence report. The Western frontier explained for Chinese readers; China's creator scene explained for English readers.","publisher":{"@id":"https://radar.sharpener.ai/#person"}},
+{"@type":"Person","@id":"https://radar.sharpener.ai/#person","name":"mingming","url":"https://radar.sharpener.ai/","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},
+{"@type":"Blog","@id":"https://radar.sharpener.ai/#blog","url":"https://radar.sharpener.ai/","name":"AI Radar","description":"Daily AI intelligence across two hemispheres.","inLanguage":["en","zh-CN"],"author":{"@id":"https://radar.sharpener.ai/#person"},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}
+]}
+</script>
 <style>
 :root{
   --ground:#ECEDEF; --surface:#F6F7F8; --raised:#FFFFFF;
@@ -181,6 +192,9 @@ a.report:hover .shape em{text-decoration:underline}
 .arch .dt{font-family:var(--mono);font-size:12.5px;color:var(--east);letter-spacing:.03em;font-variant-numeric:tabular-nums}
 .arch .ti{font-size:15px}
 .arch .rd{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.08em}
+.arch-more{display:block;margin-top:18px;padding:13px 16px;text-align:center;border:1px dashed var(--line);border-radius:4px;
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--muted);transition:border-color .2s,color .2s}
+.arch-more:hover{border-color:var(--east);color:var(--ink)}
 
 /* differentiators */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:5px;overflow:hidden}
@@ -215,7 +229,7 @@ a.report:hover .shape em{text-decoration:underline}
 /* footer */
 footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:44px 0 60px;margin-top:20px}
 .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:baseline}
-.foot .sig{font-family:var(--serif);font-size:16px}
+.foot .sig{font-family:var(--serif);font-size:16px;line-height:1.7}
 .foot .meta{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em;line-height:2}
 .foot a.dom{color:var(--east)}
 
@@ -288,7 +302,7 @@ html.js .reveal.in{opacity:1;transform:none}
   <!-- TODAY'S RADAR — injected live from reports/archive.json -->
   <section id="today">
     <div class="sec-head reveal"><span class="num">02</span><h2 data-i18n="today.h2">今天这份雷达</h2></div>
-    <p class="lead reveal" data-i18n="today.lead">公开版免费、完整、无个人信息。付费版多一层「选题建议」——只有我能给你的那部分。</p>
+    <p class="lead reveal" data-i18n="today.lead">免费完整报告,付费版包含信号和选题建议。</p>
     <a class="report reveal" id="latestCard" href="#">
       <div class="rhead">
         <span class="d" id="latestDate">—</span>
@@ -309,6 +323,7 @@ html.js .reveal.in{opacity:1;transform:none}
   <section id="archive">
     <div class="sec-head reveal"><span class="num">03</span><h2 data-i18n="arch.h2">往期</h2></div>
     <div class="arch reveal" id="archiveList"></div>
+    <a class="arch-more reveal" id="archiveMore" href="/archive-zh.html" style="display:none"></a>
   </section>
 
   <!-- DIFFERENTIATORS -->
@@ -324,12 +339,12 @@ html.js .reveal.in{opacity:1;transform:none}
   <!-- CHANNELS -->
   <section id="channels">
     <div class="sec-head reveal"><span class="num">05</span><h2 data-i18n="ch.h2">在哪读</h2></div>
-    <p class="lead reveal" data-i18n="ch.lead">中英各一个免费渠道,加一个「为你的定位定制一份专属雷达」。</p>
+    <p class="lead reveal" data-i18n="ch.lead">中英双语免费报告,加我定制你的专属雷达。</p>
     <div class="chan reveal">
       <div class="card cn">
         <div class="top"><h3>微信公众号</h3><span class="lang">中文 · CN</span></div>
-        <p data-i18n="ch.cnP">每天完整正文,免费。想要选题建议或一份定制雷达?加我。</p>
-        <span class="price" data-i18n="ch.cnPrice">免费 · 正文 + 加我得选题</span>
+        <p data-i18n="ch.cnP">每天完整正文,免费。想要每日选题或一份定制雷达?私信我。</p>
+        <span class="price" data-i18n="ch.cnPrice">免费 · 正文 · 私信获取每日选题</span>
         <div class="qr">
           <img src="assets/gzh-qr.jpg" alt="微信扫码关注 明明AI掘金记" width="104" height="104" loading="lazy">
           <div class="qr-cap"><b>明明AI掘金记</b><span data-i18n="ch.scan">微信扫码关注</span></div>
@@ -343,7 +358,7 @@ html.js .reveal.in{opacity:1;transform:none}
       </a>
       <div class="card cu">
         <div class="top"><h3 data-i18n="ch.cuH">定制雷达</h3><span class="lang" data-i18n="ch.cuTag">Done-for-you</span></div>
-        <p data-i18n="ch.cuP">用你自己的定位、你的对标账号,搭一份每天自动跑的专属雷达。省掉你自己刷全网的时间。</p>
+        <p data-i18n="ch.cuP">用你自己的市场定位、你所在的行业,搭一份每天自动跑的专属雷达。省掉你自己刷全网的时间。</p>
         <span class="price" data-i18n="ch.cuPrice">按定位定制 · 私聊</span>
         <div class="go"><span><span data-i18n="ch.talk">聊聊</span> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener">LinkedIn</a></span><span class="arrow">→</span></div>
       </div>
@@ -353,10 +368,10 @@ html.js .reveal.in{opacity:1;transform:none}
 
 <footer>
   <div class="wrap foot">
-    <div>
-      <div class="sig" data-i18n="foot.sig">你的 AI 市场雷达,每天转一圈。</div>
-      <div class="meta" style="margin-top:10px"><a class="dom" href="https://radar.sharpener.ai">radar.sharpener.ai</a> · <span data-i18n="foot.by">by mingming</span> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener">LinkedIn</a></div>
-    </div>
+    <!-- Kept byte-identical to footer_html() in tools/python/publish_public.py.
+         Change one, change both. -->
+    <div class="sig" data-i18n="foot.sig">你的 AI 市场雷达,每天一份横跨东西的完整报告。<br><a class="dom" href="/">radar.sharpener.ai</a></div>
+    <div class="meta">by mingming · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div>
   </div>
 </footer>
 
@@ -366,6 +381,7 @@ html.js .reveal.in{opacity:1;transform:none}
    zone and setLang's `&& __archive` would throw, aborting the whole script and
    leaving every .reveal element stuck at opacity:0 (only header/footer visible). */
 let __archive=null, __curLang="zh";
+const ARCHIVE_SHOWN=10;   // landing shows the latest 10; /archive-*.html has them all
 /* ---------- i18n ---------- */
 const I18N={
  en:{
@@ -380,7 +396,7 @@ const I18N={
   "why.eP":"WAIC on the ground, Moonshot's IPO, a beginner who practiced vibe coding for a year on rednote, Agent tutorials on Bilibili — the half of the battlefield the West rarely sees.",
   "why.wTag":"West · English world","why.wH":"Western sources, for Chinese readers",
   "why.wP":"Lab releases, VC bets, indie-hacker real numbers — not translated headlines, but re-read into angles that fit your positioning.",
-  "today.h2":"Today's radar","today.lead":"The public edition is free, complete, and scrubbed of personal info. The paid edition adds one layer — the 选题 picks only I can give you.",
+  "today.h2":"Today's radar","today.lead":"Totally free public reports. The paid edition unlocks early trends and topics to write about.",
   "today.edition":"CN edition","today.pill":"Public · Free",
   "today.tA":"Every signal today points to one thing: ","today.tB":"the intelligence supply you depend on is getting cheaper and less stable at once","today.tC":" — and neither is in your control.",
   "today.l1":"Primary","today.l2":"Sense-maker","today.l3":"Practitioner","today.l4":"Investor",
@@ -401,16 +417,15 @@ const I18N={
   "how.p2":"A local vector model pulls by meaning, not literal match — so you don't lose a signal just because you didn't think of the word.",
   "how.k3":"Decay review","how.h3c":"Radar terms expire",
   "how.p3":"Every tracked term carries an expiry; at the date it forces a keep / drop at the top of the report — so the radar never rots into a noise collector.",
-  "ch.h2":"Where to read","ch.lead":"A free channel in each language, plus “a custom radar built for your positioning.”",
-  "ch.cnP":"Full report daily, free. Want the picks or a custom radar? Add me.",
-  "ch.cnPrice":"Free full report · add-me for picks","ch.follow":"Follow","ch.scan":"Scan to follow on WeChat",
+  "ch.h2":"Where to read","ch.lead":"A free channel in each language, plus a custom radar built for you — just ask.",
+  "ch.cnP":"Full report daily, free. Want the daily story angles, or a custom radar? Message me.",
+  "ch.cnPrice":"Free full report · message me for daily angles","ch.follow":"Follow","ch.scan":"Scan to follow on WeChat",
   "ch.enP":"Full report free. Paid tier unlocks the early trends and daily topics to write about.",
   "ch.enPrice":"Free full report · Paid picks","ch.sub":"Subscribe",
   "ch.cuH":"Custom radar","ch.cuTag":"Done-for-you",
-  "ch.cuP":"Your positioning, your benchmark accounts — a private radar that runs itself every day. Reclaim the hours you'd spend scanning the web.",
+  "ch.cuP":"Your market positioning, your industry — a private radar that runs itself every day. Reclaim the hours you'd spend scanning the web.",
   "ch.cuPrice":"Built to your positioning · DM","ch.talk":"Let's talk",
-  "foot.sig":"Your AI market radar. One full sweep, every day.",
-  "foot.by":"by mingming",
+  "foot.sig":"Your AI market radar. One full report covering west and east, every day.<br><a class=\"dom\" href=\"/\">radar.sharpener.ai</a>",
   "brand":"AI Radar"
  }
 };
@@ -518,12 +533,21 @@ function renderArchive(lang){
     document.getElementById("latestThesis").textContent=rows[0].title||"";
     document.getElementById("latestThesis").removeAttribute("data-i18n");
   }
-  // list
+  // list — only the latest ARCHIVE_SHOWN here; the full run lives on /archive-*.html,
+  // which is statically generated so crawlers see every issue without running JS.
   if(list){
     const readTxt=lang==="en"?"read →":"读 →";
-    list.innerHTML = rows.length ? rows.map(e=>
+    const shown=rows.slice(0,ARCHIVE_SHOWN);
+    const more=rows.length>ARCHIVE_SHOWN;
+    list.innerHTML = rows.length ? shown.map(e=>
       `<a href="${e.url}"><span class="dt">${fmtDate(e.date)}</span><span class="ti">${(e.title||"").replace(/[<>&]/g,"")}</span><span class="rd">${readTxt}</span></a>`
     ).join("") : `<div class="empty">${lang==="en"?"First edition publishing soon.":"首期即将发布。"}</div>`;
+    const link=document.getElementById("archiveMore");
+    if(link){
+      link.href=`/archive-${lang}.html`;
+      link.textContent=lang==="en"?`View all ${rows.length} issues →`:`查看全部 ${rows.length} 期 →`;
+      link.style.display=more?"":"none";
+    }
   }
 }
 (function(){

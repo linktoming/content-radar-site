@@ -1,12 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- The brand mark: a radar scope. Amber = east/dawn (--east), the same token the
-       header dot and section numbers use. Ring strokes stay visible at 16px. -->
-  <circle cx="16" cy="16" r="14.5" fill="#141821"/>
-  <g fill="none" stroke="#C67A16" stroke-opacity=".45" stroke-width="1.2">
-    <circle cx="16" cy="16" r="10.5"/>
-    <circle cx="16" cy="16" r="6"/>
-  </g>
-  <path d="M16 16 L16 4.5 A11.5 11.5 0 0 1 26 10.5 Z" fill="#C67A16" fill-opacity=".38"/>
-  <path d="M16 16 L16 4.5" stroke="#E0912E" stroke-width="1.6" stroke-linecap="round"/>
-  <circle cx="16" cy="16" r="2.4" fill="#E0912E"/>
+  <title>AI Radar</title>
+  <!-- Brand mark: a radar scope. Three high-contrast shapes only, because the
+       common size is 16px; thin rings on a dark disc vanish in the tab strip.
+       Amber (#E0912E, the east/dawn brand token) carries it, and reads on both
+       light and dark browser chrome.
+       NOTE: never write a double hyphen inside this comment. It is illegal in an
+       XML comment and silently makes the whole file unparseable, which is exactly
+       why the first favicon never rendered anywhere (2026-08-05). -->
+  <rect width="32" height="32" rx="7" fill="#141821"/>
+  <circle cx="16" cy="16" r="9.5" fill="none" stroke="#E0912E" stroke-width="2.6" stroke-opacity=".55"/>
+  <path d="M16 16 L16 4 A12 12 0 0 1 26.4 10 Z" fill="#E0912E" fill-opacity=".9"/>
+  <circle cx="16" cy="16" r="4" fill="#E0912E"/>
 </svg>

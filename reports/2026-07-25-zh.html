@@ -3,8 +3,10 @@
 <title>今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天 · AI情报</title>
 <meta name="description" content="今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天：Anthropic 发 Claude Opus 5">
 <link rel="canonical" href="https://radar.sharpener.ai/reports/2026-07-25-zh.html">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="AI情报" href="../feed-zh.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI情报">
 <meta property="og:title" content="今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天">
@@ -17,6 +19,7 @@
 <meta name="twitter:title" content="今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天">
 <meta name="twitter:description" content="今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天：Anthropic 发 Claude Opus 5">
 <meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天","description":"今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天：Anthropic 发 Claude Opus 5","datePublished":"2026-07-25","dateModified":"2026-07-25","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-07-25-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-07-25-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
 <style>
 :root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
 @media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
@@ -38,6 +41,7 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--groun
 .report-page{position:relative;z-index:1;padding:40px 0 20px}
 .rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
 .pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
 .rp-body{font-size:16.5px}
 .rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
 .rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
@@ -52,29 +56,43 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--groun
 .rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
 .rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
 .rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
 .rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
 .rp-cta p{margin:0 0 16px;color:var(--muted)}
 .btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
 .btn.primary{background:var(--ink);color:var(--ground)}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
-.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.05em}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
 .foot .dom{color:var(--east)}
 ::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
 </style></head><body>
 <div class="meridian" aria-hidden="true"></div>
 <header><div class="wrap bar">
-  <a class="brand" href="../index.html"><span class="dot"></span><span>AI情报</span></a>
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
   <div class="controls">
     <span class="edtag">中文版</span>
     <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
   </div>
 </div></header>
 <main class="wrap report-page">
-  <div class="rp-head">
-    <div class="eyebrow">2026 · 07 · 25 · 每日 AI 情报</div>
-    <span class="pill free">公开免费版</span>
-  </div>
-  <article class="rp-body"><h2>🔭 今日主线</h2>
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-07-25">2026 · 07 · 25 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天</h1>
+    <div class="rp-body"><h2>🔭 今日主线</h2>
 <p>今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天：Anthropic 发 <a href="https://www.anthropic.com/news/claude-opus-5">Claude Opus 5</a>，OpenAI 把 <a href="https://x.com/OpenAI/status/2080378182469857576">ChatGPT Voice</a> 放进桌面端并能调度 ChatGPT Work / Codex 多个 agent，OpenAI 又推出 <a href="https://openai.com/index/health-in-chatgpt">Health in ChatGPT</a>，Google 则用 <a href="https://x.com/GoogleDeepMind/status/2080321516814647630#m">Gemini 3.5 Flash Cyber</a> 把模型推向防御型代码审计。</p>
 <p>外部答案卷也支持这个判断：<a href="https://tldr.tech/ai/2026-07-24">TLDR AI</a> 今天的 headline 把 ChatGPT Health 放在首位；<a href="https://news.smol.ai/issues/26-07-22-not-much/">AINews</a> 连续盯 OpenAI eval agent 逃逸、Hugging Face、Moonshot/Kimi 蒸馏和开源模型政策。换句话说，主线不是“谁分数更高”，而是模型正在进入你的文件、健康数据、浏览器、代码库、企业系统和安全边界。</p>
 <p>对你最有价值的切口：内容创业者别再只问“哪个模型最强”，要开始问“我的个人操作系统里，哪些上下文可以安全交给 agent，哪些必须留在人手里”。这正好落在你自己的 OpenClaw / Codex / 爆款兔实践主场。</p>
@@ -134,16 +152,15 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px
 <li><strong>AI Native（33）</strong> — 从“什么是真正 AI Native”到企业 AI 操作系统、本体论。这个词有教育价值，但中文平台仍偏概念解释，短期选题要落到场景。</li>
 <li><strong>Agent / Workflow（15）</strong> — 命中少但质量贴身：<a href="https://www.rednote.com/search_result/6a48e816000000001702a292">从 0 到 1 搭建 AI Agent</a>、<a href="https://www.rednote.com/search_result/6a56276b000000000f005bea">6 个 AI Agent 术语</a>、<a href="https://www.rednote.com/search_result/6a441608000000001c026c95">Obsidian+Codex</a> 都可转成“普通创作者怎么理解 agent”。</li>
 <li><strong>当下热词（5）</strong> — Graph Engineering / Context Engineering 仍有零散命中，但不够形成主线；可以观察，不急着做大选题。</li>
-</ul></article>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><a class="rp-nav-prev" href="/reports/2026-07-24-zh.html" rel="prev"><span class="k">← 前一期</span><span class="t">今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层</span></a><a class="rp-nav-next" href="/reports/2026-07-26-zh.html" rel="next"><span class="k">后一期 →</span><span class="t">今天不是单点模型新闻，而是「agent 从会答题，变成会接管工作界面」继续加速</span></a><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
   <div class="rp-cta">
     <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
-    <a class="btn primary" href="../index.html#channels">看订阅方式 →</a>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
   </div>
 </main>
-<footer><div class="wrap foot">
-  <a class="dom" href="../index.html">radar.sharpener.ai</a>
-  <span class="meta">by mingming</span>
-</div></footer>
+<footer><div class="wrap foot"><div class="sig">你的 AI 市场雷达,每天一份横跨东西的完整报告。<br><a class="dom" href="/">radar.sharpener.ai</a></div><div class="meta">by mingming · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
 <script>
 const root=document.documentElement;
 (function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();

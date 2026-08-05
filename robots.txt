@@ -1,4 +1,48 @@
+# radar.sharpener.ai — a daily AI intelligence report, published in full and free.
+# This site exists to be read AND to be cited, by search engines and by LLMs alike,
+# so the AI crawlers are allowed explicitly rather than left to the wildcard. Two
+# distinct jobs: *-Bot/*Bot names train and index; *-User names fetch a page live to
+# answer a user's question and cite the source, which is the traffic we actually want.
+
 User-agent: *
+Allow: /
+
+# Search
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+# LLM / answer engines
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://radar.sharpener.ai/sitemap.xml
