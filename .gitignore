@@ -1,0 +1,3 @@
+
+# local gstack daemon state (tokens, browse logs) — never publish
+.gstack/

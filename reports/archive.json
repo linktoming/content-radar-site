@@ -3,192 +3,224 @@
   "date": "2026-08-05",
   "lang": "zh",
   "title": "今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞",
+  "summary": "今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞",
   "url": "reports/2026-08-05-zh.html"
  },
  {
   "date": "2026-08-05",
   "lang": "en",
   "title": "The important shift is not another model launch. It is the agent stack becoming operational",
+  "summary": "The important shift is not another model launch. It is the agent stack becoming operational",
   "url": "reports/2026-08-05-en.html"
  },
  {
   "date": "2026-08-04",
   "lang": "zh",
   "title": "今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」",
+  "summary": "今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」。OpenAI 用内部下一代模型给出 10 个数学和理论计算机科学结果，并释放 Lean certificates",
   "url": "reports/2026-08-04-zh.html"
  },
  {
   "date": "2026-08-04",
   "lang": "en",
   "title": "The important shift is not another model launch. Models are leaving the chat box and entering verifiable work systems",
+  "summary": "The important shift is not another model launch. Models are leaving the chat box and entering verifiable work systems",
   "url": "reports/2026-08-04-en.html"
  },
  {
   "date": "2026-08-03",
   "lang": "zh",
   "title": "真正的主线不是「又有新模型」，而是 frontier intelligence 正在从稀缺炫技品变成可被产品、组织和创作者每天调用的作业层",
+  "summary": "真正的主线不是「又有新模型」，而是 frontier intelligence 正在从稀缺炫技品变成可被产品、组织和创作者每天调用的作业层",
   "url": "reports/2026-08-03-zh.html"
  },
  {
   "date": "2026-08-03",
   "lang": "en",
   "title": "The important shift is not simply that models are getting stronger",
+  "summary": "The important shift is not simply that models are getting stronger: the unit economics of agent workflows are collapsing while the surrounding execution layer—harnesses, sandboxes, local inference",
   "url": "reports/2026-08-03-en.html"
  },
  {
   "date": "2026-08-02",
   "lang": "zh",
   "title": "今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出",
+  "summary": "今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出",
   "url": "reports/2026-08-02-zh.html"
  },
  {
   "date": "2026-08-02",
   "lang": "en",
   "title": "The clearest shift is that models are getting cheaper while value moves upward into harnesses, agent security",
+  "summary": "The clearest shift is that models are getting cheaper while value moves upward into harnesses, agent security, workflow design, and verifiable outcomes",
   "url": "reports/2026-08-02-en.html"
  },
  {
   "date": "2026-08-01",
   "lang": "zh",
   "title": "主线不是“又出了一个模型”，而是模型能力开始被压进可用成本、可控运行时和真实工作流里",
+  "summary": "主线不是“又出了一个模型”，而是模型能力开始被压进可用成本、可控运行时和真实工作流里",
   "url": "reports/2026-08-01-zh.html"
  },
  {
   "date": "2026-08-01",
   "lang": "en",
   "title": "The important shift is not another model launch: frontier capability is being compressed into cheaper inference",
+  "summary": "The important shift is not another model launch: frontier capability is being compressed into cheaper inference, deployable open weights, controllable runtimes, and workflows that a small team",
   "url": "reports/2026-08-01-en.html"
  },
  {
   "date": "2026-07-31",
   "lang": "zh",
   "title": "主线不是“又出了一个模型”，而是 AI 的单位经济开始塌缩，agent 的工程边界开始变硬",
+  "summary": "主线不是“又出了一个模型”，而是 AI 的单位经济开始塌缩，agent 的工程边界开始变硬：OpenAI 降 GPT-5.6 Luna/Terra 价格",
   "url": "reports/2026-07-31-zh.html"
  },
  {
   "date": "2026-07-31",
   "lang": "en",
   "title": "The important shift is not another model launch. Inference economics are collapsing while the engineering boundaries",
+  "summary": "The important shift is not another model launch. Inference economics are collapsing while the engineering boundaries around agents are hardening",
   "url": "reports/2026-07-31-en.html"
  },
  {
   "date": "2026-07-30",
   "lang": "zh",
   "title": "今天的主线不是“又有一个大模型发布”，而是 模型能力开始被系统设置、推理成本、运行 harness 和分发入口重新定义",
+  "summary": "今天的主线不是“又有一个大模型发布”，而是 模型能力开始被系统设置、推理成本、运行 harness 和分发入口重新定义。OpenAI 在 GPT-5.6 Sol 上把效率、ARC-AGI-3 记忆设置、科研访问连成一条线",
   "url": "reports/2026-07-30-zh.html"
  },
  {
   "date": "2026-07-30",
   "lang": "en",
   "title": "The open-weights war went from policy argument to shipped infrastructure this week",
+  "summary": "The open-weights war went from policy argument to shipped infrastructure this week — and the fastest way to understand it is to read both halves of the world. The fact layer",
   "url": "reports/2026-07-30-en.html"
  },
  {
   "date": "2026-07-29",
   "lang": "zh",
   "title": "今天的主线不是“又出了一个模型”，而是 agent 时代的基础设施开始从能力竞赛转向安全、成本、控制权和工作流分发",
+  "summary": "今天的主线不是“又出了一个模型”，而是 agent 时代的基础设施开始从能力竞赛转向安全、成本、控制权和工作流分发",
   "url": "reports/2026-07-29-zh.html"
  },
  {
   "date": "2026-07-29",
   "lang": "en",
   "title": "The important shift is not another model launch: the agent market is moving from raw capability toward control—security",
+  "summary": "The important shift is not another model launch: the agent market is moving from raw capability toward control—security, cost routing, observability, and workflow distribution",
   "url": "reports/2026-07-29-en.html"
  },
  {
   "date": "2026-07-28",
   "lang": "zh",
   "title": "今天的主线不是「又发了一个模型」，而是开源/开放权重模型开始把 frontier 能力、推理供给和商业策略连成一条线",
+  "summary": "今天的主线不是「又发了一个模型」，而是开源/开放权重模型开始把 frontier 能力、推理供给和商业策略连成一条线",
   "url": "reports/2026-07-28-zh.html"
  },
  {
   "date": "2026-07-28",
   "lang": "en",
   "title": "The important story is not another model launch. China’s Moonshot AI released Kimi K3",
+  "summary": "The important story is not another model launch. China’s Moonshot AI released Kimi K3, an open-weight 2.8T MoE model with a 1M context window and multimodal capability—and Together, vLLM, Fireworks",
   "url": "reports/2026-07-28-en.html"
  },
  {
   "date": "2026-07-27",
   "lang": "zh",
   "title": "今天的主线不是单个模型发布，而是“模型能力进入可替换、可路由、可本地掌控”的阶段",
+  "summary": "今天的主线不是单个模型发布，而是“模型能力进入可替换、可路由、可本地掌控”的阶段。源头层里 Anthropic 发布 Claude Opus 5，强调同价位、更强编码与专业任务",
   "url": "reports/2026-07-27-zh.html"
  },
  {
   "date": "2026-07-27",
   "lang": "en",
   "title": "The model layer is becoming replaceable; the workflow layer is becoming the product",
+  "summary": "The model layer is becoming replaceable; the workflow layer is becoming the product. Anthropic shipped Claude Opus 5, and Cursor, Warp",
   "url": "reports/2026-07-27-en.html"
  },
  {
   "date": "2026-07-26",
   "lang": "zh",
   "title": "今天不是单点模型新闻，而是「agent 从会答题，变成会接管工作界面」继续加速",
+  "summary": "今天不是单点模型新闻，而是「agent 从会答题，变成会接管工作界面」继续加速。源头层里，OpenAI 把 ChatGPT Voice 放进桌面端",
   "url": "reports/2026-07-26-zh.html"
  },
  {
   "date": "2026-07-26",
   "lang": "en",
   "title": "The frontier-model story has moved past benchmark leadership",
+  "summary": "The frontier-model story has moved past benchmark leadership. OpenAI is turning voice into a desktop control surface, Anthropic is simplifying the scaffolding around a stronger coding model",
   "url": "reports/2026-07-26-en.html"
  },
  {
   "date": "2026-07-25",
   "lang": "zh",
   "title": "今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天",
+  "summary": "今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天：Anthropic 发 Claude Opus 5",
   "url": "reports/2026-07-25-zh.html"
  },
  {
   "date": "2026-07-25",
   "lang": "en",
   "title": "The model race is becoming an operating-surface race. Anthropic shipped Claude Opus 5",
+  "summary": "The model race is becoming an operating-surface race. Anthropic shipped Claude Opus 5, OpenAI put Voice on desktop where it can direct ChatGPT Work and Codex agents",
   "url": "reports/2026-07-25-en.html"
  },
  {
   "date": "2026-07-24",
   "lang": "zh",
   "title": "今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层",
+  "summary": "今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层。OpenAI 把 ChatGPT Voice 带到桌面",
   "url": "reports/2026-07-24-zh.html"
  },
  {
   "date": "2026-07-24",
   "lang": "en",
   "title": "AI is moving out of the chat window and into the control plane for work",
+  "summary": "AI is moving out of the chat window and into the control plane for work. OpenAI brought Voice to desktop, where it can control the computer and coordinate ChatGPT Work and Codex agents",
   "url": "reports/2026-07-24-en.html"
  },
  {
   "date": "2026-07-23",
   "lang": "zh",
   "title": "今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型",
+  "summary": "今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型；解读层开始盯 sandbox / reward-seeking / 长程任务",
   "url": "reports/2026-07-23-zh.html"
  },
  {
   "date": "2026-07-23",
   "lang": "en",
   "title": "The agent story has moved from capability to controlled deployment",
+  "summary": "The agent story has moved from capability to controlled deployment. Labs are adding security, economic observability, enterprise agent surfaces, and cheaper models",
   "url": "reports/2026-07-23-en.html"
  },
  {
   "date": "2026-07-22",
   "lang": "zh",
   "title": "今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统",
+  "summary": "今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统：源头层在补能力与安全边界，实践层在把 agent 变成岗位/工作流，投资层在押“软件自己生产自己”的 dark factory",
   "url": "reports/2026-07-22-zh.html"
  },
  {
   "date": "2026-07-22",
   "lang": "en",
   "title": "The consequential shift is not another model release. Agents are leaving the chat box and entering production systems",
+  "summary": "The consequential shift is not another model release. Agents are leaving the chat box and entering production systems, where speed, permissions, verification, identity",
   "url": "reports/2026-07-22-en.html"
  },
  {
   "date": "2026-07-21",
   "lang": "zh",
   "title": "今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束",
+  "summary": "今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束：长任务安全、可验证执行环境、算力供给、开放模型、以及 founder 自己的内容系统",
   "url": "reports/2026-07-21-zh.html"
  },
  {
   "date": "2026-07-20",
   "lang": "zh",
   "title": "今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推",
+  "summary": "今天的主线很清楚：AI 供给正在一边变强变便宜，一边变得更像供应链风险。 Kimi K3 和 Qwen3.8 把 open-weight 的能力预期往前推",
   "url": "reports/2026-07-20-zh.html"
  }
 ]
