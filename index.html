@@ -302,7 +302,7 @@ html.js .reveal.in{opacity:1;transform:none}
   <!-- TODAY'S RADAR — injected live from reports/archive.json -->
   <section id="today">
     <div class="sec-head reveal"><span class="num">02</span><h2 data-i18n="today.h2">今日报告</h2></div>
-    <p class="lead reveal" data-i18n="today.lead">免费完整报告,付费版包含信号和选题建议。</p>
+    <p class="lead reveal" data-i18n="today.lead">每天清晨自动跑出来,我自己读的就是这份——这里是它的公开版,免费完整;付费版多早期信号和选题建议。</p>
     <a class="report reveal" id="latestCard" href="#">
       <div class="rhead">
         <span class="d" id="latestDate">—</span>
@@ -329,8 +329,9 @@ html.js .reveal.in{opacity:1;transform:none}
   <!-- DIFFERENTIATORS -->
   <section id="how">
     <div class="sec-head reveal"><span class="num">04</span><h2 data-i18n="how.h2">信号全收,噪音全滤</h2></div>
+    <p class="lead reveal" data-i18n="how.lead">直取源头抓取,本地小模型按你的定位滤相关,LLM 合成当天一份报告。三个机制守住这条流水线:</p>
     <div class="grid3 reveal">
-      <div class="cell"><div class="k" data-i18n="how.k1">信任召回</div><h3 data-i18n="how.h1">信来源,不信词汇</h3><p data-i18n="how.p1">追踪账号的帖不看关键词直接进候选——治「新事物还没名字」时的失明。</p></div>
+      <div class="cell"><div class="k" data-i18n="how.k1">信任召回</div><h3 data-i18n="how.h1">信来源,不信词汇</h3><p data-i18n="how.p1">按一张市场地图追踪——源头、解读、实战、投资,四层实体的帖不看关键词直接进候选,治「新事物还没名字」时的失明。</p></div>
       <div class="cell"><div class="k" data-i18n="how.k2">语义召回</div><h3 data-i18n="how.h3b">关键词零命中也浮上来</h3><p data-i18n="how.p2">本地向量模型按语义相关性捞,不靠字面匹配,所以不会因为你没想到那个词就漏掉。</p></div>
       <div class="cell"><div class="k" data-i18n="how.k3">Decay 复审</div><h3 data-i18n="how.h3c">雷达词会过期</h3><p data-i18n="how.p3">每个追踪词带过期日,到点强制在报告顶勾 keep / drop——防雷达变成没人清理的噪音收集器。</p></div>
     </div>
@@ -396,7 +397,7 @@ const I18N={
   "why.eP":"Open weights from Chinese labs, creators' real-world practice on rednote, Agent tutorials on Bilibili, scenes like WAIC — the half of the battlefield the West rarely sees.",
   "why.wTag":"West · English world","why.wH":"Western sources, for Chinese readers",
   "why.wP":"Lab releases, VC bets, indie-hacker real numbers — not translated headlines, but re-read into angles that fit your positioning.",
-  "today.h2":"Today's report","today.lead":"Free public reports. The paid edition unlocks early trends and topics to write about.",
+  "today.h2":"Today's report","today.lead":"The same report I read every morning — this is its public edition, free and complete. Paid adds early trends and topics to write about.",
   "today.edition":"CN edition","today.pill":"Public · Free",
   "today.tA":"Every signal today points to one thing: ","today.tB":"the intelligence supply you depend on is getting cheaper and less stable at once","today.tC":" — and neither is in your control.",
   "today.l1":"Primary","today.l2":"Sense-maker","today.l3":"Practitioner","today.l4":"Investor",
@@ -410,9 +411,9 @@ const I18N={
   "arch.a2":"Kimi K3 isn't just a performance story — it's open-source pulling level with the frontier",
   "arch.a3":"Agent infra shifts from “it runs” to “billed by the millisecond”",
   "arch.a4":"Don't over-engineer your AI system: the scaffolding is racing the model",
-  "how.h2":"All signal. No noise.",
+  "how.h2":"All signal. No noise.","how.lead":"Fetched straight from the source, filtered for relevance by a local model, synthesized into one daily report. Three mechanisms keep that pipeline honest:",
   "how.k1":"Trust recall","how.h1":"Trust the source, not the word",
-  "how.p1":"Posts from tracked accounts enter regardless of keywords — curing the blindness to things that don't have a name yet.",
+  "how.p1":"Tracked on a map of the market — primary sources, sense-makers, practitioners, investors — their posts enter regardless of keywords, curing the blindness to things that don't have a name yet.",
   "how.k2":"Semantic recall","how.h3b":"Zero keyword hits, still surfaced",
   "how.p2":"A local vector model pulls by meaning, not literal match — so you don't lose a signal just because you didn't think of the word.",
   "how.k3":"Decay review","how.h3c":"Radar terms expire",
