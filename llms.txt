@@ -1,6 +1,6 @@
 # AI Radar / AI情报
 
-> A daily AI intelligence report covering both hemispheres: the Western frontier (labs, X, Hacker News, VC) explained for Chinese readers, and China's AI scene (rednote, Bilibili, WAIC, Chinese labs) explained for English readers. Every edition is published in full, free, in both Chinese and English.
+> A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
 Published daily by mingming (https://x.com/linktoming). 15 days archived.
 

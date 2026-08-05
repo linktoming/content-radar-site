@@ -1,12 +1,12 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>AI Radar — Read the Other Half of the World</title>
+<title>AI Radar — Daily AI Intelligence, West and East</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Static metadata is ENGLISH to match the <title> above. The page swaps language
      client-side, but no crawler or link unfurler (X, LinkedIn, Slack, WeChat) runs
      that JS — they read exactly what is served here, so it has to be one language.
      Per-report pages DO know their language and set these per-edition. -->
-<meta name="description" content="A daily AI intelligence report. The Western frontier (X · Hacker News · labs) explained for Chinese readers; China's AI scene (rednote · Bilibili · WAIC) explained for English readers.">
+<meta name="description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute report. Free full editions in English and Chinese.">
 <link rel="canonical" href="https://radar.sharpener.ai/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -15,21 +15,21 @@
 <link rel="alternate" type="application/rss+xml" title="AI情报 (中文)" href="/feed-zh.xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI Radar">
-<meta property="og:title" content="AI Radar — Read the Other Half of the World">
-<meta property="og:description" content="A daily AI intelligence report. The Western frontier explained for Chinese readers; China's AI scene explained for English readers. Two hemispheres, one radar.">
+<meta property="og:title" content="AI Radar — Daily AI Intelligence, West and East">
+<meta property="og:description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute report. Free full editions in English and Chinese.">
 <meta property="og:url" content="https://radar.sharpener.ai/">
 <meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Radar — Read the Other Half of the World">
-<meta name="twitter:description" content="A daily AI intelligence report. The Western frontier explained for Chinese readers; China's AI scene explained for English readers.">
+<meta name="twitter:title" content="AI Radar — Daily AI Intelligence, West and East">
+<meta name="twitter:description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute report. Free full editions in English and Chinese.">
 <meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
 <!-- Structured data: states publisher, author, language and cadence as facts rather
      than leaving a crawler (search or LLM) to infer them from the layout. -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","@id":"https://radar.sharpener.ai/#website","url":"https://radar.sharpener.ai/","name":"AI Radar","alternateName":"AI情报","inLanguage":["en","zh-CN"],"description":"A daily AI intelligence report. The Western frontier explained for Chinese readers; China's AI scene explained for English readers.","publisher":{"@id":"https://radar.sharpener.ai/#person"}},
+{"@type":"WebSite","@id":"https://radar.sharpener.ai/#website","url":"https://radar.sharpener.ai/","name":"AI Radar","alternateName":"AI情报","inLanguage":["en","zh-CN"],"description":"A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute report. Free full editions in English and Chinese.","publisher":{"@id":"https://radar.sharpener.ai/#person"}},
 {"@type":"Person","@id":"https://radar.sharpener.ai/#person","name":"mingming","url":"https://radar.sharpener.ai/","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},
 {"@type":"Blog","@id":"https://radar.sharpener.ai/#blog","url":"https://radar.sharpener.ai/","name":"AI Radar","description":"Daily AI intelligence across two hemispheres.","inLanguage":["en","zh-CN"],"author":{"@id":"https://radar.sharpener.ai/#person"},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}
 ]}
@@ -266,7 +266,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <h1 class="reveal">
         <span data-i18n="hero.h1a">读到</span><span class="east" data-i18n="hero.h1east">另一半</span><span data-i18n="hero.h1b">世界</span>
       </h1>
-      <p class="sub reveal" data-i18n="hero.sub">一份每天的 AI 情报报告,把西方的源头(X · HN · 实验室)讲给中文读者,把中文AI圈(小红书 · B站 · WAIC)讲给英文读者。两个半球,一条雷达。</p>
+      <p class="sub reveal" data-i18n="hero.sub">我给自己造了一台每天自动跑的 AI 情报雷达:一次扫描横跨西方源头(X · HN · 实验室)和中文AI圈(小红书 · B站),压缩成一份 10 分钟读完的报告。这是它今天的输出。</p>
       <div class="cta-row reveal">
         <a class="btn primary" href="#channels"><span data-i18n="hero.cta1">订阅AI情报</span><span aria-hidden="true">→</span></a>
         <a class="btn ghost" href="#today" data-i18n="hero.cta2">今日报告</a>
@@ -286,7 +286,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <div class="hemi e">
         <div class="tag" data-i18n="why.eTag">东 · 中文世界</div>
         <h3 data-i18n="why.eH">写给英文读者的中国信号</h3>
-        <p data-i18n="why.eP">WAIC 现场、月之暗面 IPO、小红书里一年练 vibe coding 的素人、B站的 Agent 教程——西方读者平时看不到的那半个战场。</p>
+        <p data-i18n="why.eP">中国实验室的开源权重、小红书创作者的真实实战、B站的 Agent 教程、WAIC 这样的现场——西方读者平时看不到的那半个战场。</p>
         <ul><li>rednote · bilibili · 抖音</li><li>WAIC · 机器之心 · 量子位</li><li>Kimi · Qwen · DeepSeek</li></ul>
       </div>
       <div class="divider-mark" aria-hidden="true">MERIDIAN</div>
@@ -388,12 +388,12 @@ const I18N={
   "hero.eyebrow":"Daily · AI Intelligence · East meets West",
   "today.loading":"Loading the latest edition…","today.readfull":"Read the full four-layer report →",
   "hero.h1a":"Read the ",  "hero.h1east":"other half",  "hero.h1b":" of the world",
-  "hero.sub":"A daily AI intelligence report — Western frontier (X · HN · labs) explained for Chinese readers, China's AI scene (rednote · Bilibili · WAIC) explained for English readers. Two hemispheres, one radar.",
+  "hero.sub":"I built myself an AI radar that runs every day — one sweep across the Western frontier (X · HN · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute read. This is today's output.",
   "hero.cta1":"Subscribe to AI radar","hero.cta2":"Today's report","hero.radarcap":"Sweep · 116°E / 122°W",
   "why.h2":"Everyone else scans half the sky",
   "why.lead":"English AI newsletters barely watch China's AI signals; Chinese ones can't keep up with Western sources. AI Radar crawls both in one pass — so what you read each day is the full circle, not half a map.",
   "why.eTag":"East · Chinese world","why.eH":"China's signals, for English readers",
-  "why.eP":"WAIC on the ground, Moonshot's IPO, a beginner who practiced vibe coding for a year on rednote, Agent tutorials on Bilibili — the half of the battlefield the West rarely sees.",
+  "why.eP":"Open weights from Chinese labs, creators' real-world practice on rednote, Agent tutorials on Bilibili, scenes like WAIC — the half of the battlefield the West rarely sees.",
   "why.wTag":"West · English world","why.wH":"Western sources, for Chinese readers",
   "why.wP":"Lab releases, VC bets, indie-hacker real numbers — not translated headlines, but re-read into angles that fit your positioning.",
   "today.h2":"Today's report","today.lead":"Free public reports. The paid edition unlocks early trends and topics to write about.",
@@ -433,7 +433,7 @@ const zhStore={};
 function cacheZh(){document.querySelectorAll("[data-i18n]").forEach(el=>{zhStore[el.getAttribute("data-i18n")]=el.innerHTML;});}
 function setLang(l){
   document.documentElement.lang = l==="en"?"en":"zh";
-  document.title = l==="en" ? "AI Radar — Read the Other Half of the World" : "AI情报 — 读到另一半世界";
+  document.title = l==="en" ? "AI Radar — Daily AI Intelligence, West and East" : "AI情报 — 每日 AI 情报 · 横跨东西";
   document.querySelectorAll("[data-i18n]").forEach(el=>{
     const k=el.getAttribute("data-i18n");
     if(l==="en"&&I18N.en[k]!=null) el.innerHTML=I18N.en[k];
