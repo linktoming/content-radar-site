@@ -6,7 +6,7 @@
      client-side, but no crawler or link unfurler (X, LinkedIn, Slack, WeChat) runs
      that JS — they read exactly what is served here, so it has to be one language.
      Per-report pages DO know their language and set these per-edition. -->
-<meta name="description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute report. Free full editions in English and Chinese.">
+<meta name="description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (labs · social · solo builders), compressed into a 10-minute report. Free full editions in English and Chinese.">
 <link rel="canonical" href="https://radar.sharpener.ai/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -16,20 +16,20 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI Radar">
 <meta property="og:title" content="AI Radar — Daily AI Intelligence, West and East">
-<meta property="og:description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute report. Free full editions in English and Chinese.">
+<meta property="og:description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (labs · social · solo builders), compressed into a 10-minute report. Free full editions in English and Chinese.">
 <meta property="og:url" content="https://radar.sharpener.ai/">
 <meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Radar — Daily AI Intelligence, West and East">
-<meta name="twitter:description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute report. Free full editions in English and Chinese.">
+<meta name="twitter:description" content="A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (labs · social · solo builders), compressed into a 10-minute report. Free full editions in English and Chinese.">
 <meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
 <!-- Structured data: states publisher, author, language and cadence as facts rather
      than leaving a crawler (search or LLM) to infer them from the layout. -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","@id":"https://radar.sharpener.ai/#website","url":"https://radar.sharpener.ai/","name":"AI Radar","alternateName":"AI情报","inLanguage":["en","zh-CN"],"description":"A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute report. Free full editions in English and Chinese.","publisher":{"@id":"https://radar.sharpener.ai/#person"}},
+{"@type":"WebSite","@id":"https://radar.sharpener.ai/#website","url":"https://radar.sharpener.ai/","name":"AI Radar","alternateName":"AI情报","inLanguage":["en","zh-CN"],"description":"A daily AI intelligence radar — one sweep across the Western frontier (X · Hacker News · labs) and China's AI scene (labs · social · solo builders), compressed into a 10-minute report. Free full editions in English and Chinese.","publisher":{"@id":"https://radar.sharpener.ai/#person"}},
 {"@type":"Person","@id":"https://radar.sharpener.ai/#person","name":"mingming","url":"https://radar.sharpener.ai/","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},
 {"@type":"Blog","@id":"https://radar.sharpener.ai/#blog","url":"https://radar.sharpener.ai/","name":"AI Radar","description":"Daily AI intelligence across two hemispheres.","inLanguage":["en","zh-CN"],"author":{"@id":"https://radar.sharpener.ai/#person"},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}
 ]}
@@ -266,7 +266,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <h1 class="reveal">
         <span data-i18n="hero.h1a">每天 10 分钟,<br>AI 圈</span><span class="east" data-i18n="hero.h1east">一网打尽</span><span data-i18n="hero.h1b"></span>
       </h1>
-      <p class="sub reveal" data-i18n="hero.sub">我给自己造了一台每天自动跑的 AI 情报雷达:一次扫描横跨西方源头(X · HN · 实验室)和中文AI圈(小红书 · B站),压缩成一份 10 分钟读完的报告。</p>
+      <p class="sub reveal" data-i18n="hero.sub">我给自己造了一台每天自动跑的 AI 情报雷达:一次扫描横跨西方源头(X · HN · 实验室)和中文AI圈(实验室 · 社媒 · 一人公司),压缩成一份每日报告。</p>
       <div class="cta-row reveal">
         <a class="btn primary" href="#channels"><span data-i18n="hero.cta1">订阅AI情报</span><span aria-hidden="true">→</span></a>
         <a class="btn ghost" href="#today" data-i18n="hero.cta2">今日报告</a>
@@ -387,8 +387,8 @@ const I18N={
  en:{
   "hero.eyebrow":"Daily · AI Intelligence · East meets West",
   "today.loading":"Loading the latest edition…","today.readfull":"Read the full four-layer report →",
-  "hero.h1a":"AI. ",  "hero.h1east":"All in.",  "hero.h1b":"<br>10 minutes a day.",
-  "hero.sub":"I built myself an AI radar that runs every day — one sweep across the Western frontier (X · HN · labs) and China's AI scene (rednote · Bilibili), compressed into a 10-minute read.",
+  "hero.h1a":"",  "hero.h1east":"All in.",  "hero.h1b":" AI.<br>10 minutes daily.",
+  "hero.sub":"I built myself an AI radar that runs every day — one sweep across the Western frontier (X · HN · labs) and China's AI scene (labs · social · solo builders), compressed into one daily report.",
   "hero.cta1":"Subscribe to AI radar","hero.cta2":"Today's report","hero.radarcap":"Sweep · 116°E / 122°W",
   "why.h2":"Everyone else scans half the sky",
   "why.lead":"English AI newsletters barely watch China's AI signals; Chinese ones can't keep up with Western sources. AI Radar crawls both in one pass — so what you read each day is the full circle, not half a map.",
