@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束：长任务安全、可验证执行环境、算力供给 · Content Radar</title>
+<title>今天的主线不是“又一个模型发布”，而是 agent 从 demo 进入生产之后，系统开始暴露真正的约束 · AI情报</title>
 <style>
 :root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
 @media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
@@ -47,7 +47,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px
 </style></head><body>
 <div class="meridian" aria-hidden="true"></div>
 <header><div class="wrap bar">
-  <a class="brand" href="../index.html"><span class="dot"></span><span>Content&nbsp;Radar</span></a>
+  <a class="brand" href="../index.html"><span class="dot"></span><span>AI情报</span></a>
   <div class="controls">
     <span class="edtag">中文版</span>
     <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
@@ -116,15 +116,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px
 </ul>
 <h2>📡 关键词雷达（by-search，非热榜）</h2>
 <p>今天不展开关键词雷达。原因不是“关键词没热”，而是 by-search 平台没有跑完：rednote / bilibili / douyin 被 <code>CR_SKIP_BROWSER_LANES=1</code> 整体跳过，<code>health.search_coverage</code> 为空。</p>
-<p>这意味着今天不能判断“AI 内容创作 / 一人公司 / vibe coding / agent workflow”等词在中文主流内容平台的热度。要把这块恢复，需要先修 gstack/XHS search hang，再重新 fresh crawl；否则空桶只代表没抓，不代表没信号。</p>
-<h2>🌱 早期信号</h2>
-<ol>
-<li><strong>Agent runtime 成为新底座</strong> — <a href="https://x.com/perplexity_ai/status/2077432518081744979#m">Perplexity SPACE</a>、<a href="https://x.com/LangChain/status/2079220134103638209#m">LangSmith Sandboxes</a>、<a href="https://x.com/pika_labs/status/2077438210213634159#m">Pika MCP</a> 都在补“agent 怎么安全地长时间做事”。</li>
-<li><strong>Open-weight 模型的商业化窗口打开</strong> — <a href="https://x.com/Alibaba_Qwen/status/2078759124914098291#m">Qwen3.8</a>、<a href="https://x.com/Kimi_Moonshot/status/2078855608565207130#m">Kimi K3</a>、<a href="https://x.com/FireworksAI_HQ/status/2078163976542949700#m">Fireworks</a> 同时出现，说明 open model 不再只是开发者玩具。</li>
-<li><strong>Compute access 产品化</strong> — <a href="https://x.com/togethercompute/status/2079211555212972310#m">YC × Together</a> 的 GPU cluster 不是单个融资新闻，而是 accelerator 开始把算力做成 portfolio service。</li>
-<li><strong>内容系统进入 agentic editor 阶段</strong> — <a href="https://www.lennysnewsletter.com/p/how-the-founder-of-morning-brew-built">Morning Brew Claude machine</a>、<a href="https://x.com/AliAbdaal/status/2078419107268178151#m">Riverside agentic editor</a>、<a href="https://x.com/runwayml/status/2078215839862648903#m">Runway Agent</a> 都在逼近“内容工厂没有工厂”的现实版本。</li>
-<li><strong>评测从 benchmark 变成工作流合同</strong> — Cursor 的 held-out tests、Harvey 的 80M token diligence environments、SemiAnalysis 的 gating parity 都在讲同一件事：AI 系统要上线，必须能被自动判分。</li>
-</ol></article>
+<p>这意味着今天不能判断“AI 内容创作 / 一人公司 / vibe coding / agent workflow”等词在中文主流内容平台的热度。要把这块恢复，需要先修 gstack/XHS search hang，再重新 fresh crawl；否则空桶只代表没抓，不代表没信号。</p></article>
   <div class="rp-cta">
     <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
     <a class="btn primary" href="../index.html#channels">看订阅方式 →</a>
@@ -132,7 +124,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px
 </main>
 <footer><div class="wrap foot">
   <a class="dom" href="../index.html">radar.sharpener.ai</a>
-  <span class="meta">公开版免费 · 完整 · 无个人信息 · 选题与定制走付费</span>
+  <span class="meta">by mingming</span>
 </div></footer>
 <script>
 const root=document.documentElement;
