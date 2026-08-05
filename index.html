@@ -6,7 +6,7 @@
      client-side, but no crawler or link unfurler (X, LinkedIn, Slack, WeChat) runs
      that JS — they read exactly what is served here, so it has to be one language.
      Per-report pages DO know their language and set these per-edition. -->
-<meta name="description" content="A daily AI intelligence report. The Western frontier (X · Hacker News · labs) explained for Chinese readers; China's creator scene (rednote · Bilibili · WAIC) explained for English readers.">
+<meta name="description" content="A daily AI intelligence report. The Western frontier (X · Hacker News · labs) explained for Chinese readers; China's AI scene (rednote · Bilibili · WAIC) explained for English readers.">
 <link rel="canonical" href="https://radar.sharpener.ai/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -16,20 +16,20 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI Radar">
 <meta property="og:title" content="AI Radar — Read the Other Half of the World">
-<meta property="og:description" content="A daily AI intelligence report. The Western frontier explained for Chinese readers; China's creator scene explained for English readers. Two hemispheres, one radar.">
+<meta property="og:description" content="A daily AI intelligence report. The Western frontier explained for Chinese readers; China's AI scene explained for English readers. Two hemispheres, one radar.">
 <meta property="og:url" content="https://radar.sharpener.ai/">
 <meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Radar — Read the Other Half of the World">
-<meta name="twitter:description" content="A daily AI intelligence report. The Western frontier explained for Chinese readers; China's creator scene explained for English readers.">
+<meta name="twitter:description" content="A daily AI intelligence report. The Western frontier explained for Chinese readers; China's AI scene explained for English readers.">
 <meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
 <!-- Structured data: states publisher, author, language and cadence as facts rather
      than leaving a crawler (search or LLM) to infer them from the layout. -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","@id":"https://radar.sharpener.ai/#website","url":"https://radar.sharpener.ai/","name":"AI Radar","alternateName":"AI情报","inLanguage":["en","zh-CN"],"description":"A daily AI intelligence report. The Western frontier explained for Chinese readers; China's creator scene explained for English readers.","publisher":{"@id":"https://radar.sharpener.ai/#person"}},
+{"@type":"WebSite","@id":"https://radar.sharpener.ai/#website","url":"https://radar.sharpener.ai/","name":"AI Radar","alternateName":"AI情报","inLanguage":["en","zh-CN"],"description":"A daily AI intelligence report. The Western frontier explained for Chinese readers; China's AI scene explained for English readers.","publisher":{"@id":"https://radar.sharpener.ai/#person"}},
 {"@type":"Person","@id":"https://radar.sharpener.ai/#person","name":"mingming","url":"https://radar.sharpener.ai/","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},
 {"@type":"Blog","@id":"https://radar.sharpener.ai/#blog","url":"https://radar.sharpener.ai/","name":"AI Radar","description":"Daily AI intelligence across two hemispheres.","inLanguage":["en","zh-CN"],"author":{"@id":"https://radar.sharpener.ai/#person"},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}
 ]}
@@ -266,10 +266,10 @@ html.js .reveal.in{opacity:1;transform:none}
       <h1 class="reveal">
         <span data-i18n="hero.h1a">读到</span><span class="east" data-i18n="hero.h1east">另一半</span><span data-i18n="hero.h1b">世界</span>
       </h1>
-      <p class="sub reveal" data-i18n="hero.sub">一份每天的 AI 情报报告,把西方的源头(X · HN · 实验室)讲给中文读者,把中文创作圈(小红书 · B站 · WAIC)讲给英文读者。两个半球,一条雷达。</p>
+      <p class="sub reveal" data-i18n="hero.sub">一份每天的 AI 情报报告,把西方的源头(X · HN · 实验室)讲给中文读者,把中文AI圈(小红书 · B站 · WAIC)讲给英文读者。两个半球,一条雷达。</p>
       <div class="cta-row reveal">
-        <a class="btn primary" href="#channels"><span data-i18n="hero.cta1">订阅今日雷达</span><span aria-hidden="true">→</span></a>
-        <a class="btn ghost" href="#today" data-i18n="hero.cta2">看今天这份</a>
+        <a class="btn primary" href="#channels"><span data-i18n="hero.cta1">订阅AI情报</span><span aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#today" data-i18n="hero.cta2">今日报告</a>
       </div>
     </div>
     <div class="radar-wrap reveal">
@@ -301,7 +301,7 @@ html.js .reveal.in{opacity:1;transform:none}
 
   <!-- TODAY'S RADAR — injected live from reports/archive.json -->
   <section id="today">
-    <div class="sec-head reveal"><span class="num">02</span><h2 data-i18n="today.h2">今天这份雷达</h2></div>
+    <div class="sec-head reveal"><span class="num">02</span><h2 data-i18n="today.h2">今日报告</h2></div>
     <p class="lead reveal" data-i18n="today.lead">免费完整报告,付费版包含信号和选题建议。</p>
     <a class="report reveal" id="latestCard" href="#">
       <div class="rhead">
@@ -388,8 +388,8 @@ const I18N={
   "hero.eyebrow":"Daily · AI Intelligence · East meets West",
   "today.loading":"Loading the latest edition…","today.readfull":"Read the full four-layer report →",
   "hero.h1a":"Read the ",  "hero.h1east":"other half",  "hero.h1b":" of the world",
-  "hero.sub":"A daily AI intelligence report — Western frontier (X · HN · labs) explained for Chinese readers, China's creator scene (rednote · Bilibili · WAIC) explained for English readers. Two hemispheres, one radar.",
-  "hero.cta1":"Subscribe to today's radar","hero.cta2":"See today's edition","hero.radarcap":"Sweep · 116°E / 122°W",
+  "hero.sub":"A daily AI intelligence report — Western frontier (X · HN · labs) explained for Chinese readers, China's AI scene (rednote · Bilibili · WAIC) explained for English readers. Two hemispheres, one radar.",
+  "hero.cta1":"Subscribe to AI radar","hero.cta2":"See today's edition","hero.radarcap":"Sweep · 116°E / 122°W",
   "why.h2":"Everyone else scans half the sky",
   "why.lead":"English AI newsletters barely watch China's creator signals; Chinese ones can't keep up with Western sources. AI Radar crawls both in one pass — so what you read each day is the full circle, not half a map.",
   "why.eTag":"East · Chinese world","why.eH":"China's signals, for English readers",
