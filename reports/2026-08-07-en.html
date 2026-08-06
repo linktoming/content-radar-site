@@ -1,0 +1,161 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agent products are turning intelligence into a controlled loop · AI Radar</title>
+<meta name="description" content="Agent products are turning intelligence into a controlled loop: OpenAI exposed reasoning effort, Vercel proposed a shared plugin layer, and investors are now asking how an agent knows when to stop">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-08-07-en.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Radar" href="/feed-en.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Radar">
+<meta property="og:title" content="Agent products are turning intelligence into a controlled loop">
+<meta property="og:description" content="Agent products are turning intelligence into a controlled loop: OpenAI exposed reasoning effort, Vercel proposed a shared plugin layer, and investors are now asking how an agent knows when to stop">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-08-07-en.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-07">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agent products are turning intelligence into a controlled loop">
+<meta name="twitter:description" content="Agent products are turning intelligence into a controlled loop: OpenAI exposed reasoning effort, Vercel proposed a shared plugin layer, and investors are now asking how an agent knows when to stop">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agent products are turning intelligence into a controlled loop","description":"Agent products are turning intelligence into a controlled loop: OpenAI exposed reasoning effort, Vercel proposed a shared plugin layer, and investors are now asking how an agent knows when to stop","datePublished":"2026-08-07","dateModified":"2026-08-07","inLanguage":"en","url":"https://radar.sharpener.ai/reports/2026-08-07-en.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-08-07-en.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI Radar","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI Radar</span></a>
+  <div class="controls">
+    <span class="edtag">EN edition</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-08-07">2026 · 08 · 07 · Daily AI Intelligence</time></div>
+      <span class="pill free">Public · Free</span>
+    </div>
+    <h1 class="rp-title">Agent products are turning intelligence into a controlled loop</h1>
+    <div class="rp-body"><h2>🔭 Today's Thesis</h2>
+<p>Agent products are turning intelligence into a controlled loop: OpenAI exposed reasoning effort, Vercel proposed a shared plugin layer, and investors are now asking how an agent knows when to stop. The practical moat is shifting from choosing the smartest model to owning orchestration, context, verification, and cost boundaries.</p>
+<p>Today we scanned 98 tracked primary sources across 15 platform lanes and reviewed 701 scored candidates. The China-side echo is unusually concrete: builders are already combining multiple coding CLIs, packaging Codex into video workflows, and selling measurable enterprise redesign rather than another chatbot wrapper.</p>
+<h2>🎯 Primary</h2>
+<h3>📦 Releases and platform moves</h3>
+<ul>
+<li><strong>OpenAI</strong> unified GPT-5.6 Sol across instant and deeper reasoning for paid users, added a reasoning-effort slider, and expanded Luna's Think mode to free users. The product surface now exposes inference budget as a user decision, not an invisible backend choice. <a href="https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt">OpenAI announcement</a></li>
+<li><strong>Vercel</strong> introduced Agent Plugins, an open extension standard supporting Agent Skills and MCP, built with AWS, VS Code, Cursor, GitHub, and OpenAI. The significant move is ecosystem coordination around portable agent capabilities. <a href="https://x.com/vercel/status/2085398393179005223#m">Announcement</a></li>
+<li><strong>OpenAI</strong> demonstrated Agent Plugins as a path for extending agents beyond a single application boundary. <a href="https://www.youtube.com/watch?v=UaeWJK_vv-Y">Demo</a></li>
+<li><strong>Alibaba Qwen</strong> said Qwen3.8-Max reached #2 in the Image-to-WebDev Arena, behind only Claude, while distribution widened through Cline. For Western builders, this is another reminder that Chinese models increasingly arrive with developer-channel distribution, not just benchmark claims. <a href="https://x.com/Alibaba_Qwen/status/2084834140516676093#m">Arena result</a></li>
+<li><strong>Kimi K3</strong> rolled into GitHub Copilot as an open-weight option; Together AI separately highlighted its performance on autonomous legal tasks. China’s frontier models are moving into Western production surfaces faster than the Western newsletter cycle tends to register. <a href="https://x.com/FireworksAI_HQ/status/2085446382090138001">GitHub rollout</a></li>
+<li><strong>Wan 3.0</strong>, reported by Chinese creator Guizang, supports native 30-second 1080p generation and mixed references spanning text, images, video, audio, documents, slides, webpages, and Markdown. That broad input contract matters for agent-driven media pipelines. <a href="https://x.com/op7418/status/2085370072332452212#m">Guizang's report</a></li>
+</ul>
+<h3>Infrastructure and control</h3>
+<ul>
+<li><strong>Cursor</strong> published a task-shaped routing view: Grok for routine work, GPT-5.6 Sol for planning and codebase comprehension, Opus 5 for execution-heavy work. Routing is becoming an explicit product opinion. <a href="https://x.com/cursor_ai/status/2085390485502239171#m">Cursor</a></li>
+<li><strong>Warp</strong> redesigned its Agent CLI around visible subagent orchestration. The UX problem is no longer “can an agent run?” but “can you see and govern the work tree?” <a href="https://x.com/warpdotdev/status/2085446166012166182#m">Warp</a></li>
+<li><strong>Sierra</strong> argued that builders should rent model intelligence but own customer context and the relationship layer. That is the clearest durable-moat framing in today's primary-source set. <a href="https://sierra.ai/blog/context-engine">Sierra</a></li>
+<li><strong>Xiaomi Robotics</strong> released a vision-language-action collection trained on more than 100,000 hours of real-world data—a China-side signal that embodied-AI advantage is being built through data operations, not demos. <a href="https://x.com/AdinaYakup/status/2085014813546295788#m">Collection</a></li>
+</ul>
+<h2>💰 Investor</h2>
+<ul>
+<li><strong>a16z's Yoko Li</strong> framed loop convergence as the missing operational primitive: a model can always produce another answer, so useful agents require explicit completion checks and budgets. <a href="https://www.a16z.news/p/knowing-when-to-stop-the-art-of-making">Essay</a></li>
+<li><strong>a16z</strong> noted that vLLM runs on roughly half a million GPUs at any moment. The quiet infrastructure layer beneath open models may capture more durable value than another thin model wrapper. <a href="https://x.com/a16z/status/2085429677007736872#m">Discussion</a></li>
+<li><strong>Y Combinator</strong> argued that “personal AGI” will let much smaller teams run companies, while its portfolio is already attacking model spend: Understudy claims up to 80% lower Anthropic bills without sacrificing performance. <a href="https://x.com/ycombinator/status/2085443781797785828">Personal AGI</a> · <a href="https://www.linkedin.com/company/y-combinator/posts/">Cost control</a></li>
+<li><strong>Bessemer-linked investors</strong> sharpened the AI-native services question: technical feasibility does not automatically create an attractive market; outcome pricing, margins, and repeatability still decide whether the company compounds. <a href="https://x.com/MahaAmanMalik/status/2085093348277113155#m">Market framing</a></li>
+</ul>
+<h2>🧠 Sense Maker</h2>
+<ul>
+<li><strong>AINews</strong> led with Google DeepMind's leadership reset, while <strong>TLDR AI</strong> paired that reshuffle with Meta Muse Code and Anthropic's chip team. The external answer keys reinforce today's deeper theme: labs are reorganizing around deployment, developer workflow, and infrastructure control. <a href="https://news.smol.ai/issues/26-08-05-gdm-reset/">AINews</a> · <a href="https://tldr.tech/ai/2026-08-06">TLDR AI</a></li>
+<li><strong>Andrej Karpathy</strong> moved beyond toy SVG tests and gave Opus 5 an open-ended game-building task. His test is directionally important: evaluate long-horizon artifact construction, not isolated cleverness. <a href="https://x.com/karpathy/status/2083749667410727319">Experiment</a></li>
+<li><strong>AlphaSignal</strong> unpacked Kimi K3's real engineering problem: serving a 2.8T-parameter MoE with 104B active parameters, 896 experts, and million-token contexts without network or KV-cache collapse. The benchmark headline is less useful than the serving architecture. <a href="https://x.com/AlphaSignalAI/status/2084683062856827243#m">Breakdown</a></li>
+<li><strong>SemiAnalysis</strong> reported ASE test capex at nearly twice its prior peak and memory tester book-to-bill above 2. Demand is migrating downstream into packaging and test, evidence that the compute buildout is broader than GPU orders alone. <a href="https://x.com/SemiAnalysis_/status/2085411193561194865#m">Signal</a></li>
+</ul>
+<h2>🔨 Practitioner</h2>
+<ul>
+<li><strong>Every</strong> found that good Codex setups are person-specific, not role-specific: two writers with the same title still need different context and workflows. This supports “own the relationship/context layer” at the individual level. <a href="https://x.com/every/status/2085458904310509627#m">Every</a></li>
+<li><strong>Levels</strong> proposed shipping books as <code>SKILL.md</code> files so coding agents can directly apply an author's method. Knowledge products are beginning to ship as executable context, not PDFs. <a href="https://x.com/levelsio/status/2085381480440623378">Example</a></li>
+<li><strong>Greg Isenberg</strong> described the next startup abstraction as “/loop for X” and warned that marketing agents do not solve saturated distribution. Building got cheaper; differentiated attention did not. <a href="https://x.com/gregisenberg/status/2085405277042380834#m">Loop thesis</a></li>
+<li><strong>AI Engineer</strong> mapped model routing across NVIDIA, Cognition, and OpenRouter—useful confirmation that orchestration is graduating into a standalone engineering discipline. <a href="https://www.youtube.com/watch?v=QHBjufYK8TA">Talk</a></li>
+</ul>
+<h2>🔥 Professional Trending</h2>
+<ul>
+<li>A C++20 port of vLLM's serving stack produced a 66 MiB binary with token-for-token checked output, a useful early signal for lean inference environments. <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vh9lx4/i_ported_vllms_serving_stack_to_c20_66_mib_binary/">Reddit discussion</a></li>
+<li>Qwen3.8-Max was reported ahead of Opus 5 on Artificial Analysis' agentic index. Treat the ranking cautiously, but track the direction: Chinese open models are competing on agentic work, not only price. <a href="https://www.reddit.com/r/LocalLLaMA/comments/1vhd416/qwen_38_max_now_ranked_as_best_overall_model/">Discussion</a></li>
+</ul>
+<h2>🌶️ Hotspots — China's Market Pulse</h2>
+<ul>
+<li><strong>Guizang</strong>, a high-signal Chinese AI product creator, tested <code>bb</code>, an IDE that auto-detects Codex, Claude Code, Grok Build, and Pi Agent CLIs and lets the operator switch models without setup. The Chinese builder conversation has already moved from “which coding agent?” to “which control plane coordinates all of them?” <a href="https://x.com/vista8/status/2085404916928197086#m">Field test</a></li>
+<li><strong>Tsinghua Jiang</strong>, a Bilibili educator translating frontier tooling for Chinese creators, shared four Codex plugins for video production. Coding agents are escaping software teams and entering creator operations. <a href="https://www.bilibili.com/video/BV1TYuH6YEX4">Video</a></li>
+<li><strong>Guangyu's Parallel World</strong>, a Chinese enterprise-AI operator, published concrete transformation cases: a fashion company saving RMB 5 million, a decision agent saving RMB 4 million, and a one-person ecommerce unit producing more than RMB 10 million in annual sales. The Chinese market is packaging AI adoption as organizational surgery with a P&amp;L number attached. <a href="https://www.douyin.com/video/7670472262297881871">Fashion case</a> · <a href="https://www.douyin.com/video/7662313739689004303">Decision-agent case</a> · <a href="https://www.douyin.com/video/7667129956081618226">Solo ecommerce case</a></li>
+<li><strong>Bilibili search</strong> is saturated with AI short-drama production courses and income claims. The signal is not another tool opportunity; it is commoditization. Workflow access is cheap, so taste, original IP, and distribution become the scarce layers. <a href="https://www.bilibili.com/video/BV1oRuH67E1i">Representative course</a></li>
+<li>A Bilibili builder demonstrated DeepSeek V4 plus Codex on a traceable data-analysis agent. Whether every performance claim survives scrutiny, the market expectation is clear: Chinese models must plug into the same agent harnesses as Western ones. <a href="https://www.bilibili.com/video/BV19VuJ6qEmp">Demo</a></li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="Previous/Next"><a class="rp-nav-prev" href="/reports/2026-08-06-en.html" rel="prev"><span class="k">← Previous</span><span class="t">The agent race has moved from model intelligence to operational systems</span></a><span></span><a class="rp-nav-all" href="/archive-en.html">All issues →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>This is the full public edition. Want the daily story angles, or a radar built for your market positioning?</p>
+    <a class="btn primary" href="/#channels">See how to subscribe →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI market radar. Free report daily covering both west and east.<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-en.xml">English</a> · <a class="dom" href="/feed-zh.xml">中文</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">build story</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

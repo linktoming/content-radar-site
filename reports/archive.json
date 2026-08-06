@@ -7,6 +7,13 @@
   "url": "reports/2026-08-07-zh.html"
  },
  {
+  "date": "2026-08-07",
+  "lang": "en",
+  "title": "Agent products are turning intelligence into a controlled loop",
+  "summary": "Agent products are turning intelligence into a controlled loop: OpenAI exposed reasoning effort, Vercel proposed a shared plugin layer, and investors are now asking how an agent knows when to stop",
+  "url": "reports/2026-08-07-en.html"
+ },
+ {
   "date": "2026-08-06",
   "lang": "zh",
   "title": "Agent 竞争今天从「谁的模型更聪明」推进到「谁能把模型塞进可控、可复盘、可交付的工作系统」",
