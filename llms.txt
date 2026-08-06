@@ -2,7 +2,7 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 16 days archived.
+Published daily by mingming (https://x.com/linktoming). 17 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
@@ -27,6 +27,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## 中文版
 
+- [2026-08-07 — Agent 的竞争正在从“模型聪明”转向“系统可控”：谁能把路由、验证、上下文、权限和成本闭环做好，谁才真正拥有生产力](https://radar.sharpener.ai/reports/2026-08-07-zh.html): Agent 的竞争正在从“模型聪明”转向“系统可控”：谁能把路由、验证、上下文、权限和成本闭环做好，谁才真正拥有生产力。今日扫描 295 个追踪源 · 19 个 fetcher · 1262 条原始帖子
 - [2026-08-06 — Agent 竞争今天从「谁的模型更聪明」推进到「谁能把模型塞进可控、可复盘、可交付的工作系统」](https://radar.sharpener.ai/reports/2026-08-06-zh.html): Agent 竞争今天从「谁的模型更聪明」推进到「谁能把模型塞进可控、可复盘、可交付的工作系统」。今日扫描 293 个追踪实体 · 19 个 fetcher · 1290 条原始帖，主信号不是单点发布，而是同一天在源头
 - [2026-08-05 — 今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞](https://radar.sharpener.ai/reports/2026-08-05-zh.html): 今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞
 - [2026-08-04 — 今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」](https://radar.sharpener.ai/reports/2026-08-04-zh.html): 今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」。OpenAI 用内部下一代模型给出 10 个数学和理论计算机科学结果，并释放 Lean certificates
