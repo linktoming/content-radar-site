@@ -7,6 +7,13 @@
   "url": "reports/2026-08-08-zh.html"
  },
  {
+  "date": "2026-08-08",
+  "lang": "en",
+  "title": "The agent stack is becoming an operable system: cheaper models, reusable skills, agent-first browsers, voice",
+  "summary": "The agent stack is becoming an operable system: cheaper models, reusable skills, agent-first browsers, voice, code review, and observability are converging into real workflows",
+  "url": "reports/2026-08-08-en.html"
+ },
+ {
   "date": "2026-08-07",
   "lang": "zh",
   "title": "Agent 的竞争正在从“模型聪明”转向“系统可控”：谁能把路由、验证、上下文、权限和成本闭环做好，谁才真正拥有生产力",
