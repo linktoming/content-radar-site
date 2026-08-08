@@ -7,6 +7,13 @@
   "url": "reports/2026-08-09-zh.html"
  },
  {
+  "date": "2026-08-09",
+  "lang": "en",
+  "title": "China's builder market is turning frontier models into interchangeable execution engines",
+  "summary": "China's builder market is turning frontier models into interchangeable execution engines, while Western labs are making the frontier itself harder to deploy",
+  "url": "reports/2026-08-09-en.html"
+ },
+ {
   "date": "2026-08-08",
   "lang": "zh",
   "title": "Agent 栈今天进入“可运营系统”阶段：模型更强只是底座，真正的竞争点变成安全闸、权限、插件、路由、语音界面和能长期跑业务结果的 harness",
