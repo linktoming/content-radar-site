@@ -29,7 +29,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## 中文版
 
-- [2026-08-08 — Agent 栈今天从“模型更强”转向“系统可运营”：OpenAI 给 Astra 加上 critical cyber 闸](https://radar.sharpener.ai/reports/2026-08-08-zh.html): Agent 栈今天从“模型更强”转向“系统可运营”：OpenAI 给 Astra 加上 critical cyber 闸，Vercel / Cursor 推 Agent Plugins，Cursor Router
+- [2026-08-08 — Agent 栈今天进入“可运营系统”阶段：模型更强只是底座，真正的竞争点变成安全闸、权限、插件、路由、语音界面和能长期跑业务结果的 harness](https://radar.sharpener.ai/reports/2026-08-08-zh.html): Agent 栈今天进入“可运营系统”阶段：模型更强只是底座，真正的竞争点变成安全闸、权限、插件、路由、语音界面和能长期跑业务结果的 harness
 - [2026-08-07 — Agent 的竞争正在从“模型聪明”转向“系统可控”：谁能把路由、验证、上下文、权限和成本闭环做好，谁才真正拥有生产力](https://radar.sharpener.ai/reports/2026-08-07-zh.html): Agent 的竞争正在从“模型聪明”转向“系统可控”：谁能把路由、验证、上下文、权限和成本闭环做好，谁才真正拥有生产力。今日扫描 295 个追踪源 · 19 个 fetcher · 1262 条原始帖子
 - [2026-08-06 — Agent 竞争今天从「谁的模型更聪明」推进到「谁能把模型塞进可控、可复盘、可交付的工作系统」](https://radar.sharpener.ai/reports/2026-08-06-zh.html): Agent 竞争今天从「谁的模型更聪明」推进到「谁能把模型塞进可控、可复盘、可交付的工作系统」。今日扫描 293 个追踪实体 · 19 个 fetcher · 1290 条原始帖，主信号不是单点发布，而是同一天在源头
 - [2026-08-05 — 今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞](https://radar.sharpener.ai/reports/2026-08-05-zh.html): 今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞
