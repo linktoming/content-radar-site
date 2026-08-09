@@ -8,6 +8,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## English editions
 
+- [2026-08-10 — AI work systems are converging on three hard requirements](https://radar.sharpener.ai/reports/2026-08-10-en.html): AI work systems are converging on three hard requirements: real-business integration, safe delegation, and complete workflows that non-programmers can actually run
 - [2026-08-09 — China's builder market is turning frontier models into interchangeable execution engines](https://radar.sharpener.ai/reports/2026-08-09-en.html): China's builder market is turning frontier models into interchangeable execution engines, while Western labs are making the frontier itself harder to deploy
 - [2026-08-08 — The agent stack is becoming an operable system: cheaper models, reusable skills, agent-first browsers, voice](https://radar.sharpener.ai/reports/2026-08-08-en.html): The agent stack is becoming an operable system: cheaper models, reusable skills, agent-first browsers, voice, code review, and observability are converging into real workflows
 - [2026-08-07 — Agent products are turning intelligence into a controlled loop](https://radar.sharpener.ai/reports/2026-08-07-en.html): Agent products are turning intelligence into a controlled loop: OpenAI exposed reasoning effort, Vercel proposed a shared plugin layer, and investors are now asking how an agent knows when to stop
