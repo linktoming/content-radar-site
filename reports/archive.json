@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-11",
+  "lang": "zh",
+  "title": "Agent 从“会聊天”进入“能被雇佣”：OpenAI 把 GPT-5.6 放进金融和网络防御工作流",
+  "summary": "Agent 从“会聊天”进入“能被雇佣”：OpenAI 把 GPT-5.6 放进金融和网络防御工作流，Anthropic 把 Claude 的价格/安全边界调到生产可用",
+  "url": "reports/2026-08-11-zh.html"
+ },
+ {
+  "date": "2026-08-11",
+  "lang": "en",
+  "title": "AI agents are becoming employable labor: OpenAI is putting GPT-5.6 into finance and cyber-defense workflows",
+  "summary": "AI agents are becoming employable labor: OpenAI is putting GPT-5.6 into finance and cyber-defense workflows, Anthropic is tuning Claude's price and safety boundaries for production",
+  "url": "reports/2026-08-11-en.html"
+ },
+ {
   "date": "2026-08-10",
   "lang": "zh",
   "title": "AI 工作系统的竞争焦点正在落到三个硬指标：能不能接进真实业务，能不能安全放权，能不能让非程序员也跑完整流程",
