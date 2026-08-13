@@ -1,0 +1,173 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer · AI情报</title>
+<meta name="description" content="Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer History，Claude 把 Chrome session 接回全端">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-08-14-zh.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI情报">
+<meta property="og:title" content="Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer">
+<meta property="og:description" content="Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer History，Claude 把 Chrome session 接回全端">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-08-14-zh.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-08-14">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer">
+<meta name="twitter:description" content="Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer History，Claude 把 Chrome session 接回全端">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer","description":"Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer History，Claude 把 Chrome session 接回全端","datePublished":"2026-08-14","dateModified":"2026-08-14","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-08-14-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-08-14-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-08-14">2026 · 08 · 14 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer</h1>
+    <div class="rp-body"><h2>🔭 今日主线</h2>
+<p>Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer History，Claude 把 Chrome session 接回全端，DeepSeek 同日发布 V4-Pro 与开源 Harness，Sequoia/LangChain/a16z 则把焦点压到 harness、eval、continual learning 和真实工作流验证。</p>
+<p>今日扫描 319 个追踪实体 · 24 个 fetcher · 1098 条去重候选。AINews 与 TLDR 的外部答案卷也指向同一组信号：Claude Chrome Cowork、Grok 4.6、DeepSeek v4-Pro-0813，而不是单一模型 headline。今天真正重要的不是谁又发了一个更强模型，而是“模型如何被装进长期运行、能记忆、能评估、能接管真实流程的系统”。</p>
+<p>对你最有用的判断：内容创业者下一阶段的护城河不是收藏 20 个新模型，而是把素材、判断、写作、分发、复盘变成可审计的个人 operating system。模型越来越快、越来越便宜，差距会落到你有没有自己的上下文、评估标准和反馈飞轮。</p>
+<h2>🎯 源头 · Primary</h2>
+<ul>
+<li><strong>OpenAI</strong> — 发布 <a href="https://openai.com/index/builders-guide-to-gpt-5-6">GPT-5.6 builder guide</a>，并预览 <a href="https://openai.com/index/previewing-ultrafast">Ultrafast mode</a>：由 Cerebras 驱动，GPT-5.6 Sol 最高 750 tokens/s，主打实时 voice、客服、commerce、coding、design、financial research 与 security response。重点是“速度成为产品能力”，不是单纯 benchmark。</li>
+<li><strong>OpenAI</strong> — 推出 <a href="https://x.com/OpenAI/status/2087996497908609389#m">Computer History</a>：ChatGPT desktop 可记住电脑上的 app / website activity，并提供 timeline、清除、排除、暂停等隐私控制。这是个人工作流记忆层，不只是聊天记录增强。</li>
+<li><strong>Anthropic / Claude</strong> — <a href="https://x.com/claudeai/status/2087635262390026525#m">Claude in Chrome</a> 的 session 可跨 desktop、web、mobile 保存，skills/connectors 也带入浏览器；同时提醒 browser agent 会被网页隐藏指令诱导，安全边界成为产品体验的一部分。</li>
+<li><strong>Google DeepMind</strong> — <a href="https://deepmind.google/blog/introducing-gemini-3-7-flash/">Gemini 3.7 Flash</a> 强化 coding、knowledge work、web development，并在 debugging、issue resolution、web layout 等真实任务上提升；Demis 强调 introductory price 是 3.6 Flash 的一半。</li>
+<li><strong>DeepSeek</strong> — 发布 <a href="https://x.com/deepseek_ai/status/2087864585504305397#m">DeepSeek-V4-Pro</a>：强调 agent production gains、可调 reasoning effort、原生 OpenAI Responses API 支持；同时宣布 <a href="https://x.com/deepseek_ai/status/2087864589895798968#m">峰谷定价</a>，off-peak 低 50%。这等于把 agent 负载调度直接写进商业模型。</li>
+<li><strong>DeepSeek</strong> — <a href="https://x.com/deepseek_ai/status/2087887408440164663#m">DeepSeek Harness v0.1</a> Developer Preview 开源 MIT，面向 agent harness builders。中文侧创作者迅速把它理解为“毛坯房 + 插件系统”，这比 SDK 更接近用户行为数据入口。</li>
+<li><strong>Mistral AI</strong> — 提出欧洲 AI capacity / open-source platform 路线：企业、政府、startup 可以把最好的模型接入自己的知识，并保留价值。这条线和美国闭源 agent 平台形成对照。</li>
+<li><strong>Perplexity</strong> — <a href="https://x.com/perplexity_ai/status/2087950343841915046#m">Search as Code</a> 优化后任务成本下降近 10%；Grok 4.6 进入 Perplexity Computer，并被放到 performance / efficiency Pareto frontier 上。</li>
+<li><strong>OpenClaw</strong> — 今日稳定基线仍是 <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-2">v2026.7.1-2</a>，并继续围绕 agent 改变软件开发的方向做社区沟通。</li>
+<li><strong>本日发布</strong> — <a href="https://github.com/anomalyco/opencode/releases/tag/v1.18.18">OpenCode v1.18.18</a>、<a href="https://github.com/zed-industries/zed/releases/tag/v1.16.0-pre">Zed v1.16.0-pre</a>、<a href="https://github.com/cline/cline/releases/tag/cli-v3.0.54">Cline cli-v3.0.54</a> 与 <a href="https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.74">Cline SDK v0.0.74</a> 都在小步迭代，agent tooling 的周更节奏还在加速。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<ul>
+<li><strong>a16z</strong> — <a href="https://www.a16z.news/p/investing-in-vals">投资 Vals</a>：判断是 frontier model 在 leaderboard 上漂亮，不等于能证明它做得了真实工作；独立 evaluation layer 会成为 AI adoption 的关键基础设施。</li>
+<li><strong>Sequoia / LangChain</strong> — Harrison Chase 在 <a href="https://www.youtube.com/watch?v=HI2q3ci3Iuc">When to Build Your Own Agent Harness</a> 里把“own your intelligence”拆成 open agent system、context、compounding loop；Sequoia 同场还把 continual learning、post-training、RL environments 连成一条企业智能资产路线。</li>
+<li><strong>Sequoia / Trajectory</strong> — Arjun Karanam 在 <a href="https://www.youtube.com/watch?v=eYrMF9Cht8A">continual learning talk</a> 里说模型有 IQ 但没有 tenure，企业要保留 trace、eval、harness 与真实交互数据，才能让 agent 越用越懂业务。</li>
+<li><strong>a16z / Datadog</strong> — <a href="https://www.youtube.com/watch?v=KSYnuCqCL4o">Datadog CISO 访谈</a> 的重点不是“要不要用 AI agent”，而是如何用 role-based MCP、ephemeral credentials 和 AI judge 让 4000+ 工程师安全使用 coding agents。</li>
+<li><strong>Arize / Dynatrace</strong> — Arize 宣布被 Dynatrace 收购，Foundation Capital 提到交易约 <a href="https://x.com/ashugarg/status/2087956528670167065">$915M</a>。这说明生产 AI observability / eval / drift 问题已经从工具层进入大型平台整合。</li>
+<li><strong>Databricks</strong> — TechCrunch 报道 Databricks 最终以 <a href="https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/">$190B valuation 融资 $5B</a>。资本押注的是数据平台成为模型、agent、企业 workflow 的承载层。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<ul>
+<li><strong>AINews / TLDR</strong> — 今日外部摘要把 <a href="https://tldr.tech/ai/2026-08-13">Claude Chrome Cowork、Grok 4.6、DeepSeek v4-Pro-0813</a> 放在同一组 headline。它们共同指向“agent 进入真实浏览器、真实 harness、真实成本约束”。</li>
+<li><strong>量子位</strong> — <a href="https://www.qbitai.com/">深度体验 DeepSeek Harness</a> 的角度是“涨价可以被原谅吗”：如果 Harness 真能把 agent workflow 和插件生态跑起来，模型厂商就不只卖 token，而是在争夺使用入口。</li>
+<li><strong>Harrison Chase</strong> — <a href="https://x.com/hwchase17/status/2087950696457162837#m">harnesses &amp; evals</a> 的核心判断是：你要拥有 agent system、context、compounding loop。对一人公司来说，这句话可以翻译成“别只买工具，要沉淀自己的流程数据”。</li>
+<li><strong>Ethan Mollick / Brynjolfsson</strong> — 更新版 <a href="https://x.com/erikbryn/status/2087553309926416887#m">Canaries in the Coal Mine</a> 仍未看到广泛 AI job displacement，但 AI-exposed jobs 里的年轻人相对下滑扩大到 19%。这不是失业恐慌题，而是“入门工种的学习路径被改写”。</li>
+<li><strong>Boris Cherny</strong> — <a href="https://x.com/adocomplete/status/2087728817012162973#m">Claude Code sessions 可以命名并互相 DM</a>；另一个判断是 LLM bug 从 off-by-one 转向 system design、UI usability、缺 broader context。这对你的产品开发很直接：agent coding 的瓶颈正在从“会不会写代码”转向“会不会理解系统”。</li>
+<li><strong>Sierra</strong> — <a href="https://sierra.ai/blog/defense-in-depth-in-the-age-of-agents">Defense in depth in the age of agents</a> 把 flow-based agents 和 goal/guardrail agents 区分开：越往目标驱动走，越需要多层防御和可恢复控制。</li>
+</ul>
+<h2>🔨 实践 · Practitioner</h2>
+<ul>
+<li><strong>DHH</strong> — 用 Grok 4.6 复现 Fable 计划，约 1h24m、8.6M tokens、成本约 <a href="https://x.com/dhh/status/2087867270479351885">$55</a>。他的另一个点是 Rails 也开始系统评估 coding performance；实践者关心的是“用多少钱把真实任务做完”。</li>
+<li><strong>Cursor</strong> — <a href="https://x.com/cursor_ai/status/2087991786279251993#m">Firetiger joins Cursor</a>：两边要做能把变更带到 production、观察行为、出错后响应的 long-running autonomous agents。coding agent 从 IDE 内补全走向生产闭环。</li>
+<li><strong>Cline</strong> — 把 DeepSeek V4-Pro 0813 接进 ClinePass，并称其 Terminal Bench 相比 April Preview 提升 15.8%，以很低成本逼近 Fable 5 表现。这里的信号是模型价格下降会立刻改写 coding agent 默认路由。</li>
+<li><strong>Tianyi Cui</strong> — <a href="https://x.com/tianyi/status/2087888089759015218">DeepSeek Harness 0.1.0</a> 被定位为 developer preview，承认 rough edges，但开放反馈。这比完美发布更像 agent infra 生态的早期真实状态。</li>
+<li><strong>Hiten Shah</strong> — <a href="https://x.com/hnshah/status/2087943930386198662">AI 迫使我们把 judgment reusable</a>。这句话适合贴在你的内容系统墙上：AI 内容创业不是把文章外包给模型，而是把你的判断标准产品化。</li>
+<li><strong>Eugene Cheng / LinkedIn</strong> — 简历优化 prompt 仍是大众 AI 高需求；但同池里也出现 “AI 改简历导致传统招聘失灵” 的视频。就业/招聘是内容创业者能长期吃的场景，不是一次性工具分享。</li>
+</ul>
+<h2>🔥 专业热榜</h2>
+<ul>
+<li><strong>GitHub Trending</strong> — <a href="https://github.com/anthropics/skills">anthropics/skills</a>、<a href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a>、<a href="https://github.com/holaboss-ai/holaOS">holaboss-ai/holaOS</a>、<a href="https://github.com/NVIDIA-NeMo/Switchyard">NVIDIA-NeMo/Switchyard</a> 都落在 agent workflow / skills / orchestration 方向。</li>
+<li><strong>HN</strong> — <a href="https://docs.mistral.ai/models/ocr-4-1">Mistral OCR 4.1</a> 上榜，说明“文档理解 + structured extraction”仍是企业 agent 的硬基础，不是性感 demo。</li>
+<li><strong>Hugging Face</strong> — DeepSeek V4 Pro、MiniMax Music 3、Muse Glimmer 等开放模型集中出现；开源/开放权重继续把模型层的优势压缩到更短半衰期。</li>
+<li><strong>Product Hunt</strong> — 今日工具流里更值得看的不是单点小工具，而是“面向具体岗位的 workflow 封装”：招聘、设计、研究、文档处理、agent scheduling。</li>
+</ul>
+<h2>👥 我的 feeds</h2>
+<ul>
+<li><strong>LinkedIn</strong> — <a href="https://www.linkedin.com/feed/update/urn:li:activity:7493745133184647168/">OpenAI Deployment Company</a> 这样的表述开始出现：AI 公司的工作重心从模型发布转到部署、流程、组织改造。</li>
+<li><strong>LinkedIn</strong> — <a href="https://www.linkedin.com/in/andrewchen/">FLORA Studios</a> 把 fashion team 的 sketch-to-render、garment swap、recolor、print placement、model generation、try-on 放进一个 cohesive tool。垂直创意工作流比泛图片模型更接近付费场景。</li>
+<li><strong>LinkedIn</strong> — <a href="https://www.linkedin.com/in/iuliia-shnai/">2 人团队 $3M ARR</a> 和 “AI companies revenue per employee” 继续刷屏；噪音很大，但需求很真：大家想知道 AI-native 小团队到底能跑到什么经营密度。</li>
+<li><strong>X / LinkedIn</strong> — 多条关于 DeepSeek、Gemini、Grok 4.6、Cursor/Firetiger 的内容被算法流推到前排，说明 agent workflow 已经不是小圈子 infra 话题，而在扩散到更宽的 builder feed。</li>
+</ul>
+<h2>🌶️ 热点</h2>
+<ul>
+<li><strong>DeepSeek V4-Pro + Harness 是中文侧今天最强热点。</strong> 歸藏连续跟进 <a href="https://x.com/op7418/status/2087580222992592946">V4-Pro 0813 发布</a>、<a href="https://x.com/op7418/status/2087863955150799113#m">官方公告与涨价</a>、<a href="https://x.com/op7418/status/2087724231790661951">Harness 公测节奏</a>；数字生命卡兹克则从安装、GitHub 地址、插件玩法到“毛坯房”心态完整拆了一轮。</li>
+<li><strong>涨价争议其实是产品定位争议。</strong> 中文创作者的核心反应不是“贵了”，而是：如果 DeepSeek 做 Harness，它是在从模型供应商转成 agent 产品入口；涨价、峰谷定价、插件系统会一起影响开发者要不要把 workflow 放上去。</li>
+<li><strong>内容创业侧的小爆点仍在就业 / 简历 / AI 求职。</strong> 课代表立正的 <a href="https://www.youtube.com/watch?v=BR3hN7InkmY">AI 改简历与传统招聘失灵</a> 是今天中文视频侧少数可见信号。它的选题价值不在“教你用 AI 改简历”，而在“AI 让信号筛选失灵后，个人如何重建可信作品集”。</li>
+<li><strong>AI 接单赚钱仍有市场，但要避开低质财富话术。</strong> 数字生命卡兹克转发 10w+ AI 博主分享接单方法，这类题材能吸引内容创业者，但你要写成系统方法论，别写成“AI 副业暴富”。</li>
+<li><strong>今日 CN 平台搜索缺失。</strong> rednote / B站 / 抖音搜索全 0，所以本段主要来自 X 上的中文信任创作者和 YouTube creator，不代表完整国内平台热度。</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><a class="rp-nav-prev" href="/reports/2026-08-13-zh.html" rel="prev"><span class="k">← 前一期</span><span class="t">开源 / 低价模型正在把 agent 栈从“模型发布”推向“可运营系统”。今日扫描 315 个追踪实体 · 25 个抓取源 · 1079 条去重候选</span></a><span></span><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI 市场雷达,每天一份免费报告,横跨东西。<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-zh.xml">中文</a> · <a class="dom" href="/feed-en.xml">English</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">幕后故事</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

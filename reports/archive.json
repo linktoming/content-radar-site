@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-08-14",
+  "lang": "zh",
+  "title": "Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer",
+  "summary": "Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer History，Claude 把 Chrome session 接回全端",
+  "url": "reports/2026-08-14-zh.html"
+ },
+ {
   "date": "2026-08-13",
   "lang": "zh",
   "title": "开源 / 低价模型正在把 agent 栈从“模型发布”推向“可运营系统”。今日扫描 315 个追踪实体 · 25 个抓取源 · 1079 条去重候选",

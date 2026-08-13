@@ -2,7 +2,7 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 23 days archived.
+Published daily by mingming (https://x.com/linktoming). 24 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
@@ -33,6 +33,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## 中文版
 
+- [2026-08-14 — Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer](https://radar.sharpener.ai/reports/2026-08-14-zh.html): Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer History，Claude 把 Chrome session 接回全端
 - [2026-08-13 — 开源 / 低价模型正在把 agent 栈从“模型发布”推向“可运营系统”。今日扫描 315 个追踪实体 · 25 个抓取源 · 1079 条去重候选](https://radar.sharpener.ai/reports/2026-08-13-zh.html): 开源 / 低价模型正在把 agent 栈从“模型发布”推向“可运营系统”。今日扫描 315 个追踪实体 · 25 个抓取源 · 1079 条去重候选
 - [2026-08-12 — Agent 的主线进入「可运营系统」：OpenAI 把 Codex/桌面端继续推入工作流](https://radar.sharpener.ai/reports/2026-08-12-zh.html): Agent 的主线进入「可运营系统」：OpenAI 把 Codex/桌面端继续推入工作流，NVIDIA/Meta/Unsloth 把本地和开源模型推向高频 agent
 - [2026-08-11 — Agent 从“会聊天”进入“能被雇佣”：OpenAI 把 GPT-5.6 放进金融和网络防御工作流](https://radar.sharpener.ai/reports/2026-08-11-zh.html): Agent 从“会聊天”进入“能被雇佣”：OpenAI 把 GPT-5.6 放进金融和网络防御工作流，Anthropic 把 Claude 的价格/安全边界调到生产可用
