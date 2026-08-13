@@ -8,6 +8,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## English editions
 
+- [2026-08-14 — AI is moving from model capability to operable systems](https://radar.sharpener.ai/reports/2026-08-14-en.html): AI is moving from model capability to operable systems: OpenAI made inference speed and computer history into product primitives, Claude carried sessions into the browser
 - [2026-08-13 — The frontier-model race is turning into a distribution race between ecosystems](https://radar.sharpener.ai/reports/2026-08-13-en.html): The frontier-model race is turning into a distribution race between ecosystems. DeepSeek V4 Pro, Qwen3.8 and Grok 4.6 arrived into a market where the model is immediately compressed
 - [2026-08-11 — AI agents are becoming employable labor: OpenAI is putting GPT-5.6 into finance and cyber-defense workflows](https://radar.sharpener.ai/reports/2026-08-11-en.html): AI agents are becoming employable labor: OpenAI is putting GPT-5.6 into finance and cyber-defense workflows, Anthropic is tuning Claude's price and safety boundaries for production
 - [2026-08-10 — AI work systems are converging on three hard requirements](https://radar.sharpener.ai/reports/2026-08-10-en.html): AI work systems are converging on three hard requirements: real-business integration, safe delegation, and complete workflows that non-programmers can actually run

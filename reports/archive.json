@@ -7,6 +7,13 @@
   "url": "reports/2026-08-14-zh.html"
  },
  {
+  "date": "2026-08-14",
+  "lang": "en",
+  "title": "AI is moving from model capability to operable systems",
+  "summary": "AI is moving from model capability to operable systems: OpenAI made inference speed and computer history into product primitives, Claude carried sessions into the browser",
+  "url": "reports/2026-08-14-en.html"
+ },
+ {
   "date": "2026-08-13",
   "lang": "zh",
   "title": "开源 / 低价模型正在把 agent 栈从“模型发布”推向“可运营系统”。今日扫描 315 个追踪实体 · 25 个抓取源 · 1079 条去重候选",
