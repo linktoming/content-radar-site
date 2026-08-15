@@ -7,6 +7,13 @@
   "url": "reports/2026-08-16-zh.html"
  },
  {
+  "date": "2026-08-16",
+  "lang": "en",
+  "title": "AI agents are becoming operating systems: speed, persistent context",
+  "summary": "AI agents are becoming operating systems: speed, persistent context, and production control now matter as much as model intelligence",
+  "url": "reports/2026-08-16-en.html"
+ },
+ {
   "date": "2026-08-15",
   "lang": "zh",
   "title": "Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把 GPT-5.6 Sol 推到 14x Ultrafast",
