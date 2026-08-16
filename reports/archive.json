@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-17",
+  "lang": "zh",
+  "title": "Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把速度和长期上下文补上，Claude 把浏览器会话接进统一工作区",
+  "summary": "Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把速度和长期上下文补上，Claude 把浏览器会话接进统一工作区，DeepSeek/Cursor/Vercel 把 harness、生产修复",
+  "url": "reports/2026-08-17-zh.html"
+ },
+ {
+  "date": "2026-08-17",
+  "lang": "en",
+  "title": "China’s open-model stack is turning price-performance into a distribution weapon",
+  "summary": "China’s open-model stack is turning price-performance into a distribution weapon. Today’s scan covered 2,275 posts across 27 active fetchers and produced 1,202 ranked candidates",
+  "url": "reports/2026-08-17-en.html"
+ },
+ {
   "date": "2026-08-16",
   "lang": "zh",
   "title": "AI Agent 的竞争焦点今天从“谁更聪明”转向“谁能在真实工作流里更快、更久、更可控”",
