@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 27 days archived.
+Published daily by mingming (https://x.com/linktoming). 28 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-08-18 — AI agents are becoming persistent operating systems, while their security debt is becoming brutally measurable](https://radar.sharpener.ai/reports/2026-08-18-en.html): AI agents are becoming persistent operating systems, while their security debt is becoming brutally measurable. Today’s scan covered 1,602 posts across 27 fetchers and produced 506 ranked candidates
 - [2026-08-17 — China’s open-model stack is turning price-performance into a distribution weapon](https://radar.sharpener.ai/reports/2026-08-17-en.html): China’s open-model stack is turning price-performance into a distribution weapon. Today’s scan covered 2,275 posts across 27 active fetchers and produced 1,202 ranked candidates
 - [2026-08-16 — AI agents are becoming operating systems: speed, persistent context](https://radar.sharpener.ai/reports/2026-08-16-en.html): AI agents are becoming operating systems: speed, persistent context, and production control now matter as much as model intelligence
 - [2026-08-15 — AI agents are moving from “more intelligent” to operable](https://radar.sharpener.ai/reports/2026-08-15-en.html): AI agents are moving from “more intelligent” to operable: OpenAI is pushing GPT-5.6 Sol to 14× Ultrafast and giving ChatGPT desktop a memory of your computer activity
@@ -37,6 +38,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## 中文版
 
+- [2026-08-18 — Agent 进入“可运营系统”阶段：今天最强的信号不是单点模型炫技，而是模型、工具、基础设施、投资人和中文创作者都在追同一件事——让 AI 真正接管一段工作流](https://radar.sharpener.ai/reports/2026-08-18-zh.html): Agent 进入“可运营系统”阶段：今天最强的信号不是单点模型炫技，而是模型、工具、基础设施、投资人和中文创作者都在追同一件事——让 AI 真正接管一段工作流
 - [2026-08-17 — Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把速度和长期上下文补上，Claude 把浏览器会话接进统一工作区](https://radar.sharpener.ai/reports/2026-08-17-zh.html): Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把速度和长期上下文补上，Claude 把浏览器会话接进统一工作区，DeepSeek/Cursor/Vercel 把 harness、生产修复
 - [2026-08-16 — AI Agent 的竞争焦点今天从“谁更聪明”转向“谁能在真实工作流里更快、更久、更可控”](https://radar.sharpener.ai/reports/2026-08-16-zh.html): AI Agent 的竞争焦点今天从“谁更聪明”转向“谁能在真实工作流里更快、更久、更可控”。今日扫描 321 个一手/高信任实体 · 24 类平台/抓取器 · 2272 条原始信号
 - [2026-08-15 — Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把 GPT-5.6 Sol 推到 14x Ultrafast](https://radar.sharpener.ai/reports/2026-08-15-zh.html): Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把 GPT-5.6 Sol 推到 14x Ultrafast、ChatGPT 桌面开始记 Computer History
