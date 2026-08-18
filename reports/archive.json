@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-19",
+  "lang": "zh",
+  "title": "今天的 AI 信号不是“某个模型又强了”，而是 agent 栈开始变成一套可运营的生产系统",
+  "summary": "今天的 AI 信号不是“某个模型又强了”，而是 agent 栈开始变成一套可运营的生产系统",
+  "url": "reports/2026-08-19-zh.html"
+ },
+ {
+  "date": "2026-08-19",
+  "lang": "en",
+  "title": "Today's signal is not “one more model got better.” The stack around agents is becoming an operating system for real work",
+  "summary": "Today's signal is not “one more model got better.” The stack around agents is becoming an operating system for real work",
+  "url": "reports/2026-08-19-en.html"
+ },
+ {
   "date": "2026-08-18",
   "lang": "zh",
   "title": "Agent 进入“可运营系统”阶段：今天最强的信号不是单点模型炫技，而是模型、工具、基础设施、投资人和中文创作者都在追同一件事——让 AI 真正接管一段工作流",
