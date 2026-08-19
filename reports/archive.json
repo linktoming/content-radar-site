@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-20",
+  "lang": "zh",
+  "title": "Agent 工作系统进入受治理生产期：模型、算力、桌面、支付、内容平台都在补同一件事——可审计的 AI 运营边界",
+  "summary": "Agent 工作系统进入受治理生产期：模型、算力、桌面、支付、内容平台都在补同一件事——可审计的 AI 运营边界",
+  "url": "reports/2026-08-20-zh.html"
+ },
+ {
+  "date": "2026-08-20",
+  "lang": "en",
+  "title": "Agent infrastructure is entering its governed production phase",
+  "summary": "Agent infrastructure is entering its governed production phase: models, compute, desktops, payments, and creator platforms are all converging on auditable AI work systems",
+  "url": "reports/2026-08-20-en.html"
+ },
+ {
   "date": "2026-08-19",
   "lang": "zh",
   "title": "今天的 AI 信号不是“某个模型又强了”，而是 agent 栈开始变成一套可运营的生产系统",

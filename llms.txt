@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 29 days archived.
+Published daily by mingming (https://x.com/linktoming). 30 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-08-20 — Agent infrastructure is entering its governed production phase](https://radar.sharpener.ai/reports/2026-08-20-en.html): Agent infrastructure is entering its governed production phase: models, compute, desktops, payments, and creator platforms are all converging on auditable AI work systems
 - [2026-08-19 — Today's signal is not “one more model got better.” The stack around agents is becoming an operating system for real work](https://radar.sharpener.ai/reports/2026-08-19-en.html): Today's signal is not “one more model got better.” The stack around agents is becoming an operating system for real work
 - [2026-08-18 — AI agents are becoming persistent operating systems, while their security debt is becoming brutally measurable](https://radar.sharpener.ai/reports/2026-08-18-en.html): AI agents are becoming persistent operating systems, while their security debt is becoming brutally measurable. Today’s scan covered 1,602 posts across 27 fetchers and produced 506 ranked candidates
 - [2026-08-17 — China’s open-model stack is turning price-performance into a distribution weapon](https://radar.sharpener.ai/reports/2026-08-17-en.html): China’s open-model stack is turning price-performance into a distribution weapon. Today’s scan covered 2,275 posts across 27 active fetchers and produced 1,202 ranked candidates
@@ -39,6 +40,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## 中文版
 
+- [2026-08-20 — Agent 工作系统进入受治理生产期：模型、算力、桌面、支付、内容平台都在补同一件事——可审计的 AI 运营边界](https://radar.sharpener.ai/reports/2026-08-20-zh.html): Agent 工作系统进入受治理生产期：模型、算力、桌面、支付、内容平台都在补同一件事——可审计的 AI 运营边界
 - [2026-08-19 — 今天的 AI 信号不是“某个模型又强了”，而是 agent 栈开始变成一套可运营的生产系统](https://radar.sharpener.ai/reports/2026-08-19-zh.html): 今天的 AI 信号不是“某个模型又强了”，而是 agent 栈开始变成一套可运营的生产系统
 - [2026-08-18 — Agent 进入“可运营系统”阶段：今天最强的信号不是单点模型炫技，而是模型、工具、基础设施、投资人和中文创作者都在追同一件事——让 AI 真正接管一段工作流](https://radar.sharpener.ai/reports/2026-08-18-zh.html): Agent 进入“可运营系统”阶段：今天最强的信号不是单点模型炫技，而是模型、工具、基础设施、投资人和中文创作者都在追同一件事——让 AI 真正接管一段工作流
 - [2026-08-17 — Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把速度和长期上下文补上，Claude 把浏览器会话接进统一工作区](https://radar.sharpener.ai/reports/2026-08-17-zh.html): Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把速度和长期上下文补上，Claude 把浏览器会话接进统一工作区，DeepSeek/Cursor/Vercel 把 harness、生产修复
