@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-21",
+  "lang": "zh",
+  "title": "Agent 系统进入“运营化”阶段：今天的核心不是单个模型更聪明，而是模型、harness、支付、隐私、成本、安全、可靠性开始被打包成可长期运行的工作系统",
+  "summary": "Agent 系统进入“运营化”阶段：今天的核心不是单个模型更聪明，而是模型、harness、支付、隐私、成本、安全、可靠性开始被打包成可长期运行的工作系统",
+  "url": "reports/2026-08-21-zh.html"
+ },
+ {
+  "date": "2026-08-21",
+  "lang": "en",
+  "title": "Agents are moving from clever demos into operable systems",
+  "summary": "Agents are moving from clever demos into operable systems: the day’s strongest signal is not a single smarter model, but the packaging of models, harnesses, privacy, payments, cost controls",
+  "url": "reports/2026-08-21-en.html"
+ },
+ {
   "date": "2026-08-20",
   "lang": "zh",
   "title": "Agent 工作系统进入受治理生产期：模型、算力、桌面、支付、内容平台都在补同一件事——可审计的 AI 运营边界",
