@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-27",
+  "lang": "zh",
+  "title": "今天最强信号不是某个单点发布，而是 AI 产业链正在同时向两端收紧：上游，OpenAI 用 Jalapeno 自研推理芯片把成本、延迟和供应链控制权拉回模型厂",
+  "summary": "今天最强信号不是某个单点发布，而是 AI 产业链正在同时向两端收紧：上游，OpenAI 用 Jalapeno 自研推理芯片把成本、延迟和供应链控制权拉回模型厂",
+  "url": "reports/2026-08-27-zh.html"
+ },
+ {
+  "date": "2026-08-27",
+  "lang": "en",
+  "title": "Today's signal is not one product launch. It is the AI stack tightening from both ends",
+  "summary": "Today's signal is not one product launch. It is the AI stack tightening from both ends",
+  "url": "reports/2026-08-27-en.html"
+ },
+ {
   "date": "2026-08-21",
   "lang": "zh",
   "title": "Agent 系统进入“运营化”阶段：今天的核心不是单个模型更聪明，而是模型、harness、支付、隐私、成本、安全、可靠性开始被打包成可长期运行的工作系统",
