@@ -1,0 +1,167 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The agent stack moved from “impressive demo” to “operable system” · AI Radar</title>
+<meta name="description" content="The agent stack moved from “impressive demo” to “operable system”: auditable, priced, deployable, and embedded in real workflows">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-08-28-en.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Radar" href="/feed-en.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Radar">
+<meta property="og:title" content="The agent stack moved from “impressive demo” to “operable system”">
+<meta property="og:description" content="The agent stack moved from “impressive demo” to “operable system”: auditable, priced, deployable, and embedded in real workflows">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-08-28-en.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-28">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The agent stack moved from “impressive demo” to “operable system”">
+<meta name="twitter:description" content="The agent stack moved from “impressive demo” to “operable system”: auditable, priced, deployable, and embedded in real workflows">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"The agent stack moved from “impressive demo” to “operable system”","description":"The agent stack moved from “impressive demo” to “operable system”: auditable, priced, deployable, and embedded in real workflows","datePublished":"2026-08-28","dateModified":"2026-08-28","inLanguage":"en","url":"https://radar.sharpener.ai/reports/2026-08-28-en.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-08-28-en.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI Radar","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI Radar</span></a>
+  <div class="controls">
+    <span class="edtag">EN edition</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-08-28">2026 · 08 · 28 · Daily AI Intelligence</time></div>
+      <span class="pill free">Public · Free</span>
+    </div>
+    <h1 class="rp-title">The agent stack moved from “impressive demo” to “operable system”</h1>
+    <div class="rp-body"><h2>🔭 Main Line</h2>
+<p>The agent stack moved from “impressive demo” to “operable system”: auditable, priced, deployable, and embedded in real workflows. Across 852 professional signals and 995 social/platform signals, the same line shows up from different layers: OpenAI incident review, Claude’s browser surface, Google’s double-blind frontier evaluations, Qwen/GLM price pressure, and NVIDIA/AWS infrastructure all point to a new bottleneck. Model capability still matters, but the leverage is shifting to system boundaries, cost boundaries, evaluation boundaries, and user onboarding.</p>
+<p>The Chinese creator platforms add the market side Western builders usually miss. The biggest viral signal was not another benchmark. It was “teach ordinary people to operate AI agents with confidence”: long Codex and Claude Code tutorials, WorkBuddy guides, Vibe Coding demos, and knowledge-base workflows. That is the useful East-West read today: while the frontier debates evaluation and liability, the Chinese content market is already packaging agents as a learnable operating system for creators.</p>
+<h2>🎯 Primary</h2>
+<ul>
+<li><a href="https://x.com/OpenAI/status/2092691861773160673">OpenAI</a> published a technical postmortem on the Hugging Face incident and brought in <a href="https://x.com/OpenAI/status/2092691863505346634">METR / Redwood</a> for third-party assessment. Agent failures are moving into explicit accountability chains.</li>
+<li><a href="https://x.com/claudeai/status/2092755571455758427">Anthropic Claude</a> added an embedded browser to Cowork, while <a href="https://x.com/claudeai/status/2092755574563741871">Claude in Chrome</a> moved to paid-plan GA. Web operation is becoming a default agent work surface.</li>
+<li><a href="https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/">Google DeepMind</a> started piloting double-blind frontier AI evaluations, and <a href="https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/">Gemini 3.5 Transcribe</a> pushes low-latency transcription toward real content-understanding workflows.</li>
+<li>China-side model pressure was unusually concrete: <a href="https://x.com/Zai_org/status/2092616204787626030">Z.ai</a> released GLM-5.3-Flash, a 320B/18B-active, 1M-context MIT-licensed model deployable on domestic chips; <a href="https://x.com/Alibaba_Qwen/status/2092867093385613760">Qwen</a> priced Qwen3.8-Flash at $0.15/M input and $0.47/M output. Crossover: the same Qwen/GLM cluster also appeared in Reddit, Hugging Face, and Product Hunt, so this was not just a local announcement.</li>
+<li><a href="https://blogs.nvidia.com/blog/vera-cpu-delivery/">NVIDIA Vera</a> began delivery, and <a href="https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai">AWS + NVIDIA</a> expanded infrastructure by 2 million GPUs for agentic and physical AI.</li>
+<li><a href="https://lambda.ai/blog/agentflow-when-the-agents-workflow-learns">Lambda AgentFlow</a> framed the workflow itself as something that learns; <a href="https://x.com/Replit/status/2093005666931671199">Replit</a> introduced Intelligent Model Routing, turning model choice into a platform-level optimization.</li>
+</ul>
+<h2>💰 Investor</h2>
+<ul>
+<li><a href="https://x.com/a16z/status/2092977442076106960">a16z</a> argued that AI apps should not blindly copy per-token pricing; technical buyers prefer credits tied to recognizable value. For a solo founder, that matters because your cost curve may fall faster than the customer’s perceived value.</li>
+<li><a href="https://x.com/a16z/status/2093003112521027772">a16z</a> used Cursor to make the interaction-layer point: Microsoft had VS Code, GitHub, OpenAI weights, and enterprise distribution, yet Cursor still found a wedge. The lesson is not “big companies are slow”; it is that AI-native interaction layers are still open.</li>
+<li><a href="https://x.com/a16z/status/2092774816596259111">a16z</a>, via Aaron Levie, pushed the agent-friendly software thesis: if agents outnumber humans by orders of magnitude, software needs both a human interface and an agent interface.</li>
+<li><a href="https://x.com/sonyatweetybird/status/2092765608828149771">Sonya Huang</a> read video generation speed collapsing from 10 minutes to 20 seconds as Jevons Paradox: lower waiting time does not just cheapen the same demand, it creates new demand.</li>
+<li><a href="https://x.com/ycombinator/status/2092680754790891676">YC</a> highlighted Legora reaching $100M ARR since 2024-10 and covering 3% of lawyers globally, a strong proof point for professional workflows becoming agentic.</li>
+</ul>
+<h2>🧠 Sense Makers</h2>
+<ul>
+<li><a href="https://news.smol.ai/issues/26-08-26-not-much/">AINews</a> framed GLM-5.3-Flash as a new “intelligence per dollar” sample; <a href="https://tldr.tech/ai/2026-08-27">TLDR AI</a> put GLM-5.3 Flash, Claudeforce, and NVIDIA’s revenue surge in the same headline set. The external answer keys support today’s “look beyond raw model capability” theme.</li>
+<li><a href="https://news.smol.ai/issues/26-08-25-not-much/">AINews</a> connected OpenAI Jalapeño, agent harnesses, and AutoSaddler: inference economics is not only a chip story, but also a harness and model-assisted optimization story.</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2092688580111974648">SemiAnalysis</a> argued that Qwen3.8-Flash-Next uses Qwen4-lineage architecture ideas, including a 51B-parameter N-gram embedding, GDN/QSA, and FP8 support. That explains why this Qwen release deserves more than “small model update” treatment.</li>
+<li><a href="https://x.com/emollick/status/2092967957647216804">Ethan Mollick</a> warned against over-personifying the Hugging Face incident: agent behavior observed in CoT research is not the same as stable motivation.</li>
+<li><a href="https://x.com/TheZvi/status/2092938970665492743">Zvi</a> focused on the missing transparency question: if outside investigators cannot inspect OpenAI internal systems, the incident review remains incomplete.</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-08-27-11">机器之心</a>, a major Chinese AI media outlet, reported that a general coding agent directly attached to robots reached 78% success and beat specialized embodied models. If that holds, “general agent + environment interface” may have a system advantage in robotics too.</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-08-27-10">机器之心</a> also covered a 200k-line migration failure case, which pairs cleanly with SWE Refactor Bench: long-horizon repo migration is still a hard boundary for Claude/GPT-style coding agents.</li>
+<li><a href="https://www.lennysnewsletter.com/p/i-spent-20000-on-devin-in-a-month">Lenny</a> interviewed Ryan Carson on spending $20,000 on Devin in a month. The useful point is not “expensive or cheap”; it is how a real solo founder budgets agents as production systems.</li>
+</ul>
+<h2>🔨 Practitioners</h2>
+<ul>
+<li><a href="https://x.com/dotey/status/2092826289841299636">Baoyu</a>, a Chinese AI practitioner, tested asking AI to redesign the translation workflow from the goal instead of following the existing architecture. The lesson: do not only make prompts more detailed; ask the model to reframe the workflow around the outcome.</li>
+<li><a href="https://x.com/vista8/status/2092994215219470596">向阳乔木</a> read Gemini 3.5 Transcribe as an upgrade path for real-time translation and interview/content capture: low latency, code-switching, and domain terms matter directly to creators.</li>
+<li><a href="https://x.com/vista8/status/2092986511247724645">向阳乔木</a> noticed Grok Bot / X Premium+ giving an agent a GUI Linux computer. “An agent with its own machine” is a small phrasing shift with large automation implications.</li>
+<li><a href="https://x.com/op7418/status/2092806384006139907">歸藏</a>, a Chinese AI-tool creator, covered Codepilot 0.67.10: model selector, side panel, built-in browser, Windows incremental updates, and GLM 5.3 Flash support. Coding tools are bundling model choice, browsing, and project boards into a workbench.</li>
+<li><a href="https://www.youtube.com/watch?v=EoNH3Tn8wYE">Greg Isenberg</a> discussed WebMCP, where agents can pay for site capabilities. For content products, the implication is simple: you may eventually sell callable abilities, not pages.</li>
+<li><a href="https://www.youtube.com/watch?v=G7cgLjZtmMU">AI Engineer</a> discussed the Agentic Commerce Stack, reinforcing that agents are not only internal efficiency tools; they can rewrite transaction entry points.</li>
+</ul>
+<h2>🔥 Professional Trends</h2>
+<ul>
+<li><a href="https://pollen-robotics.com/microduck/">Hugging Face Microduck</a> was hot on HN and TechCrunch, while <a href="https://x.com/ClementDelangue/status/2092931447644442635">Clement Delangue</a> got 1.916M views on X. The $399 open-source robot makes physical AI legible as “something a normal person can own and train.” This was a strong news/viral crossover, so it is not repeated again in the hot section.</li>
+<li><a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next">Qwen/Qwen3.8-Flash-Next</a>, <a href="https://huggingface.co/Qwen/Qwen3.8-27B">Qwen3.8-27B</a>, and <a href="https://huggingface.co/zai-org/GLM-5.3-Flash">GLM-5.3-Flash</a> showed up across Hugging Face / Product Hunt, with Reddit discussion on Qwen3.8-Flash. China’s open model price-performance story is now visible in Western technical channels.</li>
+<li><a href="https://github.com/anthropics/claude-plugins-official">Anthropic claude-plugins-official</a>, <a href="https://github.com/K-Dense-AI/scientific-agent-skills">scientific-agent-skills</a>, <a href="https://github.com/ComposioHQ/awesome-claude-skills">awesome-claude-skills</a>, and <a href="https://github.com/thedotmack/claude-mem">claude-mem</a> hit GitHub trending. Skills, memory, and plugins formed a clear developer cluster.</li>
+<li><a href="https://huggingface.co/papers/2608.23564">SWE Refactor Bench</a> and <a href="https://huggingface.co/papers/2608.25927">Code World Model</a> point in the same research direction: coding agents are moving from solving isolated tasks to operating in long-horizon code environments.</li>
+<li><a href="https://www.producthunt.com/products/mcp-builder-ai">Product Hunt MCP-Builder.ai</a> resonated with multiple Claude skill repos: agent capability is being packaged as installable modules.</li>
+</ul>
+<h2>🌶️ Hot / Viral</h2>
+<p>The Chinese platform signal is straightforward: agent tools are being translated into “follow-along certainty.” Long videos are not a weakness when the promise is complete installation, hooks, skills, plugins, subagents, and a real deliverable.</p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1Nd596vEyU">Bilibili: 秋芝2046, “Master Codex in 40 minutes”</a> reached 1.73M views; the same Codex topic reached <a href="https://www.rednote.com/user/profile/63b622ab00000000260066bd/6a080fda000000003502d325">100k likes on Rednote</a>. Codex is no longer only an engineering tool; it is creator-anxiety content.</li>
+<li><a href="https://www.douyin.com/video/7636872072064470298">Douyin: Claude Code zero-basics ultimate tutorial</a> reached 861k likes, while <a href="https://www.bilibili.com/video/BV1NvRyBzEhq">Bilibili’s Claude Code long tutorial</a> reached 1.55M views. Crossover: GitHub’s Claude skills/plugins/memory trend shows the developer-side supply; Chinese platforms show demand-side packaging.</li>
+<li><a href="https://www.bilibili.com/video/BV1j9MP6wEV9">Bilibili: desktop agent beginner tutorial</a> reached 1.343M views; <a href="https://www.douyin.com/video/7659453388643470611">Douyin: WorkBuddy beginner guide</a> reached 223k likes. The framing is “my computer can finally do work for me.”</li>
+<li><a href="https://www.douyin.com/video/7636352251627425058">Douyin: Vibe Coding, build software by talking to AI</a> reached 150k likes. The hook is identity expansion for non-programmers.</li>
+<li><a href="https://www.rednote.com/search_result/6a523217000000002100b841">Rednote: “Knowledge base — understand an industry in one hour”</a> reached 28.8k likes. AI is being sold as a cognitive lever for entering an unfamiliar domain, not only as a writing tool.</li>
+<li><a href="https://www.douyin.com/video/7675698262409628928">Douyin: AI narrative short “Dingbo Sells Ghosts”</a> reached 147k likes. AI video still works, but the signal is narrative/topic packaging more than raw generation magic.</li>
+<li><a href="https://x.com/itsumeshk/status/2092632126231609849">Runable Grow</a> reached 1.557M views by naming the post-AI-website gap: not “make a site,” but “let AI help you grow.”</li>
+<li>Reddit provided useful confirmation rather than primary signal: r/ClaudeAI has reached Claude Code meme density, and r/LocalLLaMA’s Qwen3.8-Flash discussion confirms that China model price-performance still excites the hard-core builder crowd.</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="Previous/Next"><a class="rp-nav-prev" href="/reports/2026-08-27-en.html" rel="prev"><span class="k">← Previous</span><span class="t">Today&#x27;s signal is not one product launch. It is the AI stack tightening from both ends</span></a><span></span><a class="rp-nav-all" href="/archive-en.html">All issues →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>This is the full public edition. Want the daily story angles, or a radar built for your market positioning?</p>
+    <a class="btn primary" href="/#channels">See how to subscribe →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI market radar. Free report daily covering both west and east.<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-en.xml">English</a> · <a class="dom" href="/feed-zh.xml">中文</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">build story</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

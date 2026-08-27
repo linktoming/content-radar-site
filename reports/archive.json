@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-28",
+  "lang": "zh",
+  "title": "Agent 栈今天进入工程化运营期：会审计、会计费、可部署、能进入真实工作流。今日两路扫描合计覆盖 852 条专业信号与 995 条社媒/平台信号",
+  "summary": "Agent 栈今天进入工程化运营期：会审计、会计费、可部署、能进入真实工作流。今日两路扫描合计覆盖 852 条专业信号与 995 条社媒/平台信号",
+  "url": "reports/2026-08-28-zh.html"
+ },
+ {
+  "date": "2026-08-28",
+  "lang": "en",
+  "title": "The agent stack moved from “impressive demo” to “operable system”",
+  "summary": "The agent stack moved from “impressive demo” to “operable system”: auditable, priced, deployable, and embedded in real workflows",
+  "url": "reports/2026-08-28-en.html"
+ },
+ {
   "date": "2026-08-27",
   "lang": "zh",
   "title": "今天最强信号不是某个单点发布，而是 AI 产业链正在同时向两端收紧：上游，OpenAI 用 Jalapeno 自研推理芯片把成本、延迟和供应链控制权拉回模型厂",
