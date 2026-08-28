@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-29",
+  "lang": "zh",
+  "title": "Agent 正在从“会聊/会写代码”进入“能接设备、能改流程、能自我修正”的生产化阶段",
+  "summary": "Agent 正在从“会聊/会写代码”进入“能接设备、能改流程、能自我修正”的生产化阶段；与此同时，中文平台正在把同一波技术包装成“普通人也能获得掌控感”的教程和模板",
+  "url": "reports/2026-08-29-zh.html"
+ },
+ {
+  "date": "2026-08-29",
+  "lang": "en",
+  "title": "Agents are moving from impressive single-task demos into operating systems",
+  "summary": "Agents are moving from impressive single-task demos into operating systems: they need hardware interfaces, persistent memory, workflow repair, cost routing, and audit trails",
+  "url": "reports/2026-08-29-en.html"
+ },
+ {
   "date": "2026-08-28",
   "lang": "zh",
   "title": "Agent 栈今天进入工程化运营期：会审计、会计费、可部署、能进入真实工作流。今日两路扫描合计覆盖 852 条专业信号与 995 条社媒/平台信号",
