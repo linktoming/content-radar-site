@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-30",
+  "lang": "zh",
+  "title": "OpenAI 断供 Cursor，把 AI 编程工具竞争从功能与模型能力，推到了供应链、控制权和平台信任竞争",
+  "summary": "OpenAI 断供 Cursor，把 AI 编程工具竞争从功能与模型能力，推到了供应链、控制权和平台信任竞争",
+  "url": "reports/2026-08-30-zh.html"
+ },
+ {
+  "date": "2026-08-30",
+  "lang": "en",
+  "title": "OpenAI cutting direct model access for Cursor turns AI coding tools into a supply-chain and platform-trust story",
+  "summary": "OpenAI cutting direct model access for Cursor turns AI coding tools into a supply-chain and platform-trust story, not just a product-feature race",
+  "url": "reports/2026-08-30-en.html"
+ },
+ {
   "date": "2026-08-29",
   "lang": "zh",
   "title": "Agent 正在从“会聊/会写代码”进入“能接设备、能改流程、能自我修正”的生产化阶段",
