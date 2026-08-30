@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-08-31",
+  "lang": "zh",
+  "title": "Agent 栈今天的主线，是从“模型更聪明”转向“系统能长期、安全、低成本地运行”；而中文平台的热度给了另一半答案",
+  "summary": "Agent 栈今天的主线，是从“模型更聪明”转向“系统能长期、安全、低成本地运行”；而中文平台的热度给了另一半答案：大众不是在追 agent 概念，而是在追“我能不能照着做出结果”",
+  "url": "reports/2026-08-31-zh.html"
+ },
+ {
+  "date": "2026-08-31",
+  "lang": "en",
+  "title": "Today's signal is not “models got smarter.” It is that agents are becoming operating systems",
+  "summary": "Today's signal is not “models got smarter.” It is that agents are becoming operating systems: controlled, metered, persistent, safer, and tied to hardware",
+  "url": "reports/2026-08-31-en.html"
+ },
+ {
   "date": "2026-08-30",
   "lang": "zh",
   "title": "OpenAI 断供 Cursor，把 AI 编程工具竞争从功能与模型能力，推到了供应链、控制权和平台信任竞争",
