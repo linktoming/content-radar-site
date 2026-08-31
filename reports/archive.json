@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-01",
+  "lang": "zh",
+  "title": "Agent 栈今天进入“可控运行”竞争：OpenAI 收紧 Cursor 模型分发，Anthropic 推 Model Hardware Standard",
+  "summary": "Agent 栈今天进入“可控运行”竞争：OpenAI 收紧 Cursor 模型分发，Anthropic 推 Model Hardware Standard，OpenClaw 2.0 把记忆/搜索/托管做进 harness",
+  "url": "reports/2026-09-01-zh.html"
+ },
+ {
+  "date": "2026-09-01",
+  "lang": "en",
+  "title": "The signal today is not “more AI tools.” It is the hardening of the agent stack",
+  "summary": "The signal today is not “more AI tools.” It is the hardening of the agent stack: model access is becoming strategic distribution, agent products are turning into durable operating systems",
+  "url": "reports/2026-09-01-en.html"
+ },
+ {
   "date": "2026-08-31",
   "lang": "zh",
   "title": "Agent 栈今天的主线，是从“模型更聪明”转向“系统能长期、安全、低成本地运行”；而中文平台的热度给了另一半答案",
