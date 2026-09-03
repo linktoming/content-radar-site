@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-04",
+  "lang": "zh",
+  "title": "Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层",
+  "summary": "Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层，Anthropic 让 Claude 在后台操作电脑",
+  "url": "reports/2026-09-04-zh.html"
+ },
+ {
+  "date": "2026-09-04",
+  "lang": "en",
+  "title": "Agents are entering real workflows: OpenAI pushed Computer, Voice, and the Astra safety frame toward work execution",
+  "summary": "Agents are entering real workflows: OpenAI pushed Computer, Voice, and the Astra safety frame toward work execution; Anthropic put Claude closer to background desktop operation",
+  "url": "reports/2026-09-04-en.html"
+ },
+ {
   "date": "2026-09-03",
   "lang": "zh",
   "title": "Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统",
