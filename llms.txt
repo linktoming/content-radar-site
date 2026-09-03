@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 37 days archived.
+Published daily by mingming (https://x.com/linktoming). 38 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-09-03 — The useful story today is that agents are moving out of chat boxes and into operating workflows](https://radar.sharpener.ai/reports/2026-09-03-en.html): The useful story today is that agents are moving out of chat boxes and into operating workflows
 - [2026-09-01 — The signal today is not “more AI tools.” It is the hardening of the agent stack](https://radar.sharpener.ai/reports/2026-09-01-en.html): The signal today is not “more AI tools.” It is the hardening of the agent stack: model access is becoming strategic distribution, agent products are turning into durable operating systems
 - [2026-08-31 — Today's signal is not “models got smarter.” It is that agents are becoming operating systems](https://radar.sharpener.ai/reports/2026-08-31-en.html): Today's signal is not “models got smarter.” It is that agents are becoming operating systems: controlled, metered, persistent, safer, and tied to hardware
 - [2026-08-30 — OpenAI cutting direct model access for Cursor turns AI coding tools into a supply-chain and platform-trust story](https://radar.sharpener.ai/reports/2026-08-30-en.html): OpenAI cutting direct model access for Cursor turns AI coding tools into a supply-chain and platform-trust story, not just a product-feature race
@@ -47,6 +48,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## 中文版
 
+- [2026-09-03 — Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统](https://radar.sharpener.ai/reports/2026-09-03-zh.html): Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统：Claude 推 Fable 5.1 / Mythos 5.1 与后台 computer use
 - [2026-09-01 — Agent 栈今天进入“可控运行”竞争：OpenAI 收紧 Cursor 模型分发，Anthropic 推 Model Hardware Standard](https://radar.sharpener.ai/reports/2026-09-01-zh.html): Agent 栈今天进入“可控运行”竞争：OpenAI 收紧 Cursor 模型分发，Anthropic 推 Model Hardware Standard，OpenClaw 2.0 把记忆/搜索/托管做进 harness
 - [2026-08-31 — Agent 栈今天的主线，是从“模型更聪明”转向“系统能长期、安全、低成本地运行”；而中文平台的热度给了另一半答案](https://radar.sharpener.ai/reports/2026-08-31-zh.html): Agent 栈今天的主线，是从“模型更聪明”转向“系统能长期、安全、低成本地运行”；而中文平台的热度给了另一半答案：大众不是在追 agent 概念，而是在追“我能不能照着做出结果”
 - [2026-08-30 — OpenAI 断供 Cursor，把 AI 编程工具竞争从功能与模型能力，推到了供应链、控制权和平台信任竞争](https://radar.sharpener.ai/reports/2026-08-30-zh.html): OpenAI 断供 Cursor，把 AI 编程工具竞争从功能与模型能力，推到了供应链、控制权和平台信任竞争

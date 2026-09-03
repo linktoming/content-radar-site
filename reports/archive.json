@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-03",
+  "lang": "zh",
+  "title": "Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统",
+  "summary": "Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统：Claude 推 Fable 5.1 / Mythos 5.1 与后台 computer use",
+  "url": "reports/2026-09-03-zh.html"
+ },
+ {
+  "date": "2026-09-03",
+  "lang": "en",
+  "title": "The useful story today is that agents are moving out of chat boxes and into operating workflows",
+  "summary": "The useful story today is that agents are moving out of chat boxes and into operating workflows",
+  "url": "reports/2026-09-03-en.html"
+ },
+ {
   "date": "2026-09-01",
   "lang": "zh",
   "title": "Agent 栈今天进入“可控运行”竞争：OpenAI 收紧 Cursor 模型分发，Anthropic 推 Model Hardware Standard",
