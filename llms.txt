@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 39 days archived.
+Published daily by mingming (https://x.com/linktoming). 40 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-09-05 — GPT-6 Astra moves the agent story from “a stronger model” to “a computer worker that can be taught, packaged](https://radar.sharpener.ai/reports/2026-09-05-en.html): GPT-6 Astra moves the agent story from “a stronger model” to “a computer worker that can be taught, packaged, and delegated real workflows
 - [2026-09-04 — Agents are entering real workflows: OpenAI pushed Computer, Voice, and the Astra safety frame toward work execution](https://radar.sharpener.ai/reports/2026-09-04-en.html): Agents are entering real workflows: OpenAI pushed Computer, Voice, and the Astra safety frame toward work execution; Anthropic put Claude closer to background desktop operation
 - [2026-09-03 — The useful story today is that agents are moving out of chat boxes and into operating workflows](https://radar.sharpener.ai/reports/2026-09-03-en.html): The useful story today is that agents are moving out of chat boxes and into operating workflows
 - [2026-09-01 — The signal today is not “more AI tools.” It is the hardening of the agent stack](https://radar.sharpener.ai/reports/2026-09-01-en.html): The signal today is not “more AI tools.” It is the hardening of the agent stack: model access is becoming strategic distribution, agent products are turning into durable operating systems
@@ -49,6 +50,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## 中文版
 
+- [2026-09-05 — GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”](https://radar.sharpener.ai/reports/2026-09-05-zh.html): GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”。今日两条 lane 合计扫描 2042 条 raw posts、1904 条候选
 - [2026-09-04 — Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层](https://radar.sharpener.ai/reports/2026-09-04-zh.html): Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层，Anthropic 让 Claude 在后台操作电脑
 - [2026-09-03 — Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统](https://radar.sharpener.ai/reports/2026-09-03-zh.html): Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统：Claude 推 Fable 5.1 / Mythos 5.1 与后台 computer use
 - [2026-09-01 — Agent 栈今天进入“可控运行”竞争：OpenAI 收紧 Cursor 模型分发，Anthropic 推 Model Hardware Standard](https://radar.sharpener.ai/reports/2026-09-01-zh.html): Agent 栈今天进入“可控运行”竞争：OpenAI 收紧 Cursor 模型分发，Anthropic 推 Model Hardware Standard，OpenClaw 2.0 把记忆/搜索/托管做进 harness

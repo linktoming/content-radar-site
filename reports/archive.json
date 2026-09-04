@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-05",
+  "lang": "zh",
+  "title": "GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”",
+  "summary": "GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”。今日两条 lane 合计扫描 2042 条 raw posts、1904 条候选",
+  "url": "reports/2026-09-05-zh.html"
+ },
+ {
+  "date": "2026-09-05",
+  "lang": "en",
+  "title": "GPT-6 Astra moves the agent story from “a stronger model” to “a computer worker that can be taught, packaged",
+  "summary": "GPT-6 Astra moves the agent story from “a stronger model” to “a computer worker that can be taught, packaged, and delegated real workflows",
+  "url": "reports/2026-09-05-en.html"
+ },
+ {
   "date": "2026-09-04",
   "lang": "zh",
   "title": "Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层",
