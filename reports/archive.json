@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-06",
+  "lang": "zh",
+  "title": "GPT-6 Astra 把这一天的关键词从“更强模型”推到了“可交付的电脑工作流”",
+  "summary": "GPT-6 Astra 把这一天的关键词从“更强模型”推到了“可交付的电脑工作流”。今日两条 lane 合计扫描 1359 条 raw posts、1327 条去重候选",
+  "url": "reports/2026-09-06-zh.html"
+ },
+ {
+  "date": "2026-09-06",
+  "lang": "en",
+  "title": "GPT-6 Astra turned today’s AI story from “a stronger model” into “a deliverable computer workflow",
+  "summary": "GPT-6 Astra turned today’s AI story from “a stronger model” into “a deliverable computer workflow.” Across the two lanes, today’s run scanned 1,359 raw posts and 1,327 deduped candidates",
+  "url": "reports/2026-09-06-en.html"
+ },
+ {
   "date": "2026-09-05",
   "lang": "zh",
   "title": "GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”",

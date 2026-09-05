@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 40 days archived.
+Published daily by mingming (https://x.com/linktoming). 41 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-09-06 — GPT-6 Astra turned today’s AI story from “a stronger model” into “a deliverable computer workflow](https://radar.sharpener.ai/reports/2026-09-06-en.html): GPT-6 Astra turned today’s AI story from “a stronger model” into “a deliverable computer workflow.” Across the two lanes, today’s run scanned 1,359 raw posts and 1,327 deduped candidates
 - [2026-09-05 — GPT-6 Astra moves the agent story from “a stronger model” to “a computer worker that can be taught, packaged](https://radar.sharpener.ai/reports/2026-09-05-en.html): GPT-6 Astra moves the agent story from “a stronger model” to “a computer worker that can be taught, packaged, and delegated real workflows
 - [2026-09-04 — Agents are entering real workflows: OpenAI pushed Computer, Voice, and the Astra safety frame toward work execution](https://radar.sharpener.ai/reports/2026-09-04-en.html): Agents are entering real workflows: OpenAI pushed Computer, Voice, and the Astra safety frame toward work execution; Anthropic put Claude closer to background desktop operation
 - [2026-09-03 — The useful story today is that agents are moving out of chat boxes and into operating workflows](https://radar.sharpener.ai/reports/2026-09-03-en.html): The useful story today is that agents are moving out of chat boxes and into operating workflows
@@ -50,6 +51,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## 中文版
 
+- [2026-09-06 — GPT-6 Astra 把这一天的关键词从“更强模型”推到了“可交付的电脑工作流”](https://radar.sharpener.ai/reports/2026-09-06-zh.html): GPT-6 Astra 把这一天的关键词从“更强模型”推到了“可交付的电脑工作流”。今日两条 lane 合计扫描 1359 条 raw posts、1327 条去重候选
 - [2026-09-05 — GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”](https://radar.sharpener.ai/reports/2026-09-05-zh.html): GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”。今日两条 lane 合计扫描 2042 条 raw posts、1904 条候选
 - [2026-09-04 — Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层](https://radar.sharpener.ai/reports/2026-09-04-zh.html): Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层，Anthropic 让 Claude 在后台操作电脑
 - [2026-09-03 — Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统](https://radar.sharpener.ai/reports/2026-09-03-zh.html): Agent 模型今天的核心变化不是“更会聊天”，而是开始被塞进真实工作系统：Claude 推 Fable 5.1 / Mythos 5.1 与后台 computer use
@@ -89,7 +91,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-07-25 — 今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天](https://radar.sharpener.ai/reports/2026-07-25-zh.html): 今天不是单点模型发布日，而是“agent operating surface”同时变厚的一天：Anthropic 发 Claude Opus 5
 - [2026-07-24 — 今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层](https://radar.sharpener.ai/reports/2026-07-24-zh.html): 今天最硬的线不是“又一个模型发布”，而是 AI 开始从聊天窗口变成可操控工作环境的界面层。OpenAI 把 ChatGPT Voice 带到桌面
 - [2026-07-23 — 今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型](https://radar.sharpener.ai/reports/2026-07-23-zh.html): 今天的主线不是“又发了一个模型”，而是 AI agent 进入可控部署期：源头层在补安全、经济指数、企业 agent 平台和低成本模型；解读层开始盯 sandbox / reward-seeking / 长程任务
-- [2026-07-22 — 今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统](https://radar.sharpener.ai/reports/2026-07-22-zh.html): 今天的主线不是“又一个模型发布”，而是 agent 从聊天框进入生产系统：源头层在补能力与安全边界，实践层在把 agent 变成岗位/工作流，投资层在押“软件自己生产自己”的 dark factory
 
 ## Full index
 
