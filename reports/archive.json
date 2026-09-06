@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-07",
+  "lang": "zh",
+  "title": "GPT-6 Astra 把 AI 竞争从「模型回答」推到了「可验收的工作系统」。今天扫描 news lane 992 条、viral lane 1,078 条",
+  "summary": "GPT-6 Astra 把 AI 竞争从「模型回答」推到了「可验收的工作系统」。今天扫描 news lane 992 条、viral lane 1,078 条",
+  "url": "reports/2026-09-07-zh.html"
+ },
+ {
+  "date": "2026-09-07",
+  "lang": "en",
+  "title": "GPT-6 Astra moves the AI race from better answers to executable work systems",
+  "summary": "GPT-6 Astra moves the AI race from better answers to executable work systems. Today's combined pool scanned 992 news-lane posts and 1,078 viral-lane posts",
+  "url": "reports/2026-09-07-en.html"
+ },
+ {
   "date": "2026-09-06",
   "lang": "zh",
   "title": "GPT-6 Astra 把这一天的关键词从“更强模型”推到了“可交付的电脑工作流”",
