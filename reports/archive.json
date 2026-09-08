@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-08",
+  "lang": "zh",
+  "title": "今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流",
+  "summary": "今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流。OpenAI 把 GPT-6 Astra 推给 Work/Codex/API",
+  "url": "reports/2026-09-08-zh.html"
+ },
+ {
+  "date": "2026-09-08",
+  "lang": "en",
+  "title": "Today's signal is not “another stronger model.” It is that AI agents are moving from demos into delegable work packages",
+  "summary": "Today's signal is not “another stronger model.” It is that AI agents are moving from demos into delegable work packages. OpenAI pushed GPT-6 Astra into Work, Codex, and API",
+  "url": "reports/2026-09-08-en.html"
+ },
+ {
   "date": "2026-09-07",
   "lang": "zh",
   "title": "GPT-6 Astra 把 AI 竞争从「模型回答」推到了「可验收的工作系统」。今天扫描 news lane 992 条、viral lane 1,078 条",

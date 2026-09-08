@@ -1,0 +1,161 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流 · AI情报</title>
+<meta name="description" content="今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流。OpenAI 把 GPT-6 Astra 推给 Work/Codex/API">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-09-08-zh.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI情报">
+<meta property="og:title" content="今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流">
+<meta property="og:description" content="今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流。OpenAI 把 GPT-6 Astra 推给 Work/Codex/API">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-09-08-zh.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-09-08">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流">
+<meta name="twitter:description" content="今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流。OpenAI 把 GPT-6 Astra 推给 Work/Codex/API">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流","description":"今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流。OpenAI 把 GPT-6 Astra 推给 Work/Codex/API","datePublished":"2026-09-08","dateModified":"2026-09-08","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-09-08-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-09-08-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-09-08">2026 · 09 · 08 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流</h1>
+    <div class="rp-body"><h2>🔭 今日主线</h2>
+<p>今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流。OpenAI 把 <a href="https://x.com/OpenAI/status/2095595741528125780">GPT-6 Astra</a> 推给 Work/Codex/API，Google 用 <a href="https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/">Gemini 3.8 Flash/Cyber</a> 往低成本与安全场景压，Anthropic 用 <a href="https://x.com/AnthropicAI/status/2095947707605266436">Claude formalized Fermat's Last Theorem</a> 把“AI research assistant”推进到严肃研究流程。</p>
+<p>跨段 crossover 很明显：News 侧在讲模型、runtime、benchmark、算力和研究工作台；Viral 侧在讲 Codex/Claude Code 教程、私人助理、Vibe Coding、企业 AI 增收案例。两边合起来的信号是：用户已经不满足于“知道 AI 很强”，他们要一条能照着做、能验收、能复用的路径。对你来说，今天最该抓的不是模型名，而是“工作包 / workflow / feedback loop”这条线。</p>
+<h2>🎯 源头 · Primary</h2>
+<ul>
+<li><strong>OpenAI〔S · model_maker〕</strong> — <a href="https://x.com/sama/status/2095973658867171733">Astra</a> 已进入 Work/Codex/API；官方 <a href="https://openai.com/index/research-acceleration-view-inside-openai">Research acceleration</a> 披露 coding agents 正在提高研究实验速度和代码变更量。它和 Viral 侧的 Codex 教程爆款形成 crossover：上游给能力，下游在找“怎么用起来”。</li>
+<li><strong>OpenAI safety〔S〕</strong> — Jakub Pachocki 的 <a href="https://openai.com/index/an-alien-mind">An Alien Mind</a> 把能力加速与 safeguards / 国际协调放在一起讲。Agent 越能操作真实工作流，安全就越从工程问题变成产品承诺。</li>
+<li><strong>Google DeepMind〔S · model_maker〕</strong> — 发布 <a href="https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/">WeatherNext 3</a> 与 <a href="https://x.com/demishassabis/status/2095191106665284046">Gemini 3.8 Flash/Cyber</a>：模型路线在往“更快、更便宜、更垂直安全”走。</li>
+<li><strong>NVIDIA / Hugging Face〔A · infra〕</strong> — NVIDIA 宣布以 <a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/">129.303 亿美元收购 Hugging Face</a>，开源模型分发与 GPU 云基础设施开始合并，开放生态获得资源的同时也会面对平台中立性问题。</li>
+<li><strong>Hugging Face〔A · infra〕</strong> — 发布 <a href="https://www.youtube.com/watch?v=y9xup6XEP2o">207 个 WebGPU kernels</a>，browser AI 的底层算子生态继续变厚。</li>
+<li><strong>OpenClaw〔S · harness〕</strong> — <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.2">v2026.9.2</a> 优化长会话响应、重启恢复与 Astra 支持。结合今天的教程热度，harness 正在从“开发者工具”变成普通创作者理解 agent 的入口。</li>
+<li><strong>MiniMax〔A · model_maker〕</strong> — <a href="https://x.com/MiniMax_AI/status/2097006566696444363">H3 视频生成加速</a> 与 <a href="https://www.youtube.com/watch?v=5Cxe5dv2Xlw">M3 百万 token agent 语境</a> 同时出现：一个向生成速度，一个向长任务记忆。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<ul>
+<li><strong>a16z〔S〕</strong> — <a href="https://www.a16z.news/p/chart-of-the-week-experience-skills">Experience &gt; Skills</a> 指向同一件事：AI 没有简单消灭岗位，反而让数据组织、基础设施、施工/电力/HVAC 这类“让 AI 跑起来”的经验更值钱。</li>
+<li><strong>Sequoia〔S〕</strong> — Konstantine 的认知革命判断很尖：工业革命给人几十年迁移，这轮可能只有五年；这不是焦虑话术，而是技能折旧周期被压缩。</li>
+<li><strong>Bessemer〔A〕</strong> — <a href="https://x.com/BessemerVP/status/2095970933030683053">Agentic Awakening</a> 和 Wonderful AI $550M Series C 都把判断压在 enterprise agentic OS 上：企业买的不是聊天框，而是可审计的工作流操作系统。</li>
+<li><strong>YC〔A〕</strong> — 反复转发“harness 不是脚手架”的观点：同一模型在不同 harness 下能力差异巨大，下一层竞争会落到 runtime、memory、eval 和 workflow design。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<ul>
+<li><strong>TLDR AI〔A〕</strong> — 今日 headline 连续指向 <a href="https://tldr.tech/ai/2026-09-07">Claude proves Fermat / automated AI researcher</a>、<a href="https://tldr.tech/ai/2026-09-04">GPT-6 Astra / Grok Bot Enterprise</a>、<a href="https://tldr.tech/ai/2026-09-03">Gemini 3.8 Flash</a>：外部答案卷确认今天不是单点发布，而是 agent 能力密集上台阶。</li>
+<li><strong>The Rundown AI〔A〕</strong> — 把 OpenAI 研究内用 agent 解读成“AI research intern”时刻，并给出 <a href="https://therundownai.beehiiv.com/p/inside-openai-agent-powered-research-boom">Astra 做 app 的 workflow</a>：研究、原型、验证正在被同一个 agent loop 连接。</li>
+<li><strong>SemiAnalysis〔A〕</strong> — 警惕 Gemini 3.8 Flash / Muse Spark 1.3 这类“benchmaxxed”模型，并指出需要更多高质量私有 benchmark；同时提到 AMD 在 MI355X 上把 vLLM + MiniMax M3 agentic workload 性能做出 11x 优化。</li>
+<li><strong>Lenny / Anish Acharya〔S〕</strong> — <a href="https://www.lennysnewsletter.com/p/why-companies-are-becoming-a-series">公司会变成一系列 loops</a>：bug report → fix → low-risk release 的五分钟闭环，会从个人扩散到整个函数部门。</li>
+<li><strong>机器之心 / 36氪〔A〕</strong> — 中文侧聚焦 <a href="https://www.jiqizhixin.com/articles/2026-09-08-10">Astra 空间智能</a>、<a href="https://www.jiqizhixin.com/articles/2026-09-08-9">DeepSeek V4.1 Flash 测试</a>、<a href="https://www.jiqizhixin.com/articles/2026-09-08-2">Anthropic Labs 20 人小队</a>：国内读者也在从“模型厉害”转向“组织和产品怎样适配”。</li>
+</ul>
+<h2>🔨 实践 · Practitioner</h2>
+<ul>
+<li><strong>Andrew Ng〔S〕</strong> — 发布 <a href="https://x.com/AndrewYNg/status/2095890279865721217">AI Engineering Skills Map</a>：会用 coding agent 已经是独立技能，不是“把任务丢给模型”。</li>
+<li><strong>DeepLearning.AI〔A〕</strong> — 提醒不要让 coding agents 自主跑数小时，核心仍是 skilled human judgment、迭代规划和频繁验收。</li>
+<li><strong>Greg Isenberg〔S〕</strong> — <a href="https://www.youtube.com/watch?v=8ZC1G1ezN5o">Marketing Engineer</a> 把增长岗位重构成 agent 驱动的系统设计者；niche dataset 也可能成为 bootstrapped AI business。</li>
+<li><strong>宝玉〔A〕</strong> — 把 Skill 讲成“模型不知道的工具说明书”，强调 feedback loop：定义任务、AI 做成、你验收、公开分享、反馈再进入系统。</li>
+<li><strong>Every〔A〕</strong> — <a href="https://x.com/every/status/2096267894401409172">Compound Writing</a> 给 AI 写作一个实操方向：不是一条 prompt 出稿，而是用工作流保留个人声音。</li>
+<li><strong>Peter Steinberger / OpenClaw〔A〕</strong> — 团队 server 的 slopmeter、subagent sidebar、Astra browser-use 实测，说明实践者已经把“agent 质量”产品化成可观察指标。</li>
+</ul>
+<h2>🔥 专业热榜</h2>
+<ul>
+<li><strong>HF Papers</strong> — <a href="https://huggingface.co/papers/2609.00365">Dr. Claw</a> 把 coding agent 组织成 AI Scientist workspace，切中“研究不是一次聊天，而是一套可持续工作台”。</li>
+<li><strong>HF Papers</strong> — <a href="https://huggingface.co/papers/2609.04094">DRACO</a> 用动态 rubric 做长程 agent 训练的细粒度 credit assignment，解决“最后结果对了但过程不知道谁贡献”的问题。</li>
+<li><strong>HF Papers</strong> — <a href="https://huggingface.co/papers/2609.04523">MaxKernel</a> 让 LLM 生成 TPU custom kernels，和 SemiAnalysis 看到的算子优化潮呼应。</li>
+<li><strong>GitHub Trending</strong> — <a href="https://github.com/openai/skills">openai/skills</a>、<a href="https://github.com/coreyhaines31/marketingskills">marketingskills</a>、<a href="https://github.com/affaan-m/ECC">ECC</a> 同日上榜，说明“给 agent 的程序化经验”正在成为公开资产。</li>
+<li><strong>Product Hunt</strong> — <a href="https://www.producthunt.com/products/catenary">Catenary</a> 是 AI coding agents 的 spatial canvas IDE；<a href="https://www.producthunt.com/products/kopai-the-marketplace-for-ai-agents">Kopai</a> 把 agent cloud 做成 marketplace。</li>
+<li><strong>HN</strong> — <a href="https://danluu.com/agentic-testing/">How well do agents use test/verification techniques?</a> 热度不高但重要：agent 写代码之后，验证能力才是生产力瓶颈。</li>
+</ul>
+<h2>🌶️ 爆款盘点</h2>
+<ul>
+<li><strong>B站教程爆款 · 长视频</strong>：<a href="https://www.bilibili.com/video/BV1Nd596vEyU">秋芝2046《40分钟全面掌握 Codex》</a> 179.9万播放；同账号 <a href="https://www.bilibili.com/video/BV1NvRyBzEhq">Claude Code 60分钟</a> 157.4万、<a href="https://www.bilibili.com/video/BV1j9MP6wEV9">桌面 Agent 小白教程</a> 135.2万、<a href="https://www.bilibili.com/video/BV1mhKv68EPQ">豆包 Agent</a> 103.5万。用户要的是“我可以照着做”的 agent 入门。</li>
+<li><strong>小红书工具教程 · 图文/短视频</strong>：<a href="https://www.rednote.com/user/profile/63b622ab00000000260066bd/6a080fda000000003502d325">秋芝2046《40分钟学会 Codex》</a> 10万+赞；<a href="https://www.rednote.com/user/profile/63b622ab00000000260066bd/69fa57f7000000002301c833">Claude Code</a> 3.5万赞；<a href="https://www.rednote.com/user/profile/63b622ab00000000260066bd/6a49082b00000000060359d8">桌面 Agent</a> 8694赞；<a href="https://www.rednote.com/user/profile/5e1022d2000000000100395d/6a8fe7c20000000026003bbf">老麦的工具库《给 Codex 装 9 个 skill》</a> 7467赞。</li>
+<li><strong>“AI 怎么干活” · 长视频</strong>：<a href="https://www.bilibili.com/video/BV1o4gw6ZExs">林亦 LYi《我是怎么用 AI 干活的？》</a> 109.1万播放；<a href="https://www.bilibili.com/video/BV1kp8z6REGj">1元 vs 50万元 Vibe Coding</a> 40.5万播放。爆点不是技术细节，而是普通人/小团队怎么把工作方式改掉。</li>
+<li><strong>企业 AI 变革 · 短视频</strong>：<a href="https://www.douyin.com/video/7642252037626907958">光羽《森马用 AI 变革增收 2 个亿》</a> 7.1万播放；完整版 1.1万播放；<a href="https://www.douyin.com/video/7680454386149100819">AI 虚拟 IP 一个月卖货 4000 万</a> 5057播放。数字直接，商业结果明确，适合做转化型选题。</li>
+<li><strong>Reddit 反 AI 疲劳</strong>：<a href="https://www.reddit.com/r/SideProject/comments/1oaq2kx/share_your_notai_projects/">SideProject 的 Not-AI 项目帖</a> 645赞/1796评，<a href="https://www.reddit.com/r/SaaS/comments/1u0z4vz/new_rule_banning_a_saas_product_category_no/">SaaS 禁广告类产品</a> 538赞/289评。AI 内容泛滥后，“真实项目/反营销/反 slop”正在变成新的信任钩子。</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><a class="rp-nav-prev" href="/reports/2026-09-07-zh.html" rel="prev"><span class="k">← 前一期</span><span class="t">GPT-6 Astra 把 AI 竞争从「模型回答」推到了「可验收的工作系统」。今天扫描 news lane 992 条、viral lane 1,078 条</span></a><span></span><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI 市场雷达,每天一份免费报告,横跨东西。<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-zh.xml">中文</a> · <a class="dom" href="/feed-en.xml">English</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">幕后故事</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>
