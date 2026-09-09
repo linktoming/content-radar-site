@@ -7,6 +7,13 @@
   "url": "reports/2026-09-10-zh.html"
  },
  {
+  "date": "2026-09-10",
+  "lang": "en",
+  "title": "OpenAI moved the frontier-model story from chat and generation into large-scale, auditable agent science",
+  "summary": "OpenAI moved the frontier-model story from chat and generation into large-scale, auditable agent science",
+  "url": "reports/2026-09-10-en.html"
+ },
+ {
   "date": "2026-09-09",
   "lang": "zh",
   "title": "Agent 从“会回答”进入“能接手电脑与工作流”的产品化时刻：OpenAI 把 GPT-6 Astra 推到 Work/Codex 与 API",

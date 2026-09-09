@@ -8,6 +8,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## English editions
 
+- [2026-09-10 — OpenAI moved the frontier-model story from chat and generation into large-scale, auditable agent science](https://radar.sharpener.ai/reports/2026-09-10-en.html): OpenAI moved the frontier-model story from chat and generation into large-scale, auditable agent science
 - [2026-09-09 — Agent products crossed from “better chat” into operational work surfaces](https://radar.sharpener.ai/reports/2026-09-09-en.html): Agent products crossed from “better chat” into operational work surfaces: OpenAI framed GPT-6 Astra as “anything you can do on a computer
 - [2026-09-08 — Today's signal is not “another stronger model.” It is that AI agents are moving from demos into delegable work packages](https://radar.sharpener.ai/reports/2026-09-08-en.html): Today's signal is not “another stronger model.” It is that AI agents are moving from demos into delegable work packages. OpenAI pushed GPT-6 Astra into Work, Codex, and API
 - [2026-09-07 — GPT-6 Astra moves the AI race from better answers to executable work systems](https://radar.sharpener.ai/reports/2026-09-07-en.html): GPT-6 Astra moves the AI race from better answers to executable work systems. Today's combined pool scanned 992 news-lane posts and 1,078 viral-lane posts
@@ -47,7 +48,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-07-28 — The important story is not another model launch. China’s Moonshot AI released Kimi K3](https://radar.sharpener.ai/reports/2026-07-28-en.html): The important story is not another model launch. China’s Moonshot AI released Kimi K3, an open-weight 2.8T MoE model with a 1M context window and multimodal capability—and Together, vLLM, Fireworks
 - [2026-07-27 — The model layer is becoming replaceable; the workflow layer is becoming the product](https://radar.sharpener.ai/reports/2026-07-27-en.html): The model layer is becoming replaceable; the workflow layer is becoming the product. Anthropic shipped Claude Opus 5, and Cursor, Warp
 - [2026-07-26 — The frontier-model story has moved past benchmark leadership](https://radar.sharpener.ai/reports/2026-07-26-en.html): The frontier-model story has moved past benchmark leadership. OpenAI is turning voice into a desktop control surface, Anthropic is simplifying the scaffolding around a stronger coding model
-- [2026-07-25 — The model race is becoming an operating-surface race. Anthropic shipped Claude Opus 5](https://radar.sharpener.ai/reports/2026-07-25-en.html): The model race is becoming an operating-surface race. Anthropic shipped Claude Opus 5, OpenAI put Voice on desktop where it can direct ChatGPT Work and Codex agents
 
 ## 中文版
 
