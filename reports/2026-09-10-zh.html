@@ -1,0 +1,151 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研” · AI情报</title>
+<meta name="description" content="OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”。今日扫描 17 个 fetcher · 995 条原始帖 · 908 条候选">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-09-10-zh.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI情报">
+<meta property="og:title" content="OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”">
+<meta property="og:description" content="OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”。今日扫描 17 个 fetcher · 995 条原始帖 · 908 条候选">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-09-10-zh.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-09-10">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”">
+<meta name="twitter:description" content="OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”。今日扫描 17 个 fetcher · 995 条原始帖 · 908 条候选">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”","description":"OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”。今日扫描 17 个 fetcher · 995 条原始帖 · 908 条候选","datePublished":"2026-09-10","dateModified":"2026-09-10","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-09-10-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-09-10-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-09-10">2026 · 09 · 10 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”</h1>
+    <div class="rp-body"><h2>🔭 今日主线</h2>
+<p>OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”。今日扫描 17 个 fetcher · 995 条原始帖 · 908 条候选；主信号是 <a href="https://x.com/OpenAI/status/2097374640582668336">OpenAI 称 10,000 个协同 agents 用强于 GPT-6 Astra 的内部模型，在 88 小时内产出 Navier-Stokes 相关证明</a>，TLDR 也把它和 <a href="https://tldr.tech/ai/2026-09-09">Images 2.5、AlphaGenome Atlas</a>并列成今天头条。</p>
+<p>这不是单点 benchmark，而是“能力进入真实任务后的治理问题”：OpenAI 强调隔离和监控；The Rundown 写到 Buckmaster/Alpöge 路线与 OpenAI 抢发争议；Simon Willison 把问题落到“用户数据是否被用于 improve model performance”的边界。对你最有用的结论：下一阶段内容价值不在夸模型多强，而在解释 agent 系统如何留下证据、复核和责任链。</p>
+<h2>🎯 源头 · Primary</h2>
+<ul>
+<li><a href="https://x.com/OpenAI/status/2097374643518640382">OpenAI</a>〔S · model_maker〕— 称内部模型以约 10,000 个 agents 在 88 小时内推进 Navier-Stokes 证明，并强调 frontier eval 级别的监控/隔离。</li>
+<li><a href="https://x.com/OpenAI/status/2097431322117476423">GPT-6 Astra</a> — 已面向 Plus/Pro/Business/Enterprise 在 Codex 与 ChatGPT Work 全量推出，定位是“能操作电脑”的工作模型。</li>
+<li><a href="https://openai.com/index/introducing-chatgpt-images-2-5">ChatGPT Images 2.5</a> — 主打更快生成、局部评论式编辑、主体一致性；API 侧 <a href="https://www.youtube.com/watch?v=A7MSwdXj86k">Sunburst/Flare</a>强调更快和透明背景。</li>
+<li><a href="https://x.com/AnthropicAI/status/2097679796687769689">Anthropic</a>〔S · model_maker〕— 发布 2030 AI 经济影响情景模型，把工作拆成任务束：加速、替代、不变和创造新任务。</li>
+<li><a href="https://github.com/vllm-project/vllm/releases/tag/v0.29.0">vLLM v0.29.0</a> — Model Runner V2 成为默认，覆盖 KV cache auto-sizing、batch-sharded sampling、prompt embeds、新模型支持。</li>
+<li><a href="https://github.com/cline/cline/releases/tag/desktop-v0.0.24">Cline desktop v0.0.24</a> — 修复 live chat stream 重复/丢消息，重点是长任务、恢复任务、定时任务打开时的流式稳定性。</li>
+<li><a href="https://github.com/anomalyco/opencode/releases/tag/v1.18.30">OpenCode v1.18.30</a> — 加入 GPT-6 models 的 Astra system prompt，并补 Bedrock DeepSeek、Azure/OpenAI SDK、GitLab reasoning variants。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<ul>
+<li><a href="https://www.a16z.news/p/introducing-covenant">a16z 投 Covenant</a> — 不是 AI 应用融资，而是“低成本、可规模制造”的国防硬科技叙事：250+ test flights、Dallas/Germany 产线。</li>
+<li><a href="https://x.com/a16z/status/2097717408807202838">a16z / Vals AI</a> — “tokenmaxxing”实验显示工程团队一个月可烧掉约 150 万美元 token，甚至 10x 员工月薪；智能体成本治理会变成管理学问题。</li>
+<li><a href="https://sequoiacap.com/article/partnering-with-cymphony-security-unlocks-adoption">Sequoia / Cymphony</a> — 明确把企业 agent adoption 的瓶颈定义为“agent 能碰什么”的治理与安全层。</li>
+<li><a href="https://x.com/sequoia/status/2097363257254453495">Sequoia</a> — 重新看待 X hype 对 xAI/SSI/Prometheus 这类 AI 原生公司的发现价值：噪音里可能开始有早期融资信号。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<ul>
+<li><a href="https://tldr.tech/ai/2026-09-09">TLDR AI</a> — 今天答案卷是 Images 2.5、OpenAI/Navier-Stokes、AlphaGenome Atlas；AINews RSS 今日 402，少了一张外部校验卷。</li>
+<li><a href="https://therundownai.beehiiv.com/p/openai-secret-model-settles-a-1m-math-problem">The Rundown</a> — 把 Navier-Stokes 写成“能力突破 + 发表/署名/数据边界争议”，关键不是谁先做出，而是谁能被独立复核。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2097400068169253143">Rohan Paul</a> — 判断 OpenAI 未发布内部模型处在高于 GPT-6 Astra 的能力曲线上，额外 reasoning compute 可能比单纯延长运行更有效。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2097407760149454998">Rohan Paul</a> — Images 2.5 真正商业点是多轮编辑一致性：对素材生产、商品图、模板化内容比“更好看”更重要。</li>
+<li><a href="https://x.com/simonw/status/2097474703380365698">Simon Willison</a> — 借 Navier-Stokes 争议追问“用我的数据改进模型表现”到底覆盖哪些行为；这是创作者/研究者都绕不开的授权问题。</li>
+</ul>
+<h2>🔨 实践 · Practitioner</h2>
+<ul>
+<li><a href="https://x.com/filicroval/status/2097386575168479567">filipe</a> — 对 Navier-Stokes 争议做了实务拆解：证明是否 machine-checkable、OpenAI 是否看过草稿、署名冲突，都是 agent 科研进入真实世界后的流程问题。</li>
+<li><a href="https://x.com/filicroval/status/2097695425079685531">filipe</a> — 认为 GPT-6 Astra 在 Blender 这类复杂创作任务里明显跃迁，中文平台也同步出现 Astra + Blender/Higgsfield 的视频工作流。</li>
+<li><a href="https://x.com/simonw/status/2097474703380365698">Simon Willison</a> — 把用户数据、模型训练和公开研究之间的边界问题拉回开发者视角：工具越强，日志/权限/可解释越不能省。</li>
+<li><a href="https://x.com/jxnlco/status/2097624614876705146">jason</a> — 更新 agent/harness tierlist 后强调 DeepSeek harness 表现好；工具链竞争已经不是模型名，而是 harness + eval + workflow 的组合。</li>
+</ul>
+<h2>🔥 专业热榜</h2>
+<ul>
+<li><a href="https://github.com/Atomburstofficial/geiger">Show HN: Geiger</a> — “看见机器上每个 AI agent 以及它能碰什么”，和 Sequoia/Cymphony 的治理叙事直接同频。</li>
+<li><a href="https://tailwindcss.com/blog/tailwind-is-joining-shopify">Tailwind Labs joins Shopify</a> — 前端工具链被大平台吸收，说明“开发体验资产”仍是 AI 时代的基础设施入口。</li>
+<li><a href="https://github.com/Tencent/teamai-cli">Tencent/teamai-cli</a> — GitHub trending 里出现 TeamAI CLI，国内大厂也在把 agent 协作做成命令行工作流。</li>
+<li><a href="https://huggingface.co/papers/2609.08183">NeoHorse-1</a> — 用 routing harness 做 agentic post-training / recursive self-improvement，研究层也在把“自我改进”落成可执行结构。</li>
+<li><a href="https://papers.cool/arxiv/2609.09153">Procedural Graphs</a> — 把 LLM agent 的长程规划从隐式历史转成可演化执行图，方向上对齐可审计、可复用的 agent 流程。</li>
+<li><a href="https://huggingface.co/papers/2609.06758">Agentic Visual Generation</a> — 视觉生成从单次 prompt 走向计划、工具选择、中间检查、失败修正；这会影响视频/图像内容生产方法论。</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><a class="rp-nav-prev" href="/reports/2026-09-09-zh.html" rel="prev"><span class="k">← 前一期</span><span class="t">Agent 从“会回答”进入“能接手电脑与工作流”的产品化时刻：OpenAI 把 GPT-6 Astra 推到 Work/Codex 与 API</span></a><span></span><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI 市场雷达,每天一份免费报告,横跨东西。<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-zh.xml">中文</a> · <a class="dom" href="/feed-en.xml">English</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">幕后故事</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>
