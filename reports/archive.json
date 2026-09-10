@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-11",
+  "lang": "zh",
+  "title": "Agent 正在从“会回答”进入“可托管工作流”：OpenAI 把 Data agent 和 GPT-6 Astra 放进 ChatGPT Work",
+  "summary": "Agent 正在从“会回答”进入“可托管工作流”：OpenAI 把 Data agent 和 GPT-6 Astra 放进 ChatGPT Work",
+  "url": "reports/2026-09-11-zh.html"
+ },
+ {
+  "date": "2026-09-11",
+  "lang": "en",
+  "title": "AI is moving from “answers in a chat box” to delegated workflows with visible operating surfaces",
+  "summary": "AI is moving from “answers in a chat box” to delegated workflows with visible operating surfaces",
+  "url": "reports/2026-09-11-en.html"
+ },
+ {
   "date": "2026-09-10",
   "lang": "zh",
   "title": "OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”",
