@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-12",
+  "lang": "zh",
+  "title": "今天的主线不是「又来了一个强模型」，而是 AI 开始从模型能力进入可买单的工作台、可复现的 agent 流程、可照抄的内容生产链路",
+  "summary": "今天的主线不是「又来了一个强模型」，而是 AI 开始从模型能力进入可买单的工作台、可复现的 agent 流程、可照抄的内容生产链路",
+  "url": "reports/2026-09-12-zh.html"
+ },
+ {
+  "date": "2026-09-12",
+  "lang": "en",
+  "title": "Today was not just another stronger-model day. The useful signal is that AI is being packaged into three things builders",
+  "summary": "Today was not just another stronger-model day. The useful signal is that AI is being packaged into three things builders can actually use",
+  "url": "reports/2026-09-12-en.html"
+ },
+ {
   "date": "2026-09-11",
   "lang": "zh",
   "title": "Agent 正在从“会回答”进入“可托管工作流”：OpenAI 把 Data agent 和 GPT-6 Astra 放进 ChatGPT Work",
