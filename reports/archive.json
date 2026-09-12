@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-13",
+  "lang": "zh",
+  "title": "Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”",
+  "summary": "Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”",
+  "url": "reports/2026-09-13-zh.html"
+ },
+ {
+  "date": "2026-09-13",
+  "lang": "en",
+  "title": "Agents are moving from “models that answer” to work systems that can be deployed, audited, reused",
+  "summary": "Agents are moving from “models that answer” to work systems that can be deployed, audited, reused, and taught to ordinary users",
+  "url": "reports/2026-09-13-en.html"
+ },
+ {
   "date": "2026-09-12",
   "lang": "zh",
   "title": "今天的主线不是「又来了一个强模型」，而是 AI 开始从模型能力进入可买单的工作台、可复现的 agent 流程、可照抄的内容生产链路",
