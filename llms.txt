@@ -8,6 +8,7 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 
 ## English editions
 
+- [2026-09-14 — Today's strongest signal is not another leaderboard jump](https://radar.sharpener.ai/reports/2026-09-14-en.html): Today's strongest signal is not another leaderboard jump. OpenAI, Anthropic, DeepMind, DeepSeek, Qwen, Sierra, and the Chinese creator platforms are all pointing at the same shift
 - [2026-09-13 — Agents are moving from “models that answer” to work systems that can be deployed, audited, reused](https://radar.sharpener.ai/reports/2026-09-13-en.html): Agents are moving from “models that answer” to work systems that can be deployed, audited, reused, and taught to ordinary users
 - [2026-09-12 — Today was not just another stronger-model day. The useful signal is that AI is being packaged into three things builders](https://radar.sharpener.ai/reports/2026-09-12-en.html): Today was not just another stronger-model day. The useful signal is that AI is being packaged into three things builders can actually use
 - [2026-09-11 — AI is moving from “answers in a chat box” to delegated workflows with visible operating surfaces](https://radar.sharpener.ai/reports/2026-09-11-en.html): AI is moving from “answers in a chat box” to delegated workflows with visible operating surfaces
@@ -47,7 +48,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-01 — The important shift is not another model launch: frontier capability is being compressed into cheaper inference](https://radar.sharpener.ai/reports/2026-08-01-en.html): The important shift is not another model launch: frontier capability is being compressed into cheaper inference, deployable open weights, controllable runtimes, and workflows that a small team
 - [2026-07-31 — The important shift is not another model launch. Inference economics are collapsing while the engineering boundaries](https://radar.sharpener.ai/reports/2026-07-31-en.html): The important shift is not another model launch. Inference economics are collapsing while the engineering boundaries around agents are hardening
 - [2026-07-30 — The open-weights war went from policy argument to shipped infrastructure this week](https://radar.sharpener.ai/reports/2026-07-30-en.html): The open-weights war went from policy argument to shipped infrastructure this week — and the fastest way to understand it is to read both halves of the world. The fact layer
-- [2026-07-29 — The important shift is not another model launch: the agent market is moving from raw capability toward control—security](https://radar.sharpener.ai/reports/2026-07-29-en.html): The important shift is not another model launch: the agent market is moving from raw capability toward control—security, cost routing, observability, and workflow distribution
 
 ## 中文版
 

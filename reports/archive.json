@@ -7,6 +7,13 @@
   "url": "reports/2026-09-14-zh.html"
  },
  {
+  "date": "2026-09-14",
+  "lang": "en",
+  "title": "Today's strongest signal is not another leaderboard jump",
+  "summary": "Today's strongest signal is not another leaderboard jump. OpenAI, Anthropic, DeepMind, DeepSeek, Qwen, Sierra, and the Chinese creator platforms are all pointing at the same shift",
+  "url": "reports/2026-09-14-en.html"
+ },
+ {
   "date": "2026-09-13",
   "lang": "zh",
   "title": "Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”",
