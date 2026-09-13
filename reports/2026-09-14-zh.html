@@ -1,0 +1,157 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前 · AI情报</title>
+<meta name="description" content="OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前：模型继续加速，但真正的竞争开始转向“谁能把能力放进可审计、可部署、可复盘的系统”">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-09-14-zh.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI情报">
+<meta property="og:title" content="OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前">
+<meta property="og:description" content="OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前：模型继续加速，但真正的竞争开始转向“谁能把能力放进可审计、可部署、可复盘的系统”">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-09-14-zh.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-09-14">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前">
+<meta name="twitter:description" content="OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前：模型继续加速，但真正的竞争开始转向“谁能把能力放进可审计、可部署、可复盘的系统”">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前","description":"OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前：模型继续加速，但真正的竞争开始转向“谁能把能力放进可审计、可部署、可复盘的系统”","datePublished":"2026-09-14","dateModified":"2026-09-14","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-09-14-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-09-14-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-09-14">2026 · 09 · 14 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前</h1>
+    <div class="rp-body"><h2>🔭 主线</h2>
+<p>OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前：模型继续加速，但真正的竞争开始转向“谁能把能力放进可审计、可部署、可复盘的系统”。</p>
+<p>今日扫描 324 个追踪实体 · 18 个 news fetcher · 1,135 条原始帖 · 991 条候选。</p>
+<p>这条线有三层同时发生：源头层，<a href="https://openai.com/index/perplexity-improving-accuracy-with-astra">OpenAI</a> 用 GPT-6 Astra 帮 Perplexity 写通信、改软件、监控生产，又让 <a href="https://openai.com/index/cognition-devin-testing-with-astra">Cognition/Devin</a> 用 Astra 测自己的工作；治理层，<a href="https://x.com/AnthropicAI/status/2098097512544444447">Anthropic</a> 发布 Claude 滥用威胁报告，<a href="https://x.com/DarioAmodei/status/2098773920774074715">Dario</a> 提出 pace the frontier，<a href="https://x.com/sama/status/2098811563415150910">Sam</a> 和 <a href="https://x.com/demishassabis/status/2098909516582490602">Demis</a> 都公开接住这个方向；成本层，<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">DeepSeek V4.1 Flash</a>、<a href="https://x.com/Alibaba_Qwen/status/2098676748972122394">Qwen on Cerebras</a>、<a href="https://x.com/togethercompute/status/2098940684044562506">Together</a> 都在压低“可用 agent”的边际成本。</p>
+<p>对你更有用的读法：不要只追“哪个模型又强了”。这一轮更像个人和小团队的 AI operating system 成熟期：模型负责能力，harness 负责上下文与工具边界，eval 负责可信度，成本下降负责让工作流可以常驻。你的内容切口应该从“介绍新模型”转成“把前沿能力翻译成可运行、可复盘、可变现的个人系统”。</p>
+<h2>🎯 源头 · Primary</h2>
+<ul>
+<li><strong>📦 本日发布</strong>: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.4">OpenClaw v2026.9.4</a> 继续把 plugins / skills / portals / automations 产品化；<a href="https://x.com/openclaw/status/2098449762119020926">OpenClaw</a> 同步提到 293 contributors、GPT Image 2.5、旧聊天转 skills。这个是你自己 stack 的稳定版基线。</li>
+<li><a href="https://openai.com/index/perplexity-improving-accuracy-with-astra">OpenAI</a> 展示 GPT-6 Astra 进入 Perplexity 的端到端系统任务；<a href="https://openai.com/index/cognition-devin-testing-with-astra">Cognition</a> 用 Astra 测 Devin 自己的工作；<a href="https://x.com/OpenAI/status/2097786616311840853">OpenAI</a> 还披露动员 250+ 人强化数百个系统防御。</li>
+<li><a href="https://x.com/AnthropicAI/status/2098097512544444447">Anthropic</a> 发布最详细的 Claude threat intelligence report，覆盖 cyberattack、influence operations、surveillance 等滥用模式；<a href="https://x.com/DarioAmodei/status/2098773920774074715">Dario Amodei</a> 进一步提出三段式 slowdown / third-party evaluator 方案。</li>
+<li><a href="https://x.com/sama/status/2098811563415150910">Sam Altman</a> 说同意 Dario “pace the frontier”的方向，并强调 OpenAI 近期一直在讨论 embedded third-party evaluators；<a href="https://x.com/demishassabis/status/2098909516582490602">Demis Hassabis</a> 也说方向正确但细节还要打磨。这是罕见的跨前沿实验室共识信号。</li>
+<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">DeepSeek V4.1 Flash</a> 出现在 Hugging Face；<a href="https://x.com/togethercompute/status/2098940684044562506">Together AI</a> 称它在 agentic benchmarks 上超过 GPT-5.6 Sol，且单任务成本约三分之一；<a href="https://x.com/Alibaba_Qwen/status/2098676748972122394">Qwen</a> 则把 Qwen3.8-27B 跑到 Cerebras 的高速推理上。</li>
+<li><a href="https://sierra.ai/blog/hyper-t-bench-evaluating-agents-that-build-agents">Sierra</a> 发布 Hyper-τ-bench，专门测 coding agents “构建 agents”的能力；<a href="https://x.com/LangChain/status/2098453654399307807">LangChain</a> 把 agent harness 概括成“如果你不在做模型，你就在做 harness”。</li>
+<li><a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/">Google DeepMind</a> 发布 AlphaGenome Atlas，用 AI 预测 DNA 单字母变化影响；<a href="https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/">NVIDIA / Skild AI</a> 展示机器人从单个视频学习新任务。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<ul>
+<li><a href="https://x.com/a16z/status/2098524584874275155">a16z</a> 说真实经济采用 AI 才刚开始，但样本中 top 1% 已经达到每员工每月 7,000 美元 AI spending；泡沫感和早期感可以同时成立。</li>
+<li><a href="https://x.com/a16z/status/2098432139679453597">a16z Anish Acharya</a> 的判断是：三年前被认为太大的 idea，今天反而显得太小。AI 抬高的是可执行野心的上限。</li>
+<li><a href="https://x.com/sequoia/status/2098121578647343256">Sequoia</a> 借 Skild S1 强调 robotics research 的隐藏支柱是 deployment，不是 demo；真正的护城河来自真实环境反馈回路。</li>
+<li><a href="https://x.com/saranormous/status/2098113312890499453">Sarah Guo</a> 观察到过去 6 个月真实 M&amp;A 兴趣比前几年更强，scale-ups 饿了，incumbents 也醒了。</li>
+<li><a href="https://x.com/ycombinator/status/2098796739562193270">Y Combinator</a> 给 agentic outbound 泼冷水：自动化前先弄懂谁真的有问题、什么会让人回复。流程可以放大，市场理解不能省。</li>
+<li><a href="https://36kr.com/p/3979884174244613">36氪</a> 把 NVIDIA 可能 anchor Anthropic IPO 的传闻放到中文侧，<a href="https://36kr.com/p/3979823553657603">另一篇</a> 跟进具身新贵三个月成独角兽；资本叙事正在从纯模型转向算力、具身、企业化落地。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<ul>
+<li><a href="https://tldr.tech/ai/2026-09-11">TLDR AI</a> 把 Agents API、Cognition SWE-2、Muse Shared Agents 放在同一天 headline；外部答案卷也在确认“agent 产品化”是今天的主线。</li>
+<li><a href="https://therundownai.beehiiv.com/p/anthropic-opens-the-files-on-global-claude-misuse">The Rundown AI</a> 同期覆盖 Anthropic misuse report、ChatGPT Work 入门、DeepSeek pricing pressure，正好对应能力、治理、成本三条线。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2098618867035557984">SemiAnalysis</a> 点出 DeepSeek V4.1 Flash 在 CUDA / ROCm 支持上的现实差距：模型开源以后，软件栈和硬件生态仍然决定谁能最快用起来。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2098837429386182682">Rohan Paul</a> 摘 Satya Nadella 的观点：下一代 AI moat 不是你用哪个模型，而是公司自己能跑出的 learning loop。这个比“模型排行榜”更接近企业真实竞争。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-09-13-3">机器之心</a> 把 Dario 限速、OpenAI 暂不 IPO、Sam/Demis 接话串在一起；<a href="https://www.jiqizhixin.com/articles/2026-09-13-7">另一篇</a> 追 Astra 写代码到人类难懂，<a href="https://www.jiqizhixin.com/articles/2026-09-12-7">DeepSeek 解读</a> 则把 Flash 的成本/性能压力讲透。</li>
+<li><a href="https://36kr.com/p/3979785466730377">36氪</a> 说 OpenAI 把 Codex “拆开卖了”，<a href="https://juejin.cn/post/7683020866855632906">掘金</a> 的更实用版本是“不要先问用哪个 AI，先盘点开发工作流”。中文技术媒体的共识也在从工具名转向工作流。</li>
+</ul>
+<h2>🔨 实践 · Practitioner</h2>
+<ul>
+<li><a href="https://x.com/simonw/status/2098929534968238094">Simon Willison</a> 实测 ChatGPT Work + GPT-6 Astra 可以从地址生成 5K/10K 环形跑步路线，并调用工具查地图。这是“模型 + 工具 +本地约束”的小型 agent demo。</li>
+<li><a href="https://x.com/AlexFinn/status/2098967505943543959">Alex Finn</a> 说自己本周尝试只用 ChatGPT Work + GPT-6 Astra 做全部工作，结论是它已是极强 productivity tool。值得关注的是“全工作周替换”，不是单次 prompt。</li>
+<li><a href="https://x.com/steipete/status/2098165206296011059">Peter Steinberger</a> 提到 <code>/diff</code> 变成可滚动、可点击、实时更新的 persistent pane；coding agent 的 UX 正在补“我怎么审它改了什么”。</li>
+<li><a href="https://x.com/AMD/status/2098112122005639563">AMD</a> 用“Install ROCm. Make no mistakes.”把 coding agent 拉进底层环境配置；这类场景对内容创业者不性感，但对 builder 是明确节省时间的工作流。</li>
+<li><a href="https://x.com/Kimi_Moonshot/status/2097636366544937067">Kimi</a> 上线 Kimi Work Remote Control：让 Kimi Work 持续跑在电脑上、用户远程查看进度。国内 agent 正在往“常驻桌面员工”走。</li>
+<li><a href="https://juejin.cn/post/7684069447021035562">掘金</a> 出现“用 AI 做短剧出海，附 Skill 及教程”；这和你的内容系统非常贴：AI 创作不是单工具，而是可复用 skill + SOP。</li>
+</ul>
+<h2>🔥 专业热榜</h2>
+<ul>
+<li><a href="https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating">HN: Why are AI agents lying, cheating and coordinating?</a> 登上前排；和 Anthropic threat report、Dario pace frontier 形成同日回声。</li>
+<li><a href="https://github.com/jundot/omlx">GitHub Trending: jundot/omlx</a> 把本地 MLX server / OpenAI-compatible API 推到前台；本地优先推理仍在吃开发者注意力。</li>
+<li><a href="https://github.com/harry0703/MoneyPrinterTurbo">GitHub Trending: harry0703/MoneyPrinterTurbo</a> 继续指向 AI 视频自动化需求：脚本、素材、配音、剪辑一体化是内容创业者最容易感知的 agent workflow。</li>
+<li><a href="https://www.producthunt.com/">Product Hunt</a> 当日信号里，“local-first / 数据不离开本机”和“AI 助手如何描述你的品牌”同时出现；一个是信任，一个是 AI 搜索时代的分发入口。</li>
+<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">Hugging Face</a> 的热模型里 DeepSeek、Qwen、GGUF 量化继续占位；模型消费正在从“谁最聪明”滑向“谁便宜、谁能本地跑、谁能接进工具链”。</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><a class="rp-nav-prev" href="/reports/2026-09-13-zh.html" rel="prev"><span class="k">← 前一期</span><span class="t">Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”</span></a><span></span><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI 市场雷达,每天一份免费报告,横跨东西。<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-zh.xml">中文</a> · <a class="dom" href="/feed-en.xml">English</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">幕后故事</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>

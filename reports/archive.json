@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-09-14",
+  "lang": "zh",
+  "title": "OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前",
+  "summary": "OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前：模型继续加速，但真正的竞争开始转向“谁能把能力放进可审计、可部署、可复盘的系统”",
+  "url": "reports/2026-09-14-zh.html"
+ },
+ {
   "date": "2026-09-13",
   "lang": "zh",
   "title": "Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”",
