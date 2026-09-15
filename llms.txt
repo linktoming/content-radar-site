@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 50 days archived.
+Published daily by mingming (https://x.com/linktoming). 51 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-09-16 — Today's signal is not “which model is strongest.” The shift is that AI workflows are moving toward the trust threshold](https://radar.sharpener.ai/reports/2026-09-16-en.html): Today's signal is not “which model is strongest.” The shift is that AI workflows are moving toward the trust threshold
 - [2026-09-15 — Today's strongest signal is that agents are moving from clever demos into systems that can run for hours, recover](https://radar.sharpener.ai/reports/2026-09-15-en.html): Today's strongest signal is that agents are moving from clever demos into systems that can run for hours, recover, get audited, and fit inside real workflows
 - [2026-09-14 — Today's strongest signal is not another leaderboard jump](https://radar.sharpener.ai/reports/2026-09-14-en.html): Today's strongest signal is not another leaderboard jump. OpenAI, Anthropic, DeepMind, DeepSeek, Qwen, Sierra, and the Chinese creator platforms are all pointing at the same shift
 - [2026-09-13 — Agents are moving from “models that answer” to work systems that can be deployed, audited, reused](https://radar.sharpener.ai/reports/2026-09-13-en.html): Agents are moving from “models that answer” to work systems that can be deployed, audited, reused, and taught to ordinary users
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-03 — The important shift is not simply that models are getting stronger](https://radar.sharpener.ai/reports/2026-08-03-en.html): The important shift is not simply that models are getting stronger: the unit economics of agent workflows are collapsing while the surrounding execution layer—harnesses, sandboxes, local inference
 - [2026-08-02 — The clearest shift is that models are getting cheaper while value moves upward into harnesses, agent security](https://radar.sharpener.ai/reports/2026-08-02-en.html): The clearest shift is that models are getting cheaper while value moves upward into harnesses, agent security, workflow design, and verifiable outcomes
 - [2026-08-01 — The important shift is not another model launch: frontier capability is being compressed into cheaper inference](https://radar.sharpener.ai/reports/2026-08-01-en.html): The important shift is not another model launch: frontier capability is being compressed into cheaper inference, deployable open weights, controllable runtimes, and workflows that a small team
-- [2026-07-31 — The important shift is not another model launch. Inference economics are collapsing while the engineering boundaries](https://radar.sharpener.ai/reports/2026-07-31-en.html): The important shift is not another model launch. Inference economics are collapsing while the engineering boundaries around agents are hardening
 
 ## 中文版
 
+- [2026-09-16 — 今天的主线不是“哪个模型又强了”，而是 AI 工作流开始进入可托付阶段：模型能做更多事，用户却更在意它是否能长期运行、能不能被审查、能不能保留上下文](https://radar.sharpener.ai/reports/2026-09-16-zh.html): 今天的主线不是“哪个模型又强了”，而是 AI 工作流开始进入可托付阶段：模型能做更多事，用户却更在意它是否能长期运行、能不能被审查、能不能保留上下文、能不能真的交付结果
 - [2026-09-15 — Agent 正在从「会回答」跨进「能长期代办、能被审计、能本地化部署」的产品周期](https://radar.sharpener.ai/reports/2026-09-15-zh.html): Agent 正在从「会回答」跨进「能长期代办、能被审计、能本地化部署」的产品周期。今日扫描 1102 条原始帖、17 个 NEWS fetcher、934 条候选/强制召回
 - [2026-09-14 — OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前](https://radar.sharpener.ai/reports/2026-09-14-zh.html): OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前：模型继续加速，但真正的竞争开始转向“谁能把能力放进可审计、可部署、可复盘的系统”
 - [2026-09-13 — Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”](https://radar.sharpener.ai/reports/2026-09-13-zh.html): Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”
@@ -90,7 +91,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-04 — 今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」](https://radar.sharpener.ai/reports/2026-08-04-zh.html): 今天主线不是单点模型发布，而是「模型能力开始从聊天框撤退，进入可验证的工作系统」。OpenAI 用内部下一代模型给出 10 个数学和理论计算机科学结果，并释放 Lean certificates
 - [2026-08-03 — 真正的主线不是「又有新模型」，而是 frontier intelligence 正在从稀缺炫技品变成可被产品、组织和创作者每天调用的作业层](https://radar.sharpener.ai/reports/2026-08-03-zh.html): 真正的主线不是「又有新模型」，而是 frontier intelligence 正在从稀缺炫技品变成可被产品、组织和创作者每天调用的作业层
 - [2026-08-02 — 今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出](https://radar.sharpener.ai/reports/2026-08-02-zh.html): 今天主线很清楚：模型层继续降价，价值开始从“模型本身”迁移到 harness、agent 安全、工作流和可验证产出
-- [2026-08-01 — 主线不是“又出了一个模型”，而是模型能力开始被压进可用成本、可控运行时和真实工作流里](https://radar.sharpener.ai/reports/2026-08-01-zh.html): 主线不是“又出了一个模型”，而是模型能力开始被压进可用成本、可控运行时和真实工作流里
 
 ## Full index
 

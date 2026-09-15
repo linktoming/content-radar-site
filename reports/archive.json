@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-16",
+  "lang": "zh",
+  "title": "今天的主线不是“哪个模型又强了”，而是 AI 工作流开始进入可托付阶段：模型能做更多事，用户却更在意它是否能长期运行、能不能被审查、能不能保留上下文",
+  "summary": "今天的主线不是“哪个模型又强了”，而是 AI 工作流开始进入可托付阶段：模型能做更多事，用户却更在意它是否能长期运行、能不能被审查、能不能保留上下文、能不能真的交付结果",
+  "url": "reports/2026-09-16-zh.html"
+ },
+ {
+  "date": "2026-09-16",
+  "lang": "en",
+  "title": "Today's signal is not “which model is strongest.” The shift is that AI workflows are moving toward the trust threshold",
+  "summary": "Today's signal is not “which model is strongest.” The shift is that AI workflows are moving toward the trust threshold",
+  "url": "reports/2026-09-16-en.html"
+ },
+ {
   "date": "2026-09-15",
   "lang": "zh",
   "title": "Agent 正在从「会回答」跨进「能长期代办、能被审计、能本地化部署」的产品周期",
