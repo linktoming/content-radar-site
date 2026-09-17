@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-18",
+  "lang": "zh",
+  "title": "Agent 进入运营期：前沿模型开始自己审计、自己优化、自己卖货，创作者要看的不是“谁最强”，而是谁能变成稳定工作流",
+  "summary": "Agent 进入运营期：前沿模型开始自己审计、自己优化、自己卖货，创作者要看的不是“谁最强”，而是谁能变成稳定工作流",
+  "url": "reports/2026-09-18-zh.html"
+ },
+ {
+  "date": "2026-09-18",
+  "lang": "en",
+  "title": "Agents are moving from impressive demos into operating systems",
+  "summary": "Agents are moving from impressive demos into operating systems: the winning question is no longer “which model is smartest,” but “which model can become a reliable workflow.”",
+  "url": "reports/2026-09-18-en.html"
+ },
+ {
   "date": "2026-09-16",
   "lang": "zh",
   "title": "今天的主线不是“哪个模型又强了”，而是 AI 工作流开始进入可托付阶段：模型能做更多事，用户却更在意它是否能长期运行、能不能被审查、能不能保留上下文",
