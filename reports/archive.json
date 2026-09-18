@@ -14,6 +14,20 @@
   "url": "reports/2026-09-18-en.html"
  },
  {
+  "date": "2026-09-17",
+  "lang": "zh",
+  "title": "Agent 栈进入可运营期：前沿实验室在补治理、语音入口与真实场景责任，基础设施在把 agentic inference 变成可计量的生产能力",
+  "summary": "Agent 栈进入可运营期：前沿实验室在补治理、语音入口与真实场景责任，基础设施在把 agentic inference 变成可计量的生产能力，国内内容平台则把 AI 编程、AI 视频",
+  "url": "reports/2026-09-17-zh.html"
+ },
+ {
+  "date": "2026-09-17",
+  "lang": "en",
+  "title": "The agent stack is moving from clever demos into operating systems",
+  "summary": "The agent stack is moving from clever demos into operating systems: labs are hardening governance, voice, safety, and real-world deployment",
+  "url": "reports/2026-09-17-en.html"
+ },
+ {
   "date": "2026-09-16",
   "lang": "zh",
   "title": "今天的主线不是“哪个模型又强了”，而是 AI 工作流开始进入可托付阶段：模型能做更多事，用户却更在意它是否能长期运行、能不能被审查、能不能保留上下文",
