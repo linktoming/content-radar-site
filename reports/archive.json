@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-20",
+  "lang": "zh",
+  "title": "AI 新闻的主线从模型更强，转向谁能把高风险 Agent 放进真实组织，并证明它可验证、可治理、可复用",
+  "summary": "AI 新闻的主线从模型更强，转向谁能把高风险 Agent 放进真实组织，并证明它可验证、可治理、可复用",
+  "url": "reports/2026-09-20-zh.html"
+ },
+ {
+  "date": "2026-09-20",
+  "lang": "en",
+  "title": "The main AI story has moved from stronger models to trusted deployment",
+  "summary": "The main AI story has moved from stronger models to trusted deployment: who can place high-risk agents inside real organizations and prove that they are verifiable, governable, and reusable",
+  "url": "reports/2026-09-20-en.html"
+ },
+ {
   "date": "2026-09-18",
   "lang": "zh",
   "title": "Agent 进入运营期：前沿模型开始自己审计、自己优化、自己卖货，创作者要看的不是“谁最强”，而是谁能变成稳定工作流",
