@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-21",
+  "lang": "zh",
+  "title": "Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流",
+  "summary": "Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流。Anthropic 把独立评估推到 10 亿美元级别，OpenAI 把模型失准披露和法律、企业工作流放到同一天",
+  "url": "reports/2026-09-21-zh.html"
+ },
+ {
+  "date": "2026-09-21",
+  "lang": "en",
+  "title": "The next phase of agents is not better chat; it is verifiable, governable systems embedded in real work",
+  "summary": "The next phase of agents is not better chat; it is verifiable, governable systems embedded in real work",
+  "url": "reports/2026-09-21-en.html"
+ },
+ {
   "date": "2026-09-20",
   "lang": "zh",
   "title": "AI 新闻的主线从模型更强，转向谁能把高风险 Agent 放进真实组织，并证明它可验证、可治理、可复用",

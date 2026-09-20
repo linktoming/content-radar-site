@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 54 days archived.
+Published daily by mingming (https://x.com/linktoming). 55 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-09-21 — The next phase of agents is not better chat; it is verifiable, governable systems embedded in real work](https://radar.sharpener.ai/reports/2026-09-21-en.html): The next phase of agents is not better chat; it is verifiable, governable systems embedded in real work
 - [2026-09-20 — The main AI story has moved from stronger models to trusted deployment](https://radar.sharpener.ai/reports/2026-09-20-en.html): The main AI story has moved from stronger models to trusted deployment: who can place high-risk agents inside real organizations and prove that they are verifiable, governable, and reusable
 - [2026-09-18 — Agents are moving from impressive demos into operating systems](https://radar.sharpener.ai/reports/2026-09-18-en.html): Agents are moving from impressive demos into operating systems: the winning question is no longer “which model is smartest,” but “which model can become a reliable workflow.”
 - [2026-09-17 — The agent stack is moving from clever demos into operating systems](https://radar.sharpener.ai/reports/2026-09-17-en.html): The agent stack is moving from clever demos into operating systems: labs are hardening governance, voice, safety, and real-world deployment
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-07 — Agent products are turning intelligence into a controlled loop](https://radar.sharpener.ai/reports/2026-08-07-en.html): Agent products are turning intelligence into a controlled loop: OpenAI exposed reasoning effort, Vercel proposed a shared plugin layer, and investors are now asking how an agent knows when to stop
 - [2026-08-06 — The agent race has moved from model intelligence to operational systems](https://radar.sharpener.ai/reports/2026-08-06-en.html): The agent race has moved from model intelligence to operational systems: the moat is now the harness that makes models controllable, observable, and deliverable
 - [2026-08-05 — The important shift is not another model launch. It is the agent stack becoming operational](https://radar.sharpener.ai/reports/2026-08-05-en.html): The important shift is not another model launch. It is the agent stack becoming operational
-- [2026-08-04 — The important shift is not another model launch. Models are leaving the chat box and entering verifiable work systems](https://radar.sharpener.ai/reports/2026-08-04-en.html): The important shift is not another model launch. Models are leaving the chat box and entering verifiable work systems
 
 ## 中文版
 
+- [2026-09-21 — Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流](https://radar.sharpener.ai/reports/2026-09-21-zh.html): Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流。Anthropic 把独立评估推到 10 亿美元级别，OpenAI 把模型失准披露和法律、企业工作流放到同一天
 - [2026-09-20 — AI 新闻的主线从模型更强，转向谁能把高风险 Agent 放进真实组织，并证明它可验证、可治理、可复用](https://radar.sharpener.ai/reports/2026-09-20-zh.html): AI 新闻的主线从模型更强，转向谁能把高风险 Agent 放进真实组织，并证明它可验证、可治理、可复用
 - [2026-09-18 — Agent 进入运营期：前沿模型开始自己审计、自己优化、自己卖货，创作者要看的不是“谁最强”，而是谁能变成稳定工作流](https://radar.sharpener.ai/reports/2026-09-18-zh.html): Agent 进入运营期：前沿模型开始自己审计、自己优化、自己卖货，创作者要看的不是“谁最强”，而是谁能变成稳定工作流
 - [2026-09-17 — Agent 栈进入可运营期：前沿实验室在补治理、语音入口与真实场景责任，基础设施在把 agentic inference 变成可计量的生产能力](https://radar.sharpener.ai/reports/2026-09-17-zh.html): Agent 栈进入可运营期：前沿实验室在补治理、语音入口与真实场景责任，基础设施在把 agentic inference 变成可计量的生产能力，国内内容平台则把 AI 编程、AI 视频
@@ -90,7 +91,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-08 — Agent 栈今天进入“可运营系统”阶段：模型更强只是底座，真正的竞争点变成安全闸、权限、插件、路由、语音界面和能长期跑业务结果的 harness](https://radar.sharpener.ai/reports/2026-08-08-zh.html): Agent 栈今天进入“可运营系统”阶段：模型更强只是底座，真正的竞争点变成安全闸、权限、插件、路由、语音界面和能长期跑业务结果的 harness
 - [2026-08-07 — Agent 的竞争正在从“模型聪明”转向“系统可控”：谁能把路由、验证、上下文、权限和成本闭环做好，谁才真正拥有生产力](https://radar.sharpener.ai/reports/2026-08-07-zh.html): Agent 的竞争正在从“模型聪明”转向“系统可控”：谁能把路由、验证、上下文、权限和成本闭环做好，谁才真正拥有生产力。今日扫描 295 个追踪源 · 19 个 fetcher · 1262 条原始帖子
 - [2026-08-06 — Agent 竞争今天从「谁的模型更聪明」推进到「谁能把模型塞进可控、可复盘、可交付的工作系统」](https://radar.sharpener.ai/reports/2026-08-06-zh.html): Agent 竞争今天从「谁的模型更聪明」推进到「谁能把模型塞进可控、可复盘、可交付的工作系统」。今日扫描 293 个追踪实体 · 19 个 fetcher · 1290 条原始帖，主信号不是单点发布，而是同一天在源头
-- [2026-08-05 — 今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞](https://radar.sharpener.ai/reports/2026-08-05-zh.html): 今天的主线不是某一个模型发布，而是「agent 从聪明 demo 进入可运营系统」：OpenAI 把 Voice、Codex、Work 插件往真实工作流里塞
 
 ## Full index
 

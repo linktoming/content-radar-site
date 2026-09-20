@@ -1,0 +1,191 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流 · AI情报</title>
+<meta name="description" content="Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流。Anthropic 把独立评估推到 10 亿美元级别，OpenAI 把模型失准披露和法律、企业工作流放到同一天">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-09-21-zh.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI情报">
+<meta property="og:title" content="Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流">
+<meta property="og:description" content="Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流。Anthropic 把独立评估推到 10 亿美元级别，OpenAI 把模型失准披露和法律、企业工作流放到同一天">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-09-21-zh.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-09-21">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流">
+<meta name="twitter:description" content="Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流。Anthropic 把独立评估推到 10 亿美元级别，OpenAI 把模型失准披露和法律、企业工作流放到同一天">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流","description":"Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流。Anthropic 把独立评估推到 10 亿美元级别，OpenAI 把模型失准披露和法律、企业工作流放到同一天","datePublished":"2026-09-21","dateModified":"2026-09-21","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-09-21-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-09-21-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-09-21">2026 · 09 · 21 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流</h1>
+    <div class="rp-body"><h2>🔭 今日主线</h2>
+<p>Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流。<a href="https://x.com/AnthropicAI/status/2101039819870937247">Anthropic</a> 把独立评估推到 10 亿美元级别，<a href="https://x.com/OpenAI/status/2100344867507327087">OpenAI</a> 把模型失准披露和法律、企业工作流放到同一天，<a href="https://x.com/warpdotdev/status/2100623731294978243">Warp</a> 与 <a href="https://x.com/LangChain/status/2101454284927959080">LangChain</a> 则把 agent 评估、低成本判断模型产品化。今天的核心不是单点模型，而是 AI 系统如何进入真实流程，并证明自己可靠。</p>
+<h2>🎯 源头 · Primary</h2>
+<ul>
+<li><a href="https://www.anthropic.com/news/accenture-embedded-evaluation">Anthropic</a>：与 Accenture 推出嵌入式评估合作，第三方验证正在进入模型开发流程。</li>
+<li><a href="https://www.anthropic.com/news/life-sciences-verification-program">Anthropic</a>：生命科学验证计划说明高风险 Agent 会先被要求证明边界，再展示能力。</li>
+<li><a href="https://openai.com/index/astra-for-law">OpenAI</a>：Astra for Law 把法律数据、流程和控制项产品化，通用聊天继续下沉到行业系统。</li>
+<li><a href="https://openai.com/index/cooley-gopublic">OpenAI</a>：Cooley 用 ChatGPT 加速 IPO 工作流，法律和资本市场是企业 AI 的硬场景。</li>
+<li><a href="https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/">Google DeepMind</a>：Gemini 3.8 Live 把实时语音、视觉和工具调用合并，语音 Agent 正从聊天入口走向边看边做。</li>
+<li><a href="https://x.com/Alibaba_Qwen/status/2101659302792679789">Qwen-Image-2.1</a>：开源统一生成与编辑能力，并获 <a href="https://x.com/Alibaba_Qwen/status/2101670804794884242">vLLM day-0 支持</a>。</li>
+<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">DeepSeek V4.1 Flash</a>：低成本、低延迟模型继续影响 agent loop 成本结构。</li>
+<li><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.5">OpenClaw v2026.9.5</a>：会话分享、共享浏览器、插件热重载、GPT Live 与专业子代理设置成为多人 Agent 工作台基线。</li>
+<li><a href="https://github.com/ollama/ollama/releases/tag/v0.34.3-rc1">Ollama v0.34.3-rc1</a>：暴露 thinking 控制信息，本地模型服务开始把推理开关变成可编排参数。</li>
+<li><a href="https://github.com/sgl-project/sglang/releases/tag/v0.5.20">SGLang v0.5.20</a>：继续补推理栈稳定性与模型支持。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<ul>
+<li><a href="https://x.com/a16z/status/2101336042712518878">a16z</a>：讨论 AI labs 应由谁监督，第三方验证成为投资叙事的一部分。</li>
+<li><a href="https://x.com/a16z/status/2101032223457829137">a16z</a>：Databricks 视角强调企业缺的不是更聪明模型，而是吸收组织上下文的系统。</li>
+<li><a href="https://www.youtube.com/watch?v=k7wPdCNfljQ">Sequoia</a>：企业 AI 的核心是数据平台、组织执行和模型能力结合。</li>
+<li><a href="https://x.com/saranormous/status/2101153682905526545">Sarah Guo</a>：提醒 AI 基础设施 backlog 与真实收入可能有巨大差距，泡沫期要区分订单故事和交付现金流。</li>
+<li><a href="https://x.com/garrytan/status/2100668489178456268">Garry Tan</a>：memory 不应只靠堆 token，而要靠 embedding 和可检索结构。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<ul>
+<li><a href="https://therundownai.beehiiv.com/p/inside-openai-log-of-misbehaving-models">The Rundown</a>：把 OpenAI 模型失准披露作为头条，是今日主线的外部确认。</li>
+<li><a href="https://tldr.tech/ai/2026-09-17">TLDR AI</a>：把 Claude/Cowork、ChatGPT sponsored agents 与 harness tax 放在一起，说明 Agent 商业化会同时遇到广告、协作和基础设施成本。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-09-19-4">机器之心</a>：报道 Anthropic 接受 AGENTS.md 标准，agent 规则文件正在成为跨工具协作协议。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2101435924790026437">Rohan Paul</a>：JevBench 关注有界软件决策，比开放问答更贴近自动化产品。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2101355922148782264">SemiAnalysis</a>：Google TPU 客户开始索要 AgentX 性能结果，agentic inference 正成为算力采购 benchmark。</li>
+<li><a href="https://x.com/naval/status/2100249689321033731">Naval</a>：未来更可能是 AI 代表人类彼此对抗，而不是 AI 对抗人类，给 Agent 治理提供了更现实的冲突模型。</li>
+</ul>
+<h2>🔨 实践 · Practitioner</h2>
+<ul>
+<li><a href="https://x.com/DeepLearningAI/status/2101302790253359531">DeepLearning.AI</a>：Andrew Ng 把 agent swarm 事故归因于沙箱和监控不足，而不是 AI 失控。</li>
+<li><a href="https://x.com/steipete/status/2101141707375227372">Peter Steinberger</a>：团队服务器里的 live agent 能进 Discord 并理解上下文，真实团队正在把 Agent 放进协作系统。</li>
+<li><a href="https://x.com/HamelHusain/status/2101533413010440593">Hamel Husain</a>：Jev 可做 evals，但要用人类标签测试并防止过拟合。</li>
+<li><a href="https://x.com/gregisenberg/status/2101284640828915995">Greg Isenberg</a>：列出 Jev-native 产品，核心是判断成本下降后哪些微产品开始成立。</li>
+<li><a href="https://x.com/dotey/status/2101523037233217780">宝玉</a>：用 GPT-6 Astra 做可交互的《桃花源记》，AI 内容正从图文/视频走向互动网页体验。</li>
+<li><a href="https://x.com/op7418/status/2101536330018918793">歸藏</a>：用 Jev 做实时 3D 场景生成器，判断模型可以负责素材、状态与布局选择。</li>
+</ul>
+<h2>🔥 专业热榜（by-feed·trending·专业）</h2>
+<ul>
+<li><a href="https://huggingface.co/Qwen/Qwen3.8-27B">Qwen3.8-27B</a>：国产模型在开发者社区继续有显性热度。</li>
+<li><a href="https://huggingface.co/papers/2609.19969">DeepSeek-V4.1-Flash 论文</a>：KV cache 压缩影响长上下文 Agent 的边际成本。</li>
+<li><a href="https://github.com/cloudflare/security-audit-skill">Cloudflare security-audit-skill</a>：可复用 agent skill 先在安全审计场景成熟。</li>
+<li><a href="https://github.com/anthropics/claude-code">Claude Code</a>：代码 Agent 仍是开发者最强入口之一。</li>
+<li><a href="https://github.com/trycua/cua">trycua/cua</a>：computer use / GUI automation 仍是 agent 落地重要分支。</li>
+<li><a href="https://github.com/addyosmani/agent-skills">Addy Osmani agent-skills</a>：社区正在把提示词经验沉淀为可安装能力包。</li>
+</ul>
+<h2>👥 我的 feeds（by-feed·mine）</h2>
+<p>News lane 没有独立 my_feed_* 输入；相关算法流由 X list/user、专业热榜和中文搜索覆盖。</p>
+<h2>🌶️ 热点（热点 pass · 国内市场脉搏）</h2>
+<ul>
+<li><a href="https://www.douyin.com/video/7685291635374083363">WorkBuddy 抖音教程</a>：低门槛 Agent 工作流教程高互动，说明用户想要能直接搭流程的入口。</li>
+<li><a href="https://www.rednote.com/search_result/6a9670b000000000280322c1">小红书 WorkBuddy Skill</a>：中文用户从装什么 skill 进入 agent 工作流，而不是先学框架。</li>
+<li><a href="https://www.bilibili.com/video/BV1toei6zEac">B站 AI 日报</a>：Step 5 Preview、Qwen-Image-2.1 和硅谷热点被压缩成中文信息流。</li>
+<li><a href="https://www.douyin.com/video/7636872072064470298">抖音 Claude Code 教程</a>：coding agent 正突破程序员圈层。</li>
+<li><a href="https://www.rednote.com/search_result/6aaf5e15000000000f039800">小红书 Jev 千人千面网站</a>：低成本判断模型被翻译成大众产品想象。</li>
+</ul>
+<h2>🔭 今日主线</h2>
+<p>豆包手机助手、Jev 决策模型和 Agent 教程一起把 AI 热点推向可执行入口：用户不再只问模型强不强，而是问它能不能替我完成明确动作。中文平台最强爆点仍是看得见的结果：手机入口、保姆级教程、AI 修复、AI 视频作品、企业增收案例。英文算法流则围绕 Jev、agent evaluation、AI 搜索可见性和企业销售展开。</p>
+<h2>🌶️ 爆款盘点</h2>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1mhKv68EPQ">秋芝2046 · 豆包真能干活了</a>：105.5 万播放，国产工具 + 手机入口 + 能干活。</li>
+<li><a href="https://www.bilibili.com/video/BV1RjYB6DEYZ">秋芝2046 · 真 AI 手机</a>：99.3 万播放，AI 手机把 agent 变成普通用户可试的入口。</li>
+<li><a href="https://www.rednote.com/user/profile/63b622ab00000000260066bd/6a080fda000000003502d325">秋芝2046 · 40 分钟学会 Codex</a>：小红书 10 万赞，零基础终极教程仍是收藏型模板。</li>
+<li><a href="https://www.bilibili.com/video/BV139bD6gEa8">技术爬爬虾 · Pi 极简 Agent 全攻略</a>：81.6 万播放，横向比较满足我该选哪个的决策需求。</li>
+<li><a href="https://www.rednote.com/search_result/6a4f63a400000000210169d5">小红书 AI 内容创作爆款</a>：18.94 万赞，内容创作类爆款靠具体结果 + 可复制流程。</li>
+<li><a href="https://www.bilibili.com/video/BV1yr4y1d7yQ">大谷Spitzer · AI 修复珍贵画面</a>：59.3 万播放，AI 视频靠情绪和作品感传播。</li>
+<li><a href="https://www.douyin.com/video/7642252037626907958">光羽 · 森马 AI 变革增收 2 亿</a>：企业案例靠明确业务结果传播。</li>
+<li><a href="https://www.reddit.com/r/ClaudeAI/comments/1wkqszd/asked_claude_to_waste_my_remaining_usage_before/">Reddit ClaudeAI</a>：3223 分，订阅和额度焦虑正在成为英文用户情绪。</li>
+<li><a href="https://www.reddit.com/r/SideProject/comments/1oaq2kx/share_your_notai_projects/">Reddit SideProject Not-AI</a>：653 分、1796 评论，indie 圈继续反噬万物皆 AI。</li>
+</ul>
+<h2>👥 平台流</h2>
+<ul>
+<li><a href="https://x.com/LangChain/status/2101454284927959080">LangChain</a>：Jev 对比 LLM judge，说明 System One model 会先从评估和路由切进 agent 栈。</li>
+<li><a href="https://x.com/rasbt/status/2101672304358948992">Sebastian Raschka</a>：Jev 不是普通分类器，关键是低延迟判断。</li>
+<li><a href="https://x.com/andrewchen/status/2101517283588030926">Andrew Chen</a>：Jev 可能打开广告支持的免费 AI-native app。</li>
+<li><a href="https://x.com/rakyll/status/2101559196038909976">Jaana Dogan</a>：agentic workload 需要 stateful、fast resumption 和 observability。</li>
+<li><a href="https://x.com/Shpigford/status/2101637954061910236">Josh Pigford</a>：移动端控制真实电脑的 AI IDE 是具体摩擦点。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-09-20-2">机器之心 · Jev 刷屏</a>：专业媒体确认 Jev 模型品类外溢。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-09-19-8">机器之心 · Karl Workbench</a>：科研 agent 工作台进入单细胞和空间组学基准。</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><a class="rp-nav-prev" href="/reports/2026-09-20-zh.html" rel="prev"><span class="k">← 前一期</span><span class="t">AI 新闻的主线从模型更强，转向谁能把高风险 Agent 放进真实组织，并证明它可验证、可治理、可复用</span></a><span></span><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI 市场雷达,每天一份免费报告,横跨东西。<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-zh.xml">中文</a> · <a class="dom" href="/feed-en.xml">English</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">幕后故事</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>
