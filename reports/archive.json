@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-22",
+  "lang": "zh",
+  "title": "Agent 栈今天的主线是「从聪明能力走向可运营系统」：模型公司在补企业记忆、语义层、安全披露、外部评估和行业准入，工具公司在补评分器、工作流",
+  "summary": "Agent 栈今天的主线是「从聪明能力走向可运营系统」：模型公司在补企业记忆、语义层、安全披露、外部评估和行业准入，工具公司在补评分器、工作流、桌面端和低成本决策模型",
+  "url": "reports/2026-09-22-zh.html"
+ },
+ {
+  "date": "2026-09-22",
+  "lang": "en",
+  "title": "The day’s real story is the operationalization of agents",
+  "summary": "The day’s real story is the operationalization of agents: model labs are adding memory, semantic layers, disclosure systems, third-party evaluation, and regulated access",
+  "url": "reports/2026-09-22-en.html"
+ },
+ {
   "date": "2026-09-21",
   "lang": "zh",
   "title": "Agent 的下一阶段不是更会聊天，而是可验证、可治理、可嵌入真实工作流",
