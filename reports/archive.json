@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-27",
+  "lang": "zh",
+  "title": "AI agent 正在从“会回答”走向“会代办、会用工具、会被审计”：OpenAI 公开代理训练中不该外传的数据事件",
+  "summary": "AI agent 正在从“会回答”走向“会代办、会用工具、会被审计”：OpenAI 公开代理训练中不该外传的数据事件，Anthropic 用 Claude 做科学计算和生物发现",
+  "url": "reports/2026-09-27-zh.html"
+ },
+ {
+  "date": "2026-09-27",
+  "lang": "en",
+  "title": "🎯 Primary",
+  "summary": "🎯 Primary",
+  "url": "reports/2026-09-27-en.html"
+ },
+ {
   "date": "2026-09-24",
   "lang": "zh",
   "title": "GPT-6 Sol/Luna 与 Claude Opus 5.5 同日把竞争焦点从“更强模型”推进到“更便宜、更可评估、更能进入真实工作流”",
