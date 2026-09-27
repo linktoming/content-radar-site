@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-28",
+  "lang": "zh",
+  "title": "Agent 从“会聊、会生成”进入“要被治理、要接工作流、要能分发”的运营期",
+  "summary": "Agent 从“会聊、会生成”进入“要被治理、要接工作流、要能分发”的运营期",
+  "url": "reports/2026-09-28-zh.html"
+ },
+ {
+  "date": "2026-09-28",
+  "lang": "en",
+  "title": "High-end AI is moving from “new model launch” to cheaper, more usable agent workflows. The key pattern today",
+  "summary": "High-end AI is moving from “new model launch” to cheaper, more usable agent workflows. The key pattern today",
+  "url": "reports/2026-09-28-en.html"
+ },
+ {
   "date": "2026-09-27",
   "lang": "zh",
   "title": "AI agent 正在从“会回答”走向“会代办、会用工具、会被审计”：OpenAI 公开代理训练中不该外传的数据事件",
