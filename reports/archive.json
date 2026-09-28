@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-29",
+  "lang": "zh",
+  "title": "Agent 进入第二阶段：模型更强不是主线，能被控制、审计、路由、嵌进业务流程才是主线",
+  "summary": "Agent 进入第二阶段：模型更强不是主线，能被控制、审计、路由、嵌进业务流程才是主线",
+  "url": "reports/2026-09-29-zh.html"
+ },
+ {
+  "date": "2026-09-29",
+  "lang": "en",
+  "title": "AI is moving from model demos into operating layers: voice agents with tools, safer agent platforms",
+  "summary": "AI is moving from model demos into operating layers: voice agents with tools, safer agent platforms, vertical scientific workflows, and infrastructure built for reliable inference and evaluation",
+  "url": "reports/2026-09-29-en.html"
+ },
+ {
   "date": "2026-09-28",
   "lang": "zh",
   "title": "Agent 从“会聊、会生成”进入“要被治理、要接工作流、要能分发”的运营期",
