@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-09-30",
+  "lang": "zh",
+  "title": "Claude Sonnet 5.5、OpenAI DevDay 预热、NVIDIA/AMD 的 agent 安全与空间智能下注，把今天的行业信号推向同一个方向",
+  "summary": "Claude Sonnet 5.5、OpenAI DevDay 预热、NVIDIA/AMD 的 agent 安全与空间智能下注，把今天的行业信号推向同一个方向",
+  "url": "reports/2026-09-30-zh.html"
+ },
+ {
+  "date": "2026-09-30",
+  "lang": "en",
+  "title": "AI platforms are shifting from “better chat” to operational infrastructure",
+  "summary": "AI platforms are shifting from “better chat” to operational infrastructure: decision models, safer agents, lower-cost coding, private memory, voice/avatar interfaces, and enterprise safety cases",
+  "url": "reports/2026-09-30-en.html"
+ },
+ {
   "date": "2026-09-29",
   "lang": "zh",
   "title": "Agent 进入第二阶段：模型更强不是主线，能被控制、审计、路由、嵌进业务流程才是主线",

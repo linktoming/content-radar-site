@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 61 days archived.
+Published daily by mingming (https://x.com/linktoming). 62 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-09-30 — AI platforms are shifting from “better chat” to operational infrastructure](https://radar.sharpener.ai/reports/2026-09-30-en.html): AI platforms are shifting from “better chat” to operational infrastructure: decision models, safer agents, lower-cost coding, private memory, voice/avatar interfaces, and enterprise safety cases
 - [2026-09-29 — AI is moving from model demos into operating layers: voice agents with tools, safer agent platforms](https://radar.sharpener.ai/reports/2026-09-29-en.html): AI is moving from model demos into operating layers: voice agents with tools, safer agent platforms, vertical scientific workflows, and infrastructure built for reliable inference and evaluation
 - [2026-09-28 — High-end AI is moving from “new model launch” to cheaper, more usable agent workflows. The key pattern today](https://radar.sharpener.ai/reports/2026-09-28-en.html): High-end AI is moving from “new model launch” to cheaper, more usable agent workflows. The key pattern today
 - [2026-09-27 — 🎯 Primary](https://radar.sharpener.ai/reports/2026-09-27-en.html): 🎯 Primary
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-15 — AI agents are moving from “more intelligent” to operable](https://radar.sharpener.ai/reports/2026-08-15-en.html): AI agents are moving from “more intelligent” to operable: OpenAI is pushing GPT-5.6 Sol to 14× Ultrafast and giving ChatGPT desktop a memory of your computer activity
 - [2026-08-14 — AI is moving from model capability to operable systems](https://radar.sharpener.ai/reports/2026-08-14-en.html): AI is moving from model capability to operable systems: OpenAI made inference speed and computer history into product primitives, Claude carried sessions into the browser
 - [2026-08-13 — The frontier-model race is turning into a distribution race between ecosystems](https://radar.sharpener.ai/reports/2026-08-13-en.html): The frontier-model race is turning into a distribution race between ecosystems. DeepSeek V4 Pro, Qwen3.8 and Grok 4.6 arrived into a market where the model is immediately compressed
-- [2026-08-11 — AI agents are becoming employable labor: OpenAI is putting GPT-5.6 into finance and cyber-defense workflows](https://radar.sharpener.ai/reports/2026-08-11-en.html): AI agents are becoming employable labor: OpenAI is putting GPT-5.6 into finance and cyber-defense workflows, Anthropic is tuning Claude's price and safety boundaries for production
 
 ## 中文版
 
+- [2026-09-30 — Claude Sonnet 5.5、OpenAI DevDay 预热、NVIDIA/AMD 的 agent 安全与空间智能下注，把今天的行业信号推向同一个方向](https://radar.sharpener.ai/reports/2026-09-30-zh.html): Claude Sonnet 5.5、OpenAI DevDay 预热、NVIDIA/AMD 的 agent 安全与空间智能下注，把今天的行业信号推向同一个方向
 - [2026-09-29 — Agent 进入第二阶段：模型更强不是主线，能被控制、审计、路由、嵌进业务流程才是主线](https://radar.sharpener.ai/reports/2026-09-29-zh.html): Agent 进入第二阶段：模型更强不是主线，能被控制、审计、路由、嵌进业务流程才是主线
 - [2026-09-28 — Agent 从“会聊、会生成”进入“要被治理、要接工作流、要能分发”的运营期](https://radar.sharpener.ai/reports/2026-09-28-zh.html): Agent 从“会聊、会生成”进入“要被治理、要接工作流、要能分发”的运营期
 - [2026-09-27 — AI agent 正在从“会回答”走向“会代办、会用工具、会被审计”：OpenAI 公开代理训练中不该外传的数据事件](https://radar.sharpener.ai/reports/2026-09-27-zh.html): AI agent 正在从“会回答”走向“会代办、会用工具、会被审计”：OpenAI 公开代理训练中不该外传的数据事件，Anthropic 用 Claude 做科学计算和生物发现
@@ -90,7 +91,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-15 — Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把 GPT-5.6 Sol 推到 14x Ultrafast](https://radar.sharpener.ai/reports/2026-08-15-zh.html): Agent 栈今天从“更聪明”转向“更可运营”：OpenAI 把 GPT-5.6 Sol 推到 14x Ultrafast、ChatGPT 桌面开始记 Computer History
 - [2026-08-14 — Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer](https://radar.sharpener.ai/reports/2026-08-14-zh.html): Agent 栈今天从“模型能力”转向“可运营工作流”：OpenAI 推 GPT-5.6 Sol 的 750 tokens/s 与 Computer History，Claude 把 Chrome session 接回全端
 - [2026-08-13 — 开源 / 低价模型正在把 agent 栈从“模型发布”推向“可运营系统”。今日扫描 315 个追踪实体 · 25 个抓取源 · 1079 条去重候选](https://radar.sharpener.ai/reports/2026-08-13-zh.html): 开源 / 低价模型正在把 agent 栈从“模型发布”推向“可运营系统”。今日扫描 315 个追踪实体 · 25 个抓取源 · 1079 条去重候选
-- [2026-08-12 — Agent 的主线进入「可运营系统」：OpenAI 把 Codex/桌面端继续推入工作流](https://radar.sharpener.ai/reports/2026-08-12-zh.html): Agent 的主线进入「可运营系统」：OpenAI 把 Codex/桌面端继续推入工作流，NVIDIA/Meta/Unsloth 把本地和开源模型推向高频 agent
 
 ## Full index
 
