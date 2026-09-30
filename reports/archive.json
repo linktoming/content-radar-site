@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-01",
+  "lang": "zh",
+  "title": "OpenAI 把 DevDay 变成了「全天候 agent + 更便宜更快模型 + 工作流入口」的一次集中换挡",
+  "summary": "OpenAI 把 DevDay 变成了「全天候 agent + 更便宜更快模型 + 工作流入口」的一次集中换挡。今日扫描 1195 条原始内容，语义召回后进入 517 条候选",
+  "url": "reports/2026-10-01-zh.html"
+ },
+ {
+  "date": "2026-10-01",
+  "lang": "en",
+  "title": "AI agents are moving from launch-stage spectacle into work systems",
+  "summary": "AI agents are moving from launch-stage spectacle into work systems: small-business enablement, security workflows, coding environments, enterprise runtimes",
+  "url": "reports/2026-10-01-en.html"
+ },
+ {
   "date": "2026-09-30",
   "lang": "zh",
   "title": "Claude Sonnet 5.5、OpenAI DevDay 预热、NVIDIA/AMD 的 agent 安全与空间智能下注，把今天的行业信号推向同一个方向",
