@@ -52,11 +52,19 @@ expect "archive list populated (1..10 rows)" "(n=>n>=1&&n<=10)(document.querySel
 # Footer contract (kept in sync with publish_public.py::footer_html).
 expect "footer has both RSS feed links" "document.querySelectorAll('footer a[href^=\"/feed-\"]').length" "2"
 
-if "$B" console --errors 2>/dev/null | grep -q "(no console errors)"; then
-  echo "  ok  no console errors"
+# The Cloudflare Web Analytics beacon POSTs to cloudflareinsights.com/cdn-cgi/rum.
+# Served from localhost, that preflight is CORS-rejected (CF echoes an allow-origin of
+# "http://localhost" without the port, which never matches) — so it always errors here
+# and never errors on radar.sharpener.ai. Filtered by URL, NOT by turning the check off:
+# the "no console errors" assertion was bought with the TDZ accident that blanked the
+# whole page while the HTML stayed perfectly valid. Any OTHER error still fails.
+_console_errors=$("$B" console --errors 2>/dev/null | grep -v "cloudflareinsights\.com\|cdn-cgi/rum\|net::ERR_FAILED")
+if echo "$_console_errors" | grep -q "(no console errors)" || \
+   ! echo "$_console_errors" | grep -qi "\[error\]"; then
+  echo "  ok  no console errors (CF beacon CORS on localhost ignored)"
 else
   echo "FAIL  console has errors:"
-  "$B" console --errors 2>/dev/null
+  echo "$_console_errors"
   fail=1
 fi
 

@@ -241,6 +241,13 @@ html.js .reveal.in{opacity:1;transform:none}
 ::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
 :focus-visible{outline:2px solid var(--east);outline-offset:2px;border-radius:2px}
 </style>
+<!-- Cloudflare Web Analytics. The token is public by design (write-only: it can
+     report a hit, it cannot read stats) — do not treat it as a credential.
+     Kept identical in radar/tools/python/publish_public.py (ANALYTICS) by hand,
+     same as the footer — if you change one, change both. A stale copy here
+     under-counts the landing page, which is the page that matters most. -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5c11ed430a7843f2abf57ca8d4bcae46"}'></script>
+
 
 <div class="meridian" aria-hidden="true"></div>
 
