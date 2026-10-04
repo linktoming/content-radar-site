@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-05",
+  "lang": "zh",
+  "title": "🔭 今日主线",
+  "summary": "🔭 今日主线",
+  "url": "reports/2026-10-05-zh.html"
+ },
+ {
+  "date": "2026-10-05",
+  "lang": "en",
+  "title": "Always-on assistants are converging; differentiation still lies in completing a specific workflow",
+  "summary": "Always-on assistants are converging; differentiation still lies in completing a specific workflow",
+  "url": "reports/2026-10-05-en.html"
+ },
+ {
   "date": "2026-10-04",
   "lang": "zh",
   "title": "常驻 Agent 正在成为新的工作入口，但你的机会不在再造一个聊天框，而在把任务拆清、把结果验明、把经验变成内容",
