@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-09",
+  "lang": "zh",
+  "title": "本期材料覆盖 56 个有内容进入候选的一手实体、17 条采集通道；共采集 1,284 条，合成候选 1,041 条",
+  "summary": "本期材料覆盖 56 个有内容进入候选的一手实体、17 条采集通道；共采集 1,284 条，合成候选 1,041 条。\n- Anthropic（Claude）· 交互交付 · 内容的交付物正在从文字变成可操作的作品",
+  "url": "reports/2026-10-09-zh.html"
+ },
+ {
+  "date": "2026-10-09",
+  "lang": "en",
+  "title": "From generated text to usable deliverables. Interactive answers",
+  "summary": "From generated text to usable deliverables. Interactive answers, dashboards and animation are lowering production barriers",
+  "url": "reports/2026-10-09-en.html"
+ },
+ {
   "date": "2026-10-08",
   "lang": "zh",
   "title": "Haiku 5.5 降价、ChatGPT 交互界面上线，AI 产品开始同时争夺你的预算和工作入口",
