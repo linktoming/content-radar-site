@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-11",
+  "lang": "zh",
+  "title": "🔭 主线",
+  "summary": "🔭 主线",
+  "url": "reports/2026-10-11-zh.html"
+ },
+ {
+  "date": "2026-10-11",
+  "lang": "en",
+  "title": "AI advantage is shifting from generating outputs to delivering usable, verifiable results",
+  "summary": "AI advantage is shifting from generating outputs to delivering usable, verifiable results. For content businesses, the practical priorities are acceptance checks, reusable editorial assets",
+  "url": "reports/2026-10-11-en.html"
+ },
+ {
   "date": "2026-10-10",
   "lang": "zh",
   "title": "低成本决策模型与可编辑创作工具，正在把 AI 从回答问题推进到持续交付",

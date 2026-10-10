@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 69 days archived.
+Published daily by mingming (https://x.com/linktoming). 70 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-10-11 — AI advantage is shifting from generating outputs to delivering usable, verifiable results](https://radar.sharpener.ai/reports/2026-10-11-en.html): AI advantage is shifting from generating outputs to delivering usable, verifiable results. For content businesses, the practical priorities are acceptance checks, reusable editorial assets
 - [2026-10-10 — AI products are moving from answers toward usable interfaces, repeatable workflows and finished outputs](https://radar.sharpener.ai/reports/2026-10-10-en.html): AI products are moving from answers toward usable interfaces, repeatable workflows and finished outputs
 - [2026-10-09 — From generated text to usable deliverables. Interactive answers](https://radar.sharpener.ai/reports/2026-10-09-en.html): From generated text to usable deliverables. Interactive answers, dashboards and animation are lowering production barriers
 - [2026-10-08 — AI competition is shifting toward cost per useful outcome, interactive experiences, and reliable execution](https://radar.sharpener.ai/reports/2026-10-08-en.html): AI competition is shifting toward cost per useful outcome, interactive experiences, and reliable execution
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-28 — The agent stack moved from “impressive demo” to “operable system”](https://radar.sharpener.ai/reports/2026-08-28-en.html): The agent stack moved from “impressive demo” to “operable system”: auditable, priced, deployable, and embedded in real workflows
 - [2026-08-27 — Today's signal is not one product launch. It is the AI stack tightening from both ends](https://radar.sharpener.ai/reports/2026-08-27-en.html): Today's signal is not one product launch. It is the AI stack tightening from both ends
 - [2026-08-21 — Agents are moving from clever demos into operable systems](https://radar.sharpener.ai/reports/2026-08-21-en.html): Agents are moving from clever demos into operable systems: the day’s strongest signal is not a single smarter model, but the packaging of models, harnesses, privacy, payments, cost controls
-- [2026-08-20 — Agent infrastructure is entering its governed production phase](https://radar.sharpener.ai/reports/2026-08-20-en.html): Agent infrastructure is entering its governed production phase: models, compute, desktops, payments, and creator platforms are all converging on auditable AI work systems
 
 ## 中文版
 
+- [2026-10-11 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-11-zh.html): 🔭 主线
 - [2026-10-10 — 低成本决策模型与可编辑创作工具，正在把 AI 从回答问题推进到持续交付](https://radar.sharpener.ai/reports/2026-10-10-zh.html): 低成本决策模型与可编辑创作工具，正在把 AI 从回答问题推进到持续交付
 - [2026-10-09 — 本期材料覆盖 56 个有内容进入候选的一手实体、17 条采集通道；共采集 1,284 条，合成候选 1,041 条](https://radar.sharpener.ai/reports/2026-10-09-zh.html): 本期材料覆盖 56 个有内容进入候选的一手实体、17 条采集通道；共采集 1,284 条，合成候选 1,041 条。
 - Anthropic（Claude）· 交互交付 · 内容的交付物正在从文字变成可操作的作品
@@ -91,7 +92,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-08-28 — Agent 栈今天进入工程化运营期：会审计、会计费、可部署、能进入真实工作流。今日两路扫描合计覆盖 852 条专业信号与 995 条社媒/平台信号](https://radar.sharpener.ai/reports/2026-08-28-zh.html): Agent 栈今天进入工程化运营期：会审计、会计费、可部署、能进入真实工作流。今日两路扫描合计覆盖 852 条专业信号与 995 条社媒/平台信号
 - [2026-08-27 — 今天最强信号不是某个单点发布，而是 AI 产业链正在同时向两端收紧：上游，OpenAI 用 Jalapeno 自研推理芯片把成本、延迟和供应链控制权拉回模型厂](https://radar.sharpener.ai/reports/2026-08-27-zh.html): 今天最强信号不是某个单点发布，而是 AI 产业链正在同时向两端收紧：上游，OpenAI 用 Jalapeno 自研推理芯片把成本、延迟和供应链控制权拉回模型厂
 - [2026-08-21 — Agent 系统进入“运营化”阶段：今天的核心不是单个模型更聪明，而是模型、harness、支付、隐私、成本、安全、可靠性开始被打包成可长期运行的工作系统](https://radar.sharpener.ai/reports/2026-08-21-zh.html): Agent 系统进入“运营化”阶段：今天的核心不是单个模型更聪明，而是模型、harness、支付、隐私、成本、安全、可靠性开始被打包成可长期运行的工作系统
-- [2026-08-20 — Agent 工作系统进入受治理生产期：模型、算力、桌面、支付、内容平台都在补同一件事——可审计的 AI 运营边界](https://radar.sharpener.ai/reports/2026-08-20-zh.html): Agent 工作系统进入受治理生产期：模型、算力、桌面、支付、内容平台都在补同一件事——可审计的 AI 运营边界
 
 ## Full index
 
