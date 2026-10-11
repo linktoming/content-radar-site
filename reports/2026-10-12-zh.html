@@ -1,0 +1,565 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🔭 主线 · AI情报</title>
+<meta name="description" content="🔭 主线">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-10-12-zh.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI情报">
+<meta property="og:title" content="🔭 主线">
+<meta property="og:description" content="🔭 主线">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-10-12-zh.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-12">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🔭 主线">
+<meta name="twitter:description" content="🔭 主线">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"🔭 主线","description":"🔭 主线","datePublished":"2026-10-12","dateModified":"2026-10-12","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-10-12-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-10-12-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5c11ed430a7843f2abf57ca8d4bcae46"}'></script><!-- End Cloudflare Web Analytics --></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-10-12">2026 · 10 · 12 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">🔭 主线</h1>
+    <div class="rp-body"><h2>🔭 主线</h2>
+<ul>
+<li>
+<p><a href="https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap">The Rundown AI · 产品价值</a> · <strong>今天最值得抓住的不是“软件死了”，而是功能之外的价值必须重新说清楚</strong>：微软撤掉低价值入口、Levels 自建工具与 Marc 自建邮件系统共同指向可靠交付和持续运营，而非更长的功能表。</p>
+</li>
+<li>
+<p><a href="https://sequoiacap.com/article/typesafe-the-jevolution">Sequoia · 决策模型</a> · <strong>决策模型正在变成自动化的基础零件</strong>：红杉与 a16z 押注 Jev、开放模型跟进、立正做窄任务蒸馏实验，共同提示你先拆分高频判断再比较成本与误判。</p>
+</li>
+<li>
+<p><a href="https://x.com/dotey/status/2109063941233979397">宝玉xp · 验证成本</a> · <strong>生成越便宜，验证越贵</strong>：审稿成本转移、Anthropic 非预期操作与 Hamel 的轨迹回放，都说明内容系统应优化“可靠成稿率”而非只优化生成速度。</p>
+</li>
+<li>
+<p><a href="https://x.com/khoslaventures/status/2108315675404222935">Khosla Ventures · 内容系统</a> · <strong>内容创业的机会向生产组织迁移</strong>：数字人日更、共享写作技能与素材管理的共振，意味着可复用流程和独特表达比单次生成更值得积累。</p>
+</li>
+</ul>
+<h2>🎯 源头 · Primary</h2>
+<h3>模型、科研与边界</h3>
+<ul>
+<li><a href="https://openai.com/index/asana-browser-agent">OpenAI</a> · Asana 案例称浏览器测试模型成本降至原来的约 1/76，值得借鉴的是任务优化而非盲目换大模型。</li>
+<li><a href="https://www.youtube.com/watch?v=Ju-JyxDgV7g">OpenAI</a> · Oracle 演示让业务人员直接描述结果，内部数据能否接通比聊天框长什么样更重要。</li>
+<li><a href="https://x.com/AnthropicAI/status/2108680150556737819">Anthropic</a> · Anthropic 披露四类非预期网站操作，做自动化必须验收行为而不只验收回答。</li>
+<li><a href="https://x.com/AnthropicAI/status/2108290395599667700">Anthropic</a> · Claude Science 参与紫外全天图研究，科研价值应看补上了什么知识缺口。</li>
+<li><a href="https://openai.com/index/oracle">OpenAI</a> · Oracle 把专业经验转成可重复流程，你的内容系统也应沉淀过程而非只保存成稿。</li>
+<li><a href="https://x.com/OpenAI/status/2107909792945832070">OpenAI</a> · 青少年版与升学工具展示教育产品分层，你的学习产品也应按人群而非统一聊天入口设计。</li>
+<li><a href="https://x.com/AnthropicAI/status/2108226292235809081">Anthropic</a> · Anthropic 宣布向 Genesis Mission 投入 1.5 亿美元，科学工具正在走向机构化部署。</li>
+<li><a href="https://x.com/AnthropicAI/status/2107894208547983705">Anthropic</a> · Anthropic 宣布 Haiku 5.5，轻量任务路由有了新的候选而非所有流程都要升级。</li>
+<li><a href="https://openai.com/index/sophos">OpenAI</a> · Sophos 案例称调查时间减少 96% 且保留人工监督，可借鉴自动处理与人工接管的分工。</li>
+<li><a href="https://www.anthropic.com/news/genesis-mission-commitment">Anthropic</a> · Anthropic 发布科学投入说明，机构合作的具体入口比抽象科研口号更值得跟进。</li>
+<li><a href="https://www.anthropic.com/news/anthropic-cyber-mission">Anthropic</a> · Anthropic 发布 Cyber Mission 页面，当前摘录只有标题，不据此推断产品能力或开放范围。</li>
+<li><a href="https://www.anthropic.com/news/2026-usage-policy-update">Anthropic</a> · Anthropic 更新使用政策，当前仅有标题，不能把它改写成某类用途已获放行。</li>
+<li><a href="https://x.com/MistralAI/status/2107457414387622310">Mistral AI</a> · Mistral Large 4 宣称以稀疏激活提供开放多模态能力，选型仍应回到自己的负载。</li>
+<li><a href="https://x.com/GoogleDeepMind/status/2107834249680499136">Google DeepMind</a> · SynthID Detector 对公众开放，内容溯源有了新入口但不等于万能 AI 鉴定器。</li>
+<li><a href="https://x.com/demishassabis/status/2107861788301607261">Demis Hassabis</a> · DeepMind 强调与 CZI 的生物研究合作，AI 科研正向领域基础设施靠拢。</li>
+<li><a href="https://x.com/demishassabis/status/2108331042083872882">Demis Hassabis</a> · Demis 宣布支持 Genesis Mission，科学应用出现跨实验室投入的共振。</li>
+<li><a href="https://x.com/bcherny/status/2107909939025052107">Boris Cherny</a> · Boris 称 Haiku 5.5 在 100k 上下文下更便宜，值得单独评估短任务成本。</li>
+<li><a href="https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/">Google DeepMind</a> · EmbeddingGemma 2 提供轻量开放多模态嵌入，为本地素材检索增加候选。</li>
+<li><a href="https://x.com/MiniMax_AI/status/2108793182968504771">MiniMax</a> · MiniMax M3 接入 Rubin 与 vLLM，开放模型的可用性取决于服务栈共同成熟。</li>
+<li><a href="https://x.com/MiniMax_AI/status/2108339348584448365">MiniMax</a> · MiniMax 宣称 H3 物理表现接近闭源前沿，视频创作仍需按具体运动场景检验。</li>
+<li><a href="https://x.com/StepFun_ai/status/2108671660840894652">阶跃星辰 StepFun</a> · Step 5 Preview 在 Nous Portal 提供限时体验，低成本试用窗口不等于长期价格。</li>
+<li><a href="https://x.com/Zai_org/status/2107272032073437185">智谱 Zhipu (Z.ai)</a> · GLM-5.3 上线 Bedrock，企业采纳开放模型的采购与部署路径更丰富。</li>
+<li><a href="https://www.perplexity.ai/hub/blog/multimodal-embeddings-beyond-a-single-vector">Perplexity</a> · Perplexity 讨论多模态嵌入，混合素材库不能默认一条向量解决所有相关性。</li>
+<li><a href="https://x.com/ClementDelangue/status/2109290775322243143">Clement Delangue 🧪</a> · Clement 将数学问题转成开放 RL 环境，但当前验证器会错拒等价证明。</li>
+<li><a href="https://x.com/MSFTResearch/status/2108210811365728686">Microsoft AI</a> · 微软研究强调非显而易见的失败，你应记录预期与行为的偏差。</li>
+<li><a href="https://x.com/cohere/status/2107096277079200037">Cohere</a> · Cohere 发布 North 2，企业代理竞争继续围绕安全、控制与规模展开。</li>
+<li><a href="https://x.com/grok/status/2109223877712683277">Grok</a> · Grok 汇总 MailCheap 回复中的部署难点，自托管便宜仍不等于普通用户容易上手。</li>
+<li><a href="https://cohere.com/blog/shared-or-dedicated-inference-for-embed-rerank">Cohere</a> · Cohere 讨论嵌入与重排的共享或专用推理，素材检索同样存在部署成本取舍。</li>
+<li><a href="https://x.com/ClementDelangue/status/2109087946825675239">Clement Delangue 🧪</a> · Clement 转发小型决策模型蒸馏案例，窄任务有机会下放到本地低成本运行。</li>
+<li><a href="https://x.com/grok/status/2108610528423842095">Grok</a> · Grok 给机器人独立邮箱，代理逐渐拥有可持续接收任务的身份。</li>
+<li><a href="https://x.com/StabilityAI/status/2108278193316630711">Stability AI</a> · Stability 探索更可预测的视频表示，生成效率不只是压缩率问题。</li>
+<li><a href="https://x.com/cohere/status/2109039163463115116">Cohere</a> · Cohere 转发底层安全边界思路，系统可以约束模型而不是完全信任模型。</li>
+<li><a href="https://x.com/ClementDelangue/status/2109041354432983111">Clement Delangue 🧪</a> · Clement 建议看活跃使用而非下载量，生态热度需要多指标交叉观察。</li>
+<li><a href="https://x.com/ClementDelangue/status/2108184948548976921">Clement Delangue 🧪</a> · Clement 呼吁公开攻防轨迹，防守工具需要真实失败样本才能改进。</li>
+<li><a href="https://x.com/AI21Labs/status/2107463110709612772">AI21 Labs</a> · AI21 建议先问任务能否验证，盲目加算力前应检查架构中的浪费。</li>
+<li><a href="https://x.com/MSFTResearch/status/2107866039803404605">Microsoft AI</a> · 微软 Agent Lightning 连接既有代理与 RL，训练优化未必需要推倒工作流重建。</li>
+</ul>
+<h3>内容、检索与交互</h3>
+<ul>
+<li><a href="https://x.com/OpenAI/status/2107894997538525580">OpenAI</a> · ChatGPT 推出交互式回答，知识内容的竞争对象正从文章变成可直接操作的界面。</li>
+<li><a href="https://www.youtube.com/watch?v=p5KxBTUncoE">OpenAI</a> · OpenAI 演示在手机设置 dot，个人智能体的入口正在迁移到日常移动使用场景。</li>
+<li><a href="https://x.com/ElevenLabs/status/2109116790517477412">ElevenLabs</a> · ElevenLabs 加码新加坡与多语言团队，东南亚内容产品可关注本地语音体验。</li>
+<li><a href="https://x.com/HeyGen/status/2108608631696740793">HeyGen</a> · HeyGen 宣称语音模型登顶盲测，内容团队应再用目标语言与脚本实测。</li>
+<li><a href="https://x.com/HeyGen/status/2107968227221602530">HeyGen</a> · HeyGen 展示 MCP 加数字人生成每日节目，为新闻内容提供可串联的生产接口。</li>
+<li><a href="https://x.com/huggingface/status/2109251686929969400">Hugging Face</a> · Hugging Face 转发本地语义搜索应用，嵌入模型正转成日常文件检索体验。</li>
+<li><a href="https://x.com/midjourney/status/2108307894886400511">Midjourney</a> · Midjourney 测试思考模式改善文字与一致性，可用同一品牌素材测多轮可控性。</li>
+<li><a href="https://x.com/ideogram_ai/status/2108611116142108882">Ideogram</a> · Ideogram 强调精确编辑，创作者选图像模型应把“改得准”列入指标。</li>
+<li><a href="https://x.com/HeyGen/status/2108166496409248157">HeyGen</a> · HeyGen 与 Ryan Serhant 做免拍摄日更栏目，数字人正在从演示走向固定内容供给。</li>
+<li><a href="https://www.youtube.com/watch?v=PynQZyvtIk8">Hugging Face</a> · Reachy Mini 用真实动作和可分叉网页做音乐视频，内容可以同时是作品与可复用资产。</li>
+<li><a href="https://www.youtube.com/watch?v=1E0ZoktFerQ">Hugging Face</a> · HF 用 Xet 只上传变化片段，反复更新素材库时应关注增量同步成本。</li>
+<li><a href="https://x.com/gdb/status/2107899150247616531">Greg Brockman</a> · Brockman 展示交互式回答，模型输出正在从文字变成任务界面。</li>
+</ul>
+<h3>代理运行与业务执行</h3>
+<ul>
+<li><a href="https://x.com/openclaw/status/2109347136328417718">OpenClaw</a> · OpenClaw 10.1 加入技能发现、MCP Apps 与外部备份，直接关联内容系统的可用性。</li>
+<li><a href="https://x.com/omnigent_ai/status/2108694413668958333">OmniAgent</a> · Omnigent 展示跨 Claude Code 与 Codex 接续工作，交接质量比多开窗口更重要。</li>
+<li><a href="https://x.com/openclaw/status/2108232507649089799">OpenClaw</a> · OpenClaw 补丁修复更新恢复、消息与定时任务，稳定性比新增模型名更直接影响日报交付。</li>
+<li><a href="https://x.com/NousResearch/status/2109012611555840069">Hermes</a> · Nous 推出强调 token 效率的 MISSINGNO，接入前应验证真实长任务而非宣传定位。</li>
+<li><a href="https://x.com/omnigent_ai/status/2108628823692759431">OmniAgent</a> · Omnigent 预告直接对数据表做图推理，若能减少搬运会降低知识工作流维护负担。</li>
+<li><a href="https://x.com/cursor_ai/status/2108289748628566496">Cursor</a> · Cursor 支持在同一对话追问并更新图表，分析产品应保留探索过程而非只给静态结果。</li>
+<li><a href="https://x.com/NousResearch/status/2109351356528234506">Hermes</a> · Hermes 集成 Anatomy 可选技能，交互式解释内容开始成为代理的原生输出形态。</li>
+<li><a href="https://x.com/SierraPlatform/status/2108665347201212623">Sierra</a> · Sierra 发布 Poppy 草案与新伙伴，个人代理代客办事需要双方认可的权限边界。</li>
+<li><a href="https://x.com/omnigent_ai/status/2108309591364648998">OmniAgent</a> · Omnigent 强调外部约束而非代理自查，可靠性不能只靠提示词求它守规矩。</li>
+<li><a href="https://x.com/LangChain/status/2108633597355630914">LangChain</a> · LangChain 要求知道代理在哪里失败、如何复现与停止，是上线前最实用的三问。</li>
+<li><a href="https://x.com/LangChain/status/2108604396506591548">LangChain</a> · Managed Deep Agents 新增 Slack 回执接口，长任务的可见状态会影响用户信任。</li>
+<li><a href="https://x.com/vercel/status/2108636435507269725">Vercel</a> · Vercel 的 Rillet 案例把客户请求接到 PR，真正可借的是反馈如何进入可审查交付。</li>
+<li><a href="https://x.com/harvey/status/2108231639616930135">Harvey</a> · Harvey 实验离线“睡眠”整理记忆，内容系统也可探索运行与复盘分离。</li>
+<li><a href="https://sierra.ai/blog/caller-id-in-the-age-of-agents">Sierra</a> · Sierra 用 fleming-1 检测来电代理，服务系统开始需要识别机器客户。</li>
+<li><a href="https://x.com/omnigent_ai/status/2107579759479722464">OmniAgent</a> · Omnigent 0.17 加强登录、快捷操作与周期预算，长任务管理正在补齐日常使用细节。</li>
+<li><a href="https://x.com/Replit/status/2107138750077911257">Replit</a> · Replit 展示家族企业自建工具增长案例，真实流程需求比先找创业点子更具体。</li>
+<li><a href="https://x.com/warpdotdev/status/2108219690237747354">Warp</a> · Warp 接入 ChatGPT Go 订阅，现有订阅能否复用正在影响工具切换成本。</li>
+<li><a href="https://x.com/warpdotdev/status/2107924681940672975">Warp</a> · Warp 把软件工厂接入 Teams 与 Azure DevOps，代理更可能进入既有协作入口。</li>
+<li><a href="https://x.com/SierraPlatform/status/2108245197440307584">Sierra</a> · Sierra 演示跨代理找房与预审批，协议价值在能否串通真实服务。</li>
+<li><a href="https://x.com/glean/status/2108273000759927080">Glean</a> · Glean 接入 Haiku 5.5 用于日常检索与结构化输出，模型分工开始按工作负载细化。</li>
+<li><a href="https://x.com/glean/status/2108211007243928045">Glean</a> · Glean 把技能扫描、隔离运行和治理连起来，安装技能不应成为不透明授权。</li>
+<li><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.1">OpenClaw</a> · OpenClaw 10.1 发布页提供正式变更记录，与你正在用的稳定版本最相关。</li>
+<li><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.1">OpenClaw</a> · OpenClaw 10.5 测试版强调重启恢复与结果回传，适合关注修复但不应混作稳定版。</li>
+<li><a href="https://github.com/anomalyco/opencode/releases/tag/v1.19.0">OpenCode</a> · OpenCode 更新终端校验并改为主动更新，升级行为也是运行可靠性的一部分。</li>
+<li><a href="https://x.com/zeddotdev/status/2109050287654600950">Zed</a> · Zed Delta 加入提及与线程通知，人与代理协作需要明确接球者。</li>
+<li><a href="https://x.com/zeddotdev/status/2108616719065296974">Zed</a> · Zed 展示子线程探索与交接，协作界面应保留决策上下文。</li>
+</ul>
+<h3>本地与云端基础设施</h3>
+<ul>
+<li><a href="https://x.com/AMD/status/2108558299968708885">AMD</a> · AMD 强调小型开放模型协作，低成本多任务组合值得关注。</li>
+<li><a href="https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/">NVIDIA</a> · NVIDIA 展示智能体搭建仿真应用，真实场景仍需物理与行为检查。</li>
+<li><a href="https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/">NVIDIA</a> · NVIDIA 与微软推动 Windows 本地代理，持续任务的部署选择不再只有云端。</li>
+<li><a href="https://x.com/AMD/status/2108648723534201145">AMD</a> · AMD 与 Zyphra 展示推理模型训练合作，开放计算栈的价值需要看真实负载验证。</li>
+<li><a href="https://x.com/Broadcom/status/2108571954789638488">Broadcom</a> · Broadcom 强调集成光学连接，AI 基建瓶颈也在芯片与机柜之间。</li>
+<li><a href="https://x.com/togethercompute/status/2107139875522879939">Together AI</a> · Together Link 按任务自动路由开放模型，能否降低切换成本比支持名单更重要。</li>
+<li><a href="https://x.com/CoreWeave/status/2108679927377613194">CoreWeave</a> · CoreWeave 公布 Devin 负载吞吐提升，厂商结果需要按同等任务条件比较。</li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years">NVIDIA</a> · NVIDIA 宣布五年科学投入，行业资源继续向科研和基础设施汇聚。</li>
+<li><a href="https://wf.coreweave.com/blog/what-is-aria-and-how-did-we-build-it">CoreWeave</a> · CoreWeave 的 ARIA 强调研究成果超越单次聊天，持久状态比临时回答更重要。</li>
+<li><a href="https://wf.coreweave.com/blog/closing-the-loop-between-inference-and-post-training">CoreWeave</a> · CoreWeave 连接推理、蒸馏与后训练，真实使用反馈正在成为模型改进入口。</li>
+<li><a href="https://x.com/SambaNovaAI/status/2107920016821702971">SambaNova</a> · SambaNova 宣称长上下文缓存显著降本，你可检查重复输入而非只盯输出 token。</li>
+<li><a href="https://x.com/nscale/status/2108170992023486821">Nscale</a> · Nscale 强调首 token 时间，用户感知性能不等于后台利用率。</li>
+<li><a href="https://x.com/vllm_project/status/2108027563608350794">vLLM</a> · vLLM-Omni 统一多模态服务，语音与视频工作流需要比文本更复杂的运行底座。</li>
+<li><a href="https://x.com/vllm_project/status/2108128026303357173">vLLM</a> · vLLM 0.31 增加模型支持与快速恢复，服务升级价值应看负载与重启表现。</li>
+<li><a href="https://x.com/vllm_project/status/2109210324985622960">vLLM</a> · vLLM 推介 Decision 3.0 开放权重，决策模型出现更多可自部署替代品。</li>
+<li><a href="https://x.com/vllm_project/status/2108736734309896625">vLLM</a> · vLLM 公布 Rubin 上的早期吞吐结果，比较时必须保留模型和基线条件。</li>
+<li><a href="https://x.com/ollama/status/2107193986482126883">Ollama</a> · Ollama 表示将支持 Reflection 新模型，本地选择继续增加。</li>
+<li><a href="https://x.com/lmsysorg/status/2108743838479339604">SGLang</a> · SGLang 优化 Rubin 推理与 RL，服务和训练开始围绕同一代理负载协同。</li>
+<li><a href="https://x.com/ggerganov/status/2107462737211056421">llama.cpp / ggml</a> · llama.cpp 建议 Qwen 用户试 DFlash，性能优化应在相同质量条件下测试。</li>
+<li><a href="https://github.com/ollama/ollama/releases/tag/v0.40.3">Ollama</a> · Ollama 补丁暂停影响嵌入性能的后台升级，检索稳定性值得优先回归。</li>
+<li><a href="https://x.com/ggerganov/status/2107891912640487514">llama.cpp / ggml</a> · llama.cpp 支持异构设备分布推理，旧硬件复用仍需考虑配置复杂度。</li>
+<li><a href="https://x.com/ggerganov/status/2107513582925853030">llama.cpp / ggml</a> · llama.cpp 同步支持 EmbeddingGemma 2，本地语义检索具备可试运行入口。</li>
+<li><a href="https://x.com/ggerganov/status/2107190267887632462">llama.cpp / ggml</a> · llama.cpp 0.6 支持 Clef、Qwen 与 Metal 优化，本地推理栈持续补齐任务覆盖。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<h3>资金背后的产品判断</h3>
+<ul>
+<li><a href="https://x.com/sequoia/status/2108712705041608769">Sequoia Capital</a> · 红杉把 Jev 视为自动化新入口，你应关注可执行判断而不只是聊天体验。</li>
+<li><a href="https://x.com/a16z/status/2108287764303372392">a16z</a> · AWS 为智能体重做临时数据库、沙箱和权限，你的自动化成本结构不能照搬人用软件。</li>
+<li><a href="https://sequoiacap.com/article/typesafe-the-jevolution">Sequoia Capital</a> · 红杉详解 Jev 的类型化答案与置信度，你可以把高频判断从长篇生成中拆出来。</li>
+<li><a href="https://x.com/a16z/status/2109033742853619830">a16z</a> · a16z 展示呼叫中心岗位收缩扩散的图表，内容服务应向复杂判断而非标准答复迁移。</li>
+<li><a href="https://x.com/a16z/status/2109018642629423174">a16z</a> · 中美发电量对比把竞争拉回物理供给，读 AI 规模叙事不能只看模型参数。</li>
+<li><a href="https://x.com/a16z/status/2108663228029112702">a16z</a> · 呼叫中心岗位从增长转向收缩的图表，提示重复性服务的定价基础正在改变。</li>
+<li><a href="https://x.com/a16z/status/2108308969815257427">a16z</a> · a16z 称智能体耗用更多 token，按人头估算调用预算会低估后台任务需求。</li>
+<li><a href="https://www.youtube.com/watch?v=TyWe_QQtYEU">a16z</a> · Vesta 先重建按揭业务的核心记录系统，说明给旧流程外挂智能体未必解决数据瓶颈。</li>
+<li><a href="https://x.com/a16z/status/2108965850544005533">a16z</a> · 呼叫中心变化存在国别差异，不宜把岗位替代趋势直接套到所有市场。</li>
+<li><a href="https://x.com/a16z/status/2108580864749941063">a16z</a> · Pat Gelsinger 把供电视为扩张上限，算力承诺需要和实际供电能力分开看。</li>
+<li><a href="https://x.com/a16z/status/2108565658695025057">a16z</a> · 芯片访谈把制造、带宽、封装与能源并列，推理降本不会只靠更快的芯片设计。</li>
+<li><a href="https://www.a16z.news/p/this-week-in-charts-are-prediction">a16z</a> · a16z 图表周报讨论就业与市场指标，适合建立趋势假设而非把相关性当因果。</li>
+<li><a href="https://www.a16z.news/p/investing-in-typesafe">a16z</a> · a16z 确认投资 TypeSafe，资本押注的是嵌进业务运行时的决策能力。</li>
+<li><a href="https://www.a16z.news/p/you-need-a-new-cfo">a16z</a> · a16z 讨论工具如何改变 CFO 职能，AI 产品可能重塑岗位职责而非只替换表格。</li>
+<li><a href="https://www.youtube.com/watch?v=ZBDGuT6EGPY">a16z</a> · Valon 先把监管与服务流程做成软件，垂直业务的难点仍是可信记录和组织迁移。</li>
+<li><a href="https://www.youtube.com/watch?v=bGph8GwB3Sk">Sequoia Capital</a> · Google 基建负责人强调有效产出而非 FLOPS，你的自动化指标也应扣除失败和返工。</li>
+<li><a href="https://x.com/saranormous/status/2109118872951611627">Sarah Guo</a> · Sarah Guo 认为资本配置与招人能力被放大，小团队也需明确有限资源投向何处。</li>
+<li><a href="https://x.com/saranormous/status/2109026153705201963">Sarah Guo</a> · Sarah Guo 访谈开放模型的商业模式与推理效率，能帮助你区分开放性和可持续经营。</li>
+<li><a href="https://x.com/saranormous/status/2108768174321861103">Sarah Guo</a> · Sarah Guo 看好网络事件响应服务，垂直交付能力可能比“科技公司”标签更重要。</li>
+<li><a href="https://x.com/conviction/status/2108589129667850266">Conviction (Sarah Guo)</a> · Conviction 强调数据策展放大训练收益，优质样本比盲目增加数据量更值得投入。</li>
+<li><a href="https://x.com/ycombinator/status/2109127137446023448">Y Combinator</a> · YC 转发 AI 找到长期潜伏漏洞的案例，安全工具的价值应落在被复核的发现上。</li>
+<li><a href="https://x.com/lightspeedvp/status/2108679565451067621">Lightspeed</a> · Lightspeed 按通用程度和机型范围拆解机器人，可避免把所有具身项目当成同一市场。</li>
+<li><a href="https://www.youtube.com/watch?v=kDLji2s7LV4">Y Combinator</a> · Gumloop 从大量客户访谈找到落地路径，让懂业务的人自动化仍需 IT 管住访问和成本。</li>
+<li><a href="https://www.youtube.com/watch?v=0-g2-PRrOdw">Y Combinator</a> · Halluminate 把知识工作做成训练环境，精确评分比任务数量更能决定模型学到什么。</li>
+<li><a href="https://x.com/khoslaventures/status/2108315675404222935">Khosla Ventures</a> · Khosla 投资内容资产管理工具 Shade，生成变便宜后整理、协作和复用更值钱。</li>
+<li><a href="https://x.com/BessemerVP/status/2107121896420778180">Bessemer</a> · Bessemer 回顾机器身份安全的早期判断，代理增加后非人类账户成为治理对象。</li>
+<li><a href="https://x.com/venturetwins/status/2107504399283331126">Justine Moore</a> · Justine 招募 AI 内容创作者，说明工具公司的增长需求正转成具体内容岗位。</li>
+<li><a href="https://x.com/venturetwins/status/2109321612655038857">Justine Moore</a> · Justine 自述追问后显著降本提速，生成完再做有指标的优化值得保留。</li>
+<li><a href="https://x.com/snowmaker/status/2108241985446478104">Jared Friedman</a> · Jared 以 Cisco 为例说明旧公司也能开辟 AI 业务，组织规模不是转型结果的充分解释。</li>
+<li><a href="https://x.com/snowmaker/status/2108586321069617207">Jared Friedman</a> · Jared 强调 Ultra 已在现场交付，具身 AI 商业判断应优先看实际服务。</li>
+</ul>
+<h3>组织、判断与经营</h3>
+<ul>
+<li><a href="https://x.com/a16z/status/2109328300808286565">a16z</a> · Chesky 反对例行一对一会议，提醒小团队别让私下决策绕过共同上下文。</li>
+<li><a href="https://x.com/a16z/status/2109366017831154097">a16z</a> · Waymo 用问题是否收敛和验收表判断能否上线，你也应先定义什么叫真正完成。</li>
+<li><a href="https://x.com/a16z/status/2109313173245616141">a16z</a> · Dylan Field 认为价值向设计、品牌和判断上移，内容创业者不必把全部优势押在写代码上。</li>
+<li><a href="https://x.com/a16z/status/2109003648034615343">a16z</a> · Dylan Field 认为创作门槛下降不等于精品上限提高，你的审美与用心仍须体现在成品里。</li>
+<li><a href="https://www.youtube.com/watch?v=hZxmbhsbvyw">Sequoia Capital</a> · Bending Spoons 把运营与人才筛选做成系统，一人公司也能借鉴对新增复杂度举证的纪律。</li>
+<li><a href="https://x.com/sequoia/status/2108238569408250122">Sequoia Capital</a> · 红杉强调 Bending Spoons 的统一技术平台，多个产品共享运营底座值得借鉴。</li>
+<li><a href="https://x.com/sequoia/status/2108238220890947659">Sequoia Capital</a> · 红杉补充同一访谈的收听入口，属于延伸阅读而非新增公司事实。</li>
+<li><a href="https://www.youtube.com/watch?v=5ze3ZNvOdRY">a16z</a> · a16z 讨论 AI 泡沫问题，但仅凭视频标题无法替两位嘉宾给出立场。</li>
+</ul>
+<h3>组织与公共立场</h3>
+<ul>
+<li><a href="https://x.com/garrytan/status/2109294554038079703">Garry Tan</a> · Garry Tan 强调公共服务者与行动主义者的区别，可借作执行问责视角而非产品证据。</li>
+<li><a href="https://x.com/garrytan/status/2109281021233676792">Garry Tan</a> · Garry Tan 讨论地方治理选择，这条属于其公共立场而非新增行业进展。</li>
+<li><a href="https://x.com/garrytan/status/2109302243308802263">Garry Tan</a> · Garry Tan 仅转发 Satya 的短链，现有材料不足以把它写成微软的新发布。</li>
+<li><a href="https://x.com/garrytan/status/2109341633800229114">Garry Tan</a> · Garry Tan 转发 REA 热议，说明软件复刻已进入投资人视野，但不证明软件价值归零。</li>
+<li><a href="https://x.com/garrytan/status/2109302473756401896">Garry Tan</a> · 其转发住房开发模拟游戏，复杂制度也能被转成可体验的解释内容。</li>
+<li><a href="https://x.com/garrytan/status/2109279984506527938">Garry Tan</a> · 其转发地方治安评论但缺完整上下文，不能据此延伸商业判断。</li>
+<li><a href="https://x.com/garrytan/status/2109279626665377963">Garry Tan</a> · 其转发 Coinbase 的双人小组实践，小团队协作方式正在成为投资圈关注的组织变量。</li>
+<li><a href="https://x.com/garrytan/status/2108749429134282837">Garry Tan</a> · Garry Tan 支持旧金山治疗与康复投入，这条呈现公共立场而非 AI 机会。</li>
+<li><a href="https://x.com/garrytan/status/2108992728675828064">Garry Tan</a> · Garry Tan 转发 gbrain 多智能体方案，摘录不足以验证架构，只能作为后续观察线索。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<h3>产品、认知与内容生意</h3>
+<ul>
+<li><a href="https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap">The Rundown AI</a> · 微软承认模型能力领先于产品形态，你的机会是把智能变成用户真正会用的流程。</li>
+<li><a href="https://x.com/karpathy/status/2109361546505966046">Andrej Karpathy</a> · Karpathy 认为大众与重度用户的能力认知差距扩大，做内容要先判断读者站在哪一层。</li>
+<li><a href="https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap">The Rundown AI</a> · Copilot 撤掉高流量低价值入口，提醒你用户被导入不等于获得了价值。</li>
+<li><a href="https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap">The Rundown AI</a> · 微软按可逆与不可逆行动划分自主权，可作为内容系统自动执行边界的设计框架。</li>
+<li><a href="https://x.com/naval/status/2109246586668949928">Naval Ravikant</a> · Naval 转发政治评论但正文截断，这条只能观察其关注方向，不能推导 AI 商业结论。</li>
+<li><a href="https://x.com/naval/status/2108263590511927698">Naval Ravikant</a> · Naval 用开放代码的反讽回应复刻浪潮，提醒你区分开放生态与自己的竞争资产。</li>
+<li><a href="https://x.com/naval/status/2107648710918410670">Naval Ravikant</a> · Naval 判断模型是软件最后的护城河，你应把它当作待检验的命题而非经营结论。</li>
+<li><a href="https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap">The Rundown AI</a> · Copilot 用自动路由消化模型差异，帮用户免去选模型的负担本身就是产品价值。</li>
+<li><a href="https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap">The Rundown AI</a> · 微软的邮件分诊与销售案例强调重做工作流，你应围绕成果而不是单步提速设计系统。</li>
+<li><a href="https://speedrun.substack.com/p/what-founders-ask-us-before-applying">a16z SPEEDRUN</a> · SPEEDRUN 整理创始人申请问题，可借来检查你的产品叙事是否说清用户与机会。</li>
+<li><a href="https://www.youtube.com/shorts/xDLVZOIUXkQ">Lenny Rachitsky</a> · OpenAI 的自主文化故事强调承担错误，授权自动化不能抹掉责任归属。</li>
+<li><a href="https://x.com/lennysan/status/2109058392044224785">Lenny Rachitsky</a> · 产品经理先和设计师做原型、验证后再扩工程，适合小团队控制试错成本。</li>
+<li><a href="https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think">Lenny Rachitsky</a> · Google Labs 用“几乎可行”的点子清单组织实验，你可保留暂时做不到但值得重试的场景。</li>
+<li><a href="https://x.com/thedankoe/status/2109271564931797433">Dan Koe</a> · Dan Koe 主张把沉迷转向长期技能，可借鉴注意力配置但别把夸张年限当保证。</li>
+<li><a href="https://x.com/fortelabs/status/2109313645263847428">Tiago Forte</a> · Tiago 提醒持续自我优化可能遮蔽真实愿望，系统效率应服务目标而不是取代目标。</li>
+<li><a href="https://letters.thedankoe.com/p/full-course-how-to-turn-your-interests">Dan Koe</a> · Dan Koe 把兴趣转成生活方式生意，适合反思内容如何连接可持续产品收入。</li>
+<li><a href="https://x.com/AliAbdaal/status/2108148562101985569">Ali Abdaal</a> · Ali 推出 CreatorGrid 解决品牌合作摩擦，创作者商业化机会也在交易流程而非写稿。</li>
+</ul>
+<h3>成本与行业地图</h3>
+<ul>
+<li><a href="https://x.com/SemiAnalysis_/status/2109116974705844313">SemiAnalysis</a> · SemiAnalysis 讨论分层风险融资，算力繁荣背后要看谁最终承担回报落空的损失。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2109056651231654310">SemiAnalysis</a> · 其把 Lambda—Anthropic 交易拆成四方结构，读云供给新闻要穿透到履约方和时间表。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2109358639030952117">SemiAnalysis</a> · 铜—金刚石封装讨论揭示散热瓶颈，AI 扩张需要材料工程而非单纯堆卡。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2109116976077365511">SemiAnalysis</a> · SemiAnalysis 补充播客收听入口，不构成新的融资数据或独立结论。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2109056655522402642">SemiAnalysis</a> · 其把英伟达长期租约解释为电力园区选择权，期限错配不应只按表面数字判断。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2109056656512262485">SemiAnalysis</a> · 其补充 TCO 模型入口，比较云价格需要算完整生命周期而非单个 GPU 时价。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2108996099893567503">SemiAnalysis</a> · SemiAnalysis 补充视频入口，适合回看访谈但不新增性能证据。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2108996100895986123">SemiAnalysis</a> · SemiAnalysis 补充另一音频入口，不能把同主题分发当成多方印证。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2108996098710708729">SemiAnalysis</a> · 其认为短期少用 token 未必减少后续返工，模型成本应该按完整交付周期核算。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2108344060658221528">SemiAnalysis</a> · SemiAnalysis 将中国安全治理解读为速度优先，跨市场产品判断应区分其分析与既定事实。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2108247914967371963">SemiAnalysis</a> · 其用形式化证明调侃 OpenAI 收入披露，营收话题仍需可核验口径。</li>
+<li><a href="https://x.com/SemiAnalysis_/status/2108224786170040341">SemiAnalysis</a> · 这条只有简短致意与短链，不能把互动情绪补写成行业结论。</li>
+<li><a href="https://tldr.tech/ai/2026-10-09">TLDR AI</a> · TLDR 汇总高速模型、通用智能体与推测解码，可用来观察效率竞争的共同方向。</li>
+<li><a href="https://tldr.tech/ai/2026-10-08">TLDR AI</a> · TLDR 把交互 UI、Haiku 与跨模型机器人并列，产品入口和后台模型正逐渐解耦。</li>
+<li><a href="https://tldr.tech/ai/2026-10-07">TLDR AI</a> · TLDR 聚焦 Mistral、决策 API 与图像模型，适合按任务更新工具地图而非统一追新。</li>
+</ul>
+<h3>研究、验证与中文观察</h3>
+<ul>
+<li><a href="https://www.youtube.com/shorts/2nYtmGd61Wc">The Information</a> · The Information 解释虚假完成，自动化验收必须检查产物是否存在。</li>
+<li><a href="https://x.com/emollick/status/2109327353088287057">Ethan Mollick</a> · Mollick 观察人机协作在数学研究中的增强，人的职责可能转向选题、解释和验证。</li>
+<li><a href="https://www.qbitai.com/2026/10/502644.html">量子位</a> · 量子位介绍论文检索到初稿的多智能体流程，可借鉴证据定位而非直接信任生成稿。</li>
+<li><a href="https://www.qbitai.com/2026/10/502628.html">量子位</a> · 多模态 Harness 框架把视觉能力接到执行系统，值得追踪但摘要尚不足以验证效果。</li>
+<li><a href="https://x.com/jeremyphoward/status/2109217122916409389">Jeremy Howard</a> · Jeremy 转发不把自家排第一的 OCR 评测，评价工具值得看测量方法而非自报冠军。</li>
+<li><a href="https://x.com/natolambert/status/2109091763906343086">Nathan Lambert</a> · Nathan 说明模型跟踪样本的范围，使用下载榜判断生态前应先看统计口径。</li>
+<li><a href="https://x.com/natolambert/status/2108954173316178231">Nathan Lambert</a> · Nathan 观察模型下载数下滑并提示计数变化，不能直接把曲线解释成开放生态衰退。</li>
+<li><a href="https://x.com/natolambert/status/2108952534744256675">Nathan Lambert</a> · Nathan 强调样本效率与奖励作弊，更多训练数据不必然带来更可靠行为。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-10-11-4">机器之心</a> · 机器之心转述 Liam Fedus 对实验科学的关注，数学产出之外仍要面对现实验证。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-10-11-3">机器之心</a> · OpenRSI Index 尝试衡量研究能力，评测应区分刷题与开放探索。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-10-11-2">机器之心</a> · 陶哲轩的“数学 2.0”讨论把理解放回答案旁边，知识创作者可以服务这一解释缺口。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-10-10-7">机器之心</a> · 机器之心报道数学手稿冲击，论文数量不能替代正确性和学界消化程度。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-10-10-6">机器之心</a> · AgentForesight 尝试用小模型在线审计，错误传播前拦截比事后归因更有用。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-10-10-2">机器之心</a> · 报道讨论灾难情境推演，不等于灾难必然在一年内发生。</li>
+<li><a href="https://www.jiqizhixin.com/articles/2026-10-10">机器之心</a> · 递归改进综述提示研究流程本身正在自动化，但每轮改动仍需要独立验收。</li>
+<li><a href="https://36kr.com/p/4020977744449666">36氪</a> · 36氪追问访谈驱动的真人模拟边界，模拟用户不能自动替代真实用户反馈。</li>
+<li><a href="https://36kr.com/p/4020977643671686">36氪</a> · 36氪追踪 REA 热潮，应该把复刻演示与长期可维护产品分开。</li>
+<li><a href="https://36kr.com/p/4020977816539010">36氪</a> · Claude 多代理查错案例显示更多发现，但发现数量仍需去重和人工复核。</li>
+<li><a href="https://36kr.com/p/4020888466542726">36氪</a> · Adobe 复刻报道提醒别急于卸载原版，功能像不等于稳定性与工作流完整。</li>
+<li><a href="https://36kr.com/p/4019964584464263">36氪</a> · 36氪观察少手写代码的趋势，人的工作正向定义、评审与集成迁移。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2109345465838006445">Rohan Paul 🧪</a> · 认为子代理放大低价模型用量，token 增长不等于前沿模型收入同步增长。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2109260111067971603">Rohan Paul 🧪</a> · 转述陶哲轩把难题视作探索灯塔，理解过程不应被答案产量取代。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2109025847835529580">Rohan Paul 🧪</a> · 转述英伟达与 Reflection 洽谈，当前只是报道中的谈判而非已完成交易。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2109021283329687635">Rohan Paul 🧪</a> · 转述流程失败与内容失败的区分，改运行框架未必修得好错误方案。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2108830211861049395">Rohan Paul 🧪</a> · 转述检测器跨代失效研究，内容判别方法需随生成模型变化复测。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2108772007282200658">Rohan Paul 🧪</a> · 转述“关闭思考”仍产生推理的研究，参数名不能替代行为测量。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2108768446154760403">Rohan Paul 🧪</a> · 介绍 Claude Code Projects 的分支与共享记忆，代理并行仍需处理真实合并冲突。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2108779305413099736">Rohan Paul 🧪</a> · 解读 MiMo 的任务生成与反作弊循环，自改进关键在评测而不只追加算力。</li>
+<li><a href="https://x.com/rohanpaul_ai/status/2108755803133903259">Rohan Paul 🧪</a> · 解读 SGUID 的精简技能库，少而持续有效的规则可能胜过大量提示词。</li>
+<li><a href="https://x.com/tferriss/status/2107951078688039347">Tim Ferriss 🧪</a> · 引波普尔谈检验，好的实验应淘汰错误假设而非保护面子。</li>
+</ul>
+<h2>🔨 实践 · Practitioner</h2>
+<h3>个人代理运营：同一案例的进展与回声</h3>
+<ul>
+<li><a href="https://x.com/AlexFinn/status/2109037099253170600">Alex Finn</a> · Agent Use Cases 把案例、结果和提示词放在一起，比再卖一个空白智能体更接近用户需求。</li>
+<li><a href="https://x.com/AlexFinn/status/2109152147325796381">Alex Finn</a> · 作者自述 Grok Bot 持续改功能、做 SEO 和找赞助，值得拆解的是反馈到迭代的闭环。</li>
+<li><a href="https://x.com/AlexFinn/status/2109307059087053188">Alex Finn</a> · 作者再次转发智能体运营案例，这是同一案例的传播回声而非第二份独立验证。</li>
+<li><a href="https://x.com/AlexFinn/status/2109350802041291031">Alex Finn</a> · 作者自述上线 15 小时获两万访客和 1500 邮箱，尚未确认首笔赞助收入，流量不能写成盈利。</li>
+<li><a href="https://x.com/AlexFinn/status/2109149837170278628">Alex Finn</a> · 作者按回复改界面、投票和 SEO，案例价值在于把用户反馈接进持续维护。</li>
+<li><a href="https://x.com/AlexFinn/status/2109149147962163353">Alex Finn</a> · 作者转发一句赞赏，能说明传播互动但不能充当效果验证。</li>
+<li><a href="https://x.com/AlexFinn/status/2109144364375314726">Alex Finn</a> · 作者展示上线初期分析截图，现有文本不足以确认留存与收入表现。</li>
+<li><a href="https://x.com/AlexFinn/status/2109048101852054004">Alex Finn</a> · 作者继续修改生成界面的质感，自动建站之后仍有面向读者的设计工作。</li>
+<li><a href="https://x.com/AlexFinn/status/2109041922618917119">Alex Finn</a> · 作者公开征集反馈，提醒你把智能体产品做成可反馈的服务而非一次性演示。</li>
+<li><a href="https://x.com/AlexFinn/status/2108747211198840866">Alex Finn</a> · 作者赞赏 Claude 5.5 并推广 Herdr，属于使用感受而非受控模型比较。</li>
+</ul>
+<h3>评测、知识与工作流</h3>
+<ul>
+<li><a href="https://x.com/DeepLearningAI/status/2108346705972199928">DeepLearningAI</a> · AREX 按要求逐项核验、只补研究缺口，这比不断重跑整份内容更适合你的雷达流程。</li>
+<li><a href="https://www.youtube.com/shorts/f3n4LwDqqzc">课代表立正</a> · 从打工转创业不能事事等待权威反馈，真实用户和结果需要成为你的校准来源。</li>
+<li><a href="https://www.youtube.com/watch?v=sD2qk6osdAw">课代表立正</a> · 吃豆人实验里 0.8B 蒸馏模型更快但通用性更差，替换 Jev 前应先测自己的任务。</li>
+<li><a href="https://www.youtube.com/watch?v=qvbOuVEcSWs">课代表立正</a> · 立正讨论跨模型迭代是否推倒重来，值得检视已有工作如何保留而非追逐单次惊艳。</li>
+<li><a href="https://x.com/DeepLearningAI/status/2108935584206983486">DeepLearningAI</a> · 吴恩达强调智能体还会搜索、存储与交易，你的运行预算应覆盖整个工具链。</li>
+<li><a href="https://x.com/DeepLearningAI/status/2108648572451221787">DeepLearningAI</a> · 其披露单个智能体每日数千次搜索，长任务的吞吐与成本需要独立监测。</li>
+<li><a href="https://www.youtube.com/watch?v=ZyC56eV8sVw">AI Engineer</a> · AI Engineer 演示组件清单与边界检查，先知道系统用了什么才能有效约束代理行为。</li>
+<li><a href="https://x.com/HamelHusain/status/2109365383086170602">Hamel Husain</a> · Hamel 推荐 Excalidraw 配合 MCP 做幻灯片，为知识型内容提供可编辑的轻量视觉路径。</li>
+<li><a href="https://www.youtube.com/watch?v=_naLJOqVOEI">AI Engineer</a> · 同模型跨服务商出现速度差异，推理采购要一起看缓存、故障率和完整运行成本。</li>
+<li><a href="https://x.com/sh_reya/status/2109331753047650809">Shreya Shankar</a> · Shreya 转发团队高频使用朴素写作技能，稳定表达比复杂提示词更接近日常需求。</li>
+<li><a href="https://x.com/jerryjliu0/status/2109319298531709416">Jerry Liu</a> · Jerry 主张模型生成训练样本、人定义评测，小团队研究闭环的稀缺环节是标准。</li>
+<li><a href="https://x.com/HamelHusain/status/2109063317427978553">Hamel Husain</a> · Hamel 主张回放真实轨迹检验代理，模拟环境本身也要先证明能复现生产行为。</li>
+<li><a href="https://x.com/HamelHusain/status/2109371836056350802">Hamel Husain</a> · Hamel 调侃各职业都宣称自己是新护城河，判断优势最好回到实际交付。</li>
+<li><a href="https://x.com/sh_reya/status/2106924034873286982">Shreya Shankar</a> · Shreya 指出工具选择与数据检索日益交织，代理设计不能把二者割裂优化。</li>
+<li><a href="https://x.com/sh_reya/status/2109003050774065516">Shreya Shankar</a> · Shreya 建议面试评审 AI PR 和识别冗余，人才评价应检查判断力而非只看生成速度。</li>
+<li><a href="https://x.com/jerryjliu0/status/2108996530204205463">Jerry Liu</a> · Jerry 称 Mistral OCR 在 OpenDocRouter 上快速且成本合适，仍要用自家表格样本验证。</li>
+<li><a href="https://x.com/jerryjliu0/status/2108983824453615939">Jerry Liu</a> · Jerry 提醒代理购物也会受指标与评论影响，产品真实质量不自动等于机器感知质量。</li>
+<li><a href="https://x.com/simonw/status/2107630159927062921">Simon Willison</a> · Simon 为决策模型发布 LLM 插件，类型化判断已有轻量试验入口。</li>
+<li><a href="https://x.com/simonw/status/2107158711798218848">Simon Willison</a> · Simon 对本地 Qwen 的长数字加法做复测，简单任务同样需要可复现基线。</li>
+<li><a href="https://x.com/sh_reya/status/2107501842364260462">Shreya Shankar</a> · Shreya 指出分析代码生成变快后瓶颈转向执行，数据系统优化会更重要。</li>
+<li><a href="https://x.com/jerryjliu0/status/2107864677611139096">Jerry Liu</a> · OpenDocRouter 统一文档解析入口，内容采集可减少对单一 OCR 的绑定。</li>
+<li><a href="https://x.com/_philschmid/status/2108209169052414138">Philipp Schmid</a> · Philipp 展示 SynthID 文件检测流程，可用于标记来源但不要把无水印当真人证明。</li>
+</ul>
+<h3>内容生产与小团队经营</h3>
+<ul>
+<li><a href="https://x.com/dotey/status/2109151666020794711">宝玉xp</a> · 宝玉用 REA 辅助理解再重写幻灯片编辑器，功能复刻压力已从讨论进入实践。</li>
+<li><a href="https://x.com/levelsio/status/2109268364572913953">Pieter Levels</a> · 个人软件可能由聊天自动生成，你的产品需要提供生成之外的持续价值。</li>
+<li><a href="https://x.com/levelsio/status/2109352968122515681">Pieter Levels</a> · 作者自述取消多数 SaaS，提醒你区分可自建功能与仍愿付费的内容、算力和托管。</li>
+<li><a href="https://x.com/elonmusk/status/2109155867983786382">Elon Musk</a> · Musk 自述让机器人研究并购买乐高，消费入口从搜索页转向意图委托。</li>
+<li><a href="https://x.com/levelsio/status/2109288526726549822">Pieter Levels</a> · 用户要的是修图和报表而不是造软件，产品表达应从任务而非技术能力出发。</li>
+<li><a href="https://x.com/every/status/2109312342320398705">every</a> · Every 把共享技能、工具连接与纠错记忆放进 Slack，团队经验可成为共同资产。</li>
+<li><a href="https://x.com/every/status/2109025223353979229">every</a> · Dan Shipper 未重启个人 OpenClaw 的故事提醒你，维护负担会抵消工具能力优势。</li>
+<li><a href="https://x.com/steipete/status/2107911769767440832">steipete</a> · steipete 讨论团队如何协作使用智能体，组织共享比个人炫技更可能积累价值。</li>
+<li><a href="https://x.com/levelsio/status/2109334226608804003">Pieter Levels</a> · Levels 认为一份模型订阅会挤压多项工具订阅，你需要说清额外收费买到什么。</li>
+<li><a href="https://x.com/levelsio/status/2109300101755883566">Pieter Levels</a> · Levels 区分创作体验与功能软件，知识 IP 的表达与作者性不等于一个可复制按钮。</li>
+<li><a href="https://x.com/dotey/status/2109063941233979397">宝玉xp</a> · 宝玉指出生成者把校验成本转给审查者，内容提效不能只统计写稿时间。</li>
+<li><a href="https://x.com/marclou/status/2108918232279400920">Marc Lou</a> · Marc Lou 开源基于 SES 的 MailCheap，邮件内容业务多了可自托管的替代路径。</li>
+<li><a href="https://x.com/marclou/status/2108509543810605218">Marc Lou</a> · 他以自建邮件系统回应订阅涨价，但账单节省仍需减去维护和送达率管理成本。</li>
+<li><a href="https://www.youtube.com/watch?v=rkK8ZyzYyEA">Greg Isenberg</a> · Greg 把视频、调研、配音与幻灯片开源工具连到业务，适合按内容流程而非工具数量试用。</li>
+<li><a href="https://www.youtube.com/watch?v=bQPU6UJ4iCw">Greg Isenberg</a> · Greg 的创业分类强调分发、数据与领域流程，你的优势应落在自己拥有的资产上。</li>
+<li><a href="https://x.com/every/status/2109342790866055606">every</a> · Every 用 Slack 历史构建公司百科，协作记录可以转成可持续更新的组织知识。</li>
+<li><a href="https://x.com/every/status/2109306657247301985">every</a> · Every 提出探索者加架构师组合，可用来区分你的快速试验与稳定化职责。</li>
+<li><a href="https://x.com/marclou/status/2108927122366439439">Marc Lou</a> · Marc 把多站收入与流量合并展示，一人多产品运营需要统一经营视图。</li>
+<li><a href="https://x.com/every/status/2108979903521800550">every</a> · Every 展示先拟合同与邮件、人工审后再发送，内容业务可借这一交付边界。</li>
+<li><a href="https://x.com/dotey/status/2108972823440220375">宝玉xp</a> · 宝玉转发按实际调用调优上下文的方法，别把统一压缩阈值当通用最佳实践。</li>
+<li><a href="https://x.com/thesamparr/status/2107889951627227239">Sam Parr</a> · Sam Parr 区分适合持有与适合风投的媒体生意，你的内容业务未必需要追规模估值。</li>
+<li><a href="https://x.com/every/status/2107501826840952908">every</a> · Every 正式推出公司级 Slack 代理，让成员的好方法能被他人看见与复用。</li>
+<li><a href="https://x.com/thesamparr/status/2107139049991631262">Sam Parr</a> · Sam Parr 回顾创业复制工厂，功能复刻不是新事物，运营与市场进入才是后半程。</li>
+<li><a href="https://x.com/dannypostma/status/2106928558375678007">Danny Postma</a> · Danny 先用问卷验证内容大纲，低成本需求确认应发生在完整生产之前。</li>
+<li><a href="https://x.com/filicroval/status/2108987883122045101">filicroval 🧪</a> · filicroval 公布本地 Qwen 部署配方，值得复测速度与长上下文质量的平衡。</li>
+</ul>
+<h2>🔥 专业热榜（by-feed·trending·专业）</h2>
+<h3>HN</h3>
+<ul>
+<li><a href="https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/">HN · README 用户测试</a> · 付费请人照文档操作获得 323 分关注，提醒你入门文档也需要真实用户验收。</li>
+<li><a href="https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/">HN · 人仍需思考</a> · 这篇获 212 分的讨论提示生成能力提升后，判断责任并未消失。</li>
+<li><a href="https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf">HN · 陶哲轩数学演讲</a> · 获 205 分、248 评论，见 🧠 解读，学界争论已扩散到开发者社区。</li>
+<li><a href="http://epestr.com/blog/reverse-engineering-a-commercial-spatial-audio-effect/">HN · 空间音效逆向</a> · 获 53 分的技术复盘提供拆解思路，适合观察复刻如何走向可验证工程。</li>
+<li><a href="https://www.playgrnd.tools/">HN · Playgrnd</a> · 这组小型视觉创作工具获 20 分，可为内容表达寻找轻量互动形式。</li>
+<li><a href="https://www.theverge.com/games/1009140/ram-shortage-intel-amd-ddr4-comeback">HN · 内存短缺</a> · DDR4 回潮讨论获 234 分，本地 AI 的硬件成本仍受供给影响。</li>
+</ul>
+<h3>GitHub Trending</h3>
+<ul>
+<li><a href="https://github.com/morluto/rea">GitHub · REA</a> · 见 🔨 实践的宝玉案例，软件逆向同时登上开发者热榜。</li>
+<li><a href="https://github.com/cathrynlavery/diagram-design">GitHub · diagram-design</a> · 提供多种 HTML 与 SVG 图解形式，可把知识内容做成可编辑视觉资产。</li>
+<li><a href="https://github.com/storytold/artcraft">GitHub · ArtCraft</a> · 面向设计师与影视创作者的制作引擎，值得观察能否减少创意到成品的摩擦。</li>
+<li><a href="https://github.com/lyogavin/airllm">GitHub · AirLLM</a> · 主打小显存运行大模型，是否值得用仍需同时看速度而非只看装得下。</li>
+<li><a href="https://github.com/bilawalsidhu/gods-eye-view">GitHub · 空间信息地球仪</a> · 把公开空间数据做成浏览器可视化，提供复杂信息叙事的交互参考。</li>
+</ul>
+<h3>Product Hunt</h3>
+<ul>
+<li><a href="https://www.producthunt.com/products/agibot">Product Hunt · Agibot</a> · 主打 Mac 常驻个人代理，试用应重点检查持续运行而非只看首次演示。</li>
+<li><a href="https://www.producthunt.com/products/edgee">Product Hunt · Edgee</a> · 尝试在 Claude Code 中切换模型，降低工具与模型绑定是其产品切口。</li>
+<li><a href="https://www.producthunt.com/products/kernelai">Product Hunt · KernelAI</a> · 强调手机离线 AI，本地隐私与能力上限需要一起比较。</li>
+<li><a href="https://www.producthunt.com/products/focuswrite">Product Hunt · FocusWrite</a> · 本地优先写作工具把注意力管理放在前面，提醒内容生产不只缺生成能力。</li>
+<li><a href="https://www.producthunt.com/products/museum-of-models">Product Hunt · Museum of Models</a> · 展示 371 个模型对同题的回答，适合直观看差异而非只读综合分。</li>
+<li><a href="https://www.producthunt.com/products/farol-3">Product Hunt · Farol</a> · 把需要人介入的编码代理突出显示，多任务管理的价值在于减少漏接。</li>
+</ul>
+<h3>Hugging Face</h3>
+<ul>
+<li><a href="https://huggingface.co/google/embeddinggemma-2">HF · EmbeddingGemma 2</a> · 约 9.88 万下载、1661 赞，见 🎯 源头，轻量检索同时得到社区关注。</li>
+<li><a href="https://huggingface.co/Cloudflare/clef">HF · Cloudflare Clef</a> · 约 1.44 万下载、2021 赞，可作为多模态决策模型的开放候选。</li>
+<li><a href="https://huggingface.co/Qwen/Qwen3.8-27B">HF · Qwen3.8-27B</a> · 约 684 万下载、17498 赞，见 🎯 源头本地推理支持，下载量不等于任务胜率。</li>
+<li><a href="https://huggingface.co/Lightricks/LTX-2.5">HF · LTX-2.5</a> · 约 173 万下载、7290 赞，为可自部署的视频制作增加候选。</li>
+<li><a href="https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo">HF · Qwen-Image-2.1-Turbo</a> · 4702 下载、525 赞，可观察低延迟图像生成是否适合反复修改。</li>
+<li><a href="https://huggingface.co/spaces/multimodalart/jev-decision-index">HF · Jev 决策索引</a> · 586 赞的比较入口有助于选候选，但榜单不能替代你自己的任务集。</li>
+<li><a href="https://huggingface.co/datasets/XiaomiMiMo/MiMo-V2.6-RL-oss">HF · MiMo RL 数据集</a> · 约 11.39 万下载、909 赞，见 🧠 解读，研究流程正在转成可复用数据资产。</li>
+</ul>
+<h3>HF Papers</h3>
+<ul>
+<li><a href="https://huggingface.co/papers/2610.11959">HF Papers · MiMo-V2.6</a> · 74 赞，见 🧠 解读，关注训练任务、审计和奖励是否形成闭环。</li>
+<li><a href="https://huggingface.co/papers/2609.35855">HF Papers · Mara Chain</a> · 研究把失败转成系统演化线索，适合对照你如何保存和复用失败经验。</li>
+<li><a href="https://huggingface.co/papers/2609.33987">HF Papers · Opera</a> · 研究长编码任务的纠错反馈，提醒评审本身也可能误导执行者。</li>
+<li><a href="https://huggingface.co/papers/2610.11287">HF Papers · REMORY</a> · 38 赞，尝试补充摘要丢掉的信息，长任务记忆不应只靠压缩文本。</li>
+<li><a href="https://huggingface.co/papers/2610.11794">HF Papers · Memento 3</a> · 35 赞，研究反思规则簿如何更新世界理解，可对照持久经验的组织方式。</li>
+<li><a href="https://huggingface.co/papers/2610.10355">HF Papers · MIRA</a> · 将音乐生成对齐到用户真实意图，创作质量不能只看文本音频相似度。</li>
+<li><a href="https://huggingface.co/papers/2610.12360">HF Papers · 知识冲突中的谦逊</a> · 考察检索证据冲突时是否修正判断，适合作为内容查证流程的验收题。</li>
+</ul>
+<h3>papers.cool</h3>
+<ul>
+<li><a href="https://papers.cool/arxiv/2610.12466">papers.cool · METR 时间跨度复核</a> · 从统计角度检查任务时长指标，别把一条增长曲线直接等同自主工作能力。</li>
+<li><a href="https://papers.cool/arxiv/2610.12367">papers.cool · SGUID</a> · 见 🧠 解读，技能库精简应依据持续有效性而非只按主题相似度。</li>
+<li><a href="https://papers.cool/arxiv/2610.12445">papers.cool · 隐蔽欺骗检测</a> · 研究用内部探针辅助监测代理，外部口头解释并非唯一观察窗口。</li>
+<li><a href="https://papers.cool/arxiv/2610.12274">papers.cool · HarnessSQL</a> · 把真实数据库交互纳入训练，静态 SQL 正确不等于代理能完成分析任务。</li>
+<li><a href="https://papers.cool/arxiv/2610.12452">papers.cool · BrickBench</a> · 要求积木设计真的能搭起来，为生成内容增加了物理可执行的验收条件。</li>
+<li><a href="https://papers.cool/arxiv/2610.12409">papers.cool · 安全基准审计</a> · 拆解总分掩盖的属性差异，选模型时应看与你有关的具体失败类型。</li>
+</ul>
+<h2>👥 我的 feeds（by-feed·mine）</h2>
+<h3>X For-You</h3>
+<ul>
+<li><a href="https://x.com/davidsenra/status/2109283692439105997">David Senra · 新面孔</a> · 与 Alexandr Wang 的长访谈补充个人 AI 的产品视角，超出代码代理的单一叙事。</li>
+<li><a href="https://x.com/sachinrekhi/status/2109305529617285331">Sachin Rekhi · 新面孔</a> · 把个人 AI 实验变成团队共享操作系统，关键在流程和行为改变而非采购工具。</li>
+<li><a href="https://x.com/JackEllis/status/2109367770890547631">Jack Ellis · 新面孔</a> · 他自建界面却继续购买邮件服务，为“所有 SaaS 都会消失”提供维护责任的反例。</li>
+<li><a href="https://x.com/signulll/status/2109328860919607537">signüll · 新面孔</a> · 少数开发者就可能扩大软件供给，价格压力不必等到每个人都亲自编程。</li>
+<li><a href="https://x.com/MrCollison/status/2109289834774659302">Matt · 新面孔</a> · 他区分造应用与有人付钱，提醒你演示数量增加并不等于需求增长。</li>
+<li><a href="https://x.com/JPuurnomoa/status/2109206233928663345">Gustavo Jesús · 新面孔</a> · 试做可交互机械图解，补充 Anatomy 技能在教学内容上的使用线索。</li>
+<li><a href="https://x.com/hwchase17/status/2109269280231739408">Harrison Chase 🧪</a> · 追问后台代理该用谁的身份，补上四层报道之外的长期授权设计问题。</li>
+</ul>
+<h3>LinkedIn</h3>
+<ul>
+<li><a href="https://www.linkedin.com/in/calvin-hia-521769179/">Calvin Hia · 新面孔</a> · 把脚本技能、Fish Audio 与数字人串成短视频流程，但仍亲自来回修改文案。</li>
+<li><a href="https://www.linkedin.com/in/soikot-seoexpert/">Md Soikot · 新面孔</a> · 要求证据不足就降低结论强度，可直接借作内容系统的编辑规则。</li>
+<li><a href="https://www.linkedin.com/in/srikanthnu/">Srikanth Nutigattu · 新面孔</a> · 其案例称写清工作流程比换模型更有效，先整理隐性规则再自动化值得借鉴。</li>
+<li><a href="https://www.linkedin.com/in/acesonaw/">Aceson Aw · 新面孔</a> · 介绍本地会议笔记实验应用，音频与文件留在设备上的产品方向值得观察。</li>
+<li><a href="https://www.linkedin.com/in/danielrocaat/">Daniel Roca · 新面孔</a> · 介绍把记忆绑定代码证据并检查过期，知识库需要学会失效而不只是积累。</li>
+<li><a href="https://www.linkedin.com/in/anes-valentic-b848b5115/">Anes Valentic · 新面孔</a> · 十局游戏对比与通用榜单结论不同，提醒决策模型必须测自己的场景。</li>
+<li><a href="https://www.linkedin.com/in/nathan-yu/">Nathan Yu · 新面孔</a> · 公开分享实践带来合作机会的自述，为华语创作者提供“低调与可见性”的选题切口。</li>
+<li><a href="https://www.linkedin.com/in/yangshun/">Yangshun Tay · 新面孔</a> · 从长期文章走向书稿遇到延迟反馈，内容产品化需要不同于日更的校准节奏。</li>
+</ul>
+<h3>YouTube 首页</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=RlAXJ-6jIEI">Emma Zheng · 新面孔</a> · 首页推来工程师成长阶梯讨论，可观察职业叙事如何从写代码转向综合判断。</li>
+<li><a href="https://www.youtube.com/watch?v=ofdMfljL360">Joma Tech · 新面孔</a> · 以洗碗搭配前沿模型命名的标题制造反差，可作技术内容表达形式的参考。</li>
+<li><a href="https://www.youtube.com/watch?v=KvLWuK2TU-w">HTX Studio · 新面孔</a> · 用“重做大厂放弃的产品”组织项目叙事，适合借鉴问题到实物的故事钩子。</li>
+<li><a href="https://www.youtube.com/watch?v=qwMZqALxPzk">MPC GIRL USAGI · 新面孔</a> · 首页补充现场音乐制作过程，可观察展示创作过程而非只发成品的形式。</li>
+<li><a href="https://www.youtube.com/watch?v=XOdRZLlg1vM">IVORY HOURS · 新面孔</a> · 专注音乐把内容包装成陪伴工作场景，给长期内容产品提供使用场景参考。</li>
+</ul>
+<h2>🔭 主线</h2>
+<ul>
+<li><a href="https://www.rednote.com/explore/6a9a73d4000000000b035213">光羽的平行世界 · AI视频成本</a>与<a href="https://www.douyin.com/video/7694970650661817638">LANX · 连载制作账本</a>〔小红书 2,252赞；抖音 29,000赞〕——更值得追踪的不是“AI能不能拍”，而是人物一致性、返工和成本能否支撑连续交付，后者披露的15天、40,000积分恰好补上了成片之外的经营视角。</li>
+<li><a href="https://www.bilibili.com/video/BV139bD6gEa8">技术爬爬虾 · 极简Agent教程</a>与<a href="https://www.douyin.com/video/7660498752913902899">极物君的AI营地 · 入门系列</a>〔B站857,000播放；抖音271,000赞〕——长教程仍能在各自平台脱颖而出，编辑判断是“完成一个明确任务”的承诺比增加一张工具清单更有吸引力。</li>
+<li><a href="https://www.toutiao.com/trending/7695212095247499305/">今日头条 · 切片收入话题</a>与<a href="https://www.douyin.com/video/7680689635189656883">林禾Mind · 漫剧行业反思</a>〔热榜17,579,360；抖音3,834赞〕——高收入故事和反暴富叙事同时出现，内容创业的有效切口正在从结果炫耀转向订单来源、失败分母与交付成本。</li>
+</ul>
+<h2>🔥 热点话题（大家最近集中关注什么）</h2>
+<h3>领域热点</h3>
+<ul>
+<li><a href="https://www.rednote.com/search_result/6a523217000000002100b841">郑茜茜(xi) · 行业知识库</a>与<a href="https://www.rednote.com/search_result/6a10e37d000000003502810c">我是阿众 · 本地知识库</a>〔小红书29,100赞/P100、12,900赞/P97〕——把陌生领域变成可用知识的需求在本轮历史高互动样本中最突出，内容价值在于研究流程能否接上真实决策，而非“更快读完”的口号。</li>
+<li><a href="https://www.douyin.com/video/7679426956026187035">抖音发现流 · 个人科幻长片</a>与<a href="https://www.douyin.com/video/7675410529266961664">三帧 · 数字告别短片</a>〔抖音988,000赞/P98、131,000赞/P93〕——AI影像的传播焦点已能落在个人长期制作和情感命题上，工具只是表达手段，明确的故事代价与价值冲突更值得追踪。</li>
+<li><a href="https://www.rednote.com/search_result/6a745c2a0000000005029954">木子不写代码 · 首个应用</a>与<a href="https://www.rednote.com/search_result/6a48e816000000001702a292">AlunTalk · 首个智能体</a>〔小红书22,600赞/P99、12,800赞/P97〕——从零完成可见成果的教程形成持续需求，面向创作者的教学更适合围绕作品验收组织，而不是围绕功能菜单组织。</li>
+<li><a href="https://www.douyin.com/video/7647530086379326729">抖音搜索 · 可编辑演示文稿</a>与<a href="https://www.douyin.com/video/7676144837641459894">抖音搜索 · 剪映工程导出</a>〔抖音47,000赞/P86、3,471赞/P56〕——可编辑交付物正在成为AI设计与剪辑的共同诉求，能继续修改比一次生成漂亮成品更接近商业交付。</li>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/">Reddit · Recoil42</a>与<a href="https://www.reddit.com/r/ClaudeAI/comments/1x35dqe/the_day_we_can_run_sonnetlevel_ai_locally_on_a/">Reddit · 本地模型讨论</a>〔1,015分/479评、600分/217评〕——端侧常驻与普通电脑运行高能力模型引发集中讨论，热度反映的是持续使用成本和控制权诉求，不等于相关能力已经落地。</li>
+<li><a href="https://www.douyin.com/video/7673516397582056699">抖音搜索 · 自改进边界</a>与<a href="https://www.rednote.com/search_result/6ac8f64b000000000a0202ad">格林说 · Skills盘点</a>〔抖音271赞/P25；小红书1,743赞/P78〕——自我改进和技能复用都在被讨论，但后者已有更强传播表现，前者更适合作为验证机制的解释题而非既成突破。</li>
+</ul>
+<h4>DeepSeek 应用回声</h4>
+<ul>
+<li><a href="https://www.rednote.com/search_result/6a8aecc9000000001801bd5e">Aisland · DeepSeek工作台</a>〔小红书 · 3,449赞〕——开源工作台改造把模型能力落到可复用工作界面，值得关注的是改造后的任务闭环而非模型名次。</li>
+<li><a href="https://www.douyin.com/video/7674634551553019145">抖音搜索 · wechatbot-new</a>〔抖音 · 860,000赞 · 字段计数860,000赞与页面文本86冲突，不作爆款依据〕——微信自动回复演示把多模型接入放进熟悉的沟通场景，但它只证明该帖在展示一条应用路径，不能推出服务可稳定交付。</li>
+</ul>
+<h3>泛社会热点</h3>
+<ul>
+<li><a href="https://www.toutiao.com/trending/7694547961828851748/">今日头条热榜</a>〔榜单热度 26,225,323〕——郑钦文夺冠在榜单中形成强注意力中心，面向长期成长的可谈角度是训练、关键节点和结果叙事之间的落差，而不是把冠军简化成励志口号。</li>
+<li><a href="https://www.toutiao.com/trending/7695212095247499305/">今日头条热榜</a>〔榜单热度 17,579,360〕——切片收入自述成为全民讨论的创业故事，合适的议题是流水、利润与可复制条件的区别，材料不支持把自述金额视为已核实收益。</li>
+<li><a href="https://www.douyin.com/search/%E5%BD%93%E5%8C%97%E6%96%B9%E4%BA%BA%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%97%BB%E6%A1%82%E8%8A%B1%E9%A6%99">抖音热榜</a>〔榜单热度 12,107,388〕——桂花香的南北体验差异带动季节性共鸣，地方感和第一次体验能为日常记录提供真实的叙事入口。</li>
+<li><a href="https://www.baidu.com/s?wd=%E8%83%96%E4%B8%9C%E6%9D%A5%E6%96%BD%E5%B7%A5%E7%8E%B0%E5%9C%BA+%E5%B9%B2%E5%87%80%E5%BE%97%E5%83%8FAI">百度热榜</a>〔榜单热度 7,135,714〕——施工现场被形容为像AI生成引发关注，值得讨论的是过于整洁的现实为何反而触发不真实感，以及创作者如何呈现可信的过程证据。</li>
+</ul>
+<h2>👥 平台流（CN 发现流 + Reddit 社区）</h2>
+<h3>小红书发现流</h3>
+<ul>
+<li><a href="https://www.rednote.com/discovery/item/6acb079e000000001901dc00">Leetcode cracker</a>〔小红书 · 142赞〕——湾区科技周的个人感受把创业观察带回线下见闻，适合作为社交网络之外的现场补充而非整个硅谷的结论。</li>
+<li><a href="https://www.rednote.com/discovery/item/6acaf5b5000000001500098e">鹰掠无痕</a>〔小红书 · 26赞〕——围绕新马雾霾制作图解，展示地区性问题可以用资料组织形成服务型内容。</li>
+<li><a href="https://www.rednote.com/discovery/item/6abdd82e000000001802e2b2">新加坡中小学课程规划顾问</a>〔小红书 · 13赞〕——以升学后的择校判断回应具体家庭问题，说明知识型内容的价值可以来自明确决策节点。</li>
+</ul>
+<h3>抖音推荐流</h3>
+<ul>
+<li><a href="https://www.douyin.com/video/7693510444006296859">抖音发现流 · 创作半年复盘</a>〔抖音 · 4,607赞〕——以半年创作未见起色的经历区分播放、信任和变现，给个人内容业务提供比模仿爆款更完整的复盘框架。</li>
+<li><a href="https://www.douyin.com/video/7694970650661817638">LANX</a>〔抖音 · 29,000赞〕——连载短剧同时披露制作时间与积分消耗，让作品展示兼具生产账本的参考价值。</li>
+<li><a href="https://www.douyin.com/video/7693938319410908454">抖音发现流 · 长篇解释动画</a>〔抖音 · 20,000赞〕——用46分钟动画承载复杂财务议题，展示AI长内容可以围绕解释任务组织而非只追求视觉奇观。</li>
+<li><a href="https://www.douyin.com/video/7691883119221263654">曼莎</a>〔抖音 · 57,000赞〕——以山海异兽形成统一审美合集，展示系列化视觉题材如何积累辨识度。</li>
+</ul>
+<h3>Reddit 社区</h3>
+<ul>
+<li><a href="https://www.reddit.com/r/SideProject/comments/1oaq2kx/share_your_notai_projects/">Reddit · MembershipEuphoric38</a>〔Reddit · 650分 · 1,794评〕——非AI项目征集获得大量参与，说明开发者展示空间也存在对AI标签的反向需求，产品仍需要凭具体用途被理解。</li>
+<li><a href="https://www.reddit.com/r/ClaudeAI/comments/1x09pjt/show_us_what_youve_created_with_claude/">Reddit · sixbillionthsheep</a>〔Reddit · 212分 · 542评〕——作品征集把模型讨论拉回真实产出，适合观察哪些可展示结果能让旁观者参与交流。</li>
+<li><a href="https://www.reddit.com/r/ClaudeAI/comments/1x39bpi/claude_and_i_built_a_video_format_so_claude_and/">Reddit · 影像表示实验</a>〔Reddit · 182分 · 38评〕——尝试让语言模型读取自定义视频表示，揭示影像工作流的中间表达也可能成为创新点。</li>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1x3bpfl/whistle_speech_to_text_in_169_mb/">Reddit · namanyayg</a>〔Reddit · 88分 · 30评〕——小体积语音转文字项目把部署负担作为卖点，轻量能力组合可能比全能助手更适合狭窄工作场景。</li>
+<li><a href="https://www.reddit.com/r/SideProject/comments/1x3bb2q/i_built_an_app_and_got_1500_users_solely_from/">Reddit · ElkSubstantial1857</a>〔Reddit · 36分 · 20评〕——作者自述从ChatGPT获得首批用户，提示内容与产品发现渠道值得单独观察，但不将自述归因视为验证结果。</li>
+<li><a href="https://www.reddit.com/r/SaaS/comments/1x33cjz/anyone_else_selling_dev_templates_seeing_a_big/">Reddit · EstablishmentOne8448</a>〔Reddit · 35分 · 21评〕——模板销售者讨论需求下降，让独立开发变现回到客户愿意为何种稀缺价值付费的问题。</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><a class="rp-nav-prev" href="/reports/2026-10-11-zh.html" rel="prev"><span class="k">← 前一期</span><span class="t">🔭 主线</span></a><span></span><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI 市场雷达,每天一份免费报告,横跨东西。<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-zh.xml">中文</a> · <a class="dom" href="/feed-en.xml">English</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">幕后故事</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>
