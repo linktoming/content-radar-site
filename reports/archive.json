@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-13",
+  "lang": "zh",
+  "title": "🔭 主线",
+  "summary": "🔭 主线",
+  "url": "reports/2026-10-13-zh.html"
+ },
+ {
+  "date": "2026-10-13",
+  "lang": "en",
+  "title": "The focus is shifting from generating answers to finishing work",
+  "summary": "The focus is shifting from generating answers to finishing work. Persistent execution, task-specific models and reusable production workflows are the central themes in this edition",
+  "url": "reports/2026-10-13-en.html"
+ },
+ {
   "date": "2026-10-12",
   "lang": "zh",
   "title": "🔭 主线",
