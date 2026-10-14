@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-15",
+  "lang": "zh",
+  "title": "🔭 主线",
+  "summary": "🔭 主线",
+  "url": "reports/2026-10-15-zh.html"
+ },
+ {
+  "date": "2026-10-15",
+  "lang": "en",
+  "title": "Generation is getting cheaper; reliable handoffs are becoming more valuable",
+  "summary": "Generation is getting cheaper; reliable handoffs are becoming more valuable. The practical advantage is a workflow whose outputs can be checked, resumed, edited and delivered",
+  "url": "reports/2026-10-15-en.html"
+ },
+ {
   "date": "2026-10-14",
   "lang": "zh",
   "title": "读者同时在问两件事：AI 能否替我稳定做成一件事，以及把工作交出去以后，什么还属于我",
