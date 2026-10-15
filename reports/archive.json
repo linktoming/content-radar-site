@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-16",
+  "lang": "zh",
+  "title": "🔭 主线",
+  "summary": "🔭 主线",
+  "url": "reports/2026-10-16-zh.html"
+ },
+ {
+  "date": "2026-10-16",
+  "lang": "en",
+  "title": "The shift is from generating answers to finishing work",
+  "summary": "The shift is from generating answers to finishing work. Open models are competing for long-running tasks, creative tools are targeting revisions",
+  "url": "reports/2026-10-16-en.html"
+ },
+ {
   "date": "2026-10-15",
   "lang": "zh",
   "title": "🔭 主线",
