@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 78 days archived.
+Published daily by mingming (https://x.com/linktoming). 79 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-10-20 — The useful shift is from generating isolated outputs to running complete workflows](https://radar.sharpener.ai/reports/2026-10-20-en.html): The useful shift is from generating isolated outputs to running complete workflows: plan, produce, review and recover from failure
 - [2026-10-19 — 🎯 Primary](https://radar.sharpener.ai/reports/2026-10-19-en.html): 🎯 Primary
 - [2026-10-18 — 🎯 Primary](https://radar.sharpener.ai/reports/2026-10-18-en.html): 🎯 Primary
 - [2026-10-17 — Reliable delivery matters more than output volume. Agent infrastructure is emphasizing boundaries and recovery](https://radar.sharpener.ai/reports/2026-10-17-en.html): Reliable delivery matters more than output volume. Agent infrastructure is emphasizing boundaries and recovery, open models are competing through tooling
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-07 — GPT-6 Astra moves the AI race from better answers to executable work systems](https://radar.sharpener.ai/reports/2026-09-07-en.html): GPT-6 Astra moves the AI race from better answers to executable work systems. Today's combined pool scanned 992 news-lane posts and 1,078 viral-lane posts
 - [2026-09-06 — GPT-6 Astra turned today’s AI story from “a stronger model” into “a deliverable computer workflow](https://radar.sharpener.ai/reports/2026-09-06-en.html): GPT-6 Astra turned today’s AI story from “a stronger model” into “a deliverable computer workflow.” Across the two lanes, today’s run scanned 1,359 raw posts and 1,327 deduped candidates
 - [2026-09-05 — GPT-6 Astra moves the agent story from “a stronger model” to “a computer worker that can be taught, packaged](https://radar.sharpener.ai/reports/2026-09-05-en.html): GPT-6 Astra moves the agent story from “a stronger model” to “a computer worker that can be taught, packaged, and delegated real workflows
-- [2026-09-04 — Agents are entering real workflows: OpenAI pushed Computer, Voice, and the Astra safety frame toward work execution](https://radar.sharpener.ai/reports/2026-09-04-en.html): Agents are entering real workflows: OpenAI pushed Computer, Voice, and the Astra safety frame toward work execution; Anthropic put Claude closer to background desktop operation
 
 ## 中文版
 
+- [2026-10-20 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-20-zh.html): 🔭 主线
 - [2026-10-19 — DeepSeek 降低任务成本，OpenClaw 走进新电脑，内容团队开始把编辑经验做成共享技能](https://radar.sharpener.ai/reports/2026-10-19-zh.html): DeepSeek 降低任务成本，OpenClaw 走进新电脑，内容团队开始把编辑经验做成共享技能
 - [2026-10-18 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-18-zh.html): 🔭 主线
 - [2026-10-17 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-17-zh.html): 🔭 主线
@@ -92,7 +93,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-07 — GPT-6 Astra 把 AI 竞争从「模型回答」推到了「可验收的工作系统」。今天扫描 news lane 992 条、viral lane 1,078 条](https://radar.sharpener.ai/reports/2026-09-07-zh.html): GPT-6 Astra 把 AI 竞争从「模型回答」推到了「可验收的工作系统」。今天扫描 news lane 992 条、viral lane 1,078 条
 - [2026-09-06 — GPT-6 Astra 把这一天的关键词从“更强模型”推到了“可交付的电脑工作流”](https://radar.sharpener.ai/reports/2026-09-06-zh.html): GPT-6 Astra 把这一天的关键词从“更强模型”推到了“可交付的电脑工作流”。今日两条 lane 合计扫描 1359 条 raw posts、1327 条去重候选
 - [2026-09-05 — GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”](https://radar.sharpener.ai/reports/2026-09-05-zh.html): GPT-6 Astra 把 AI agent 从“会聊天的模型”推到“可被教学、可被委托、可被产品化的电脑工作者”。今日两条 lane 合计扫描 2042 条 raw posts、1904 条候选
-- [2026-09-04 — Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层](https://radar.sharpener.ai/reports/2026-09-04-zh.html): Agent 进入「能接管真实工作」的发布周：OpenAI 把 Computer、Voice 和 Astra 安全框架推到工作流层，Anthropic 让 Claude 在后台操作电脑
 
 ## Full index
 
