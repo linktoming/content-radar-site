@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-21",
+  "lang": "zh",
+  "title": "🔭 主线",
+  "summary": "🔭 主线",
+  "url": "reports/2026-10-21-zh.html"
+ },
+ {
+  "date": "2026-10-21",
+  "lang": "en",
+  "title": "The useful shift is from model benchmarks to production workflows",
+  "summary": "The useful shift is from model benchmarks to production workflows: cheaper inference, reusable experience, and agents that finish real tasks",
+  "url": "reports/2026-10-21-en.html"
+ },
+ {
   "date": "2026-10-20",
   "lang": "zh",
   "title": "🔭 主线",
