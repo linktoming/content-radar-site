@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-24",
+  "lang": "zh",
+  "title": "Agent 的执行入口继续打开，权限与验收正在决定谁能把能力变成生意",
+  "summary": "Agent 的执行入口继续打开，权限与验收正在决定谁能把能力变成生意",
+  "url": "reports/2026-10-24-zh.html"
+ },
+ {
+  "date": "2026-10-24",
+  "lang": "en",
+  "title": "AI competition is expanding from model capability to dependable execution",
+  "summary": "AI competition is expanding from model capability to dependable execution: portable workflows, desktop operation, recovery and permission controls",
+  "url": "reports/2026-10-24-en.html"
+ },
+ {
   "date": "2026-10-23",
   "lang": "zh",
   "title": "🔭 主线",

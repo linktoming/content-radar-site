@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 82 days archived.
+Published daily by mingming (https://x.com/linktoming). 83 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-10-24 — AI competition is expanding from model capability to dependable execution](https://radar.sharpener.ai/reports/2026-10-24-en.html): AI competition is expanding from model capability to dependable execution: portable workflows, desktop operation, recovery and permission controls
 - [2026-10-23 — The opportunity is shifting from impressive AI demos to reusable workflows](https://radar.sharpener.ai/reports/2026-10-23-en.html): The opportunity is shifting from impressive AI demos to reusable workflows: portable expertise, editable assets, dependable execution, and products that fit existing habits
 - [2026-10-22 — The emerging advantage is not more generated output, but persistent context, dependable execution and verified results](https://radar.sharpener.ai/reports/2026-10-22-en.html): The emerging advantage is not more generated output, but persistent context, dependable execution and verified results
 - [2026-10-21 — The useful shift is from model benchmarks to production workflows](https://radar.sharpener.ai/reports/2026-10-21-en.html): The useful shift is from model benchmarks to production workflows: cheaper inference, reusable experience, and agents that finish real tasks
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-11 — AI is moving from “answers in a chat box” to delegated workflows with visible operating surfaces](https://radar.sharpener.ai/reports/2026-09-11-en.html): AI is moving from “answers in a chat box” to delegated workflows with visible operating surfaces
 - [2026-09-10 — OpenAI moved the frontier-model story from chat and generation into large-scale, auditable agent science](https://radar.sharpener.ai/reports/2026-09-10-en.html): OpenAI moved the frontier-model story from chat and generation into large-scale, auditable agent science
 - [2026-09-09 — Agent products crossed from “better chat” into operational work surfaces](https://radar.sharpener.ai/reports/2026-09-09-en.html): Agent products crossed from “better chat” into operational work surfaces: OpenAI framed GPT-6 Astra as “anything you can do on a computer
-- [2026-09-08 — Today's signal is not “another stronger model.” It is that AI agents are moving from demos into delegable work packages](https://radar.sharpener.ai/reports/2026-09-08-en.html): Today's signal is not “another stronger model.” It is that AI agents are moving from demos into delegable work packages. OpenAI pushed GPT-6 Astra into Work, Codex, and API
 
 ## 中文版
 
+- [2026-10-24 — Agent 的执行入口继续打开，权限与验收正在决定谁能把能力变成生意](https://radar.sharpener.ai/reports/2026-10-24-zh.html): Agent 的执行入口继续打开，权限与验收正在决定谁能把能力变成生意
 - [2026-10-23 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-23-zh.html): 🔭 主线
 - [2026-10-22 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-22-zh.html): 🔭 主线
 - [2026-10-21 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-21-zh.html): 🔭 主线
@@ -92,7 +93,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-11 — Agent 正在从“会回答”进入“可托管工作流”：OpenAI 把 Data agent 和 GPT-6 Astra 放进 ChatGPT Work](https://radar.sharpener.ai/reports/2026-09-11-zh.html): Agent 正在从“会回答”进入“可托管工作流”：OpenAI 把 Data agent 和 GPT-6 Astra 放进 ChatGPT Work
 - [2026-09-10 — OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”](https://radar.sharpener.ai/reports/2026-09-10-zh.html): OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”。今日扫描 17 个 fetcher · 995 条原始帖 · 908 条候选
 - [2026-09-09 — Agent 从“会回答”进入“能接手电脑与工作流”的产品化时刻：OpenAI 把 GPT-6 Astra 推到 Work/Codex 与 API](https://radar.sharpener.ai/reports/2026-09-09-zh.html): Agent 从“会回答”进入“能接手电脑与工作流”的产品化时刻：OpenAI 把 GPT-6 Astra 推到 Work/Codex 与 API
-- [2026-09-08 — 今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流](https://radar.sharpener.ai/reports/2026-09-08-zh.html): 今天的主线不是“又出了几个更强模型”，而是 AI agent 开始从 demo 进入可交付的工作流。OpenAI 把 GPT-6 Astra 推给 Work/Codex/API
 
 ## Full index
 
