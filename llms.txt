@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 84 days archived.
+Published daily by mingming (https://x.com/linktoming). 85 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-10-26 — Reusable workflows and reliable delivery matter more than another impressive demo](https://radar.sharpener.ai/reports/2026-10-26-en.html): Reusable workflows and reliable delivery matter more than another impressive demo. Today’s sources point toward portable skills, recoverable agent runs, richer customer context
 - [2026-10-25 — AI is moving from chat toward reusable skills, asynchronous work and richer content production](https://radar.sharpener.ai/reports/2026-10-25-en.html): AI is moving from chat toward reusable skills, asynchronous work and richer content production. The practical bottleneck is shifting toward reliable delivery, permission boundaries and verification
 - [2026-10-24 — AI competition is expanding from model capability to dependable execution](https://radar.sharpener.ai/reports/2026-10-24-en.html): AI competition is expanding from model capability to dependable execution: portable workflows, desktop operation, recovery and permission controls
 - [2026-10-23 — The opportunity is shifting from impressive AI demos to reusable workflows](https://radar.sharpener.ai/reports/2026-10-23-en.html): The opportunity is shifting from impressive AI demos to reusable workflows: portable expertise, editable assets, dependable execution, and products that fit existing habits
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-13 — Agents are moving from “models that answer” to work systems that can be deployed, audited, reused](https://radar.sharpener.ai/reports/2026-09-13-en.html): Agents are moving from “models that answer” to work systems that can be deployed, audited, reused, and taught to ordinary users
 - [2026-09-12 — Today was not just another stronger-model day. The useful signal is that AI is being packaged into three things builders](https://radar.sharpener.ai/reports/2026-09-12-en.html): Today was not just another stronger-model day. The useful signal is that AI is being packaged into three things builders can actually use
 - [2026-09-11 — AI is moving from “answers in a chat box” to delegated workflows with visible operating surfaces](https://radar.sharpener.ai/reports/2026-09-11-en.html): AI is moving from “answers in a chat box” to delegated workflows with visible operating surfaces
-- [2026-09-10 — OpenAI moved the frontier-model story from chat and generation into large-scale, auditable agent science](https://radar.sharpener.ai/reports/2026-09-10-en.html): OpenAI moved the frontier-model story from chat and generation into large-scale, auditable agent science
 
 ## 中文版
 
+- [2026-10-26 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-26-zh.html): 🔭 主线
 - [2026-10-25 — Agent Skills 走向公共标准，个人智能体的竞争转向可靠交付](https://radar.sharpener.ai/reports/2026-10-25-zh.html): Agent Skills 走向公共标准，个人智能体的竞争转向可靠交付
 - [2026-10-24 — Agent 的执行入口继续打开，权限与验收正在决定谁能把能力变成生意](https://radar.sharpener.ai/reports/2026-10-24-zh.html): Agent 的执行入口继续打开，权限与验收正在决定谁能把能力变成生意
 - [2026-10-23 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-23-zh.html): 🔭 主线
@@ -92,7 +93,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-13 — Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”](https://radar.sharpener.ai/reports/2026-09-13-zh.html): Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”
 - [2026-09-12 — 今天的主线不是「又来了一个强模型」，而是 AI 开始从模型能力进入可买单的工作台、可复现的 agent 流程、可照抄的内容生产链路](https://radar.sharpener.ai/reports/2026-09-12-zh.html): 今天的主线不是「又来了一个强模型」，而是 AI 开始从模型能力进入可买单的工作台、可复现的 agent 流程、可照抄的内容生产链路
 - [2026-09-11 — Agent 正在从“会回答”进入“可托管工作流”：OpenAI 把 Data agent 和 GPT-6 Astra 放进 ChatGPT Work](https://radar.sharpener.ai/reports/2026-09-11-zh.html): Agent 正在从“会回答”进入“可托管工作流”：OpenAI 把 Data agent 和 GPT-6 Astra 放进 ChatGPT Work
-- [2026-09-10 — OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”](https://radar.sharpener.ai/reports/2026-09-10-zh.html): OpenAI 把 frontier model 的叙事从“聊天/生成”推到“可并行执行的大规模 agent 科研”。今日扫描 17 个 fetcher · 995 条原始帖 · 908 条候选
 
 ## Full index
 

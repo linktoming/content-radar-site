@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-26",
+  "lang": "zh",
+  "title": "🔭 主线",
+  "summary": "🔭 主线",
+  "url": "reports/2026-10-26-zh.html"
+ },
+ {
+  "date": "2026-10-26",
+  "lang": "en",
+  "title": "Reusable workflows and reliable delivery matter more than another impressive demo",
+  "summary": "Reusable workflows and reliable delivery matter more than another impressive demo. Today’s sources point toward portable skills, recoverable agent runs, richer customer context",
+  "url": "reports/2026-10-26-en.html"
+ },
+ {
   "date": "2026-10-25",
   "lang": "zh",
   "title": "Agent Skills 走向公共标准，个人智能体的竞争转向可靠交付",
