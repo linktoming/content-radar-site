@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 86 days archived.
+Published daily by mingming (https://x.com/linktoming). 87 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-10-28 — 🎯 Primary](https://radar.sharpener.ai/reports/2026-10-28-en.html): 🎯 Primary
 - [2026-10-27 — Emotional storytelling and complete learning journeys stand out in this sample](https://radar.sharpener.ai/reports/2026-10-27-en.html): Emotional storytelling and complete learning journeys stand out in this sample. The strongest lesson is not “use more AI,” but “give viewers a story to follow or a job they can finish.”
 - [2026-10-26 — Reusable workflows and reliable delivery matter more than another impressive demo](https://radar.sharpener.ai/reports/2026-10-26-en.html): Reusable workflows and reliable delivery matter more than another impressive demo. Today’s sources point toward portable skills, recoverable agent runs, richer customer context
 - [2026-10-25 — AI is moving from chat toward reusable skills, asynchronous work and richer content production](https://radar.sharpener.ai/reports/2026-10-25-en.html): AI is moving from chat toward reusable skills, asynchronous work and richer content production. The practical bottleneck is shifting toward reliable delivery, permission boundaries and verification
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-15 — Today's strongest signal is that agents are moving from clever demos into systems that can run for hours, recover](https://radar.sharpener.ai/reports/2026-09-15-en.html): Today's strongest signal is that agents are moving from clever demos into systems that can run for hours, recover, get audited, and fit inside real workflows
 - [2026-09-14 — Today's strongest signal is not another leaderboard jump](https://radar.sharpener.ai/reports/2026-09-14-en.html): Today's strongest signal is not another leaderboard jump. OpenAI, Anthropic, DeepMind, DeepSeek, Qwen, Sierra, and the Chinese creator platforms are all pointing at the same shift
 - [2026-09-13 — Agents are moving from “models that answer” to work systems that can be deployed, audited, reused](https://radar.sharpener.ai/reports/2026-09-13-en.html): Agents are moving from “models that answer” to work systems that can be deployed, audited, reused, and taught to ordinary users
-- [2026-09-12 — Today was not just another stronger-model day. The useful signal is that AI is being packaged into three things builders](https://radar.sharpener.ai/reports/2026-09-12-en.html): Today was not just another stronger-model day. The useful signal is that AI is being packaged into three things builders can actually use
 
 ## 中文版
 
+- [2026-10-28 — OpenAI 与 Anthropic 都宣布内部模型在 10 月 16 日独立推翻了「指数时间假设」（ETH），AI 交出的成果第一次需要整个学界来验收](https://radar.sharpener.ai/reports/2026-10-28-zh.html): OpenAI 与 Anthropic 都宣布内部模型在 10 月 16 日独立推翻了「指数时间假设」（ETH），AI 交出的成果第一次需要整个学界来验收
 - [2026-10-27 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-27-zh.html): 🔭 主线
 - [2026-10-26 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-26-zh.html): 🔭 主线
 - [2026-10-25 — Agent Skills 走向公共标准，个人智能体的竞争转向可靠交付](https://radar.sharpener.ai/reports/2026-10-25-zh.html): Agent Skills 走向公共标准，个人智能体的竞争转向可靠交付
@@ -92,7 +93,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-15 — Agent 正在从「会回答」跨进「能长期代办、能被审计、能本地化部署」的产品周期](https://radar.sharpener.ai/reports/2026-09-15-zh.html): Agent 正在从「会回答」跨进「能长期代办、能被审计、能本地化部署」的产品周期。今日扫描 1102 条原始帖、17 个 NEWS fetcher、934 条候选/强制召回
 - [2026-09-14 — OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前](https://radar.sharpener.ai/reports/2026-09-14-zh.html): OpenAI、Anthropic、DeepMind 和 Sam/Demis/Dario 今天把同一个问题推到台前：模型继续加速，但真正的竞争开始转向“谁能把能力放进可审计、可部署、可复盘的系统”
 - [2026-09-13 — Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”](https://radar.sharpener.ai/reports/2026-09-13-zh.html): Agent 正在从“会回答的模型”变成“能被部署、被审计、被复用、被普通人照着做的工作系统”
-- [2026-09-12 — 今天的主线不是「又来了一个强模型」，而是 AI 开始从模型能力进入可买单的工作台、可复现的 agent 流程、可照抄的内容生产链路](https://radar.sharpener.ai/reports/2026-09-12-zh.html): 今天的主线不是「又来了一个强模型」，而是 AI 开始从模型能力进入可买单的工作台、可复现的 agent 流程、可照抄的内容生产链路
 
 ## Full index
 
