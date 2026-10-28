@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-29",
+  "lang": "zh",
+  "title": "Gemini 4 Carbon 推进长时任务，AI 产品开始围绕“工作完成”重组",
+  "summary": "Gemini 4 Carbon 推进长时任务，AI 产品开始围绕“工作完成”重组",
+  "url": "reports/2026-10-29-zh.html"
+ },
+ {
+  "date": "2026-10-29",
+  "lang": "en",
+  "title": "AI products are shifting from generating answers to completing work",
+  "summary": "AI products are shifting from generating answers to completing work. Google DeepMind emphasizes sustained execution, DeepLearning.AI teaches checks and event triggers",
+  "url": "reports/2026-10-29-en.html"
+ },
+ {
   "date": "2026-10-28",
   "lang": "zh",
   "title": "OpenAI 与 Anthropic 都宣布内部模型在 10 月 16 日独立推翻了「指数时间假设」（ETH），AI 交出的成果第一次需要整个学界来验收",
