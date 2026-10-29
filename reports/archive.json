@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-10-30",
+  "lang": "zh",
+  "title": "🔭 主线",
+  "summary": "🔭 主线",
+  "url": "reports/2026-10-30-zh.html"
+ },
+ {
+  "date": "2026-10-30",
+  "lang": "en",
+  "title": "AI is moving from personal assistant to shared work system",
+  "summary": "AI is moving from personal assistant to shared work system. Every’s company agent and OpenClaw’s multiplayer demo point toward shared workflows—with identity",
+  "url": "reports/2026-10-30-en.html"
+ },
+ {
   "date": "2026-10-29",
   "lang": "zh",
   "title": "Gemini 4 Carbon 推进长时任务，AI 产品开始围绕“工作完成”重组",
