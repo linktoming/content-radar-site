@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 89 days archived.
+Published daily by mingming (https://x.com/linktoming). 90 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-10-31 — AI competition is shifting from better answers to completed work](https://radar.sharpener.ai/reports/2026-10-31-en.html): AI competition is shifting from better answers to completed work. The useful unit is increasingly a finished task, a coordinated deliverable, or a workflow with fewer handoffs
 - [2026-10-30 — AI is moving from personal assistant to shared work system](https://radar.sharpener.ai/reports/2026-10-30-en.html): AI is moving from personal assistant to shared work system. Every’s company agent and OpenClaw’s multiplayer demo point toward shared workflows—with identity
 - [2026-10-29 — AI products are shifting from generating answers to completing work](https://radar.sharpener.ai/reports/2026-10-29-en.html): AI products are shifting from generating answers to completing work. Google DeepMind emphasizes sustained execution, DeepLearning.AI teaches checks and event triggers
 - [2026-10-28 — 🎯 Primary](https://radar.sharpener.ai/reports/2026-10-28-en.html): 🎯 Primary
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-18 — Agents are moving from impressive demos into operating systems](https://radar.sharpener.ai/reports/2026-09-18-en.html): Agents are moving from impressive demos into operating systems: the winning question is no longer “which model is smartest,” but “which model can become a reliable workflow.”
 - [2026-09-17 — The agent stack is moving from clever demos into operating systems](https://radar.sharpener.ai/reports/2026-09-17-en.html): The agent stack is moving from clever demos into operating systems: labs are hardening governance, voice, safety, and real-world deployment
 - [2026-09-16 — Today's signal is not “which model is strongest.” The shift is that AI workflows are moving toward the trust threshold](https://radar.sharpener.ai/reports/2026-09-16-en.html): Today's signal is not “which model is strongest.” The shift is that AI workflows are moving toward the trust threshold
-- [2026-09-15 — Today's strongest signal is that agents are moving from clever demos into systems that can run for hours, recover](https://radar.sharpener.ai/reports/2026-09-15-en.html): Today's strongest signal is that agents are moving from clever demos into systems that can run for hours, recover, get audited, and fit inside real workflows
 
 ## 中文版
 
+- [2026-10-31 — AI开始接手整条工作流，人的瓶颈转向判断与验收](https://radar.sharpener.ai/reports/2026-10-31-zh.html): AI开始接手整条工作流，人的瓶颈转向判断与验收
 - [2026-10-30 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-30-zh.html): 🔭 主线
 - [2026-10-29 — Gemini 4 Carbon 推进长时任务，AI 产品开始围绕“工作完成”重组](https://radar.sharpener.ai/reports/2026-10-29-zh.html): Gemini 4 Carbon 推进长时任务，AI 产品开始围绕“工作完成”重组
 - [2026-10-28 — OpenAI 与 Anthropic 都宣布内部模型在 10 月 16 日独立推翻了「指数时间假设」（ETH），AI 交出的成果第一次需要整个学界来验收](https://radar.sharpener.ai/reports/2026-10-28-zh.html): OpenAI 与 Anthropic 都宣布内部模型在 10 月 16 日独立推翻了「指数时间假设」（ETH），AI 交出的成果第一次需要整个学界来验收
@@ -92,7 +93,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-09-18 — Agent 进入运营期：前沿模型开始自己审计、自己优化、自己卖货，创作者要看的不是“谁最强”，而是谁能变成稳定工作流](https://radar.sharpener.ai/reports/2026-09-18-zh.html): Agent 进入运营期：前沿模型开始自己审计、自己优化、自己卖货，创作者要看的不是“谁最强”，而是谁能变成稳定工作流
 - [2026-09-17 — Agent 栈进入可运营期：前沿实验室在补治理、语音入口与真实场景责任，基础设施在把 agentic inference 变成可计量的生产能力](https://radar.sharpener.ai/reports/2026-09-17-zh.html): Agent 栈进入可运营期：前沿实验室在补治理、语音入口与真实场景责任，基础设施在把 agentic inference 变成可计量的生产能力，国内内容平台则把 AI 编程、AI 视频
 - [2026-09-16 — 今天的主线不是“哪个模型又强了”，而是 AI 工作流开始进入可托付阶段：模型能做更多事，用户却更在意它是否能长期运行、能不能被审查、能不能保留上下文](https://radar.sharpener.ai/reports/2026-09-16-zh.html): 今天的主线不是“哪个模型又强了”，而是 AI 工作流开始进入可托付阶段：模型能做更多事，用户却更在意它是否能长期运行、能不能被审查、能不能保留上下文、能不能真的交付结果
-- [2026-09-15 — Agent 正在从「会回答」跨进「能长期代办、能被审计、能本地化部署」的产品周期](https://radar.sharpener.ai/reports/2026-09-15-zh.html): Agent 正在从「会回答」跨进「能长期代办、能被审计、能本地化部署」的产品周期。今日扫描 1102 条原始帖、17 个 NEWS fetcher、934 条候选/强制召回
 
 ## Full index
 
