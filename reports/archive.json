@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-01",
+  "lang": "zh",
+  "title": "Agent 开始争夺完整工作流程：模型更便宜，验收、上下文和内容资产更值钱",
+  "summary": "Agent 开始争夺完整工作流程：模型更便宜，验收、上下文和内容资产更值钱",
+  "url": "reports/2026-11-01-zh.html"
+ },
+ {
+  "date": "2026-11-01",
+  "lang": "en",
+  "title": "AI is moving from impressive demos toward dependable work",
+  "summary": "AI is moving from impressive demos toward dependable work: persistent sessions, task-level economics, enterprise data boundaries and institutional adoption",
+  "url": "reports/2026-11-01-en.html"
+ },
+ {
   "date": "2026-10-31",
   "lang": "zh",
   "title": "AI开始接手整条工作流，人的瓶颈转向判断与验收",
