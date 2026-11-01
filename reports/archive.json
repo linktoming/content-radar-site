@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-02",
+  "lang": "zh",
+  "title": "HackerTube 把二十年的社区推荐变成个人产品，AI 创作的瓶颈正在转向选材、判断与协作",
+  "summary": "HackerTube 把二十年的社区推荐变成个人产品，AI 创作的瓶颈正在转向选材、判断与协作",
+  "url": "reports/2026-11-02-zh.html"
+ },
+ {
+  "date": "2026-11-02",
+  "lang": "en",
+  "title": "AI is moving from impressive outputs toward dependable workflows",
+  "summary": "AI is moving from impressive outputs toward dependable workflows: persistent agent state, enterprise controls, editable media and lower-cost execution",
+  "url": "reports/2026-11-02-en.html"
+ },
+ {
   "date": "2026-11-01",
   "lang": "zh",
   "title": "Agent 开始争夺完整工作流程：模型更便宜，验收、上下文和内容资产更值钱",
