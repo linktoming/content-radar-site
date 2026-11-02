@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-03",
+  "lang": "zh",
+  "title": "🔭 主线",
+  "summary": "🔭 主线",
+  "url": "reports/2026-11-03-zh.html"
+ },
+ {
+  "date": "2026-11-03",
+  "lang": "en",
+  "title": "AI competition is shifting from impressive answers to completed work",
+  "summary": "AI competition is shifting from impressive answers to completed work. As models reduce both delivery costs and customers’ barriers to building in-house, defensibility increasingly rests on context",
+  "url": "reports/2026-11-03-en.html"
+ },
+ {
   "date": "2026-11-02",
   "lang": "zh",
   "title": "HackerTube 把二十年的社区推荐变成个人产品，AI 创作的瓶颈正在转向选材、判断与协作",
