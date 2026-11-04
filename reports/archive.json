@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-05",
+  "lang": "zh",
+  "title": "OpenAI 拟收购 Pierre，把 Codex 从写代码进一步推向团队审阅与交付",
+  "summary": "OpenAI 拟收购 Pierre，把 Codex 从写代码进一步推向团队审阅与交付",
+  "url": "reports/2026-11-05-zh.html"
+ },
+ {
+  "date": "2026-11-05",
+  "lang": "en",
+  "title": "AI competition is moving beyond generation toward durable workflows",
+  "summary": "AI competition is moving beyond generation toward durable workflows: persistent knowledge, code review, deployment reliability and real-world task value",
+  "url": "reports/2026-11-05-en.html"
+ },
+ {
   "date": "2026-11-04",
   "lang": "zh",
   "title": "AI 正在接手完整工作，验证、权限和成本决定交付上限",
