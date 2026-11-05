@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-06",
+  "lang": "zh",
+  "title": "OpenClaw 与 Perplexity 把 Agent 推向共享协作，内容生产开始同时争夺生成能力和工作上下文",
+  "summary": "OpenClaw 与 Perplexity 把 Agent 推向共享协作，内容生产开始同时争夺生成能力和工作上下文",
+  "url": "reports/2026-11-06-zh.html"
+ },
+ {
+  "date": "2026-11-06",
+  "lang": "en",
+  "title": "AI products are moving from isolated capabilities toward durable workflows",
+  "summary": "AI products are moving from isolated capabilities toward durable workflows: recoverable agent state, controlled enterprise deployment, specialized security work and connected creative production",
+  "url": "reports/2026-11-06-en.html"
+ },
+ {
   "date": "2026-11-05",
   "lang": "zh",
   "title": "OpenAI 拟收购 Pierre，把 Codex 从写代码进一步推向团队审阅与交付",
