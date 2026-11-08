@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-09",
+  "lang": "zh",
+  "title": "Anthropic 的“做梦”记忆与 Agent 评测潮，把竞争推进到能否稳定完成工作",
+  "summary": "Anthropic 的“做梦”记忆与 Agent 评测潮，把竞争推进到能否稳定完成工作",
+  "url": "reports/2026-11-09-zh.html"
+ },
+ {
+  "date": "2026-11-09",
+  "lang": "en",
+  "title": "AI is moving from generating answers toward maintaining memory, completing tasks and operating reliably",
+  "summary": "AI is moving from generating answers toward maintaining memory, completing tasks and operating reliably",
+  "url": "reports/2026-11-09-en.html"
+ },
+ {
   "date": "2026-11-08",
   "lang": "zh",
   "title": "Agent 的下一轮竞争落在记忆、验收和成果成本上，内容生意的稀缺项转向品味与分发",
