@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-10",
+  "lang": "zh",
+  "title": "Claude Fable 5.2 升级并降价，Muse Ember 把日常 Agent 的竞争推向任务成本",
+  "summary": "Claude Fable 5.2 升级并降价，Muse Ember 把日常 Agent 的竞争推向任务成本",
+  "url": "reports/2026-11-10-zh.html"
+ },
+ {
+  "date": "2026-11-10",
+  "lang": "en",
+  "title": "AI competition is shifting from stronger models to cheaper useful outcomes",
+  "summary": "AI competition is shifting from stronger models to cheaper useful outcomes. Meanwhile, persistent agents and finished creative work are making reliability",
+  "url": "reports/2026-11-10-en.html"
+ },
+ {
   "date": "2026-11-09",
   "lang": "zh",
   "title": "Anthropic 的“做梦”记忆与 Agent 评测潮，把竞争推进到能否稳定完成工作",

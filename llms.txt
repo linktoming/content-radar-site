@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 99 days archived.
+Published daily by mingming (https://x.com/linktoming). 100 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-11-10 — AI competition is shifting from stronger models to cheaper useful outcomes](https://radar.sharpener.ai/reports/2026-11-10-en.html): AI competition is shifting from stronger models to cheaper useful outcomes. Meanwhile, persistent agents and finished creative work are making reliability
 - [2026-11-09 — AI is moving from generating answers toward maintaining memory, completing tasks and operating reliably](https://radar.sharpener.ai/reports/2026-11-09-en.html): AI is moving from generating answers toward maintaining memory, completing tasks and operating reliably
 - [2026-11-08 — Agents are moving from impressive answers toward dependable work](https://radar.sharpener.ai/reports/2026-11-08-en.html): Agents are moving from impressive answers toward dependable work: recovery, reusable memory, real-task evaluation and safer integrations
 - [2026-11-07 — Useful outcomes and finished entertainment travel further than model names](https://radar.sharpener.ai/reports/2026-11-07-en.html): Useful outcomes and finished entertainment travel further than model names. The supplied examples cluster around practical tutorials, repeatable creative workflows
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-01 — AI agents are moving from launch-stage spectacle into work systems](https://radar.sharpener.ai/reports/2026-10-01-en.html): AI agents are moving from launch-stage spectacle into work systems: small-business enablement, security workflows, coding environments, enterprise runtimes
 - [2026-09-30 — AI platforms are shifting from “better chat” to operational infrastructure](https://radar.sharpener.ai/reports/2026-09-30-en.html): AI platforms are shifting from “better chat” to operational infrastructure: decision models, safer agents, lower-cost coding, private memory, voice/avatar interfaces, and enterprise safety cases
 - [2026-09-29 — AI is moving from model demos into operating layers: voice agents with tools, safer agent platforms](https://radar.sharpener.ai/reports/2026-09-29-en.html): AI is moving from model demos into operating layers: voice agents with tools, safer agent platforms, vertical scientific workflows, and infrastructure built for reliable inference and evaluation
-- [2026-09-28 — High-end AI is moving from “new model launch” to cheaper, more usable agent workflows. The key pattern today](https://radar.sharpener.ai/reports/2026-09-28-en.html): High-end AI is moving from “new model launch” to cheaper, more usable agent workflows. The key pattern today
 
 ## 中文版
 
+- [2026-11-10 — Claude Fable 5.2 升级并降价，Muse Ember 把日常 Agent 的竞争推向任务成本](https://radar.sharpener.ai/reports/2026-11-10-zh.html): Claude Fable 5.2 升级并降价，Muse Ember 把日常 Agent 的竞争推向任务成本
 - [2026-11-09 — Anthropic 的“做梦”记忆与 Agent 评测潮，把竞争推进到能否稳定完成工作](https://radar.sharpener.ai/reports/2026-11-09-zh.html): Anthropic 的“做梦”记忆与 Agent 评测潮，把竞争推进到能否稳定完成工作
 - [2026-11-08 — Agent 的下一轮竞争落在记忆、验收和成果成本上，内容生意的稀缺项转向品味与分发](https://radar.sharpener.ai/reports/2026-11-08-zh.html): Agent 的下一轮竞争落在记忆、验收和成果成本上，内容生意的稀缺项转向品味与分发
 - [2026-11-07 — 排序候选 834 条，另有信任召回 187 条，并补充视频号对标作品与评论](https://radar.sharpener.ai/reports/2026-11-07-zh.html): 排序候选 834 条，另有信任召回 187 条，并补充视频号对标作品与评论
@@ -92,7 +93,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-01 — OpenAI 把 DevDay 变成了「全天候 agent + 更便宜更快模型 + 工作流入口」的一次集中换挡](https://radar.sharpener.ai/reports/2026-10-01-zh.html): OpenAI 把 DevDay 变成了「全天候 agent + 更便宜更快模型 + 工作流入口」的一次集中换挡。今日扫描 1195 条原始内容，语义召回后进入 517 条候选
 - [2026-09-30 — Claude Sonnet 5.5、OpenAI DevDay 预热、NVIDIA/AMD 的 agent 安全与空间智能下注，把今天的行业信号推向同一个方向](https://radar.sharpener.ai/reports/2026-09-30-zh.html): Claude Sonnet 5.5、OpenAI DevDay 预热、NVIDIA/AMD 的 agent 安全与空间智能下注，把今天的行业信号推向同一个方向
 - [2026-09-29 — Agent 进入第二阶段：模型更强不是主线，能被控制、审计、路由、嵌进业务流程才是主线](https://radar.sharpener.ai/reports/2026-09-29-zh.html): Agent 进入第二阶段：模型更强不是主线，能被控制、审计、路由、嵌进业务流程才是主线
-- [2026-09-28 — Agent 从“会聊、会生成”进入“要被治理、要接工作流、要能分发”的运营期](https://radar.sharpener.ai/reports/2026-09-28-zh.html): Agent 从“会聊、会生成”进入“要被治理、要接工作流、要能分发”的运营期
 
 ## Full index
 
