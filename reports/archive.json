@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-11",
+  "lang": "zh",
+  "title": "Claude 把白板、表格和数据搬进对话，ChatGPT 把商家搬进消费入口",
+  "summary": "Claude 把白板、表格和数据搬进对话，ChatGPT 把商家搬进消费入口",
+  "url": "reports/2026-11-11-zh.html"
+ },
+ {
+  "date": "2026-11-11",
+  "lang": "en",
+  "title": "Claude is bringing documents, data and connected applications into a shared workspace",
+  "summary": "Claude is bringing documents, data and connected applications into a shared workspace. ChatGPT is adding merchant-facing infrastructure",
+  "url": "reports/2026-11-11-en.html"
+ },
+ {
   "date": "2026-11-10",
   "lang": "zh",
   "title": "Claude Fable 5.2 升级并降价，Muse Ember 把日常 Agent 的竞争推向任务成本",
