@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-12",
+  "lang": "zh",
+  "title": "Anthropic (Claude) 把表格、白板与数据分析收进助手，The Rundown AI 报道 ChatGPT 将品牌主页",
+  "summary": "Anthropic (Claude) 把表格、白板与数据分析收进助手，The Rundown AI 报道 ChatGPT 将品牌主页、提及分析和购物 Agent 收进对话入口，a16z 则把这条变化概括为 B2A",
+  "url": "reports/2026-11-12-zh.html"
+ },
+ {
+  "date": "2026-11-12",
+  "lang": "en",
+  "title": "AI competition is moving from impressive answers toward complete work",
+  "summary": "AI competition is moving from impressive answers toward complete work: harder tasks, integrated interfaces, maintained memory, and operations people can inspect and stop",
+  "url": "reports/2026-11-12-en.html"
+ },
+ {
   "date": "2026-11-11",
   "lang": "zh",
   "title": "Claude 把白板、表格和数据搬进对话，ChatGPT 把商家搬进消费入口",
