@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 102 days archived.
+Published daily by mingming (https://x.com/linktoming). 103 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-11-13 — AI competition is moving beyond model capability toward dependable execution](https://radar.sharpener.ai/reports/2026-11-13-en.html): AI competition is moving beyond model capability toward dependable execution: recovery, permissions, memory, review and measurable business outcomes
 - [2026-11-12 — AI competition is moving from impressive answers toward complete work](https://radar.sharpener.ai/reports/2026-11-12-en.html): AI competition is moving from impressive answers toward complete work: harder tasks, integrated interfaces, maintained memory, and operations people can inspect and stop
 - [2026-11-11 — Claude is bringing documents, data and connected applications into a shared workspace](https://radar.sharpener.ai/reports/2026-11-11-en.html): Claude is bringing documents, data and connected applications into a shared workspace. ChatGPT is adding merchant-facing infrastructure
 - [2026-11-10 — AI competition is shifting from stronger models to cheaper useful outcomes](https://radar.sharpener.ai/reports/2026-11-10-en.html): AI competition is shifting from stronger models to cheaper useful outcomes. Meanwhile, persistent agents and finished creative work are making reliability
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-07 — AI competition is shifting from better answers to durable workflows](https://radar.sharpener.ai/reports/2026-10-07-en.html): AI competition is shifting from better answers to durable workflows: working inside existing documents, preserving permissions, producing editable assets, and completing tasks
 - [2026-10-05 — Always-on assistants are converging; differentiation still lies in completing a specific workflow](https://radar.sharpener.ai/reports/2026-10-05-en.html): Always-on assistants are converging; differentiation still lies in completing a specific workflow
 - [2026-10-04 — AI is increasingly framed around ongoing work rather than one-off answers](https://radar.sharpener.ai/reports/2026-10-04-en.html): AI is increasingly framed around ongoing work rather than one-off answers. For content businesses, the useful questions are who coordinates, who delivers, and how outputs are checked
-- [2026-10-01 — AI agents are moving from launch-stage spectacle into work systems](https://radar.sharpener.ai/reports/2026-10-01-en.html): AI agents are moving from launch-stage spectacle into work systems: small-business enablement, security workflows, coding environments, enterprise runtimes
 
 ## 中文版
 
+- [2026-11-13 — Gemini 4 Hydrogen 把快模型推入日常工作，Agent 的竞争进一步转向“把事情做完”](https://radar.sharpener.ai/reports/2026-11-13-zh.html): Gemini 4 Hydrogen 把快模型推入日常工作，Agent 的竞争进一步转向“把事情做完”
 - [2026-11-12 — Anthropic (Claude) 把表格、白板与数据分析收进助手，The Rundown AI 报道 ChatGPT 将品牌主页](https://radar.sharpener.ai/reports/2026-11-12-zh.html): Anthropic (Claude) 把表格、白板与数据分析收进助手，The Rundown AI 报道 ChatGPT 将品牌主页、提及分析和购物 Agent 收进对话入口，a16z 则把这条变化概括为 B2A
 - [2026-11-11 — Claude 把白板、表格和数据搬进对话，ChatGPT 把商家搬进消费入口](https://radar.sharpener.ai/reports/2026-11-11-zh.html): Claude 把白板、表格和数据搬进对话，ChatGPT 把商家搬进消费入口
 - [2026-11-10 — Claude Fable 5.2 升级并降价，Muse Ember 把日常 Agent 的竞争推向任务成本](https://radar.sharpener.ai/reports/2026-11-10-zh.html): Claude Fable 5.2 升级并降价，Muse Ember 把日常 Agent 的竞争推向任务成本
@@ -92,7 +93,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-07 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-07-zh.html): 🔭 主线
 - [2026-10-05 — 🔭 今日主线](https://radar.sharpener.ai/reports/2026-10-05-zh.html): 🔭 今日主线
 - [2026-10-04 — 常驻 Agent 正在成为新的工作入口，但你的机会不在再造一个聊天框，而在把任务拆清、把结果验明、把经验变成内容](https://radar.sharpener.ai/reports/2026-10-04-zh.html): 常驻 Agent 正在成为新的工作入口，但你的机会不在再造一个聊天框，而在把任务拆清、把结果验明、把经验变成内容
-- [2026-10-01 — OpenAI 把 DevDay 变成了「全天候 agent + 更便宜更快模型 + 工作流入口」的一次集中换挡](https://radar.sharpener.ai/reports/2026-10-01-zh.html): OpenAI 把 DevDay 变成了「全天候 agent + 更便宜更快模型 + 工作流入口」的一次集中换挡。今日扫描 1195 条原始内容，语义召回后进入 517 条候选
 
 ## Full index
 

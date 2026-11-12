@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-13",
+  "lang": "zh",
+  "title": "Gemini 4 Hydrogen 把快模型推入日常工作，Agent 的竞争进一步转向“把事情做完”",
+  "summary": "Gemini 4 Hydrogen 把快模型推入日常工作，Agent 的竞争进一步转向“把事情做完”",
+  "url": "reports/2026-11-13-zh.html"
+ },
+ {
+  "date": "2026-11-13",
+  "lang": "en",
+  "title": "AI competition is moving beyond model capability toward dependable execution",
+  "summary": "AI competition is moving beyond model capability toward dependable execution: recovery, permissions, memory, review and measurable business outcomes",
+  "url": "reports/2026-11-13-en.html"
+ },
+ {
   "date": "2026-11-12",
   "lang": "zh",
   "title": "Anthropic (Claude) 把表格、白板与数据分析收进助手，The Rundown AI 报道 ChatGPT 将品牌主页",
