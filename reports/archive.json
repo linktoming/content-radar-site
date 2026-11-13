@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-14",
+  "lang": "zh",
+  "title": "AI 内容的注意力正在分流到完整教程与可追更的故事",
+  "summary": "AI 内容的注意力正在分流到完整教程与可追更的故事",
+  "url": "reports/2026-11-14-zh.html"
+ },
+ {
+  "date": "2026-11-14",
+  "lang": "en",
+  "title": "AI is moving from answering questions to completing transactions and running workflows",
+  "summary": "AI is moving from answering questions to completing transactions and running workflows. The competitive question is increasingly practical",
+  "url": "reports/2026-11-14-en.html"
+ },
+ {
   "date": "2026-11-13",
   "lang": "zh",
   "title": "Gemini 4 Hydrogen 把快模型推入日常工作，Agent 的竞争进一步转向“把事情做完”",
