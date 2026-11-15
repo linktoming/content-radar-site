@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 105 days archived.
+Published daily by mingming (https://x.com/linktoming). 106 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-11-16 — AI assistants are moving from answering questions to completing transactions and ongoing work](https://radar.sharpener.ai/reports/2026-11-16-en.html): AI assistants are moving from answering questions to completing transactions and ongoing work. The enabling layer is not just better models
 - [2026-11-15 — AI competition is moving beyond model answers toward controlled action](https://radar.sharpener.ai/reports/2026-11-15-en.html): AI competition is moving beyond model answers toward controlled action, complete workflows and institutional accountability
 - [2026-11-14 — AI is moving from answering questions to completing transactions and running workflows](https://radar.sharpener.ai/reports/2026-11-14-en.html): AI is moving from answering questions to completing transactions and running workflows. The competitive question is increasingly practical
 - [2026-11-13 — AI competition is moving beyond model capability toward dependable execution](https://radar.sharpener.ai/reports/2026-11-13-en.html): AI competition is moving beyond model capability toward dependable execution: recovery, permissions, memory, review and measurable business outcomes
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-10 — AI products are moving from answers toward usable interfaces, repeatable workflows and finished outputs](https://radar.sharpener.ai/reports/2026-10-10-en.html): AI products are moving from answers toward usable interfaces, repeatable workflows and finished outputs
 - [2026-10-09 — From generated text to usable deliverables. Interactive answers](https://radar.sharpener.ai/reports/2026-10-09-en.html): From generated text to usable deliverables. Interactive answers, dashboards and animation are lowering production barriers
 - [2026-10-08 — AI competition is shifting toward cost per useful outcome, interactive experiences, and reliable execution](https://radar.sharpener.ai/reports/2026-10-08-en.html): AI competition is shifting toward cost per useful outcome, interactive experiences, and reliable execution
-- [2026-10-07 — AI competition is shifting from better answers to durable workflows](https://radar.sharpener.ai/reports/2026-10-07-en.html): AI competition is shifting from better answers to durable workflows: working inside existing documents, preserving permissions, producing editable assets, and completing tasks
 
 ## 中文版
 
+- [2026-11-16 — Agent 开始接管交易与交付，可靠性成为下一道产品门槛](https://radar.sharpener.ai/reports/2026-11-16-zh.html): Agent 开始接管交易与交付，可靠性成为下一道产品门槛
 - [2026-11-15 — 常驻 Agent 开始接管完整工作流，人的价值转向目标、反馈和交付判断](https://radar.sharpener.ai/reports/2026-11-15-zh.html): 常驻 Agent 开始接管完整工作流，人的价值转向目标、反馈和交付判断
 - [2026-11-14 — AI 内容的注意力正在分流到完整教程与可追更的故事](https://radar.sharpener.ai/reports/2026-11-14-zh.html): AI 内容的注意力正在分流到完整教程与可追更的故事
 - [2026-11-13 — Gemini 4 Hydrogen 把快模型推入日常工作，Agent 的竞争进一步转向“把事情做完”](https://radar.sharpener.ai/reports/2026-11-13-zh.html): Gemini 4 Hydrogen 把快模型推入日常工作，Agent 的竞争进一步转向“把事情做完”
@@ -92,7 +93,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-09 — 本期材料覆盖 56 个有内容进入候选的一手实体、17 条采集通道；共采集 1,284 条，合成候选 1,041 条](https://radar.sharpener.ai/reports/2026-10-09-zh.html): 本期材料覆盖 56 个有内容进入候选的一手实体、17 条采集通道；共采集 1,284 条，合成候选 1,041 条。
 - Anthropic（Claude）· 交互交付 · 内容的交付物正在从文字变成可操作的作品
 - [2026-10-08 — Haiku 5.5 降价、ChatGPT 交互界面上线，AI 产品开始同时争夺你的预算和工作入口](https://radar.sharpener.ai/reports/2026-10-08-zh.html): Haiku 5.5 降价、ChatGPT 交互界面上线，AI 产品开始同时争夺你的预算和工作入口
-- [2026-10-07 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-07-zh.html): 🔭 主线
 
 ## Full index
 
