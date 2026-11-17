@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 107 days archived.
+Published daily by mingming (https://x.com/linktoming). 108 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-11-18 — 🔭 Today's Throughline](https://radar.sharpener.ai/reports/2026-11-18-en.html): 🔭 Today's Throughline
 - [2026-11-17 — 🔭 Main Threads](https://radar.sharpener.ai/reports/2026-11-17-en.html): 🔭 Main Threads
 - [2026-11-16 — AI assistants are moving from answering questions to completing transactions and ongoing work](https://radar.sharpener.ai/reports/2026-11-16-en.html): AI assistants are moving from answering questions to completing transactions and ongoing work. The enabling layer is not just better models
 - [2026-11-15 — AI competition is moving beyond model answers toward controlled action](https://radar.sharpener.ai/reports/2026-11-15-en.html): AI competition is moving beyond model answers toward controlled action, complete workflows and institutional accountability
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-12 — AI value is shifting from feature lists to dependable delivery](https://radar.sharpener.ai/reports/2026-10-12-en.html): AI value is shifting from feature lists to dependable delivery. Cheaper generation makes verification, workflow design and ongoing operations more important—not less
 - [2026-10-11 — AI advantage is shifting from generating outputs to delivering usable, verifiable results](https://radar.sharpener.ai/reports/2026-10-11-en.html): AI advantage is shifting from generating outputs to delivering usable, verifiable results. For content businesses, the practical priorities are acceptance checks, reusable editorial assets
 - [2026-10-10 — AI products are moving from answers toward usable interfaces, repeatable workflows and finished outputs](https://radar.sharpener.ai/reports/2026-10-10-en.html): AI products are moving from answers toward usable interfaces, repeatable workflows and finished outputs
-- [2026-10-09 — From generated text to usable deliverables. Interactive answers](https://radar.sharpener.ai/reports/2026-10-09-en.html): From generated text to usable deliverables. Interactive answers, dashboards and animation are lowering production barriers
 
 ## 中文版
 
+- [2026-11-18 — GPT-6.2 把竞争推向单任务成本，Agent 产品把竞争推向持续交付](https://radar.sharpener.ai/reports/2026-11-18-zh.html): GPT-6.2 把竞争推向单任务成本，Agent 产品把竞争推向持续交付
 - [2026-11-17 — 🔭 主线](https://radar.sharpener.ai/reports/2026-11-17-zh.html): 🔭 主线
 - [2026-11-16 — Agent 开始接管交易与交付，可靠性成为下一道产品门槛](https://radar.sharpener.ai/reports/2026-11-16-zh.html): Agent 开始接管交易与交付，可靠性成为下一道产品门槛
 - [2026-11-15 — 常驻 Agent 开始接管完整工作流，人的价值转向目标、反馈和交付判断](https://radar.sharpener.ai/reports/2026-11-15-zh.html): 常驻 Agent 开始接管完整工作流，人的价值转向目标、反馈和交付判断
@@ -91,8 +92,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-12 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-12-zh.html): 🔭 主线
 - [2026-10-11 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-11-zh.html): 🔭 主线
 - [2026-10-10 — 低成本决策模型与可编辑创作工具，正在把 AI 从回答问题推进到持续交付](https://radar.sharpener.ai/reports/2026-10-10-zh.html): 低成本决策模型与可编辑创作工具，正在把 AI 从回答问题推进到持续交付
-- [2026-10-09 — 本期材料覆盖 56 个有内容进入候选的一手实体、17 条采集通道；共采集 1,284 条，合成候选 1,041 条](https://radar.sharpener.ai/reports/2026-10-09-zh.html): 本期材料覆盖 56 个有内容进入候选的一手实体、17 条采集通道；共采集 1,284 条，合成候选 1,041 条。
-- Anthropic（Claude）· 交互交付 · 内容的交付物正在从文字变成可操作的作品
 
 ## Full index
 
