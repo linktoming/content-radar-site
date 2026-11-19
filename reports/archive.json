@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-20",
+  "lang": "zh",
+  "title": "Anthropic 以每股 83 美元完成史上最大 IPO，同一个 24 小时里，Google 用 Gemini 4 Neon 拿走了模型口碑",
+  "summary": "Anthropic 以每股 83 美元完成史上最大 IPO，同一个 24 小时里，Google 用 Gemini 4 Neon 拿走了模型口碑",
+  "url": "reports/2026-11-20-zh.html"
+ },
+ {
+  "date": "2026-11-20",
+  "lang": "en",
+  "title": "🔭 Today's Throughline",
+  "summary": "🔭 Today's Throughline",
+  "url": "reports/2026-11-20-en.html"
+ },
+ {
   "date": "2026-11-19",
   "lang": "zh",
   "title": "GPT-6.2 的口碑分化，把 Agent 竞争拉回真实任务、运行成本与交付质量",
