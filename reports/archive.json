@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-22",
+  "lang": "zh",
+  "title": "Thinking Machines 以 Apache 2.0 开源 26B 的 Inkling 2 Mini，笔记本就能跑",
+  "summary": "Thinking Machines 以 Apache 2.0 开源 26B 的 Inkling 2 Mini，笔记本就能跑；同一天，Lean 社区为 Claude 辅助完成的黎曼猜想证明背书",
+  "url": "reports/2026-11-22-zh.html"
+ },
+ {
+  "date": "2026-11-22",
+  "lang": "en",
+  "title": "🔭 Today's Throughline",
+  "summary": "🔭 Today's Throughline",
+  "url": "reports/2026-11-22-en.html"
+ },
+ {
   "date": "2026-11-21",
   "lang": "zh",
   "title": "Anthropic 数学家宣称借 Claude 证明了广义黎曼猜想，同一天 ANT 盘前跌回发行价 5% 以内",
