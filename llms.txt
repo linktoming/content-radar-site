@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 112 days archived.
+Published daily by mingming (https://x.com/linktoming). 113 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-11-23 — 🔭 Main Thread](https://radar.sharpener.ai/reports/2026-11-23-en.html): 🔭 Main Thread
 - [2026-11-22 — 🔭 Today's Throughline](https://radar.sharpener.ai/reports/2026-11-22-en.html): 🔭 Today's Throughline
 - [2026-11-21 — 🔭 Today's Thread](https://radar.sharpener.ai/reports/2026-11-21-en.html): 🔭 Today's Thread
 - [2026-11-20 — 🔭 Today's Throughline](https://radar.sharpener.ai/reports/2026-11-20-en.html): 🔭 Today's Throughline
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-17 — Reliable delivery matters more than output volume. Agent infrastructure is emphasizing boundaries and recovery](https://radar.sharpener.ai/reports/2026-10-17-en.html): Reliable delivery matters more than output volume. Agent infrastructure is emphasizing boundaries and recovery, open models are competing through tooling
 - [2026-10-16 — The shift is from generating answers to finishing work](https://radar.sharpener.ai/reports/2026-10-16-en.html): The shift is from generating answers to finishing work. Open models are competing for long-running tasks, creative tools are targeting revisions
 - [2026-10-15 — Generation is getting cheaper; reliable handoffs are becoming more valuable](https://radar.sharpener.ai/reports/2026-10-15-en.html): Generation is getting cheaper; reliable handoffs are becoming more valuable. The practical advantage is a workflow whose outputs can be checked, resumed, edited and delivered
-- [2026-10-14 — Generation is getting faster; acceptance, coordination and recovery are becoming the constraints](https://radar.sharpener.ai/reports/2026-10-14-en.html): Generation is getting faster; acceptance, coordination and recovery are becoming the constraints. For content businesses, scale the ability to verify and deliver useful work—not just output volume
 
 ## 中文版
 
+- [2026-11-23 — OpenAI 首次公开预训练进度曲线，提议把 perplexity 作为全行业共同的安全红线](https://radar.sharpener.ai/reports/2026-11-23-zh.html): OpenAI 首次公开预训练进度曲线，提议把 perplexity 作为全行业共同的安全红线；同一周，Gemini 4 Neon 在 LiveBench 和象棋榜上同时登顶
 - [2026-11-22 — Thinking Machines 以 Apache 2.0 开源 26B 的 Inkling 2 Mini，笔记本就能跑](https://radar.sharpener.ai/reports/2026-11-22-zh.html): Thinking Machines 以 Apache 2.0 开源 26B 的 Inkling 2 Mini，笔记本就能跑；同一天，Lean 社区为 Claude 辅助完成的黎曼猜想证明背书
 - [2026-11-21 — Anthropic 数学家宣称借 Claude 证明了广义黎曼猜想，同一天 ANT 盘前跌回发行价 5% 以内](https://radar.sharpener.ai/reports/2026-11-21-zh.html): Anthropic 数学家宣称借 Claude 证明了广义黎曼猜想，同一天 ANT 盘前跌回发行价 5% 以内
 - [2026-11-20 — Anthropic 以每股 83 美元完成史上最大 IPO，同一个 24 小时里，Google 用 Gemini 4 Neon 拿走了模型口碑](https://radar.sharpener.ai/reports/2026-11-20-zh.html): Anthropic 以每股 83 美元完成史上最大 IPO，同一个 24 小时里，Google 用 Gemini 4 Neon 拿走了模型口碑
@@ -90,8 +91,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-17 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-17-zh.html): 🔭 主线
 - [2026-10-16 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-16-zh.html): 🔭 主线
 - [2026-10-15 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-15-zh.html): 🔭 主线
-- [2026-10-14 — 读者同时在问两件事：AI 能否替我稳定做成一件事，以及把工作交出去以后，什么还属于我](https://radar.sharpener.ai/reports/2026-10-14-zh.html): 读者同时在问两件事：AI 能否替我稳定做成一件事，以及把工作交出去以后，什么还属于我。
-- 最强大脑王心冉 · 职业价值〔小红书 · 66,700 赞 · 同平台 P100〕——职业替代问题拿到本批小红书最高百分位
 
 ## Full index
 
