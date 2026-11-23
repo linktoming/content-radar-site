@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-24",
+  "lang": "zh",
+  "title": "英伟达董事会在黄仁勋辞职 11 天后恢复他的总裁兼 CEO 职务，NVDA 盘前涨逾 28%",
+  "summary": "英伟达董事会在黄仁勋辞职 11 天后恢复他的总裁兼 CEO 职务，NVDA 盘前涨逾 28%；同一周，Inkling 2 Mini 和 GLM-5.4 先后用“循环层”把更深的推理塞进更小的模型",
+  "url": "reports/2026-11-24-zh.html"
+ },
+ {
+  "date": "2026-11-24",
+  "lang": "en",
+  "title": "🔭 Today's Thread",
+  "summary": "🔭 Today's Thread",
+  "url": "reports/2026-11-24-en.html"
+ },
+ {
   "date": "2026-11-23",
   "lang": "zh",
   "title": "OpenAI 首次公开预训练进度曲线，提议把 perplexity 作为全行业共同的安全红线",
