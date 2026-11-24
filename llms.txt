@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 114 days archived.
+Published daily by mingming (https://x.com/linktoming). 115 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-11-25 — 🔭 Main Threads](https://radar.sharpener.ai/reports/2026-11-25-en.html): 🔭 Main Threads
 - [2026-11-24 — 🔭 Today's Thread](https://radar.sharpener.ai/reports/2026-11-24-en.html): 🔭 Today's Thread
 - [2026-11-23 — 🔭 Main Thread](https://radar.sharpener.ai/reports/2026-11-23-en.html): 🔭 Main Thread
 - [2026-11-22 — 🔭 Today's Throughline](https://radar.sharpener.ai/reports/2026-11-22-en.html): 🔭 Today's Throughline
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-19 — 🎯 Primary](https://radar.sharpener.ai/reports/2026-10-19-en.html): 🎯 Primary
 - [2026-10-18 — 🎯 Primary](https://radar.sharpener.ai/reports/2026-10-18-en.html): 🎯 Primary
 - [2026-10-17 — Reliable delivery matters more than output volume. Agent infrastructure is emphasizing boundaries and recovery](https://radar.sharpener.ai/reports/2026-10-17-en.html): Reliable delivery matters more than output volume. Agent infrastructure is emphasizing boundaries and recovery, open models are competing through tooling
-- [2026-10-16 — The shift is from generating answers to finishing work](https://radar.sharpener.ai/reports/2026-10-16-en.html): The shift is from generating answers to finishing work. Open models are competing for long-running tasks, creative tools are targeting revisions
 
 ## 中文版
 
+- [2026-11-25 — Anthropic 股价跌破 83 美元发行价的同一天，两位业余天文爱好者用 Codex 和 Astra 在 NASA 公开数据里筛出了候选系外行星](https://radar.sharpener.ai/reports/2026-11-25-zh.html): Anthropic 股价跌破 83 美元发行价的同一天，两位业余天文爱好者用 Codex 和 Astra 在 NASA 公开数据里筛出了候选系外行星
 - [2026-11-24 — 英伟达董事会在黄仁勋辞职 11 天后恢复他的总裁兼 CEO 职务，NVDA 盘前涨逾 28%](https://radar.sharpener.ai/reports/2026-11-24-zh.html): 英伟达董事会在黄仁勋辞职 11 天后恢复他的总裁兼 CEO 职务，NVDA 盘前涨逾 28%；同一周，Inkling 2 Mini 和 GLM-5.4 先后用“循环层”把更深的推理塞进更小的模型
 - [2026-11-23 — OpenAI 首次公开预训练进度曲线，提议把 perplexity 作为全行业共同的安全红线](https://radar.sharpener.ai/reports/2026-11-23-zh.html): OpenAI 首次公开预训练进度曲线，提议把 perplexity 作为全行业共同的安全红线；同一周，Gemini 4 Neon 在 LiveBench 和象棋榜上同时登顶
 - [2026-11-22 — Thinking Machines 以 Apache 2.0 开源 26B 的 Inkling 2 Mini，笔记本就能跑](https://radar.sharpener.ai/reports/2026-11-22-zh.html): Thinking Machines 以 Apache 2.0 开源 26B 的 Inkling 2 Mini，笔记本就能跑；同一天，Lean 社区为 Claude 辅助完成的黎曼猜想证明背书
@@ -90,7 +91,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-19 — DeepSeek 降低任务成本，OpenClaw 走进新电脑，内容团队开始把编辑经验做成共享技能](https://radar.sharpener.ai/reports/2026-10-19-zh.html): DeepSeek 降低任务成本，OpenClaw 走进新电脑，内容团队开始把编辑经验做成共享技能
 - [2026-10-18 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-18-zh.html): 🔭 主线
 - [2026-10-17 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-17-zh.html): 🔭 主线
-- [2026-10-16 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-16-zh.html): 🔭 主线
 
 ## Full index
 
