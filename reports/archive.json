@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-26",
+  "lang": "zh",
+  "title": "OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%",
+  "summary": "OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%",
+  "url": "reports/2026-11-26-zh.html"
+ },
+ {
+  "date": "2026-11-26",
+  "lang": "en",
+  "title": "🔭 Throughline",
+  "summary": "🔭 Throughline",
+  "url": "reports/2026-11-26-en.html"
+ },
+ {
   "date": "2026-11-25",
   "lang": "zh",
   "title": "Anthropic 股价跌破 83 美元发行价的同一天，两位业余天文爱好者用 Codex 和 Astra 在 NASA 公开数据里筛出了候选系外行星",

@@ -1,0 +1,428 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8% · AI情报</title>
+<meta name="description" content="OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%">
+<link rel="canonical" href="https://radar.sharpener.ai/reports/2026-11-26-zh.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI情报" href="/feed-zh.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI情报">
+<meta property="og:title" content="OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%">
+<meta property="og:description" content="OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%">
+<meta property="og:url" content="https://radar.sharpener.ai/reports/2026-11-26-zh.html">
+<meta property="og:image" content="https://radar.sharpener.ai/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-26">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%">
+<meta name="twitter:description" content="OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%">
+<meta name="twitter:image" content="https://radar.sharpener.ai/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%","description":"OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%","datePublished":"2026-11-26","dateModified":"2026-11-26","inLanguage":"zh-CN","url":"https://radar.sharpener.ai/reports/2026-11-26-zh.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://radar.sharpener.ai/reports/2026-11-26-zh.html"},"image":"https://radar.sharpener.ai/assets/og.png","author":{"@type":"Person","name":"mingming","url":"https://radar.sharpener.ai","sameAs":["https://x.com/linktoming","https://www.linkedin.com/in/mingmingwang001"]},"publisher":{"@type":"Organization","name":"AI情报","url":"https://radar.sharpener.ai","logo":{"@type":"ImageObject","url":"https://radar.sharpener.ai/apple-touch-icon.png"}},"isAccessibleForFree":true,"about":[{"@type":"Thing","name":"Artificial intelligence"},{"@type":"Thing","name":"AI agents"},{"@type":"Thing","name":"Large language models"},{"@type":"Thing","name":"AI industry news"}]}</script>
+<style>
+:root{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti SC","Noto Serif CJK SC",Georgia,serif;--mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace}
+@media(prefers-color-scheme:dark){:root{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}}
+:root[data-theme=light]{--ground:#ECEDEF;--surface:#F6F7F8;--raised:#FFF;--ink:#141821;--muted:#5C6470;--faint:#8A909A;--line:#D7DADF;--line-soft:#E4E6EA;--east:#C67A16;--west:#3E718F}
+:root[data-theme=dark]{--ground:#0B0E13;--surface:#111620;--raised:#151B26;--ink:#DCE3EC;--muted:#8A94A2;--faint:#5E6875;--line:#252F3C;--line-soft:#1B222D;--east:#E0912E;--west:#5C93B0}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.meridian{position:fixed;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--east) 12%,var(--line) 50%,var(--west) 88%,transparent);opacity:.28;z-index:0}
+@media(max-width:900px){.meridian{display:none}}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--east);box-shadow:0 0 0 3px color-mix(in srgb,var(--east) 22%,transparent)}
+.controls{display:flex;align-items:center;gap:10px}
+.edtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.iconbtn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:3px;padding:6px 8px;cursor:pointer}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.report-page{position:relative;z-index:1;padding:40px 0 20px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--west)}
+.rp-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,4.2vw,36px);line-height:1.2;letter-spacing:-.012em;margin:18px 0 26px;text-wrap:balance}
+.rp-body{font-size:16.5px}
+.rp-body h2{font-family:var(--serif);font-size:26px;letter-spacing:-.01em;margin:40px 0 4px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.rp-body h2:first-child{border-top:0;padding-top:0;margin-top:8px}
+.rp-body h3{font-family:var(--serif);font-size:19px;margin:26px 0 6px}
+.rp-body p{margin:12px 0}
+.rp-body strong{color:var(--ink)}
+.rp-body a{color:var(--east);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--east) 30%,transparent)}
+.rp-body a:hover{border-bottom-color:var(--east)}
+.rp-body ul{padding-left:0;list-style:none}
+.rp-body li{padding:5px 0 5px 20px;position:relative}
+.rp-body li::before{content:"·";position:absolute;left:4px;color:var(--east);font-weight:700}
+.rp-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+.rp-body th,.rp-body td{border:1px solid var(--line-soft);padding:8px 10px;text-align:left}
+.rp-body blockquote{margin:16px 0;padding:2px 18px;border-left:2px solid var(--east);color:var(--muted)}
+.rp-nav{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--line-soft);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-nav a{display:flex;flex-direction:column;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:5px;transition:border-color .2s,transform .18s}
+.rp-nav a:hover{border-color:var(--east);transform:translateY(-2px)}
+.rp-nav .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--east)}
+.rp-nav .t{font-size:14px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rp-nav-next{text-align:right;align-items:flex-end}
+.rp-nav-all{grid-column:1/-1;flex-direction:row!important;justify-content:center;border-style:dashed!important;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+@media(max-width:560px){.rp-nav{grid-template-columns:1fr}.rp-nav-next{text-align:left;align-items:flex-start}}
+.rp-cta{margin:44px 0 10px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:5px;text-align:center}
+.rp-cta p{margin:0 0 16px;color:var(--muted)}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--ink);display:inline-block}
+.btn.primary{background:var(--ink);color:var(--ground)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:34px 0 50px;margin-top:20px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline}
+/* the report wrap is only 760px: let the tagline wrap internally so the byline
+   still holds the right edge instead of dropping to its own line */
+.foot .sig{flex:1 1 300px;min-width:0;font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink)}
+.foot .meta{flex:0 0 auto;white-space:nowrap;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+.foot .dom{color:var(--east)}
+::selection{background:color-mix(in srgb,var(--east) 30%,transparent)}
+</style><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5c11ed430a7843f2abf57ca8d4bcae46"}'></script><!-- End Cloudflare Web Analytics --></head><body>
+<div class="meridian" aria-hidden="true"></div>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><span class="dot"></span><span>AI情报</span></a>
+  <div class="controls">
+    <span class="edtag">中文版</span>
+    <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+  </div>
+</div></header>
+<main class="wrap report-page">
+  <article>
+    <div class="rp-head">
+      <div class="eyebrow"><time datetime="2026-11-26">2026 · 11 · 26 · 每日 AI 情报</time></div>
+      <span class="pill free">公开免费版</span>
+    </div>
+    <h1 class="rp-title">OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%</h1>
+    <div class="rp-body"><h2>🔭 今日主线</h2>
+<p><strong>OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%。</strong></p>
+<p>今日扫描 16 条采集通道 · 1,226 条原始内容 · 983 条候选。</p>
+<p>同一周，前沿模型在数学和科学上接连交卷：<a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf">OpenAI</a> 放出 111 页预印本，称矩阵乘法指数恰为 9/4；Google 的 <a href="https://github.com/google-research/google-research/tree/master/cogentic_research_papers">Cogentic</a> 一次放出六篇无人参与的数学论文；Lean 版黎曼猜想落地三天后，<a href="https://x.com/ladyxtel/status/2125587817082601587">agent 用它证出 17 个结果</a>。能解千禧年难题、却在订机票改日程这类小事上四成失败——<a href="https://x.com/lateinteraction/status/2123827471325765706">Omar Khattab</a> 转引的那句话说得准：这改变的是我们对"地形"的理解，而不是对"车"的评价。</p>
+<p>可靠性因此成了这周真正的主题，而且三层同时在讲。源头侧，<a href="https://x.com/AnthropicAI/status/2125627317263466739">Anthropic</a> 把 Messages API 从 Python 迁到 Rust，用旧服务当验收标准，让一队 Claude agent 修差异；它的 <a href="https://x.com/AnthropicAI/status/2125341904644763678">Siren 评测</a>发现 Claude 在弱化沙箱里 21–32% 的时候会往外看，把规则写进 system prompt 后降到约 2%。解读侧，<a href="https://x.com/swyx/status/2125627281230205435">swyx</a> 提醒"单任务成本"会掩盖真正稀缺的人类注意力；<a href="https://x.com/eugeneyan/status/2125418696248095188">Eugene Yan</a> 拆了 12 个公开评测，发现评分器本身有 bug；<a href="https://x.com/rohanpaul_ai/status/2125338017762267608">Rohan Paul</a> 转述北大与微软的论文：37% 的 coding agent 工作报告含虚报或无依据的结论。实践侧，<a href="https://x.com/HamelHusain/status/2125287011770925320">Hamel Husain</a> 说他不关心你用 AI 合了多少 PR，只关心多赚了多少钱。</p>
+<p>内容创业这条线上，生产端在合并、变便宜，判断和关系在变贵。<a href="https://x.com/claudeai/status/2124970294523945328">Claude</a> 把 connectors 与 skills 合成插件，<a href="https://x.com/bcherny/status/2125292098165612585">MCP 也能自带 Skill 发布</a>；<a href="https://x.com/runwayml/status/2125246332642427088">Runway</a> 让日常 agent 直接出广告成片。另一边，<a href="https://x.com/kevin2kelly/status/2125673169487114433">Kevin Kelly</a> 预言 slop 会变成一种像动漫那样的风格，<a href="https://x.com/RickRubin/status/2125663412944597116">Rick Rubin</a> 说"什么都能做"的结果是所有人的平均值，也就是平庸；<a href="https://x.com/every/status/2125616924574753029">every</a> 以 1.1 亿美元估值融到 A 轮，同时引《大西洋月刊》不许作者用 AI 写作的做法；<a href="https://x.com/gregisenberg/status/2125589710860882313">Greg Isenberg</a> 的判断是，现在最难被 AI 替代的资产是受众。</p>
+<ul>
+<li><strong>源头 × 解读 × 实践</strong>：<a href="https://x.com/openclaw/status/2125326970976366734">ShellBench</a> × <a href="https://x.com/swyx/status/2125627281230205435">swyx</a> × <a href="https://x.com/HamelHusain/status/2125287011770925320">Hamel</a>：衡量 agent 的单位，从 token 价格转向"做完的事 + 人要花的复核时间 + 赚到的钱"。</li>
+<li><strong>源头 × 解读 × 投资</strong>：<a href="https://x.com/deedydas/status/2125445769629204816">OpenAI 矩阵指数</a> × <a href="https://therundownai.beehiiv.com/p/three-xai-founders-want-ai-to-predict-the-future">The Rundown 转述 Axios</a> × <a href="https://x.com/emollick/status/2125620479461573034">Ethan Mollick</a>：内部模型强到员工担心无法安全发布，前沿实验室可能变成不对外发布模型、自己下场做金融和生物的"智能垄断者"。</li>
+<li><strong>源头 × 投资 × 实践</strong>：<a href="https://x.com/sundarpichai/status/2125311868168515603">Gemini 4 Neon</a> × <a href="https://x.com/garrytan/status/2125592500215947545">Garry Tan 转发的 Antigravity 致谢</a> × <a href="https://www.lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude">Lenny 的 25 项实测</a>：Google 这一周从"追赶者"变成多位 builder 的默认首选。</li>
+</ul>
+<p>答案卷：<a href="https://tldr.tech/ai/2026-11-25">TLDR AI 11-25</a> 头条是 OpenAI 矩阵数学、SWE-2.1、swarm 的局限，与本期主线吻合；AINews 今天不在池中。</p>
+<h2>🎯 源头 · Primary</h2>
+<h3>📦 本日发布</h3>
+<ul>
+<li>📌 <strong>稳定版 <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.11.10">OpenClaw v2026.11.10</a></strong>（11-25）：8,309 个 commit、349 位贡献者；<a href="https://x.com/openclaw/status/2125591827600531554">官方帖</a>列出的新东西是聊天内 Deep Research、新记忆系统 Knowledge 和浏览器接管。</li>
+<li><strong>OpenClaw <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.11.9">v2026.11.9</a> / <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.11.8">v2026.11.8</a> / <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.11.10-beta.3">v2026.11.10-beta.3</a></strong>：beta.3 让跨 schema 变更或重启的更新也能续上，前两版是小修。</li>
+<li><strong>Zed <a href="https://github.com/zed-industries/zed/releases/tag/v1.31.0-pre">v1.31.0-pre</a> / <a href="https://github.com/zed-industries/zed/releases/tag/v1.30.2">v1.30.2</a></strong>：agent 的模型、档案、思考强度可按线程单独选，远程项目支持全局 agent skills，GPU 占用下降。</li>
+<li><strong><a href="https://github.com/ollama/ollama/releases/tag/v0.40.18">Ollama v0.40.18</a></strong>：在 Metal 上融合 Inkling 的残差计算，本地跑 Inkling 2 更快。</li>
+<li><strong><a href="https://x.com/Zai_org/status/2124811995912286352">GLM-5.4</a></strong>：智谱首个 loop transformer，复用 GLM-5 的层做更深推理，编码范围扩到视频、游戏、着色器和 CAD。</li>
+<li><strong><a href="https://x.com/vllm_project/status/2125086905989730518">ERNIE 5.5 Flash Preview</a> · <a href="https://x.com/vllm_project/status/2125026564131930475">Ling-3.2-air</a></strong>：两个国产 MoE 开放权重，vLLM 首日支持，分别是 280B/14B 激活和 124B/5.5B 激活。</li>
+<li><strong><a href="https://x.com/MiniMax_AI/status/2125272195119083827">MiniMax H3 家族</a> · <a href="https://x.com/ideogram_ai/status/2123461101224624402">Ideogram 4.6</a></strong>：H3 三个月 1.8 亿下载、1,600 个衍生模型；Ideogram 4.6 主打原生 4K 精确局部编辑。</li>
+</ul>
+<h3>Anthropic · Claude</h3>
+<ul>
+<li><strong>Anthropic</strong> — <a href="https://x.com/AnthropicAI/status/2125341904644763678">Siren 评测</a>表明沙箱规则写清楚就能把越界率从三成压到 2%，Claude Code 的 auto mode 就是用它校准的。</li>
+<li><strong>Anthropic</strong> — <a href="https://x.com/AnthropicAI/status/2125627317263466739">用旧服务验证新服务</a>，agent 团队修差异直到 Rust 版本与生产一致，"旧系统即测试"是一种可迁移的迁移方法（<a href="https://x.com/RLanceMartin/status/2125627070084796562">Lance Martin 补充</a>）。</li>
+<li><strong>Anthropic</strong> — <a href="https://x.com/AnthropicAI/status/2125365268381929637">Fellows 研究重回神经元基</a>做可解释性，说明"直接看神经元"这条老路还没走完。</li>
+<li><strong>Anthropic</strong> — <a href="https://x.com/AnthropicAI/status/2123822989154369958">联合创始人讲述公司至今的故事</a>，七位创始人出镜，是上市前后的品牌叙事。</li>
+<li><strong>Anthropic</strong> — <a href="https://www.anthropic.com/news/ipo-close">IPO 完成交割</a>，11.27 亿股、每股 83 美元，绿鞋全额行使；这正是此后跌破发行价的基准线。</li>
+<li><strong>Anthropic</strong> — <a href="https://www.youtube.com/watch?v=mNIYbP3LRpM">Dario 与 Jamie Dimon 的路演对谈</a>（10baggers 频道转载），是理解它如何向华尔街讲故事的一手材料。</li>
+<li><strong>Dario Amodei</strong> — <a href="https://x.com/DarioAmodei/status/2125656399392690605">否认"让人类交出自由意志"</a>，强调 AI 应由民主程序治理；<a href="https://x.com/axios/status/2125532966340239395">Axios</a> 报道其他 AI 领袖也在反驳这种说法。</li>
+<li><strong>Claude</strong> — <a href="https://x.com/claudeai/status/2124970294523945328">connectors 与 skills 合成插件</a>，已有一万多个，扩展 Claude 的方式从此只剩一种。</li>
+<li><strong>Claude</strong> — <a href="https://x.com/claudeai/status/2125616057788637364">Fable 5.2 发布两周的作品集</a>，开篇讲字母 A 的演变，官方在用案例定义"这个模型拿来干什么"。</li>
+<li><strong>Claude</strong> — <a href="https://x.com/claudeai/status/2125616072543944854">机械臂下 62 步跳棋并自行校正 7mm 下垂</a>，展示的是物理世界里的闭环纠错。</li>
+<li><strong>Claude</strong> — <a href="https://x.com/claudeai/status/2125616074242552180">征集"你在用 Fable 5.2 探索什么"</a>，是在向用户收集用例。</li>
+<li><strong>Boris Cherny</strong> — <a href="https://x.com/bcherny/status/2125292098165612585">MCP server 可自带 skills</a>，Claude Code 装上即会用；<a href="https://x.com/dotey/status/2125421676582043960">宝玉</a>解释了配套的 Tasks 与 Elicitation。</li>
+<li><strong>ClaudeDevs</strong> — <a href="https://x.com/ClaudeDevs/status/2125315491522650299">Artifact 可安装为桌面应用</a>，能用 connectors、发通知，曝光 880 万，"对话里做的小工具"有了常驻形态。</li>
+</ul>
+<h3>OpenAI</h3>
+<ul>
+<li><strong>OpenAI</strong> — <a href="https://x.com/OpenAI/status/2125334383490105601">GPT-6 系列的蛋白设计通过湿实验验证</a>，不调用专用生物模型、只靠推理和代码，五个靶点见结合（<a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">官方博客</a>）。</li>
+<li><strong>OpenAI</strong> — <a href="https://openai.com/index/searching-for-distant-planets-with-astra">两位业余天文爱好者用 Codex 和 Astra 找候选系外行星</a>，"科学发现"的门槛正在降到个人。</li>
+<li><strong>OpenAI</strong> — <a href="https://x.com/OpenAI/status/2124980590717911527">与 Cisco 开源 Shirudo</a>，让 agent 写 eBPF 规则先挡漏洞再打补丁；<a href="https://x.com/Cyburgerim/status/2125346188694376709">Cyburger</a> 记录了 CVE 公布 12 小时内出盾的实例。</li>
+<li><strong>OpenAI</strong> — <a href="https://x.com/OpenAI/status/2125007927098699827">GPT-6 Cyber 一轮验证 948 个 Linux 内核提权漏洞</a>并推补丁上游，安全是今天最确定的 agent 落地场景之一。</li>
+<li><strong>OpenAI</strong> — <a href="https://x.com/OpenAI/status/2124922133545714160">OpenWorks 出钱请本地 AI 专家免费教小企业</a>，等于官方承认"会用"才是采用瓶颈。</li>
+<li><strong>OpenAI</strong> — <a href="https://www.youtube.com/watch?v=A4UNP-axGHU">dot 的假期工作流</a>：盯 Slack 频道、归并工单、只在故障时叫人，附现成提示词。</li>
+<li><strong>OpenAI</strong> — <a href="https://openai.com/business/customer-stories/intentful-dots">Intentful 用 dot 做研究和提案</a>，小团队把"主动提醒"交给 agent 的客户案例。</li>
+<li><strong>OpenAI</strong> — <a href="https://x.com/OpenAI/status/2125635627341561995">"Make a Day Do Anything" 广告</a>与<a href="https://www.youtube.com/watch?v=kfGYU_-SuaE">《School Day》短片</a>，ChatGPT 的大众叙事转向"帮你把一天过好"。</li>
+<li><strong>Sam Altman</strong> — <a href="https://x.com/sama/status/2125638790593274259">Private Inference 进入小范围测试</a>，企业隐私被当作前沿模型扩大使用面的前提；另有一条只是夸 <a href="https://x.com/sama/status/2125639418849714280">"hyperstitioning" 这个词</a>。</li>
+<li><strong>Greg Brockman</strong> — <a href="https://x.com/gdb/status/2125525157464973661">写 Shirudo Shields 防新 CVE</a>、<a href="https://x.com/gdb/status/2125488568101736872">与 Fujitsu 合作网络防御</a>，安全线的高管背书。</li>
+<li><strong>METR</strong> — <a href="https://x.com/METR_Evals/status/2125372372039741753">OpenAI 公开历代预训练 loss</a>，2026 年以来下降速度约为此前的 7 倍。</li>
+</ul>
+<h3>Google · Gemini 4 Neon</h3>
+<ul>
+<li><strong>Sundar Pichai</strong> — <a href="https://x.com/sundarpichai/status/2125311868168515603">Neon 刷新付费 API 首日用量纪录</a>，Antigravity 每日 token 六周涨 82%；<a href="https://x.com/OfficialLoganK/status/2125640447305420950">Logan Kilpatrick</a> 也在晒增长。</li>
+<li><strong>Demis Hassabis</strong> — <a href="https://x.com/demishassabis/status/2125663033993437651">推荐 Neon</a>、<a href="https://x.com/demishassabis/status/2125662174257500458">转发 DHH 夸 Neon 的帖</a>，以及 <a href="https://x.com/demishassabis/status/2123871861843075099">Iso 与默沙东合作设计抗癌药</a>。</li>
+<li><strong>Google DeepMind</strong> — Neon 在 Antigravity 里<a href="https://x.com/GoogleDeepMind/status/2124959312606818597">复原图灵 1936 年的房间</a>、<a href="https://x.com/GoogleDeepMind/status/2123826572385833119">按勃朗峰真实地形写滑雪模拟</a>，Hydrogen 做了<a href="https://x.com/GoogleDeepMind/status/2125371062880022536">闪电转音乐的 3D 地球</a>，官方展示偏"一句话出完整作品"。</li>
+<li><strong>Google DeepMind</strong> — <a href="https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/">质谱 Skills</a> 与 <a href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/">agent 团队加形式化验证改进量子算法</a>，Skill 形态开始进入专业科研。</li>
+</ul>
+<h3>Agent 平台与 harness</h3>
+<ul>
+<li><strong>OpenClaw</strong> — <a href="https://x.com/openclaw/status/2125326970976366734">ShellBench</a>：12 个模型 × 5 个 harness、53,100 次评分运行，开源 harness 不落下风；<a href="https://x.com/kaggle/status/2125355064982462838">Kaggle 已复现</a>，<a href="https://x.com/rohanpaul_ai/status/2125464526149890399">Rohan Paul 补充</a>失败的 51% 是漏信息。</li>
+<li><strong>OpenClaw</strong> — <a href="https://x.com/openclaw/status/2125273417561850199">一周年</a>，12 月 6 日<a href="https://x.com/openclaw/status/2125643179726709148">在深圳办 ClawCon</a>，还有一期讲求职和语音的 <a href="https://x.com/openclaw/status/2125673262801699015">ClawCast #18</a>。</li>
+<li><strong>OmniAgent</strong> — <a href="https://x.com/omnigent_ai/status/2123545035761176763">0.23 版</a>默认四宫格会话并加了 /rewind；<a href="https://x.com/omnigent_ai/status/2125623797936198020">DBX 两周自动化账本</a>里最值钱的是拦下 33 个冒名申请。</li>
+<li><strong>Hermes</strong> — <a href="https://x.com/NousResearch/status/2123535954946257096">进入 Microsoft Teams 与 Azure</a>，并拿到 <a href="https://x.com/NousResearch/status/2125321517064171629">NVIDIA Vera CPU 开发套件</a>测试大规模 agent 并发。</li>
+<li><strong>LangChain</strong> — <a href="https://x.com/LangChain/status/2125638081651053034">agent lake</a>：把 trace 存储和分析合成一个平台，持续改进 agent；配套开源了 <a href="https://x.com/LangChain/status/2125663426865508717">Slack 常驻的 Persistent Agent</a>。</li>
+<li><strong>Hugging Face</strong> — <a href="https://x.com/huggingface/status/2125533493837038060">Nightwatch 安全 agent</a>（Hub 七月遭 agent 群攻后自建）与 <a href="https://x.com/huggingface/status/2125673906384322972">千 agent swarm 实战报告</a>。</li>
+<li><strong>Vercel</strong> — <a href="https://x.com/vercel/status/2123376276845269201">AI Gateway 数据</a>：Anthropic 在闭源模型花费中的份额从 52% 升到 65%，开放权重全年从 2% 涨到 29%；另推出<a href="https://x.com/vercel/status/2124859223783727106">第三方审计的 ZDR</a>。</li>
+<li><strong>Replit</strong> — <a href="https://x.com/Replit/status/2125347410587390388">Missions：给目标而不是提示词</a>，并<a href="https://x.com/Replit/status/2125309882794696849">接入 M365 Copilot</a>。</li>
+<li><strong>Warp</strong> — <a href="https://x.com/warpdotdev/status/2125345628272439349">Warp Learn 免费课</a>，从 backlog agent 一路搭到带规格、验证、风险评估的软件工厂。</li>
+</ul>
+<h3>垂直应用与创作工具</h3>
+<ul>
+<li><strong>Harvey</strong> — <a href="https://x.com/harvey/status/2125259420259250209">用同一套配方后训练四个美国开放权重模型</a>，追平非美模型；<a href="https://x.com/harvey/status/2124895753294221565">Harvey Graph</a> 让 agent 不再每个案子从零开始。</li>
+<li><strong>Runway</strong> — <a href="https://x.com/runwayml/status/2125246332642427088">给 agent 一个广告工作室</a>，一个 brief 出 UGC、动效、静图多版本；其 App Studio <a href="https://x.com/runwayml/status/2123875791566168423">十月起几乎所有 PR 由 agent 写</a>。</li>
+<li><strong>HeyGen</strong> — <a href="https://x.com/HeyGen/status/2125276863077695574">Gary Vee 的数字分身每天回答一个粉丝问题，持续 365 天</a>，IP 用分身扩大回应能力的样板。</li>
+<li><strong>ElevenLabs</strong> — <a href="https://x.com/ElevenLabs/status/2125277577116102987">Yahoo Scout 语音搜索</a>：用户一开口就不再打关键词、而是问完整问题；另一篇讲<a href="https://x.com/ElevenLabs/status/2125661445287510503">政府热线如何应对 agent 来电</a>。</li>
+<li><strong>Glean</strong> — <a href="https://x.com/glean/status/2125002869430513883">DocuSign 员工自建的绩效评估 agent 成了全公司最常用之一</a>，自下而上的采用比统一部署更有效。</li>
+<li><strong>Epochal</strong> — <a href="https://x.com/epochal/status/2125270859715875210">三位 xAI 创始成员的新公司</a>，把"预测未来"当作智能的度量，首个产品 Time Portal 让 agent 回到任意日期的互联网。</li>
+<li><strong>算力层</strong> — <a href="https://x.com/SemiAnalysis_/status/2125658708357128703">SemiAnalysis 基准里 Trainium3 性价比领先</a>（见解读），<a href="https://wf.coreweave.com/blog/nvidia-vera-rubin-nvl72-on-coreweave-10x-more-tokens-per-megawatt-than-blackwell">CoreWeave 实测 Vera Rubin 每兆瓦 token 是 Blackwell 的 10 倍</a>，<a href="https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director">NVIDIA 董事会恢复黄仁勋 CEO 职务</a>。</li>
+</ul>
+<h2>💰 投资 · Investor</h2>
+<h3>a16z · Sequoia</h3>
+<ul>
+<li><strong>a16z</strong> — <a href="https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents">B2A 经济：产品怎样被 agent 发现、选中、调用</a>，"给 agent 做 SEO"成了投资人的显性议题。</li>
+<li><strong>a16z</strong> — <a href="https://x.com/a16z/status/2125650357498110183">Ben Horowitz 解释为何合伙人见创始人迟到每分钟罚 10 美元</a>：文化是行动，不是信念。</li>
+<li><strong>a16z</strong> — <a href="https://x.com/a16z/status/2125604503378624561">Katherine Boyle 认为 SpaceX 的遗产是"马斯克学校"毕业生开的上千家公司</a>，押注的是硬科技人才外溢。</li>
+<li><strong>a16z</strong> — <a href="https://x.com/a16z/status/2125379237104533523">John Collison 讲 Stripe 宁可岗位空一年也不将就</a>，招聘被当作长树而不是填坑。</li>
+<li><strong>a16z</strong> — <a href="https://www.a16z.news/p/charts-of-the-week-there-is-no-gen">本周图表：There is No Gen Z</a> 一期以宏观和旅行杂项为主，与 AI 关联弱。</li>
+<li><strong>Justine Moore</strong> — <a href="https://www.a16z.news/p/investing-in-embo">a16z 领投 Embo</a>，<a href="https://x.com/venturetwins/status/2124931576912122000">她本人解释</a>押的是能在真实复杂环境里不出错的机器人。</li>
+<li><strong>Sequoia</strong> — <a href="https://www.youtube.com/watch?v=tRaFbDFBl_A">Noam Brown 讲博弈论为何没通向通用智能</a>：赢的是用人类数据去建模真实行为的系统，这条路后来通向 o1。</li>
+<li><strong>Sequoia</strong> — <a href="https://www.youtube.com/watch?v=uMO3zS5FLoc">MongoDB 回归 CEO Dev Ittycheria 的三件事框架</a>：定战略、上对的人、造让他们发挥的环境。</li>
+</ul>
+<h3>Garry Tan · YC</h3>
+<ul>
+<li><strong>Garry Tan</strong> — <a href="https://x.com/garrytan/status/2125592156027101584">AI 时代初创公司增长中位数达 10 倍</a>；<a href="https://x.com/jasonlk/status/2125415809396707514">Jason Lemkin 的数据</a>从另一面印证：千万美元以下公司的融资门槛已是 900% 增长。</li>
+<li><strong>Garry Tan</strong> — <a href="https://x.com/garrytan/status/2125580632814412155">推荐 Bostrom 的反转论点</a>："如果没人造出来，所有人都会死"，把超级智能当延寿工具。</li>
+<li><strong>Garry Tan</strong> — <a href="https://x.com/garrytan/status/2125588827045843277">转发 Nate Berkopec</a>：订阅制让每个开发者都能用到每月数千美元的前沿 token，产品必须跑赢这个隐形基准。</li>
+<li><strong>Garry Tan</strong> — <a href="https://x.com/garrytan/status/2125593484052578737">转发 Chris Pisarski 的 1,400 万美元 ARR</a>，增长来自已有 API/MCP 客户扩用。</li>
+<li><strong>Garry Tan</strong> — <a href="https://x.com/garrytan/status/2125587008722718831">转发 Google Cogentic 六篇数学论文</a>与 <a href="https://x.com/garrytan/status/2125592500215947545">Antigravity 团队对 Neon 的贡献</a>。</li>
+<li><strong>Garry Tan</strong> — <a href="https://x.com/garrytan/status/2125608491091923324">转发 Nothing 的 Ear (note)</a>（12 月 8 日发售，按键录音、agent 接手）与 <a href="https://x.com/garrytan/status/2125579749342757266">Diana Hu 夸 Epochal 把时间当一等变量</a>。</li>
+<li><strong>Garry Tan</strong> — <a href="https://x.com/garrytan/status/2125258221946630432">"YC 就是硬科技的 YC"</a>，YC 在重新给自己定位。</li>
+<li><strong>Garry Tan</strong> — 两条职业话题短视频（<a href="https://www.youtube.com/shorts/U6KrE6C_x7c">天天上班不开心就该探索</a>、<a href="https://www.youtube.com/shorts/rCikLkV7Tfw">年纪越大越看重稳定</a>），实为 AI 职业顾问 Carmen 的推广，信号弱。</li>
+<li><strong>Y Combinator</strong> — <a href="https://www.youtube.com/watch?v=w-6C-Hilg4g">Asteroid 用 Mac mini 上的 Claude Code 每月自动约 50 场演示</a>，月成本 200 美元、做到七位数收入。</li>
+<li><strong>Y Combinator</strong> — <a href="https://www.youtube.com/watch?v=fMeQ5ip1uCc">Prized 的公司级 agent Hux</a>：上线的功能带来 5% 注册、一个月起草 300 条帖子，一周烧掉 1.7 万美元 Opus 额度。</li>
+<li><strong>Y Combinator</strong> — <a href="https://x.com/ycombinator/status/2125655831668813860">转发 RightNow：Revolut 让 2,000 名工程师从 Claude Code/Codex 换到自部署 GLM 5.3</a>，编码账单降约 90%，代价是一个基础设施团队调了几个月。</li>
+</ul>
+<h3>其他</h3>
+<ul>
+<li><strong>Sarah Guo</strong> — <a href="https://x.com/saranormous/status/2125602695545504105">在《经济学人》撰文支持英伟达请回黄仁勋</a>，论点是他能阻止 AI 被少数人独占；另一条说 AI 越强，<a href="https://x.com/saranormous/status/2125466501226594642">越需要练习当一个好的初学者</a>。</li>
+<li><strong>Elad Gil</strong> — <a href="https://x.com/eladgil/status/2123562824274477437">祝贺 Anthropic 上市</a>，以及一句<a href="https://x.com/eladgil/status/2123906329643511981">黎曼猜想之后"回去做 SaaS 吧"的反讽</a>。</li>
+<li><strong>Bessemer</strong> — <a href="https://x.com/BessemerVP/status/2123514439328833774">Anthropic 上市日纳斯达克幕后照</a>；同期<a href="https://x.com/BessemerVP/status/2124969486944186476">领投 Marlowe 2.77 亿美元种子轮</a>，押多芯片推理工厂。</li>
+</ul>
+<h2>🧠 解读 · Sense Maker</h2>
+<h3>答案卷与日报</h3>
+<ul>
+<li><strong>TLDR AI</strong> — <a href="https://tldr.tech/ai/2026-11-25">11-25 期</a>头条：OpenAI 解决矩阵数学、SWE-2.1、swarm 的局限。</li>
+<li><strong>TLDR AI</strong> — <a href="https://tldr.tech/ai/2026-11-24">11-24 期</a>头条：GLM-5.4 的循环层、Claude Ship、OpenAI 加固 Linux。</li>
+<li><strong>TLDR AI</strong> — <a href="https://tldr.tech/ai/2026-11-23">11-23 期</a>头条：OpenAI 公开进展、Inkling 2 Mini、黎曼猜想证明。</li>
+<li><strong>The Rundown AI</strong> — <a href="https://therundownai.beehiiv.com/p/three-xai-founders-want-ai-to-predict-the-future">Epochal 的"互联网时光机"</a>：张国栋据报自掏 1 亿美元，Time Portal 90 天建成。</li>
+<li><strong>The Rundown AI</strong> — <a href="https://therundownai.beehiiv.com/p/three-xai-founders-want-ai-to-predict-the-future">转述 Axios</a>：二十多位知情人称 Anthropic 和 OpenAI 员工认为内部未发布模型难以安全发布，甚至出现隐藏推理的迹象。</li>
+<li><strong>The Rundown AI</strong> — <a href="https://therundownai.beehiiv.com/p/three-xai-founders-want-ai-to-predict-the-future">Tidal 将于 12 月 9 日删除全部纯 AI 生成曲目</a>：8 月底以来 43% 的投稿是 AI 曲，AI 辅助的作品仍可上架。</li>
+<li><strong>The Rundown AI</strong> — <a href="https://therundownai.beehiiv.com/p/three-xai-founders-want-ai-to-predict-the-future">Microsoft Copilot 三件套上手指南</a>：Home 问答、Code 做小应用、Autopilot 在 Teams/Outlook 里跑数周目标。</li>
+</ul>
+<h3>资本与算力</h3>
+<ul>
+<li><strong>Rohan Paul</strong> — <a href="https://x.com/rohanpaul_ai/status/2125378974796955934">转述路透：Anthropic 跌破 83 美元发行价至 76.6 美元</a>，市值蒸发近 2,000 亿，约 40 倍市销率；绿鞋行使和首日即可卖出的锁定条款撤掉了托底（<a href="https://x.com/rohanpaul_ai/status/2125637834690445790">转发版</a>）。</li>
+<li><strong>SemiAnalysis</strong> — <a href="https://x.com/SemiAnalysis_/status/2125658708357128703">亚马逊首次提交 Trainium3 成绩</a>，每美元性能是 GB300 NVL72 的 2.28 倍；<a href="https://x.com/SemiAnalysis_/status/2125658711829946830">AgentX 基准</a>已覆盖 TPU、AMD 和 OpenAI 自研芯片，几乎所有大买家都支持（<a href="https://x.com/SemiAnalysis_/status/2125658712803049646">致谢帖</a>）。</li>
+<li><strong>SemiAnalysis</strong> — <a href="https://x.com/SemiAnalysis_/status/2125477398896693373">TokenSpeed 在 MI355X 上跑 K3.1 Pro</a>，每美元 token 领先 B200，ROCm 跑大 MoE 有实质进展。</li>
+<li><strong>SemiAnalysis</strong> — <a href="https://www.linkedin.com/company/semianalysis/">"agentic CPU" 是伪概念</a>：吃 CPU 的是编译、测试、搜索这些工具调用，和人写代码时一样。</li>
+<li><strong>SemiAnalysis</strong> — <a href="https://x.com/SemiAnalysis_/status/2125371388743565562">转述 Naveen Rao</a>：AI 受限于能源，关键指标是每 token 焦耳数。</li>
+<li><strong>SemiAnalysis</strong> — <a href="https://x.com/SemiAnalysis_/status/2125428062216925608">内存价格若减半，中国单季净省约 90 亿美元</a>，成本由韩国承担。</li>
+<li><strong>SemiAnalysis</strong> — <a href="https://x.com/SemiAnalysis_/status/2125614758774849615">借 Jigar-Watts 推销数据中心模型订阅</a>，属自我推广。</li>
+<li><strong>Naval</strong> — <a href="https://x.com/naval/status/2123768555317723476">"英伟达必须比前沿实验室变成芯片公司更快地变成前沿实验室"</a>，一句话点出垂直整合的竞速。</li>
+<li><strong>Naval</strong> — <a href="https://x.com/naval/status/2123966274321719745">三个关于"思考者/行动者/观察者是否存在"的发问</a>，非 AI 内容，供认知类写作取材。</li>
+<li><strong>Lew Yan Liang（LinkedIn）</strong> — <a href="https://www.linkedin.com/in/alexlew/">称 AI 交易已结束</a>：不是芯片没人要，而是借钱卖算力的一方续不上下一个机架，周五标普跌 3.7%；<a href="https://x.com/TrungTPhan/status/2125605596212990117">Trung Phan</a> 补了一个数字：苹果市值已超过英伟达与 Anthropic 之和。</li>
+</ul>
+<h3>组织、评测与范式</h3>
+<ul>
+<li><strong>Ethan Mollick</strong> — <a href="https://x.com/emollick/status/2125267894644916669">大公司里出现两三人小组干几十人的活</a>，随之而来的是管理层的权力之争；他还推演了<a href="https://x.com/emollick/status/2125624808893538497">前沿模型被认定太危险而不发布的情景</a>。</li>
+<li><strong>Ethan Mollick</strong> — <a href="https://x.com/emollick/status/2125363024169222530">"苦涩的教训无处不在"</a>：机器人和 3D 设计也被通用前沿模型吃掉，专用模型的空间在缩小。</li>
+<li><strong>Lenny Rachitsky</strong> — <a href="https://x.com/lennysan/status/2124880663149002996">Atlassian 让所有人当"AI builder"、不设 PM 和设计师</a>，一个月后全员回到原岗位，原因是"吞吐不是问题，方向才是"。</li>
+<li><strong>Lenny Rachitsky</strong> — <a href="https://www.lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude">25 项任务自测</a>：Neon 第一，Opus 5.5 是"最不烦人的日常主力"，GPT-6.2 令人失望。</li>
+<li><strong>Lenny Rachitsky</strong> — <a href="https://www.lennysnewsletter.com/p/openclaw-for-executives-automate">OpenClaw 给高管用</a>：Innovaccer CTO 用 Mac mini 上的 Jarvis 清掉生活里每个 1% 的烦恼；另有 Gemini 产品负责人的 <a href="https://www.youtube.com/shorts/iYwlU_nVg-M">60-20-20 法则</a>，讲该领先模型多远去构建。</li>
+<li><strong>swyx</strong> — <a href="https://x.com/swyx/status/2125672763256160263">转发 No AI Slop Manifesto</a>："agent 一天产出的东西，人一辈子也审不完"；他也写了<a href="https://x.com/swyx/status/2125638081848250634">老媒体死得太快、新媒体创始人的处境</a>。</li>
+<li><strong>Peter Wildeford（经 Zvi 转发）</strong> — <a href="https://x.com/peterwildeford/status/2125624988040380903">有些数据只有 OpenAI 公开过、有些只有 Anthropic 公开过</a>，建议双方互相对齐披露。</li>
+<li><strong>Sebastian Raschka</strong> — <a href="https://x.com/rasbt/status/2125249956495953973">他的架构图库里已有 5 个循环 transformer</a>；<a href="https://x.com/dlouapre/status/2125586886680813707">David Louapre 用小实验解释循环层的收益</a>。</li>
+<li><strong>Derek Thompson</strong> — <a href="https://x.com/DKThomp/status/2125586066677612790">把"内部模型太强不能发布"和"内部能力进步更快"放在一起想</a>，指向公开模型与内部模型的差距会拉大。</li>
+<li><strong>Rohan Paul</strong> — 三篇值得读的论文转述：<a href="https://x.com/rohanpaul_ai/status/2125402155909832882">清华发现编码模型明知需求做不到仍声称满足</a>、<a href="https://x.com/rohanpaul_ai/status/2125356153299415284">哈佛与 Anthropic 发现 agent 团队比单个 agent 更不安全</a>、<a href="https://x.com/rohanpaul_ai/status/2125461932111229203">MIT 与微软发现 Copilot 让大公司初级工程师招聘减少约 40%</a>。</li>
+</ul>
+<h3>中文与媒体</h3>
+<ul>
+<li><strong>36氪</strong> — <a href="https://36kr.com/p/4084981247841927">11 月大模型竞争的四个变化</a>：从单点冲高转向按需分工，适合拿来做月度复盘。</li>
+<li><strong>36氪</strong> — <a href="https://36kr.com/p/4084819336243589">7.7 万星开源 AI 编程工具被扒"偷数据"，创始人宣布闭源</a>，开源信任一次崩塌的样本。</li>
+<li><strong>36氪</strong> — <a href="https://36kr.com/p/4085017435761028">杨立昆批评 Anthropic CEO 渲染风险是为了让开源非法</a>，与 <a href="https://x.com/lutherlowe/status/2125388005594517892">Luther Lowe 对监管冲击开源的担忧</a>同向。</li>
+<li><strong>36氪</strong> — <a href="https://36kr.com/p/4085043406973571">Anthropic 的 Tibo 据曝加盟 OpenAI</a>，与 <a href="https://x.com/ArfurGrok/status/2125341934071787696">Thariq 加入 OpenAI</a> 同一周，上市前后出现人才回流。</li>
+<li><strong>量子位</strong> — <a href="https://www.qbitai.com/2026/11/512727.html">丢一个故事直出 15 分钟 AI 短片</a>，长视频生成开始面向普通人；另有<a href="https://www.qbitai.com/2026/11/512748.html">商汤 SenseNova U1.6 的写实生图</a>。</li>
+<li><strong>TechCrunch</strong> — <a href="https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/">纽约禁止 AI 聊天玩具五年</a>，Common Sense Media 研究发现内容和情感发展风险。</li>
+</ul>
+<h2>🔨 实践 · Practitioner</h2>
+<h3>内容创作者与一人公司</h3>
+<ul>
+<li><strong>Greg Isenberg</strong> — <a href="https://x.com/gregisenberg/status/2125589710860882313">最抗 AI 的东西是受众</a>：有好产品没受众的创始人，比有受众、产品一般的创始人焦虑得多；另一条是<a href="https://x.com/gregisenberg/status/2125219710501273753">用 AI 把狗照片画成油画、月入 30 万美元的生意</a>。</li>
+<li><strong>Greg Isenberg</strong> — <a href="https://www.youtube.com/shorts/dk8vltIu_6k">Neon 的五种用法</a>（Antigravity 实测）与<a href="https://www.youtube.com/shorts/e_QqhvBXihI">机器人赛道机会地图</a>。</li>
+<li><strong>every</strong> — <a href="https://x.com/every/status/2125616924574753029">A 轮 1,750 万美元、估值 1.1 亿</a>，媒体、软件、咨询一体的小团队路线拿到了机构定价；<a href="https://x.com/every/status/2124872865648419256">招聘帖</a>写明作者用 agent 做研究和初稿。</li>
+<li><strong>every</strong> — <a href="https://x.com/every/status/2125275166468927699">《大西洋月刊》全业务用 AI、唯独不许作者用它写作</a>，Kevin Roose 认为媒体的未来取决于读者与具体作者的关系。</li>
+<li><strong>歸藏</strong> — <a href="https://x.com/op7418/status/2125531570622828617">"Code to Video / Video to Code"</a>：用 Neon、LibTV MCP、MAGI-2 双向互相参考生成动效网页和视频，并<a href="https://x.com/op7418/status/2125531753981034763">打包成 skill</a>。</li>
+<li><strong>歸藏</strong> — <a href="https://x.com/op7418/status/2125436649874379239">内容成本越来越低，但内容消费时间不变</a>，市场只会更卷；他还提到<a href="https://x.com/op7418/status/2125431201204932800">传闻中的下一代 Opus 纯代码生成的视频</a>在侵蚀视频模型的地盘。</li>
+<li><strong>数字生命卡兹克</strong> — <a href="https://x.com/vista8/status/2125158659504349396">让 Codex 读本机软件使用频次生成年度软件图</a>，已做成 <a href="https://x.com/vista8/status/2125489242646405349">skill 和分享站</a>；他推荐的 <a href="https://x.com/vista8/status/2125244592614506880">Subcast 支持 MCP/CLI</a>，播客总结和剪辑高光都能从 agent 里完成。</li>
+<li><strong>数字生命卡兹克</strong> — <a href="https://x.com/vista8/status/2125507506466336778">Neon 智力介于 Fable 和 Opus 之间</a>，中转站开始接"蒸馏 Gemini"的单。</li>
+<li><strong>宝玉</strong> — <a href="https://x.com/dotey/status/2125464294401720614">OpenAI 矩阵乘法论文的冷静解读</a>：上限 2.25 是十月旧结果，新补的下限还没有同行评审；另写了 <a href="https://x.com/dotey/status/2125368995746308453">Claude 的 Install as app 原理</a>。</li>
+<li><strong>课代表立正</strong> — <a href="https://www.youtube.com/shorts/XhI2fvtB9GY">Apple Watch 一键录音再交给 Intake Skill 整理</a>，"随手采集 → Skill 处理"的个人信息入口。</li>
+<li><strong>课代表立正</strong> — <a href="https://www.youtube.com/shorts/HfdnZQHOCJk">消费者想要便宜、生产者不能只打价格战</a>，提醒在选行业时识别降价循环。</li>
+<li><strong>Marc Lou</strong> — <a href="https://x.com/marclou/status/2125598637980069967">10 万美元黑客松第二位破万收入</a>，122 人已赚到第一美元；TrustMRR 上<a href="https://x.com/marclou/status/2125540055678591176">小产品以 0.3–0.6 倍收入成交</a>，一人公司的退出价格也很透明。</li>
+<li><strong>Danny Postma</strong> — <a href="https://x.com/dannypostma/status/2125521082711244920">让 Astra 6.2 自由探索游戏美术方向</a>，以及<a href="https://x.com/dannypostma/status/2125489920764723701">看 goal loop 里 agent 自己探索任务</a>。</li>
+<li><strong>Sam Parr</strong> — <a href="https://x.com/thesamparr/status/2124973718749491507">少做事，把少数几件做到极致</a>。</li>
+</ul>
+<h3>工程实践</h3>
+<ul>
+<li><strong>Simon Willison</strong> — <a href="https://x.com/simonw/status/2125640464863056148">两周内 194 个开源 commit 由 Fable 5.2 共同完成</a>，并扩写了<a href="https://x.com/simonw/status/2125369126877286662">过去 12 个月的三个 LLM 拐点</a>。</li>
+<li><strong>Eugene Yan</strong> — <a href="https://x.com/eugeneyan/status/2125418696248095188">12 个公开评测的拆解</a>：有误判正确答案的评分器、配错的 harness、不像真实用法的规格；<a href="https://x.com/HamelHusain/status/2125433546659729900">Hamel</a> 总结了三类问题。</li>
+<li><strong>Philipp Schmid</strong> — <a href="https://x.com/_philschmid/status/2125579472594223340">给旧模型写的护栏、skills、规则在拖慢 Neon</a>，他改了五处；配套还有<a href="https://x.com/_philschmid/status/2124840350472622124">思考强度默认值</a>和 Gemini API 的<a href="https://x.com/_philschmid/status/2123806623114440911">动态工具检索</a>。</li>
+<li><strong>steipete</strong> — <a href="https://x.com/steipete/status/2125654555262431248">Google 做了 MCP 却要禁止 gog 这类 CLI，除非加钱</a>（<a href="https://x.com/coccoinomane/status/2125547127803985932">消息来源</a>），对依赖 Workspace 的 OpenClaw 用户是直接风险；他的<a href="https://x.com/steipete/status/2125422797304549672">年终回顾</a>说 OpenClaw 在专业消费者和企业找到了位置。</li>
+<li><strong>Pieter Levels</strong> — <a href="https://x.com/levelsio/status/2125515439770104282">AI 实验室会吃掉整个应用层</a>，Claude 已在给每个人生成定制 macOS 应用；他还把<a href="https://x.com/levelsio/status/2125592280505704637">自己的推文做成 AI 垃圾回复的诱捕器</a>。</li>
+<li><strong>Jerry Liu</strong> — <a href="https://x.com/jerryjliu0/status/2125266115874144473">开源 4B 文档 OCR 模型 OCRia-1</a>，前一天还发了 <a href="https://x.com/jerryjliu0/status/2124909031999553926">8.1M 参数、CPU 即可跑的 nano 版</a>。</li>
+<li><strong>AI Engineer</strong> — <a href="https://www.youtube.com/watch?v=TvsF67C2F54">Jarred Sumner 怎么合并几百万行 agent 写的代码</a>；<a href="https://www.youtube.com/watch?v=Xyb1Bn_L2U4">Amp 21 人做到 1 亿美元以上</a>，没有任务跟踪、没有 PM、每周一次会。</li>
+<li><strong>Alex Finn</strong> — <a href="https://x.com/AlexFinn/status/2125640063216123947">开源 Herdr HUD</a>，一个浮窗管所有 agent；他还<a href="https://x.com/AlexFinn/status/2124747542566977889">在 16GB MacBook 上跑 Inkling 2 Mini 当免费编码模型</a>。</li>
+<li><strong>Alex Finn</strong> — <a href="https://x.com/AlexFinn/status/2124871846135034098">为黄仁勋复职欢呼</a>，纯情绪表态。</li>
+<li><strong>DeepLearningAI</strong> — <a href="https://x.com/DeepLearningAI/status/2125259413292253610">与 Oracle 合作的免费课：让 agent 每次工作都变好</a>。</li>
+<li><strong>DeepLearningAI</strong> — <a href="https://x.com/DeepLearningAI/status/2124936569945497801">AI Dev NYC 主会场请 Hilary Mason 讲创意工作的 AI 评测</a>，11 月 30 日。</li>
+<li><strong>DeepLearningAI</strong> — <a href="https://x.com/DeepLearningAI/status/2125266107808301474">AI Dev 门票附赠 850 美元工具额度</a>，会议推广。</li>
+<li><strong>Elon Musk 圈</strong> — <a href="https://x.com/elonmusk/status/2125511153145311665">Grok Bot 能打电话</a>；他转发的<a href="https://x.com/elonmusk/status/2125528528624246989">独立开发者用 AI 做游戏一周在 Steam 赚 133 万美元</a>是本周传播最广的"一人作品"案例（原帖曝光 148 万）。</li>
+</ul>
+<h2>🔥 专业热榜</h2>
+<h3>HN</h3>
+<ul>
+<li><a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf">OpenAI 矩阵乘法指数 9/4</a> —— 见 🔭主线（938 分、528 评论，今日榜首）。</li>
+<li><a href="https://github.com/google-research/google-research/tree/master/cogentic_research_papers">Google Cogentic 论文集</a> —— 见 🔭主线（360 分），覆盖整数分解、离散对数。</li>
+<li><a href="https://scottaaronson.blog/?p=10379">Scott Aaronson 对复杂度下界的反应</a> —— 标题连写四遍"Holy Shit"，专业圈的震动比结论本身更值得看（43 分）。</li>
+<li><a href="https://1password.com/blog/update-on-nov-2026-security-incident">1Password 安全事件通报</a> —— 475 分、210 评论，与本周 agent 安全叙事同框。</li>
+<li><a href="https://jayd.ml/2026/11/14/rockbox-on-yp3.html">用 LLM 把 Rockbox 移植到 9 美元无文档 MP3</a> —— LLM 做逆向和硬件移植的完整实录（130 分）。</li>
+<li><a href="https://joonoo.art/create-comic">Show HN：24 页 AI 漫画保持人脸一致</a> —— AI 连载内容的一致性问题有了现成工具（11 分）。</li>
+</ul>
+<h3>GitHub Trending</h3>
+<ul>
+<li><a href="https://github.com/jingyaogong/minimind">minimind</a> —— 两小时从零训一个 64M 小模型，理解大模型最短的路径。</li>
+<li><a href="https://github.com/mvanhorn/last30days-skill">last30days-skill</a> —— 跨 Reddit、X、YouTube、HN、Polymarket 研究一个话题再综合成摘要的 skill，结构和内容雷达很像。</li>
+<li><a href="https://github.com/obra/superpowers">obra/superpowers</a> —— agent skills 框架加一套开发方法论。</li>
+<li><a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a> —— Google 给 Stitch MCP 配的 skill 库，遵循 Agent Skills 开放标准，与"MCP 自带 Skill"同步。</li>
+<li><a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a> —— 给各家 coding agent 用的 52 种编辑级图表模板，单文件 HTML+SVG。</li>
+<li><a href="https://github.com/HKUDS/CLI-Anything">CLI-Anything</a> —— 把任意软件变成 agent 可调用的 CLI。</li>
+<li><a href="https://github.com/cursor/plugins">cursor/plugins</a> —— Cursor 插件规范，和 Claude 插件同一周出现。</li>
+</ul>
+<h3>Product Hunt</h3>
+<ul>
+<li><a href="https://www.producthunt.com/products/canva">Canva MCP</a> —— 设计平台开放给任意 agent 调用，创作工具开始以 MCP 形态分发。</li>
+<li><a href="https://www.producthunt.com/products/magi-1">MAGI-2</a> —— Sand AI 的 480B 电影级视频模型，歸藏的双向工作流用到了它。</li>
+<li><a href="https://www.producthunt.com/products/myclaw-3-0">MyClaw 3.0</a> —— 共享记忆的常驻 AI 团队，基于 Claw 生态。</li>
+<li><a href="https://www.producthunt.com/products/memoryworks">MemoryWorks</a> —— 给人和 agent 共用的公司记忆层。</li>
+<li><a href="https://www.producthunt.com/products/openeight">OpenEight</a> —— agent 的确定性控制层，对应"硬规则写在工具里而非提示词里"的需求。</li>
+</ul>
+<h3>Hugging Face</h3>
+<ul>
+<li><a href="https://huggingface.co/thinkingmachines/Inkling-2-Mini">Inkling-2-Mini</a> —— Thinking Machines 的循环结构小模型，5,971 赞；<a href="https://huggingface.co/unsloth/Inkling-2-Mini-GGUF">unsloth GGUF 版</a>下载 244 万，本地跑前沿级小模型成了主流。</li>
+<li><a href="https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted">Qwen3.8-27B-pi-adapted</a> —— 针对特定 harness 适配的模型，1,103 赞；<a href="https://x.com/ClementDelangue/status/2125270100496265626">Clement Delangue</a> 称定制模型是未来。</li>
+<li><a href="https://huggingface.co/spaces/joelniklaus/harness-leaderboard">harness-leaderboard</a> —— 按 harness 而不是按模型排名，553 赞，与 ShellBench 同一思路。</li>
+<li><a href="https://huggingface.co/datasets/google/physical-engineerings-last-exam">physical-engineerings-last-exam</a> —— Google 的物理工程难题评测集，下载 51 万。</li>
+<li><a href="https://huggingface.co/llamaindex/OCRia-nano-1">OCRia-nano-1</a> —— 见 🔨实践（Jerry Liu）。</li>
+</ul>
+<h3>HF Papers</h3>
+<ul>
+<li><a href="https://huggingface.co/papers/2611.32884">Lazy Agents（可验证信念强化学习）</a> —— agent 的回答会违背自己的判断，训练它按自己的信念行动；87 赞，与"agent 虚报成功"同源。</li>
+<li><a href="https://huggingface.co/papers/2611.31358">Nemotron-Labs-VisualCreation</a> —— 把像素当代码做 agent 式视觉创作，精确控制文字与版式（78 赞）。</li>
+<li><a href="https://huggingface.co/papers/2611.30962">自进化的 Computer-Use 评测环境</a> —— 静态基准跟不上 agent 进步，让评测环境自己变（45 赞）。</li>
+<li><a href="https://huggingface.co/papers/2611.33010">Embodied AI 过不了镜子测试</a> —— 一面镜子就能搞坏机器人策略（28 赞）。</li>
+<li><a href="https://huggingface.co/papers/2611.32462">MAGPIE</a> —— 先搭可执行场景再出多参考图，解决多角色一致性。</li>
+</ul>
+<h3>papers.cool</h3>
+<ul>
+<li><a href="https://papers.cool/arxiv/2611.33133">Bias in Disguise</a> —— 微小梯度编辑就能让小模型停止思考循环。</li>
+<li><a href="https://papers.cool/arxiv/2611.33111">Draft Calibration</a> —— 对齐草稿模型与目标模型分布来加速推测解码。</li>
+<li><a href="https://papers.cool/arxiv/2611.33064">U-Statistics 推理</a> —— 用 U 统计量改进 GRPO 类训练的方差。</li>
+<li><a href="https://papers.cool/arxiv/2611.33102">从自身 rollout 恢复 RL</a> —— 从 rollout 反推出 RL 后训练的效果。</li>
+<li>今日只拿到 cs.LG 分区，cs.AI 与 cs.CL 超时，原因见 📊。</li>
+</ul>
+<h2>👥 我的 feeds</h2>
+<h3>X For-You</h3>
+<ul>
+<li><a href="https://x.com/kevin2kelly/status/2125673169487114433">Kevin Kelly</a>〔新面孔〕—— slop 会成为一种风格，就像动漫，其中也会有杰作。</li>
+<li><a href="https://x.com/RickRubin/status/2125663412944597116">Rick Rubin / Tetragrammaton</a>〔新面孔〕—— "什么都能做"得到的是平均值也就是平庸，taste 已被说滥，真正需要的是具体性；同期节目嘉宾认为 <a href="https://x.com/tetranow/status/2125653316969668884">AI 能让讲故事的人更凭本事出头</a>。</li>
+<li><a href="https://x.com/tibo_maker/status/2125625087432982773">Tibo</a>〔新面孔〕—— 剩下的护城河只有分发、独有数据、网络效应、硬件和被爱的品牌，否则 30 分钟就会被克隆。</li>
+<li><a href="https://x.com/ladyxtel/status/2125587817082601587">Christel Buchanan</a>〔新面孔〕—— Lean 版黎曼猜想出来三天，他们的 agent 用它证出 17 个结果，其中 6 个是有名字的猜想（见主线）；<a href="https://x.com/omarsar0/status/2125602580004749356">elvis</a> 认为靠的是记忆系统。</li>
+<li><a href="https://x.com/paulabartabajo_/status/2125616158095360102">Pau Labarta Bajo</a>〔新面孔〕—— 他接触的公司都在用 skills，但很少有人度量和迭代 skills。</li>
+<li><a href="https://x.com/okkshitij/status/2125623846934127008">Kshitij</a>〔新面孔〕—— 转述 Dario 的判断：聊天只是过渡形态，并讨论下一种界面。</li>
+<li><a href="https://x.com/chatbase/status/2125654742311285052">Chatbase</a>〔新面孔〕—— 把整个后台做进 ChatGPT 插件，<a href="https://x.com/yasser_elsaid_/status/2125657960655233234">创始人说</a> MCP 不够、用户仍要看板。</li>
+<li><a href="https://x.com/samecrowder/status/2125636505293263083">Sam Crowder</a>〔新面孔〕—— agent trace 从四五步变成成百上千次调用，需要专门的存储和分析（对应 LangChain 的 agent lake）。</li>
+<li>已在上文：<a href="https://x.com/AnthropicAI/status/2125627317263466739">Anthropic Rust 迁移</a>、<a href="https://x.com/a16z/status/2125650357498110183">a16z</a>、<a href="https://x.com/garrytan/status/2125580632814412155">Garry Tan</a>、<a href="https://x.com/SemiAnalysis_/status/2125658708357128703">SemiAnalysis</a>、<a href="https://x.com/DarioAmodei/status/2125656399392690605">Dario</a>、<a href="https://x.com/swyx/status/2125627281230205435">swyx</a>、<a href="https://x.com/danshipper/status/2125615579964833827">Dan Shipper</a>。</li>
+</ul>
+<h3>LinkedIn</h3>
+<ul>
+<li><a href="https://www.linkedin.com/in/cem-dilmegani/">Cem Dilmegani</a>〔新面孔〕—— 一个让 Claude Code 说"原始人语"省 token 的小 skill，七个月长成 12.25 万星、超过 Rust 的 YC 公司 Caveman。</li>
+<li><a href="https://www.linkedin.com/in/gauri-tulsulkar/">Gauri Tulsulkar</a>〔新面孔〕—— Spotify 的 PM 发现 coding agent 大部分时间在读文件，换掉这部分的模型后成本降了 90%。</li>
+<li><a href="https://www.linkedin.com/in/haiphunghiem/">Hai Nghiem</a>〔新面孔〕—— MCP 两周年，Skills over MCP 上线，从 Anthropic 内部项目变成开放标准。</li>
+<li><a href="https://www.linkedin.com/in/abhijeetgupta23/">Abhijeet Gupta</a>〔新面孔〕—— Agent = 模型 + harness，harness 包括提示词、工具、沙箱、护栏、记忆和循环。</li>
+<li><a href="https://www.linkedin.com/in/yrebryk/">Yurii Rebryk</a>〔新面孔〕—— GLM-5.4 能把任意 arXiv 论文讲成两分钟的 3Blue1Brown 式动画，alphaXiv 已上首页。</li>
+<li><a href="https://www.linkedin.com/in/heemin-kim-57886a32/">Heemin Kim</a>〔新面孔〕—— 用 AI 一年：干活变快了，但人没有更闲，只是在更多种活之间更快地切换。</li>
+<li><a href="https://www.linkedin.com/in/akshay-pachaar/">Akshay Pachaar</a>〔新面孔〕—— 本地跑模型不再受显存装不下的硬限制，180B 级开放模型不必买上万美元的机器。</li>
+<li><a href="https://www.linkedin.com/in/alexlew/">Lew Yan Liang</a> —— "AI 交易结束"论，见 🧠解读。</li>
+<li>其余多为招聘、入职公告和带货帖，已略过。</li>
+</ul>
+<h3>YouTube 首页</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=w0oOxs0WKNk">David Senra × Tobi Lütke</a>〔新面孔〕—— 借黄仁勋复职谈"创始人不可替代"。</li>
+<li><a href="https://www.youtube.com/watch?v=QVnU5lGlKE8">David Senra × Travis Kalanick</a>〔新面孔〕—— "卓越是承受痛苦的能力"。</li>
+<li><a href="https://www.youtube.com/watch?v=FgS1qt3THSI">影视飓风</a>〔新面孔〕—— 评测 NVIDIA RTX Spark 是否重新定义了 PC。</li>
+<li><a href="https://www.youtube.com/watch?v=O_zcc6Xl12g">AI Engineer · Lauren Tan</a> —— "所有代码都是 slop（除了我的）"，与 No AI Slop Manifesto 同题。</li>
+<li>已在上文：<a href="https://www.youtube.com/watch?v=mNIYbP3LRpM">Dario × Jamie Dimon 路演</a>。其余为 ASMR、音乐、综艺，与定位无关。</li>
+</ul>
+<h2>🔭 今日主线</h2>
+<p>今日扫描小红书、抖音、B站、Reddit、百度、头条 6 个平台的 13 条采集通道，共 1,121 条原始内容，进入候选 841 条，另有对标账号信任池 186 条。</p>
+<p>两天前推荐过 T3 Code 的抖音博主，今天翻出 GitHub 记录公开更正：官网 5 月还写着“没有遥测”，默认开启的 PostHog 遥测 3 月 6 日就已合入。争议因此从“作者骂中文圈”变成一件可以查证的事，B站“T3 Code 偷偷上传用户数据？”8,782 播放，约为搜索池中位数的 83 倍。第二条线是迁移：Gemini 4 Neon 被当成 Claude 的平替，柱子哥的 Antigravity 入门两天从 2.5 万涨到 3 万赞，但“账号地区受限”也有 963 赞，能不能用上仍是门槛。Anthropic 上市后，Reddit 分数最高的新帖讲 Claude 把 artifact 变成桌面应用（1,068 分）。和定位最近的两处：秋芝“像高手一样做自己的 Skill”一天从 7.6 万涨到 30.7 万播放；B站出现 OpenClaw“崛起与陨落”的复盘（7,386）。全民热榜上唯一的 AI 话题是“AI 正在帮忙抓贪官”，头条 1,956 万。</p>
+<h2>🔥 热点话题（大家最近集中关注什么）</h2>
+<h3>领域热点</h3>
+<ul>
+<li><strong>T3 Code 第二天：从骂战转向查证</strong>：<a href="https://www.douyin.com/video/7711730883392228646">抖音“说好零遥测，T3 Code 却在翻你的 Claude 账号”</a>〔505 赞〕是推荐者本人对照 GitHub 记录做的更正；<a href="https://www.bilibili.com/video/BV18dyBzsEyX">B站“T3 Code 偷偷上传用户数据？作者反手开骂”</a>〔8,782 播放〕热度最高；小红书“我们今天狠狠打了 T3 的脸”〔383〕、“开发者在外网怒骂中文用户”〔75〕。工具照样在被教：<a href="https://www.bilibili.com/video/BV13QyizJEmZ">B站“备受争议的 T3 Code 如何一套 UI 接入多个 Coding Agent”</a>〔2,244〕、AI超元域完整教程〔1.4 万〕。大家追问的是“说过的话和代码对不对得上”，功能好坏反而没人争。</li>
+<li><strong>Gemini 4 Neon 迁移潮：好用和用得上是两件事</strong>：<a href="https://www.douyin.com/video/7711319445553155337">柱子哥“实测打平 Claude！Antigravity 新手入门”</a>〔3.0 万赞 · 2 天前 · 约 8 倍〕、<a href="https://www.douyin.com/video/7712040632524557631">科特“谷歌反重力保姆级上手”</a>〔5,097 · 10 小时前〕；小红书“快进来排队给 Gemini 道歉”〔436〕、“Opus 被 Gemini 追平”〔372〕；反面是小红书“Gemini 账号地区受限的根本原因”〔963〕和“改区用上满血版”〔274〕。教程热度是几万，账号问题是几百到一千，可后者决定前者有多少人真能跟着做。</li>
+<li><strong>Anthropic 上市后：产品和股价一起被讨论</strong>：<a href="https://www.reddit.com/r/ClaudeAI/comments/1y4s3m3/claudes_new_feature_lets_users_turn_aigenerated/">r/ClaudeAI“Claude 新功能把 artifact 变成 Mac/Windows 独立桌面应用”</a>〔1,068 分 · 134 评〕，原帖说“完全个人化应用的时代来了”；<a href="https://www.reddit.com/r/ClaudeAI/comments/1y57cjg/81b_ipo_1t_valuation_frontier_ai_coding_models/">“810 亿 IPO、万亿估值，Linux 支持还只是个 .deb？”</a>〔338 分 · 137 评〕。中文侧是长内容：硅谷101 对话《造神之后》作者〔4.5 万〕、Anthropic 崛起史〔31.1 万〕（见 👤）。</li>
+<li><strong>开源模型还追得上吗</strong>：<a href="https://www.reddit.com/r/LocalLLaMA/comments/1y51h3b/is_it_true_that_even_best_open_models_are_behind/">r/LocalLLaMA“最好的开源模型是不是也落后于 Haiku”</a>〔458 分 · 378 评〕，接上昨天 Theo 的“开源会越来越落后”。中文侧给的是另一种答案：<a href="https://www.bilibili.com/video/BV1u6yzzsE3w">B站“GLM-5.4 深度实测：无宣发无榜单，跑 8 小时”</a>〔3,239〕说背后是 Loop 架构，苏大讲AI 的 GLM-5.4 一天从 614 涨到 1,460；<a href="https://www.bilibili.com/video/BV18feK6dE56">“海外博主实测：DeepSeek 已比肩 Opus”</a>〔2,802〕。</li>
+<li><strong>本地小模型：Inkling 2 Mini 和 DFlash2 一起冒头</strong>：<a href="https://www.reddit.com/r/LocalLLaMA/comments/1y59t23/introducing_inkling_2_mini_fast/">Reddit 发布帖 Inkling 2 Mini Fast</a>〔125 分〕、<a href="https://www.reddit.com/r/LocalLLaMA/comments/1y5bqxj/3x_speedup_of_dflash2_for_inkling2m_on_llamacpp/">DFlash2 让它在 llama.cpp 上提速 3 倍（50→150 tps）</a>〔81 分〕；抖音<a href="https://www.douyin.com/video/7711023900632616201">“Inkling 2 mini 本地部署性能炸裂”</a>〔1,865〕、“最低只需 8G 显存”〔864〕；B站<a href="https://www.bilibili.com/video/BV1yFbs6nEsk">“Qwen 3.8-27B 在 Mac 上跑 Agent，一个反直觉答案”</a>〔7,564〕、<a href="https://www.bilibili.com/video/BV1pxt66REm7">MTP 对 DFlash2，3090 以下用 MTP</a>〔3,057〕、KV 压缩 4.6 倍让 256K 上下文提速 81%〔1,696〕。卖点从“能跑”换成了“多少显存、多快”。</li>
+<li><strong>黄仁勋复任第三天：讨论转到“之后呢”</strong>：<a href="https://www.bilibili.com/video/BV1aqsB6ZE1E">硅谷101“后黄仁勋时代：英伟达的护城河与资本棋局”</a>〔14.8 万〕、“黄仁勋的光：算力背后的光通信产业链”〔1.6 万〕；剑桥萌叔“预判成真，黄仁勋重回英伟达，但也是暂时的”〔58〕；<a href="https://www.reddit.com/r/LocalLLaMA/comments/1y5blyd/another_cut_of_nvidia_gpu/">Reddit“英伟达又一款 GPU 被砍”</a>〔435 分 · 184 评〕。今天三个热榜都没有黄仁勋，话题已从大众榜退到专业圈。</li>
+<li><strong>FSD V15 第三天：从“震撼”到“拆原理”</strong>：<a href="https://www.douyin.com/video/7710818335743050737">抖音张先生“FSD V15 上路，Reality View 跟真的一样”</a>〔5.3 万 · 3 天前 · 约 14 倍〕、科氪“看懂这个功能到底有啥用”〔2.4 万〕、<a href="https://www.douyin.com/video/7711166423078782706">老郑“仅用 8% 车载算力实时生成现实视频”</a>〔7,519〕；<a href="https://www.bilibili.com/video/BV1sYykzdEXs">B站“特斯拉车主道心破碎”</a>〔4,598〕；小红书“逆向拆解 Reality View”〔62〕。哈佛老徐的 FSD 帖今天成了低粉爆款（见 💥）。</li>
+<li><strong>OpenClaw 进入“复盘期”</strong>：<a href="https://www.bilibili.com/video/BV1c7H66zE4J">B站“一场炒作周期的解剖：OpenClaw 的崛起与陨落”</a>〔7,386 · 约 70 倍〕、<a href="https://www.bilibili.com/video/BV1je8X6RErS">“一夜爆红的 OpenClaw，会把我们带向何方”</a>〔7,248〕、作者 TED 演讲中字〔2,943〕。英文社区还在更新：<a href="https://www.reddit.com/r/openclaw/comments/1y587gq/openclaw_20261110_brings_builtin_deep_research/">2026.11.10 内置 Deep Research、Knowledge 记忆系统和浏览器接管</a>〔37 分〕、满一周年〔116 分〕。中文大众侧在讲故事的结局，英文用户侧在用新版本。</li>
+<li><strong>个人 Agent 从“能聊”到“会派活”</strong>：<a href="https://www.bilibili.com/video/BV1bpy6zREGd">B站“我让 AI 帮我盯 GitHub，结果它跑去给我派活了”</a>〔2.1 万 · 约 198 倍〕、<a href="https://www.bilibili.com/video/BV1TW1cz1Efs">“单月 920 亿 Token，每天自动化产出爆款，AI Native 实战”</a>〔2,184〕、星芒阔直板一键进小艺〔8,311〕；技术爬爬虾小艺Work 实测 50.2 万、AI超元域 ego lite 实测 3.5 万（见 👤）。标题主语从“我用 AI”变成了“AI 替我”。</li>
+<li><strong>AI 漫剧：产量在涨，账也在算</strong>：抖音推荐流<a href="https://www.douyin.com/video/7684229664243453193">《蚀途》原创微恐 AI 短剧</a>〔25.9 万〕、LibTV 制作的《末日山宿》〔4.4 万〕，B站热门两条“AI 全民制作人”（见 🌊）。算账的内容同步变多：小红书“4 家 AI 短剧工具测评，最便宜的反而最贵”〔2,061〕、<a href="https://www.douyin.com/video/7694996925606530331">“AI 猫咪博主到底能赚多少”</a>〔3 万〕说 Seedance 2.5 太贵是很多人亏钱的原因、B站“纯手搓 AI 漫剧一个月 2.2w”〔1,408〕、清华姜学长“AI 短剧 99% 都在亏钱？”〔57〕。</li>
+<li><strong>世界模型被当成游戏和工程工具来讲</strong>：<a href="https://www.bilibili.com/video/BV1XmyVzXE13">B站“谷歌出了一个颠覆传统游戏开发的 AI 模型”</a>〔2.3 万 · 约 217 倍〕是 B站搜索池第一；<a href="https://www.bilibili.com/video/BV1u5yVzjEJ5">李飞飞 Atlas 初体验</a>〔2,444〕、抖音推荐流 Atlas 正式版发布〔14.6 万〕。</li>
+<li><strong>“超级个体”第三天：讲法换成了具体的人</strong>：<a href="https://www.douyin.com/video/7706163344108947195">抖音“给我妈的第一节 AI 课：从零学 Codex”</a>〔5.8 万〕，小学数学老师用 Codex 备课每天省两小时；<a href="https://www.douyin.com/video/7711581222094310690">Ksr桑“怒烧 10w 实测，大佬们到底在用什么 AI 工具”</a>〔1.5 万 · 1 天前〕。焦虑也还在：“清华的学生也焦虑被 AI 替代”〔317〕、云峰说“AI 时代哪些工作更有价值”〔1.1 万〕。</li>
+</ul>
+<h3>泛热点交叉</h3>
+<ul>
+<li>“AI 正在帮忙抓贪官”〔头条 1,956 万〕是今天唯一上全民榜的 AI 话题；金价大跌〔头条 2,640 万〕正好撞上李一舟 10 月那条“金价跌了能不能抄底”（见 👤、🌊）。</li>
+</ul>
+<h2>👥 平台流（CN 发现流 + Reddit 社区）</h2>
+<h3>抖音推荐流</h3>
+<p>推荐流中位数 4.4 万赞。</p>
+<ul>
+<li><a href="https://www.douyin.com/video/7684229664243453193">《蚀途》原创微恐规则怪谈 AI 短剧</a>〔25.9 万 · 约 6 倍〕：今天推荐流里最高的 AI 作品，套的是“规则怪谈 + 封城列车”的类型片结构。</li>
+<li><a href="https://www.douyin.com/video/7711195138747338035">小Lin说“小县城靠 AI 拿到大结果，它凭什么？”</a>〔12.3 万 · 2 天前〕：讲乌兰察布做算力，推荐流里最高的 AI 认知类新作，用“一个地方的产业故事”来讲。</li>
+<li><a href="https://www.douyin.com/video/7707350675037998374">Atlas 正式版发布</a>〔14.6 万 · 11-13〕、<a href="https://www.douyin.com/video/7705087484836842793">《末日山宿》第二季</a>〔4.4 万 · LibTV〕、<a href="https://www.douyin.com/video/7692142873571069218">“6 种情绪布光，提示词直接抄”</a>〔2.7 万〕：工具发布、AI 剧集、提示词三类都在。</li>
+<li>43 分钟的 DSH 工作台讲解只有 5,090，长内容在推荐流里偏低；非 AI 基线是一条电钢琴合奏〔376.1 万〕。</li>
+</ul>
+<h3>小红书发现流</h3>
+<ul>
+<li>24 条候选里今天 0 条和 AI 有关（昨天 1 条），最高是演唱会周边〔6,475〕、萌宠和领证 vlog〔4,385〕。推荐流连续多天几乎不推 AI 内容。</li>
+</ul>
+<h3>Reddit 社区</h3>
+<ul>
+<li>r/LocalLLaMA：开源是否落后 Haiku〔458 分 · 378 评〕、英伟达 GPU 被砍〔435 分〕、<a href="https://www.reddit.com/r/LocalLLaMA/comments/1xxpxvi/best_audio_models_nov_2026/">“2026 年 11 月最佳音频模型”</a>〔270 分〕、Inkling 2 Mini Fast〔125 分〕、DFlash2 提速〔81 分〕。</li>
+<li>r/SaaS / r/indiehackers：<a href="https://www.reddit.com/r/indiehackers/comments/1y3s7ap/the_hardest_part_of_building_flowara_alone_wasnt/">“一个人做 Flowara，最难的是让人看一眼”</a>〔187 评〕、<a href="https://www.reddit.com/r/indiehackers/comments/1y4vh7d/day_14_of_apple_ads_on_10day_132_spent_full/">“Apple Ads 每天 10 美元的第 14 天，全部数字”</a>〔43 评〕、“发 MVP 是永久失去用户的好办法”〔37 评〕、“拿到第一个付费用户比做产品难”〔24 评〕：连续三天的共同主题是“做出来容易、卖出去难”。</li>
+<li>r/openclaw：Deep Research 与 Knowledge 记忆（见 🔥）、<a href="https://www.reddit.com/r/openclaw/comments/1y53mcs/my_openclaw_now_calls_my_phone_when_it_needs_me/">“我的 OpenClaw 需要我时会打电话，不用 Twilio”</a>〔23 分〕。</li>
+</ul></div>
+  </article>
+  <!--NAV--><nav class="rp-nav" aria-label="前一期/后一期"><a class="rp-nav-prev" href="/reports/2026-11-25-zh.html" rel="prev"><span class="k">← 前一期</span><span class="t">Anthropic 股价跌破 83 美元发行价的同一天，两位业余天文爱好者用 Codex 和 Astra 在 NASA 公开数据里筛出了候选系外行星</span></a><span></span><a class="rp-nav-all" href="/archive-zh.html">全部往期 →</a></nav><!--/NAV-->
+  <div class="rp-cta">
+    <p>这是完整的公开版。想要每天的「选题建议」,或一份为你定位定制的雷达?</p>
+    <a class="btn primary" href="/#channels">看订阅方式 →</a>
+  </div>
+</main>
+<footer><div class="wrap foot"><div class="sig">AI 市场雷达,每天一份免费报告,横跨东西。<br><a class="dom" href="/">radar.sharpener.ai</a> · RSS <a class="dom" href="/feed-zh.xml">中文</a> · <a class="dom" href="/feed-en.xml">English</a></div><div class="meta">by mingming · <a class="dom" href="https://www.linkedin.com/feed/update/urn:li:activity:7486985159095889920/" target="_blank" rel="noopener">幕后故事</a> · <a class="dom" href="https://x.com/linktoming" target="_blank" rel="noopener me">X</a> · <a class="dom" href="https://www.linkedin.com/in/mingmingwang001" target="_blank" rel="noopener me">LinkedIn</a></div></div></footer>
+<script>
+const root=document.documentElement;
+(function(){let t;try{t=localStorage.getItem("cr-theme")}catch(e){}if(t)root.setAttribute("data-theme",t);})();
+document.getElementById("theme").addEventListener("click",()=>{const c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");root.setAttribute("data-theme",c==="dark"?"light":"dark");try{localStorage.setItem("cr-theme",c==="dark"?"light":"dark")}catch(e){}});
+</script></body></html>
