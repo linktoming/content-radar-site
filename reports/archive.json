@@ -1,5 +1,19 @@
 [
  {
+  "date": "2026-11-27",
+  "lang": "zh",
+  "title": "Anthropic 上市一周跌回发行价：据 LinkedIn 上的转述，ANT 周三收在 82.79 美元，略低于 83 美元的 IPO 价",
+  "summary": "Anthropic 上市一周跌回发行价：据 LinkedIn 上的转述，ANT 周三收在 82.79 美元，略低于 83 美元的 IPO 价，市值从开盘时的近 2 万亿美元回到约 1.11 万亿美元",
+  "url": "reports/2026-11-27-zh.html"
+ },
+ {
+  "date": "2026-11-27",
+  "lang": "en",
+  "title": "🔭 Today's Throughline",
+  "summary": "🔭 Today's Throughline",
+  "url": "reports/2026-11-27-en.html"
+ },
+ {
   "date": "2026-11-26",
   "lang": "zh",
   "title": "OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%",
