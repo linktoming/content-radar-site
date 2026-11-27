@@ -2,12 +2,13 @@
 
 > A daily AI intelligence report covering both hemispheres in one sweep: the Western frontier (labs, X, Hacker News, VC) and China's AI scene (rednote, Bilibili, Chinese labs). Every edition covers the full circle and is published in full, free, in both Chinese and English.
 
-Published daily by mingming (https://x.com/linktoming). 117 days archived.
+Published daily by mingming (https://x.com/linktoming). 118 days archived.
 
 Each report is organised in four layers: 源头/Primary (labs and frontier sources), 解读/Sense-maker (analysis), 实战/Practitioner (builders shipping), 投资/Investor (funding and market moves).
 
 ## English editions
 
+- [2026-11-28 — 🔭 Main Threads](https://radar.sharpener.ai/reports/2026-11-28-en.html): 🔭 Main Threads
 - [2026-11-27 — 🔭 Today's Throughline](https://radar.sharpener.ai/reports/2026-11-27-en.html): 🔭 Today's Throughline
 - [2026-11-26 — 🔭 Throughline](https://radar.sharpener.ai/reports/2026-11-26-en.html): 🔭 Throughline
 - [2026-11-25 — 🔭 Main Threads](https://radar.sharpener.ai/reports/2026-11-25-en.html): 🔭 Main Threads
@@ -47,10 +48,10 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-22 — The emerging advantage is not more generated output, but persistent context, dependable execution and verified results](https://radar.sharpener.ai/reports/2026-10-22-en.html): The emerging advantage is not more generated output, but persistent context, dependable execution and verified results
 - [2026-10-21 — The useful shift is from model benchmarks to production workflows](https://radar.sharpener.ai/reports/2026-10-21-en.html): The useful shift is from model benchmarks to production workflows: cheaper inference, reusable experience, and agents that finish real tasks
 - [2026-10-20 — The useful shift is from generating isolated outputs to running complete workflows](https://radar.sharpener.ai/reports/2026-10-20-en.html): The useful shift is from generating isolated outputs to running complete workflows: plan, produce, review and recover from failure
-- [2026-10-19 — 🎯 Primary](https://radar.sharpener.ai/reports/2026-10-19-en.html): 🎯 Primary
 
 ## 中文版
 
+- [2026-11-28 — Grok Bot 成了这周多模型路由的消费级样本：马斯克说它按任务在 Gemini Neon 和 Opus 之间挑模型](https://radar.sharpener.ai/reports/2026-11-28-zh.html): Grok Bot 成了这周多模型路由的消费级样本：马斯克说它按任务在 Gemini Neon 和 Opus 之间挑模型，a16z 转述 Gavin Baker 的说法
 - [2026-11-27 — Anthropic 上市一周跌回发行价：据 LinkedIn 上的转述，ANT 周三收在 82.79 美元，略低于 83 美元的 IPO 价](https://radar.sharpener.ai/reports/2026-11-27-zh.html): Anthropic 上市一周跌回发行价：据 LinkedIn 上的转述，ANT 周三收在 82.79 美元，略低于 83 美元的 IPO 价，市值从开盘时的近 2 万亿美元回到约 1.11 万亿美元
 - [2026-11-26 — OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%](https://radar.sharpener.ai/reports/2026-11-26-zh.html): OpenClaw 的 ShellBench 给出了一个冷数字：最强的 agent 在 100 项日常任务上最高只拿 62.5%，三次全过只有 48.8%
 - [2026-11-25 — Anthropic 股价跌破 83 美元发行价的同一天，两位业余天文爱好者用 Codex 和 Astra 在 NASA 公开数据里筛出了候选系外行星](https://radar.sharpener.ai/reports/2026-11-25-zh.html): Anthropic 股价跌破 83 美元发行价的同一天，两位业余天文爱好者用 Codex 和 Astra 在 NASA 公开数据里筛出了候选系外行星
@@ -90,7 +91,6 @@ Each report is organised in four layers: 源头/Primary (labs and frontier sourc
 - [2026-10-22 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-22-zh.html): 🔭 主线
 - [2026-10-21 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-21-zh.html): 🔭 主线
 - [2026-10-20 — 🔭 主线](https://radar.sharpener.ai/reports/2026-10-20-zh.html): 🔭 主线
-- [2026-10-19 — DeepSeek 降低任务成本，OpenClaw 走进新电脑，内容团队开始把编辑经验做成共享技能](https://radar.sharpener.ai/reports/2026-10-19-zh.html): DeepSeek 降低任务成本，OpenClaw 走进新电脑，内容团队开始把编辑经验做成共享技能
 
 ## Full index
 
